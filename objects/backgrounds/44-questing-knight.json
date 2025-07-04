@@ -4,49 +4,52 @@
   "description": "You are on a quest for the grail, or the sword, or the throne, or for god, or a lost love, or some other significant object. Your sort are common enough, wandering the worlds, acting out your romantic melodrama, accusing good folk of being demons or faeries. Questing Knights are generally considered to be harmless.",
   "possessions": [
     {
-      "name": "Heavy Armour"
+      "name": "Heavy Armour",
+      "description": "Full plate protection"
     },
     {
-      "name": "Horse"
+      "name": "Horse",
+      "description": "Noble steed"
     },
     {
-      "name": "Lance (Damage as Spear)"
+      "name": "Lance",
+      "description": "Damage as Spear"
     },
     {
-      "name": "Sword"
+      "name": "Sword",
+      "description": "Knight's blade"
     },
     {
-      "name": "Shield"
+      "name": "Shield",
+      "description": "Defensive equipment"
     },
     {
-      "name": "A Quixotic Undertaking"
+      "name": "Quixotic Undertaking",
+      "description": "Your impossible quest"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Jousting",
-      "value": 3
+      "rank": 3
     },
     {
       "name": "Sword Fighting",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Spear Fighting",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Shield Fighting",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Awareness",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [],
-  "total_skill_points": 9,
-  "advancedSkills": [],
   "spells": [],
   "special": []
 }

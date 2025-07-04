@@ -45,8 +45,8 @@
       "rank": 1
     }
   ],
+  "spells": [],
   "special": [
     "Eaters are immune to mundane ingested poisons. They may also identify any object if eaten, gaining knowledge of its material, its origin (if plausibly familiar), and its magical properties on a successful Test of Gastrology though the object must be thoroughly masticated, not merely swallowed and passed. This does not grant special immunity to any effects the object may possess."
-  ],
-  "spells": []
+  ]
 }

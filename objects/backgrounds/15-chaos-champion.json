@@ -22,7 +22,7 @@
   ],
   "advancedSkills": [
     {
-      "name": "Language \u2013 Kurgan",
+      "name": "Language – Kurgan",
       "rank": 6
     },
     {
@@ -30,19 +30,20 @@
       "rank": 3
     },
     {
-      "name": "Secret Signs \u2013 Chaos Patron",
+      "name": "Secret Signs – Chaos Patron",
       "rank": 3
-    },
-    {
-      "name": "Spell \u2013 Random",
-      "rank": 1
     },
     {
       "name": "Second Sight",
       "rank": 1
     }
   ],
-  "spells": [],
+  "spells": [
+    {
+      "name": "Random",
+      "rank": 1
+    }
+  ],
   "special": [
     "Name your patron. You may call upon your patron for aid once per day. To do so roll three 6s on 3d6. The GM interprets their intervention."
   ]

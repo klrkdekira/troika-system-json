@@ -13,67 +13,65 @@
       "name": "Wand used to help focus new apprentices, now kept for sentimental reasons"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
-      "name": "Secret Signs - Witching Words",
-      "value": 4
+      "name": "Secret Signs – Witching Words",
+      "rank": 4
     },
     {
       "name": "Run",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Climb",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Sleight of Hand",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Swim",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Sneak",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Second Sight",
-      "value": 1
-    },
-    {
-      "name": "Spell - Jolt",
-      "value": 1
-    },
-    {
-      "name": "Spell - Amity",
-      "value": 1
-    },
-    {
-      "name": "Spell - Mirror Selves",
-      "value": 1
-    },
-    {
-      "name": "Spell - Protection from Rain",
-      "value": 1
-    },
-    {
-      "name": "Spell - Helping Hands",
-      "value": 1
-    },
-    {
-      "name": "Spell - Purple Lens",
-      "value": 1
-    },
-    {
-      "name": "Spell - Random",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [],
-  "total_skill_points": 18,
-  "advancedSkills": [],
-  "spells": [],
+  "spells": [
+    {
+      "name": "Jolt",
+      "rank": 1
+    },
+    {
+      "name": "Amity",
+      "rank": 1
+    },
+    {
+      "name": "Mirror Selves",
+      "rank": 1
+    },
+    {
+      "name": "Protection from Rain",
+      "rank": 1
+    },
+    {
+      "name": "Helping Hands",
+      "rank": 1
+    },
+    {
+      "name": "Purple Lens",
+      "rank": 1
+    },
+    {
+      "name": "Random",
+      "rank": 1
+    }
+  ],
   "special": []
 }

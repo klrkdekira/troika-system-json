@@ -10,45 +10,43 @@
       "name": "Flashy Robes"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Astrology",
-      "value": 3
+      "rank": 3
     },
     {
       "name": "Second Sight",
-      "value": 2
-    },
-    {
-      "name": "Spell - Astral Reach",
-      "value": 2
-    },
-    {
-      "name": "Spell - Teleport",
-      "value": 1
-    },
-    {
-      "name": "Spell - Web",
-      "value": 1
-    },
-    {
-      "name": "Spell - Random",
-      "value": 1
-    },
-    {
-      "name": "Spell - Random",
-      "value": 1
-    },
-    {
-      "name": "Spell - Random",
-      "value": 1
+      "rank": 2
     }
   ],
-  "special_abilities": [
-    "Channel magic through small functional door worn on forehead"
+  "spells": [
+    {
+      "name": "Astral Reach",
+      "rank": 2
+    },
+    {
+      "name": "Teleport",
+      "rank": 1
+    },
+    {
+      "name": "Web",
+      "rank": 1
+    },
+    {
+      "name": "Random",
+      "rank": 1
+    },
+    {
+      "name": "Random",
+      "rank": 1
+    },
+    {
+      "name": "Random",
+      "rank": 1
+    }
   ],
-  "total_skill_points": 12,
-  "advancedSkills": [],
-  "spells": [],
-  "special": []
+  "special": [
+    "Channel magic through small functional door worn on forehead"
+  ]
 }

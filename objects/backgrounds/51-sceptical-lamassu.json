@@ -19,38 +19,36 @@
       "name": "Wings — able to fly as fast as a running man over clear ground"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Fly",
-      "value": 3
-    },
-    {
-      "name": "Spell - Random",
-      "value": 3
-    },
-    {
-      "name": "Spell - Random",
-      "value": 3
-    },
-    {
-      "name": "Spell - Random",
-      "value": 3
+      "rank": 3
     },
     {
       "name": "Claw Fighting",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Hoof Fighting",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
+  "spells": [
+    {
+      "name": "Random",
+      "rank": 3
+    },
+    {
+      "name": "Random",
+      "rank": 3
+    },
+    {
+      "name": "Random",
+      "rank": 3
+    }
+  ],
+  "special": [
     "Natural flight ability - able to fly as fast as a running man over clear ground",
     "Has natural weapons: claws (Damage as Sword) and hooves (Damage as Club)"
-  ],
-  "total_skill_points": 15,
-  "advancedSkills": [],
-  "spells": [],
-  "special": []
+  ]
 }

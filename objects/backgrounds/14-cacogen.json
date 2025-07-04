@@ -4,17 +4,20 @@
   "description": "You are Those-Filthy-Born, spawned in the hump-backed sky lit only by great black anti-suns and false light. Your mother was sailing on the golden barges or caught in some more abstract fate when she passed you, far from the protective malaise of the million spheres. You were receptive to the power and the glory at a generative time and it shows in your teratoid form.",
   "possessions": [
     {
-      "name": "Fusil"
+      "name": "Fusil",
+      "description": "Energy weapon"
     },
     {
-      "name": "Plasmic Cores",
-      "diceExpression": "2d6"
+      "name": "2d6 Plasmic Cores",
+      "description": "Energy source for weapons"
     },
     {
-      "name": "Sword"
+      "name": "Sword",
+      "description": "Melee weapon"
     },
     {
-      "name": "Velare"
+      "name": "Velare",
+      "description": "Hard-light disguise device"
     }
   ],
   "advancedSkills": [
@@ -41,19 +44,16 @@
   ],
   "spells": [
     {
-      "name": "Random Spell",
-      "rank": 2,
-      "isRandom": true
+      "name": "Random",
+      "rank": 2
     },
     {
-      "name": "Random Spell",
-      "rank": 2,
-      "isRandom": true
+      "name": "Random",
+      "rank": 2
     },
     {
-      "name": "Random Spell",
-      "rank": 1,
-      "isRandom": true
+      "name": "Random",
+      "rank": 1
     }
   ],
   "special": []

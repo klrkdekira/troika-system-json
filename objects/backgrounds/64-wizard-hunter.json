@@ -22,39 +22,36 @@
       "name": "Ruby Lorgnette"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Tracking",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Disguise",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Crossbow Fighting",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Sword Fighting",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Sneak",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Locks",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Etiquette",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [],
-  "total_skill_points": 10,
-  "advancedSkills": [],
   "spells": [],
   "special": []
 }
