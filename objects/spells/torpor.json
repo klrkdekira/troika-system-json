@@ -5,22 +5,16 @@
   "duration": "Until ended by wizard",
   "range": "Self",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "necromancy",
-      "description": "Temporarily die - bodily functions halt, no need for food/water/air"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "limitations": [
     "Vaguely aware of surroundings (sound and movement only)",
     "Still takes damage from bodily abuse",
     "Can become irretrievably dead"
   ],
-  "tags": ["necromancy", "death", "self-transformation"]
+  "tags": [
+    "necromancy"
+  ]
 }

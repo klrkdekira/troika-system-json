@@ -5,25 +5,12 @@
   "duration": "Instantaneous",
   "range": "Touch",
   "testType": "rollUnder",
-  "target": "Living creature's entrails",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": "Living creature's entrails"
-  },
-  "effects": [
-    {
-      "type": "divination",
-      "description": "Answer one question based on creature size and importance"
-    }
+  "components": [
+    "verbal",
+    "somatic",
+    "Living creature's entrails"
   ],
-  "scaling": {
-    "creatureSize": {
-      "small": "Yes or no answers",
-      "medium": "Basic information",
-      "large": "Obtuse predictions",
-      "magical": "Explicit and thorough advice"
-    }
-  },
-  "tags": ["divination", "ritual"]
+  "tags": [
+    "divination"
+  ]
 }

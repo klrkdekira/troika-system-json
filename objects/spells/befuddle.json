@@ -1,15 +1,11 @@
 {
-    "id": "befuddle",
-    "name": "Befuddle",
-    "cost": 1,
-    "description": "A wizard's touch can shake up someone's mind like a snow globe. The target makes all rolls at a -1 penalty until their head clears. Lasts for 3 minutes.",
-    "school": "enchantment",
-    "range": "touch",
-    "duration": "3_minutes",
-    "components": [
-        "somatic"
-    ],
-    "effect": "-1 penalty to all rolls",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Befuddle",
+  "cost": 1,
+  "description": "A wizard's touch can shake up someone's mind like a snow globe. The target makes all rolls at a -1 penalty until their head clears. Lasts for 3 minutes.",
+  "range": "touch",
+  "duration": "3_minutes",
+  "components": [
+    "somatic"
+  ],
+  "testType": "rollUnder"
 }

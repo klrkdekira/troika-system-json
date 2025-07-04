@@ -1,14 +1,12 @@
 {
-  "$schema": "../../systems/item.schema.json",
-  "id": "salt",
   "name": "Salt",
   "description": "Salt is the poor man's Silver. Where Silver kills the demonic and the dead Salt merely harms or bars.",
   "slots": 1,
-  "properties": [
-    "Harms or bars demonic and undead creatures",
-    "Throwing weapon against supernatural entities",
-    "Lesser version of Silver's power"
-  ],
   "value": "2 silver pence",
-  "tags": ["consumable", "weapon", "supernatural"]
+  "tags": [
+    "consumable",
+    "weapon",
+    "supernatural"
+  ],
+  "type": "misc"
 }

@@ -1,48 +1,78 @@
 {
-    "id": "harpy",
-    "name": "Harpy",
+  "id": "harpy",
+  "name": "Harpy",
+  "description": "Immortal creatures of bitterness and spite, they look like vultures with human heads and unusually large claws. Their immortal nature precludes the need to eat yet they hunt mercilessly, most usually by lifting their quarry up into the sky and dropping them after spending some time verbally tormenting them. A greater pleasure still is when their victims survive the fall, whereupon they descend and eat the exposed sweetmeats and cackle with their mouths full. Altogether a reprehensible blight on creation.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Spiteful",
+        "behavior": "Spiteful"
+      },
+      {
+        "roll": 2,
+        "mood": "Malicious",
+        "behavior": "Malicious"
+      },
+      {
+        "roll": 3,
+        "mood": "Cruel",
+        "behavior": "Cruel"
+      },
+      {
+        "roll": 4,
+        "mood": "Hateful",
+        "behavior": "Hateful"
+      },
+      {
+        "roll": 5,
+        "mood": "Vicious",
+        "behavior": "Vicious"
+      },
+      {
+        "roll": 6,
+        "mood": "Barbaric",
+        "behavior": "Barbaric"
+      }
+    ]
+  },
+  "special": [
+    {
+      "name": "Special Ability",
+      "description": "Harpies are natural sorcerers, each knowing Read Entrails and any other Spells you might deem appropriate",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Can fly and lift prey",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Immortal",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Verbal torment",
+      "type": "passive"
+    }
+  ],
+  "habitat": [
+    "mountains",
+    "cliffs",
+    "high_places"
+  ],
+  "frequency": "uncommon",
+  "stats": {
     "skill": 8,
     "stamina": 12,
     "initiative": 3,
     "armor": 0,
-    "damage": "modest_beast",
-    "description": "Immortal creatures of bitterness and spite, they look like vultures with human heads and unusually large claws. Their immortal nature precludes the need to eat yet they hunt mercilessly, most usually by lifting their quarry up into the sky and dropping them after spending some time verbally tormenting them. A greater pleasure still is when their victims survive the fall, whereupon they descend and eat the exposed sweetmeats and cackle with their mouths full. Altogether a reprehensible blight on creation.",
-    "mien": [
-        {
-            "roll": 1,
-            "behavior": "Spiteful"
-        },
-        {
-            "roll": 2,
-            "behavior": "Malicious"
-        },
-        {
-            "roll": 3,
-            "behavior": "Cruel"
-        },
-        {
-            "roll": 4,
-            "behavior": "Hateful"
-        },
-        {
-            "roll": 5,
-            "behavior": "Vicious"
-        },
-        {
-            "roll": 6,
-            "behavior": "Barbaric"
-        }
-    ],
-    "special": [
-        "Harpies are natural sorcerers, each knowing Read Entrails and any other Spells you might deem appropriate",
-        "Can fly and lift prey",
-        "Immortal",
-        "Verbal torment"
-    ],
-    "habitat": [
-        "mountains",
-        "cliffs",
-        "high_places"
-    ],
-    "frequency": "uncommon"
+    "damage": "modest_beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

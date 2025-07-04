@@ -1,13 +1,11 @@
 {
-  "$schema": "../../systems/item.schema.json",
-  "id": "yoke",
   "name": "Yoke",
   "description": "A yoke gives you +4 carry capacity while worn but you can not use your hands while wearing it.",
   "slots": 2,
-  "properties": [
-    "+4 carry capacity while worn",
-    "Cannot use hands while wearing it"
-  ],
   "value": "8 silver pence",
-  "tags": ["tool", "burden"]
+  "tags": [
+    "tool",
+    "burden"
+  ],
+  "type": "misc"
 }

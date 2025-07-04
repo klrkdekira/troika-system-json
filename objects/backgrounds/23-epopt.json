@@ -1,63 +1,64 @@
 {
-    "id": "23",
-    "name": "Epopt",
-    "description": "You are a roaming seer, selling your visions at courts and fetes. You are instantly recognisable by your yellow coif and habit as being open for business. Road weary and worldwise, your unpopular visions cause you to constantly move on.",
-    "possessions": [
-        {
-            "name": "Yellow Epopt Outfit",
-            "description": "Padded for protection against unhappy clients (counts as Modest Armour)",
-            "category": "armor",
-            "properties": [
-                "modest_armor",
-                "distinctive"
-            ]
-        },
-        {
-            "name": "Epopt Staff",
-            "description": "A walking staff with seeing crystal on one end (Damage as Staff)",
-            "category": "weapon",
-            "properties": [
-                "staff",
-                "crystal"
-            ]
-        },
-        {
-            "name": "Collapsible Tent",
-            "description": "Large enough for your stall",
-            "category": "tool",
-            "properties": [
-                "portable",
-                "shelter"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Awareness",
-            "level": 2
-        },
-        {
-            "name": "Evaluate",
-            "level": 2
-        },
-        {
-            "name": "Second Sight",
-            "level": 1
-        },
-        {
-            "name": "Etiquette",
-            "level": 1
-        },
-        {
-            "name": "Fist Fighting",
-            "level": 1
-        },
-        {
-            "name": "Run",
-            "level": 1
-        }
-    ],
-    "special": [
-        "Epopts may Test their Luck to get a yes or no answer to a question about mundane matters. The GM should make this Test in private, not informing the Epopt if their visions are accurate."
-    ]
+  "id": 23,
+  "name": "Epopt",
+  "description": "You are a roaming seer, selling your visions at courts and fetes. You are instantly recognisable by your yellow coif and habit as being open for business. Road weary and worldwise, your unpopular visions cause you to constantly move on.",
+  "possessions": [
+    {
+      "name": "Yellow Epopt Outfit",
+      "description": "Padded for protection against unhappy clients (counts as Modest Armour)",
+      "category": "armor",
+      "properties": [
+        "modest_armor",
+        "distinctive"
+      ]
+    },
+    {
+      "name": "Epopt Staff",
+      "description": "A walking staff with seeing crystal on one end (Damage as Staff)",
+      "category": "weapon",
+      "properties": [
+        "staff",
+        "crystal"
+      ]
+    },
+    {
+      "name": "Collapsible Tent",
+      "description": "Large enough for your stall",
+      "category": "tool",
+      "properties": [
+        "portable",
+        "shelter"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Awareness",
+      "rank": 2
+    },
+    {
+      "name": "Evaluate",
+      "rank": 2
+    },
+    {
+      "name": "Second Sight",
+      "rank": 1
+    },
+    {
+      "name": "Etiquette",
+      "rank": 1
+    },
+    {
+      "name": "Fist Fighting",
+      "rank": 1
+    },
+    {
+      "name": "Run",
+      "rank": 1
+    }
+  ],
+  "special": [
+    "Epopts may Test their Luck to get a yes or no answer to a question about mundane matters. The GM should make this Test in private, not informing the Epopt if their visions are accurate."
+  ],
+  "spells": []
 }

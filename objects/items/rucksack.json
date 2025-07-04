@@ -1,26 +1,11 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "rucksack",
-    "name": "Rucksack",
-    "description": "A sturdy backpack for carrying equipment. Starting equipment for all characters.",
-    "category": "equipment",
-    "weight": "normal",
-    "slots": 1,
-    "properties": [
-        "container",
-        "worn"
-    ],
-    "modifiers": [
-        {
-            "type": "inventory_bonus",
-            "value": "+12",
-            "description": "Provides 12 inventory slots"
-        }
-    ],
-    "tags": [
-        "equipment",
-        "container",
-        "starting_equipment"
-    ],
-    "rarity": "common"
+  "name": "Rucksack",
+  "description": "A sturdy backpack for carrying equipment. Starting equipment for all characters.",
+  "slots": 1,
+  "tags": [
+    "equipment",
+    "container",
+    "starting_equipment"
+  ],
+  "type": "tool"
 }

@@ -1,71 +1,75 @@
 {
-    "name": "Ranged Weapons Damage Table",
-    "description": "Damage values for ranged weapons based on damage roll",
-    "diceType": "d6",
-    "type": "damage",
-    "damageMatrix": {
-        "weapons": [
-            "Fusil",
-            "Bow",
-            "Crossbow",
-            "Pistolet"
-        ],
-        "rollColumns": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7+"
-        ],
-        "matrix": {
-            "Fusil": {
-                "1": 2,
-                "2": 4,
-                "3": 4,
-                "4": 6,
-                "5": 12,
-                "6": 18,
-                "7+": 24
-            },
-            "Bow": {
-                "1": 2,
-                "2": 4,
-                "3": 6,
-                "4": 8,
-                "5": 8,
-                "6": 10,
-                "7+": 12
-            },
-            "Crossbow": {
-                "1": 4,
-                "2": 4,
-                "3": 6,
-                "4": 8,
-                "5": 8,
-                "6": 8,
-                "7+": 10
-            },
-            "Pistolet": {
-                "1": 2,
-                "2": 2,
-                "3": 4,
-                "4": 4,
-                "5": 6,
-                "6": 12,
-                "7+": 16
-            }
-        },
-        "special": [
-            "* indicates a Weapon that requires at least two hands to use",
-            "# indicates a Weapon that ignores 1 point of Armour"
-        ]
+  "name": "Ranged Weapons Damage Table",
+  "description": "Damage values for ranged weapons based on damage roll",
+  "type": "damage",
+  "damageMatrix": {
+    "weapons": [
+      "Fusil",
+      "Bow",
+      "Crossbow",
+      "Pistolet"
+    ],
+    "rollColumns": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7+"
+    ],
+    "matrix": {
+      "Fusil": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 6,
+        "5": 12,
+        "6": 18,
+        "7+": 24
+      },
+      "Bow": {
+        "1": 2,
+        "2": 4,
+        "3": 6,
+        "4": 8,
+        "5": 8,
+        "6": 10,
+        "7+": 12
+      },
+      "Crossbow": {
+        "1": 4,
+        "2": 4,
+        "3": 6,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7+": 10
+      },
+      "Pistolet": {
+        "1": 2,
+        "2": 2,
+        "3": 4,
+        "4": 4,
+        "5": 6,
+        "6": 12,
+        "7+": 16
+      }
     },
-    "tags": [
-        "weapons",
-        "damage",
-        "ranged",
-        "reference"
+    "special": [
+      "* indicates a Weapon that requires at least two hands to use",
+      "# indicates a Weapon that ignores 1 point of Armour"
     ]
+  },
+  "tags": [
+    "weapons",
+    "damage",
+    "ranged",
+    "reference"
+  ],
+  "diceExpression": "d6",
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

@@ -3,12 +3,7 @@
   "type": "weapon",
   "description": "A heavy clubbing weapon with a weighted head, designed to crush armor.",
   "slots": 2,
-  "value": {
-    "amount": 10,
-    "currency": "silver pence"
-  },
-  "weaponType": "melee",
-  "damage": "Mace",
+  "value": 10,
   "damageTable": {
     "1": 2,
     "2": 4,
@@ -18,6 +13,17 @@
     "6": 8,
     "7+": 10
   },
-  "properties": ["Ignores 1 point of Armour"],
-  "tags": ["weapon", "melee", "blunt", "armor-piercing"]
+  "tags": [
+    "weapon",
+    "melee",
+    "blunt",
+    "armor-piercing"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Mace",
+    "specialRules": [
+      "Ignores 1 point of Armour"
+    ]
+  }
 }

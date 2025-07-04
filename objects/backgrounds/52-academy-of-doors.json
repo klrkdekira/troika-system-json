@@ -1,48 +1,54 @@
 {
-    "$schema": "../../systems/background.schema.json",
-    "id": "52",
-    "name": "Sorcerer of the Academy of Doors",
-    "description": "You are a student at Troika's most prestigious wizarding academy (pride of the city, experts in pan-dimensional mobility) you were finally able to penetrate the (2d6)th door. You are no master but few outside your peers can claim to know more about the vagaries of skyward travel than you.",
-    "possessions": [
-        "Small Functional Door worn on your forehead through which you channel your magic",
-        "Flashy Robes"
-    ],
-    "advanced_skills": [
-        {
-            "name": "Astrology",
-            "value": 3
-        },
-        {
-            "name": "Second Sight",
-            "value": 2
-        },
-        {
-            "name": "Spell - Astral Reach",
-            "value": 2
-        },
-        {
-            "name": "Spell - Teleport",
-            "value": 1
-        },
-        {
-            "name": "Spell - Web",
-            "value": 1
-        },
-        {
-            "name": "Spell - Random",
-            "value": 1
-        },
-        {
-            "name": "Spell - Random",
-            "value": 1
-        },
-        {
-            "name": "Spell - Random",
-            "value": 1
-        }
-    ],
-    "special_abilities": [
-        "Channel magic through small functional door worn on forehead"
-    ],
-    "total_skill_points": 12
+  "id": 52,
+  "name": "Sorcerer of the Academy of Doors",
+  "description": "You are a student at Troika's most prestigious wizarding academy (pride of the city, experts in pan-dimensional mobility) you were finally able to penetrate the (2d6)th door. You are no master but few outside your peers can claim to know more about the vagaries of skyward travel than you.",
+  "possessions": [
+    {
+      "name": "Small Functional Door worn on your forehead through which you channel your magic"
+    },
+    {
+      "name": "Flashy Robes"
+    }
+  ],
+  "advanced_skills": [
+    {
+      "name": "Astrology",
+      "value": 3
+    },
+    {
+      "name": "Second Sight",
+      "value": 2
+    },
+    {
+      "name": "Spell - Astral Reach",
+      "value": 2
+    },
+    {
+      "name": "Spell - Teleport",
+      "value": 1
+    },
+    {
+      "name": "Spell - Web",
+      "value": 1
+    },
+    {
+      "name": "Spell - Random",
+      "value": 1
+    },
+    {
+      "name": "Spell - Random",
+      "value": 1
+    },
+    {
+      "name": "Spell - Random",
+      "value": 1
+    }
+  ],
+  "special_abilities": [
+    "Channel magic through small functional door worn on forehead"
+  ],
+  "total_skill_points": 12,
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

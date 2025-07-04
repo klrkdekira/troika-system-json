@@ -1,15 +1,11 @@
 {
-    "id": "flash",
-    "name": "Flash",
-    "cost": 3,
-    "description": "The wizard claps neatly and issues forth the light of a thousand suns from their hands. All within 20 metres must Test their Luck (or Skill for Enemies) or be blinded for 1d6 minutes.",
-    "school": "evocation",
-    "range": "20_metres",
-    "duration": "1d6_minutes",
-    "components": [
-        "somatic"
-    ],
-    "effect": "Blinds all in 20m radius",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Flash",
+  "cost": 3,
+  "description": "The wizard claps neatly and issues forth the light of a thousand suns from their hands. All within 20 metres must Test their Luck (or Skill for Enemies) or be blinded for 1d6 minutes.",
+  "range": "20_metres",
+  "duration": "1d6_minutes",
+  "components": [
+    "somatic"
+  ],
+  "testType": "rollUnder"
 }

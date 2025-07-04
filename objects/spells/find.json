@@ -1,23 +1,20 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "find",
-    "name": "Find",
-    "cost": 2,
-    "description": "When wizards lose their glasses they mumble to themselves until they turn up. The thing being sought must be a specific object, not a general category or type, and the direction is only given in terms of compass points.",
-    "testType": "roll_under",
-    "range": "unlimited",
-    "duration": "instantaneous",
-    "components": [
-        "verbal"
-    ],
-    "effect": "Locates specific object by compass direction",
-    "tags": [
-        "divination",
-        "utility"
-    ],
-    "specialMechanics": [
-        "Must be a specific object, not general category",
-        "Direction given only in compass points"
-    ],
-    "oopsEntry": true
+  "name": "Find",
+  "cost": 2,
+  "description": "When wizards lose their glasses they mumble to themselves until they turn up. The thing being sought must be a specific object, not a general category or type, and the direction is only given in terms of compass points.",
+  "testType": "rollUnder",
+  "range": "unlimited",
+  "duration": "instantaneous",
+  "components": [
+    "verbal"
+  ],
+  "tags": [
+    "divination",
+    "utility"
+  ],
+  "specialMechanics": [
+    "Must be a specific object, not general category",
+    "Direction given only in compass points"
+  ],
+  "oopsEntry": true
 }

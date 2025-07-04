@@ -5,17 +5,8 @@
   "duration": "12 rounds",
   "range": "12 metre cone",
   "testType": "rollUnder",
-  "target": "Cone area",
-  "components": {
-    "verbal": true,
-    "somatic": false,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "conjuration",
-      "description": "Create web in cone that traps creatures who fail Luck tests"
-    }
+  "components": [
+    "verbal"
   ],
   "saveType": "luck",
   "saveEffect": "Test Luck to avoid being trapped, repeat each Turn when moving through",
@@ -23,5 +14,7 @@
     "area": "12 metre cone in front of wizard",
     "duration": "12 rounds before drying up"
   },
-  "tags": ["conjuration", "trap", "area", "disgusting"]
+  "tags": [
+    "conjuration"
+  ]
 }

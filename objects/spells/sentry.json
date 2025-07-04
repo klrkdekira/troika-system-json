@@ -5,21 +5,15 @@
   "duration": "Until dispelled or destroyed",
   "range": "Touch",
   "testType": "rollUnder",
-  "target": "Wall or surface",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "divination",
-      "description": "Extend senses to chosen location"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "drawbacks": [
     "Wizard suffers -1 to all rolls while active",
     "If shard is harmed, wizard loses 2d6 Stamina"
   ],
-  "tags": ["divination", "surveillance", "psychic"]
+  "tags": [
+    "divination"
+  ]
 }

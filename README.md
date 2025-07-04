@@ -11,41 +11,14 @@ A comprehensive JSON data structure for the Troika! tabletop RPG system, providi
 
 ```
 troika-system-json/
-├── README.md                    # This file
-├── pyproject.toml              # Python project configuration
-├── main.py                     # Main application entry point
-├── LICENSE                     # Project license
-├── fortle.svg                  # Project logo
-├── srd.md                      # System Reference Document
-├── analysis.md                 # Project analysis documentation
-├── srd-*.md                    # SRD mapping and progress reports
-├── COMPLETION-REPORT.md        # Project completion status
 ├── objects/                    # Game data JSON files
 │   ├── troika-system-data.json # Main data aggregation file
 │   ├── backgrounds/            # Character backgrounds (36 files)
-│   │   ├── 11-ardent-giant-of-corda.json
-│   │   ├── 12-befouler-of-ponds.json
-│   │   ├── 13-burglar.json
-│   │   └── ... (33 more backgrounds)
 │   ├── enemies/                # Bestiary entries (36 files)
-│   │   ├── alzabo.json
-│   │   ├── boggart.json
-│   │   ├── dragon.json
-│   │   └── ... (33 more enemies)
 │   ├── items/                  # Equipment and items (50 files)
-│   │   ├── astrological-equipment.json
-│   │   ├── axe.json
-│   │   ├── bale-hook.json
-│   │   └── ... (47 more items)
 │   ├── skills/                 # Character skills (18 files)
-│   │   └── ... (various skill definitions)
 │   ├── spells/                 # Magic spells (74 files)
-│   │   ├── cockroach.json
-│   │   ├── jolt.json
-│   │   ├── languages.json
-│   │   └── ... (71 more spells)
 │   └── tables/                 # Random tables (5 files)
-│       └── ... (various game tables)
 └── systems/                    # JSON schemas
     ├── troika-system.schema.json
     ├── background.schema.json
@@ -82,30 +55,6 @@ troika-system-json/
 
 The primary entry point is `objects/troika-system-data.json`, which aggregates all game content using JSON references:
 
-```json
-{
-    "metadata": {
-        "version": "1.0",
-        "name": "Troika!",
-        "description": "Science Fantasy RPG System Data",
-        "publisher": "Melsonian Arts Council",
-        "license": "Third Party Compatible - see Terms in SRD"
-    },
-    "characterCreation": {
-        "skillGeneration": "1d3+3",
-        "staminaGeneration": "2d6+12",
-        "luckGeneration": "1d6+6",
-        "baselinePossessions": [...]
-    },
-    "backgrounds": [...],
-    "enemies": [...],
-    "items": [...],
-    "skills": [...],
-    "spells": [...],
-    "tables": [...]
-}
-```
-
 ### Individual Components
 
 Each game element is stored in its own JSON file with a consistent structure:
@@ -119,19 +68,33 @@ Each game element is stored in its own JSON file with a consistent structure:
 
 ## 🏗️ Development Status
 
-This project is actively being developed with the following progress:
+This project has reached a stable state with comprehensive data coverage:
+
+### Core Data (Complete)
 
 - ✅ Core data structure defined
-- ✅ JSON schemas created
+- ✅ JSON schemas created and validated
 - ✅ Background data (36/36 complete)
 - ✅ Enemy data (36/36 complete)
 - ✅ Item data (50/50 complete)
 - ✅ Spell data (74/74 complete)
-- ✅ Basic skill data (18/18 complete)
+- ✅ Skill data (18/18 complete)
 - ✅ Table data (5/5 complete)
-- 🔄 Data validation and testing
-- 🔄 API development
-- 🔄 Documentation completion
+
+### Additional Features
+
+- ✅ JSON Schema validation system
+- ✅ Modular file structure with references
+- ✅ Complete SRD compliance documentation
+- 🔄 Ongoing data validation and quality assurance
+- 🔄 Community tools and integrations
+- 🔄 Extended documentation and examples
+
+### Project Health
+
+- **Total Files**: 220+ JSON data files
+- **Schema Coverage**: 100% of game elements
+- **Last Updated**: July 2025
 
 ## 📜 License & Attribution
 
@@ -143,7 +106,7 @@ This project is based on the **Troika!** tabletop RPG system by the **Melsonian 
 
 ### Third Party Compatibility
 
-This is an independent production and is not affiliated with the Melsonian Arts Council. It is published under the terms outlined in the Troika! System Reference Document (SRD).
+This is an independent production and is not affiliated with the Melsonian Arts Council. It is published under the terms outlined in the [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/#/).
 
 **Troika! System JSON is an independent production by Chee Leong and is not affiliated with the Melsonian Arts Council.**
 

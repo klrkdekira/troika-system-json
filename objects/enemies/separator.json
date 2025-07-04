@@ -1,24 +1,77 @@
 {
   "name": "Separator",
-  "skill": 9,
-  "stamina": 12,
-  "initiative": 2,
-  "armor": 0,
-  "damage": "Medium Beast",
-  "mien": [
-    "Uncanny",
-    "Hagridden",
-    "Withdrawn",
-    "Unassuming",
-    "Ravenous",
-    "Cruel"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Uncanny",
+        "behavior": "Uncanny"
+      },
+      {
+        "roll": 2,
+        "mood": "Hagridden",
+        "behavior": "Hagridden"
+      },
+      {
+        "roll": 3,
+        "mood": "Withdrawn",
+        "behavior": "Withdrawn"
+      },
+      {
+        "roll": 4,
+        "mood": "Unassuming",
+        "behavior": "Unassuming"
+      },
+      {
+        "roll": 5,
+        "mood": "Ravenous",
+        "behavior": "Ravenous"
+      },
+      {
+        "roll": 6,
+        "mood": "Cruel",
+        "behavior": "Cruel"
+      }
+    ]
+  },
   "description": "In an infinite universe there are infinite witches, amongst which is a rich spectrum of awfulness. Separators are some of the foulest. They live like normal people by day but by night feed their sorcery through teratic transformations. Sat in their home, their bodies pull away at the breastbone, tongues lengthen and hang to the ground, and wings sprout from their spinal columns. They fly invisibly in search of sleeping victims so as to force their tongues down their gullets to feast upon the innards. Their victims awaken mysteriously sick while the witch remains healthy and young.",
   "special": [
-    "Sleeping victims lose 1d6 permanent Stamina daily unless magically restored",
-    "By day they are indistinguishable from a normal person",
-    "By night the flying portion is invisible at will, only visible through Second Sight or magic",
-    "Destroying their dormant home-body traps them in their flying aspect"
+    {
+      "name": "Special Ability",
+      "description": "Sleeping victims lose 1d6 permanent Stamina daily unless magically restored",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "By day they are indistinguishable from a normal person",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "By night the flying portion is invisible at will, only visible through Second Sight or magic",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Destroying their dormant home-body traps them in their flying aspect",
+      "type": "passive"
+    }
   ],
-  "tags": ["witch", "shapeshifter", "vampiric", "invisible"]
+  "tags": [
+    "witch",
+    "shapeshifter",
+    "vampiric",
+    "invisible"
+  ],
+  "stats": {
+    "skill": 9,
+    "stamina": 12,
+    "initiative": 2,
+    "armor": 0,
+    "damage": "Medium Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

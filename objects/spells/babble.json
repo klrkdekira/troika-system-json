@@ -1,12 +1,8 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "babble",
-    "name": "Babble",
-    "cost": 2,
-    "description": "The wizard speaks nonsense while watching the intended target, causing their words to trip and confuse. This may be done under their breath and relatively subtly.",
-    "casting_instructions": "Speak nonsense while watching target to confuse their speech",
-    "duration": "Until the confusion clears or target realizes what's happening",
-    "range": "Target within sight",
-    "oops_entry": null,
-    "damage_table": null
+  "name": "Babble",
+  "cost": 2,
+  "description": "The wizard speaks nonsense while watching the intended target, causing their words to trip and confuse. This may be done under their breath and relatively subtly.",
+  "duration": "Until the confusion clears or target realizes what's happening",
+  "range": "Target within sight",
+  "testType": "rollUnder"
 }

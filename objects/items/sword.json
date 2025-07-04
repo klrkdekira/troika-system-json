@@ -1,21 +1,16 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "sword",
-    "name": "Sword",
-    "description": "A standard blade weapon, well-balanced and versatile.",
-    "category": "weapon",
-    "weaponType": "melee",
-    "damageType": "sword",
-    "weight": "normal",
-    "slots": 1,
-    "properties": [
-        "one_handed",
-        "melee"
-    ],
-    "tags": [
-        "weapon",
-        "melee",
-        "blade"
-    ],
-    "rarity": "common"
+  "name": "Sword",
+  "type": "weapon",
+  "description": "A standard blade weapon, well-balanced and versatile.",
+  "slots": 1,
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Sword",
+    "twoHanded": false
+  },
+  "tags": [
+    "weapon",
+    "melee",
+    "blade"
+  ]
 }

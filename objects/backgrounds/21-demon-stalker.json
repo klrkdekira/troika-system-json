@@ -1,73 +1,74 @@
 {
-    "id": "21",
-    "name": "Demon Stalker",
-    "description": "You stake your reputation upon your ability to hunt and kill demonic creatures and those who break bread with them. Goat men in the wilds or the Angel cults of the slums, all need to be driven back off the edge of the map and onto the shores of chaos.",
-    "possessions": [
-        {
-            "name": "Silver Sword",
-            "description": "A sword made from star metal that can harm creatures normally immune to material harm",
-            "category": "weapon",
-            "properties": [
-                "silver",
-                "anti-demonic"
-            ]
-        },
-        {
-            "name": "16 Silver Arrows and Bow",
-            "description": "Silver arrows effective against demons and undead",
-            "category": "weapon",
-            "properties": [
-                "silver",
-                "ranged",
-                "anti-demonic"
-            ]
-        },
-        {
-            "name": "Pouch of Salt",
-            "description": "Poor man's silver, harms or bars demonic creatures",
-            "category": "tool",
-            "properties": [
-                "anti-demonic"
-            ]
-        },
-        {
-            "name": "Vial of Demon Blood",
-            "description": "Blood from a defeated demon",
-            "category": "component",
-            "properties": [
-                "alchemical"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Language - Abyssal",
-            "level": 5
-        },
-        {
-            "name": "Spell - Blood Shroud",
-            "level": 3
-        },
-        {
-            "name": "Second Sight",
-            "level": 2
-        },
-        {
-            "name": "Sword Fighting",
-            "level": 2
-        },
-        {
-            "name": "Bow Fighting",
-            "level": 2
-        },
-        {
-            "name": "Tracking",
-            "level": 1
-        },
-        {
-            "name": "Sneak",
-            "level": 1
-        }
-    ],
-    "special": []
+  "id": 21,
+  "name": "Demon Stalker",
+  "description": "You stake your reputation upon your ability to hunt and kill demonic creatures and those who break bread with them. Goat men in the wilds or the Angel cults of the slums, all need to be driven back off the edge of the map and onto the shores of chaos.",
+  "possessions": [
+    {
+      "name": "Silver Sword",
+      "description": "A sword made from star metal that can harm creatures normally immune to material harm",
+      "category": "weapon",
+      "properties": [
+        "silver",
+        "anti-demonic"
+      ]
+    },
+    {
+      "name": "16 Silver Arrows and Bow",
+      "description": "Silver arrows effective against demons and undead",
+      "category": "weapon",
+      "properties": [
+        "silver",
+        "ranged",
+        "anti-demonic"
+      ]
+    },
+    {
+      "name": "Pouch of Salt",
+      "description": "Poor man's silver, harms or bars demonic creatures",
+      "category": "tool",
+      "properties": [
+        "anti-demonic"
+      ]
+    },
+    {
+      "name": "Vial of Demon Blood",
+      "description": "Blood from a defeated demon",
+      "category": "component",
+      "properties": [
+        "alchemical"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Language - Abyssal",
+      "rank": 5
+    },
+    {
+      "name": "Spell - Blood Shroud",
+      "rank": 3
+    },
+    {
+      "name": "Second Sight",
+      "rank": 2
+    },
+    {
+      "name": "Sword Fighting",
+      "rank": 2
+    },
+    {
+      "name": "Bow Fighting",
+      "rank": 2
+    },
+    {
+      "name": "Tracking",
+      "rank": 1
+    },
+    {
+      "name": "Sneak",
+      "rank": 1
+    }
+  ],
+  "special": [],
+  "spells": []
 }

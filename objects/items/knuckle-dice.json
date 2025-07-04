@@ -1,20 +1,14 @@
 {
-    "id": "knuckle-dice",
-    "name": "Knuckle Dice",
-    "description": "Knuckle dice are made from the nimble, petal shaped knuckle bones of goblins and make excellent two sided dice.",
-    "category": "tool",
-    "encumbrance": 0,
-    "properties": [
-        "dice",
-        "goblin_bone",
-        "gambling"
-    ],
-    "effects": [
-        {
-            "type": "gambling_tool",
-            "sides": 2,
-            "material": "goblin_knuckle_bone"
-        }
-    ],
-    "value": "2_silver"
+  "name": "Knuckle Dice",
+  "description": "Knuckle dice are made from the nimble, petal shaped knuckle bones of goblins and make excellent two sided dice.",
+  "encumbrance": 0,
+  "effects": [
+    {
+      "type": "gambling_tool",
+      "sides": 2,
+      "material": "goblin_knuckle_bone"
+    }
+  ],
+  "value": "2_silver",
+  "type": "tool"
 }

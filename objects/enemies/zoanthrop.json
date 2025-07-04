@@ -1,23 +1,72 @@
 {
   "name": "Zoanthrop",
-  "skill": 7,
-  "stamina": 12,
-  "initiative": 2,
-  "armor": 0,
-  "damage": "Modest Beast",
-  "mien": [
-    "Playful",
-    "Stalking",
-    "Hungry",
-    "Tired",
-    "Plagued by Thought",
-    "Aggressive"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Playful",
+        "behavior": "Playful"
+      },
+      {
+        "roll": 2,
+        "mood": "Stalking",
+        "behavior": "Stalking"
+      },
+      {
+        "roll": 3,
+        "mood": "Hungry",
+        "behavior": "Hungry"
+      },
+      {
+        "roll": 4,
+        "mood": "Tired",
+        "behavior": "Tired"
+      },
+      {
+        "roll": 5,
+        "mood": "Plagued by Thought",
+        "behavior": "Plagued by Thought"
+      },
+      {
+        "roll": 6,
+        "mood": "Aggressive",
+        "behavior": "Aggressive"
+      }
+    ]
+  },
   "description": "In the reign of the 35th Autarch it became fashionable to be seen as in-touch with the natural world. One could often witness Exultants abstaining from artificial cloth, conspicuously forgoing their flyers on shorter journeys, and walking barefoot through their palaces whilst their servants laid down petals in their path. This trend escalated until the more desperate social climbers ultimately committed to having their prefrontal cortexes partially removed in the pursuit of the greatest animal verisimilitude. While the results were undeniable, it prevented participation in even the most basic functions of state. The Autarch applauded their commitment but tastes soon moved on.",
   "special": [
-    "Prefrontal cortexes partially removed",
-    "Cannot participate in basic functions of state",
-    "Occasionally plagued by fragments of thought"
+    {
+      "name": "Special Ability",
+      "description": "Prefrontal cortexes partially removed",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Cannot participate in basic functions of state",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Occasionally plagued by fragments of thought",
+      "type": "passive"
+    }
   ],
-  "tags": ["human", "modified", "bestial", "fashion"]
+  "tags": [
+    "human",
+    "modified",
+    "bestial",
+    "fashion"
+  ],
+  "stats": {
+    "skill": 7,
+    "stamina": 12,
+    "initiative": 2,
+    "armor": 0,
+    "damage": "Modest Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

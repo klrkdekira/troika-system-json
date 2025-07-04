@@ -1,16 +1,12 @@
 {
-    "id": "diminish",
-    "name": "Diminish",
-    "cost": 2,
-    "description": "Cause something to Test its Luck (or Skill for Enemies) or reduce its size by half. Lasts 3 minutes.",
-    "school": "transmutation",
-    "range": "sight",
-    "duration": "3_minutes",
-    "components": [
-        "verbal",
-        "somatic"
-    ],
-    "effect": "Reduce target size by half",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Diminish",
+  "cost": 2,
+  "description": "Cause something to Test its Luck (or Skill for Enemies) or reduce its size by half. Lasts 3 minutes.",
+  "range": "sight",
+  "duration": "3_minutes",
+  "components": [
+    "verbal",
+    "somatic"
+  ],
+  "testType": "rollUnder"
 }

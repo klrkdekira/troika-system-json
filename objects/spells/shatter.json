@@ -5,19 +5,13 @@
   "duration": "Instantaneous",
   "range": "Line of sight",
   "testType": "rollUnder",
-  "target": "Brittle object no larger than an umbrella",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "transmutation",
-      "description": "Cause brittle object to shatter into a million pieces"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "saveType": "luck",
   "saveEffect": "Living targets may Test their Luck to avoid the effect",
-  "tags": ["transmutation", "destruction"]
+  "tags": [
+    "transmutation"
+  ]
 }

@@ -5,21 +5,13 @@
   "duration": "Instantaneous",
   "range": "Touch or line of sight",
   "testType": "rollVersus",
-  "target": "Active spell effect",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "abjuration",
-      "description": "Disentangle a Spell from reality"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "mechanics": {
     "rollType": "Roll Versus original casting",
     "costCalculation": "Double the cost of the original Spell"
   },
-  "tags": ["abjuration", "dispel", "counter-magic"]
+  "tags": []
 }

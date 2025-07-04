@@ -5,19 +5,13 @@
   "duration": "Until woken",
   "range": "Line of sight",
   "testType": "rollUnder",
-  "target": "One creature",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "enchantment",
-      "description": "Cause target to sleep until woken"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "saveType": "luck",
   "saveEffect": "Target may Test their Luck to resist",
-  "tags": ["enchantment", "sleep", "mind-affecting"]
+  "tags": [
+    "enchantment"
+  ]
 }

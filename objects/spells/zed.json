@@ -5,18 +5,12 @@
   "duration": "Instantaneous",
   "range": "Self",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "conjuration",
-      "description": "Caster disappears instantly, never to be seen again"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "warning": "DANGER: Caster disappears permanently",
-  "tags": ["conjuration", "teleportation", "dangerous", "mystery"]
+  "tags": [
+    "conjuration"
+  ]
 }

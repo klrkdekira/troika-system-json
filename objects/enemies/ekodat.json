@@ -1,31 +1,64 @@
 {
-    "$schema": "../../systems/enemy.schema.json",
-    "id": "ekodat",
-    "name": "Ekodat",
+  "id": "ekodat",
+  "name": "Ekodat",
+  "damageType": "spear",
+  "description": "The Ekodat is a series of crystalline protrusions emanating from a clouded crystal core. These \"tentacles\" don't move; instead they grow rapidly through the air like roots. Natural philosophers have been back and forth about the categorisation of the Ekodat. While all agree it is a chimera of mineral and some other substance they cannot confirm the matter of the other. The popular attitude is that it is a divine emanation caught and refracted in some unusually dense crystal matrix, causing what would otherwise be an angelic visitation to become a mineralogical hazard.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Dormant",
+        "behavior": "Dormant"
+      },
+      {
+        "roll": 2,
+        "mood": "Stationary",
+        "behavior": "Stationary"
+      },
+      {
+        "roll": 3,
+        "mood": "Unstable",
+        "behavior": "Unstable"
+      },
+      {
+        "roll": 4,
+        "mood": "Probing",
+        "behavior": "Probing"
+      },
+      {
+        "roll": 5,
+        "mood": "Tentative",
+        "behavior": "Tentative"
+      },
+      {
+        "roll": 6,
+        "mood": "Cautious",
+        "behavior": "Cautious"
+      }
+    ]
+  },
+  "specialAbilities": [
+    {
+      "name": "Continuous Growth",
+      "description": "The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids."
+    }
+  ],
+  "tags": [
+    "mineral",
+    "construct",
+    "divine"
+  ],
+  "size": "large",
+  "stats": {
     "skill": 8,
     "stamina": 43,
     "initiative": 3,
-    "armour": 2,
-    "damageType": "spear",
-    "description": "The Ekodat is a series of crystalline protrusions emanating from a clouded crystal core. These \"tentacles\" don't move; instead they grow rapidly through the air like roots. Natural philosophers have been back and forth about the categorisation of the Ekodat. While all agree it is a chimera of mineral and some other substance they cannot confirm the matter of the other. The popular attitude is that it is a divine emanation caught and refracted in some unusually dense crystal matrix, causing what would otherwise be an angelic visitation to become a mineralogical hazard.",
-    "mien": [
-        "Dormant",
-        "Stationary",
-        "Unstable",
-        "Probing",
-        "Tentative",
-        "Cautious"
-    ],
-    "specialAbilities": [
-        {
-            "name": "Continuous Growth",
-            "description": "The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids."
-        }
-    ],
-    "tags": [
-        "mineral",
-        "construct",
-        "divine"
-    ],
-    "size": "large"
+    "armor": 2,
+    "damage": "Unarmed"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

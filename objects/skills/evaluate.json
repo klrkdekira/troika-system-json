@@ -1,8 +1,7 @@
 {
   "name": "Evaluate",
-  "type": "advanced",
+  "type": "general",
   "description": "Test this to get an idea of how much something is worth.",
-  "category": "knowledge",
   "mechanics": {
     "testType": "rollUnder"
   },
@@ -11,5 +10,13 @@
     "Assess treasure worth",
     "Identify valuable components"
   ],
-  "tags": ["knowledge", "commerce", "appraisal"]
+  "tags": [
+    "knowledge",
+    "commerce",
+    "appraisal"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

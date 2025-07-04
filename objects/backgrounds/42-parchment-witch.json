@@ -1,5 +1,5 @@
 {
-  "id": "42",
+  "id": 42,
   "name": "Parchment Witch",
   "description": "Known for their smooth skin, midnight gatherings, and preternatural fear of rain and open flames; the Parchment Witches are long-dead sorcerers who cannot give up the vanity of life. They cover themselves in perfect paper skin, a patiently painted and immaculately folded imitation of life intended to hide ancient bone and gristle.",
   "possessions": [
@@ -7,39 +7,79 @@
       "name": "d6 Rolls of Parchment",
       "description": "For replacing damaged skin",
       "category": "component",
-      "properties": ["parchment", "disguise"]
+      "properties": [
+        "parchment",
+        "disguise"
+      ]
     },
     {
       "name": "Vials of Pigments and Powders",
       "description": "For painting the false skin",
       "category": "component",
-      "properties": ["artistic", "disguise"]
+      "properties": [
+        "artistic",
+        "disguise"
+      ]
     },
     {
       "name": "Collection of Brushes",
       "description": "Fine brushes for detailed work",
       "category": "tool",
-      "properties": ["artistic", "precision"]
+      "properties": [
+        "artistic",
+        "precision"
+      ]
     },
     {
       "name": "Sword Cane",
       "description": "Concealed weapon",
       "category": "weapon",
-      "properties": ["sword", "concealed"]
+      "properties": [
+        "sword",
+        "concealed"
+      ]
     }
   ],
   "advancedSkills": [
-    {"name": "Spell - Protection From Rain", "level": 2},
-    {"name": "Spell - Callous Strike", "level": 2},
-    {"name": "Spell - Quench", "level": 2},
-    {"name": "Spell - True Seeing", "level": 2},
-    {"name": "Disguise", "level": 2},
-    {"name": "Second Sight", "level": 2},
-    {"name": "Healing", "level": 1},
-    {"name": "Spell - Undo", "level": 1},
-    {"name": "Spell - Random", "level": 1}
+    {
+      "name": "Spell - Protection From Rain",
+      "rank": 2
+    },
+    {
+      "name": "Spell - Callous Strike",
+      "rank": 2
+    },
+    {
+      "name": "Spell - Quench",
+      "rank": 2
+    },
+    {
+      "name": "Spell - True Seeing",
+      "rank": 2
+    },
+    {
+      "name": "Disguise",
+      "rank": 2
+    },
+    {
+      "name": "Second Sight",
+      "rank": 2
+    },
+    {
+      "name": "Healing",
+      "rank": 1
+    },
+    {
+      "name": "Spell - Undo",
+      "rank": 1
+    },
+    {
+      "name": "Spell - Random",
+      "rank": 1
+    }
   ],
   "special": [
     "You are undead and so do not need to breathe or circulate blood. You take double Damage from Silver Weapons and regain Stamina half as effectively from all sources. You must Test your Luck if outside in the rain, are made wet, are close to open flames, or suffer generally grievous wounds. A failure will see your skin ruined. If your skin is compromised you are very obviously a walking corpse."
-  ]
-} 
+  ],
+  "spells": []
+}

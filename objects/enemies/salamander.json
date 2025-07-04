@@ -1,25 +1,82 @@
 {
   "name": "Salamander",
-  "skill": 8,
-  "stamina": 16,
-  "initiative": 3,
-  "armor": 3,
-  "damage": "Large Beast",
-  "mien": [
-    "Convulsing",
-    "Expanding",
-    "Retracting",
-    "Surging",
-    "Revolving",
-    "Blooming"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Convulsing",
+        "behavior": "Convulsing"
+      },
+      {
+        "roll": 2,
+        "mood": "Expanding",
+        "behavior": "Expanding"
+      },
+      {
+        "roll": 3,
+        "mood": "Retracting",
+        "behavior": "Retracting"
+      },
+      {
+        "roll": 4,
+        "mood": "Surging",
+        "behavior": "Surging"
+      },
+      {
+        "roll": 5,
+        "mood": "Revolving",
+        "behavior": "Revolving"
+      },
+      {
+        "roll": 6,
+        "mood": "Blooming",
+        "behavior": "Blooming"
+      }
+    ]
+  },
   "description": "A star creature that sailors are accustomed to removing from their golden ships like terrestrial barnacles. They are attracted to the heat of the sails and interfere with their correct operation if not dealt with. When removed they are low and squat, so dark as to force your eyes to run off them, so hot that you can feel it from across a room. They move like tar, slow then fast, able to expand themselves to attack, in the moment looking like a quickly blooming rose. Even fatalistic golden sailors are careful when poking at shadows.",
   "special": [
-    "Attracted to heat of golden ship sails",
-    "Interfere with ship operation if not removed",
-    "So dark that eyes run off them",
-    "So hot you can feel it from across a room",
-    "Can expand themselves to attack like a blooming rose"
+    {
+      "name": "Special Ability",
+      "description": "Attracted to heat of golden ship sails",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Interfere with ship operation if not removed",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "So dark that eyes run off them",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "So hot you can feel it from across a room",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Can expand themselves to attack like a blooming rose",
+      "type": "passive"
+    }
   ],
-  "tags": ["star-creature", "heat", "ship", "expandable"]
+  "tags": [
+    "star-creature",
+    "heat",
+    "ship",
+    "expandable"
+  ],
+  "stats": {
+    "skill": 8,
+    "stamina": 16,
+    "initiative": 3,
+    "armor": 3,
+    "damage": "Large Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

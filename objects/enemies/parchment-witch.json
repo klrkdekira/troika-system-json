@@ -1,25 +1,72 @@
 {
   "name": "Parchment Witch",
-  "skill": 8,
-  "stamina": 14,
-  "initiative": 2,
-  "armor": 1,
-  "damage": "Weapon",
-  "mien": [
-    "Admiring",
-    "Infatuated",
-    "Obsessed",
-    "Paranoid",
-    "Skulking",
-    "Violent"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Admiring",
+        "behavior": "Admiring"
+      },
+      {
+        "roll": 2,
+        "mood": "Infatuated",
+        "behavior": "Infatuated"
+      },
+      {
+        "roll": 3,
+        "mood": "Obsessed",
+        "behavior": "Obsessed"
+      },
+      {
+        "roll": 4,
+        "mood": "Paranoid",
+        "behavior": "Paranoid"
+      },
+      {
+        "roll": 5,
+        "mood": "Skulking",
+        "behavior": "Skulking"
+      },
+      {
+        "roll": 6,
+        "mood": "Violent",
+        "behavior": "Violent"
+      }
+    ]
+  },
   "description": "Parchment Witches are an unusual breed of living dead both for having usually chosen the state of their own volition and for their staunch denial of it. They cover their rotting skin in a layer of leather, vellum, or, if no other option is available, paper. They then paint it, decorate it, and top it with a wig, thus completing the illusion. The most talented can walk among us and we'd never know it. The only tell-tale signs of a Parchment Witch among you would be the distinct smell of leather rendering in the house next door and the disappearance of a few handsome townspeople.",
   "special": [
-    "Has 5 Spells rolled randomly or chosen ahead of time",
-    "Takes double Damage from Silver",
-    "If given suitable time and supplies the Witch can completely change their appearance",
-    "Can use the skin of another person to impersonate them for a week after which time it starts to rot"
+    {
+      "name": "Special Ability",
+      "description": "Has 5 Spells rolled randomly or chosen ahead of time",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Takes double Damage from Silver",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "If given suitable time and supplies the Witch can completely change their appearance",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Can use the skin of another person to impersonate them for a week after which time it starts to rot",
+      "type": "passive"
+    }
   ],
-  "spells": 5,
-  "tags": ["undead", "witch", "disguise", "shapeshifter"]
+  "spells": [],
+  "tags": ["undead", "witch", "disguise", "shapeshifter"],
+  "stats": {
+    "skill": 8,
+    "stamina": 14,
+    "initiative": 2,
+    "armor": 1,
+    "damage": "Weapon"
+  },
+  "possessions": [],
+  "advancedSkills": []
 }

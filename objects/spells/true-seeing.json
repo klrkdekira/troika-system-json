@@ -5,17 +5,12 @@
   "duration": "10 minutes",
   "range": "Self",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "divination",
-      "description": "See through illusions and perceive the truth of matter"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
-  "tags": ["divination", "vision", "illusion"]
+  "tags": [
+    "divination",
+    "illusion"
+  ]
 }

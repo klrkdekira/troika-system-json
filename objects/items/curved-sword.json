@@ -3,12 +3,7 @@
   "type": "weapon",
   "description": "An exotic blade with a distinctive curve, favored by assassins and duelists.",
   "slots": 2,
-  "value": {
-    "amount": 20,
-    "currency": "silver pence"
-  },
-  "weaponType": "melee",
-  "damage": "Sword",
+  "value": 20,
   "damageTable": {
     "1": 4,
     "2": 6,
@@ -18,6 +13,17 @@
     "6": 8,
     "7+": 10
   },
-  "properties": ["Curved blade design"],
-  "tags": ["weapon", "melee", "sword", "exotic"]
+  "tags": [
+    "weapon",
+    "melee",
+    "sword",
+    "exotic"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Sword",
+    "specialRules": [
+      "Curved blade design"
+    ]
+  }
 }

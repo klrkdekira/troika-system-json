@@ -1,50 +1,51 @@
 {
-    "id": "43",
-    "name": "Derivative Dwarf",
-    "description": "Dwarfs are known for being the finest artisans of the million spheres. Give a Dwarf a rock and they will make gold, give a Dwarf a boulder and they will make a Dwarf. You were supposed to be the finest expression of Dwarfy craftsmanship, a true masterpiece, a brand new step in aesthetic design, a jump not seen since the old masters.",
-    "possessions": [
-        {
-            "name": "Woodsman's Axe",
-            "description": "A practical axe for cutting wood",
-            "category": "weapon",
-            "properties": [
-                "axe",
-                "woodsman"
-            ]
-        },
-        {
-            "name": "Empty Firkin",
-            "description": "A small barrel, currently empty",
-            "category": "tool",
-            "properties": [
-                "storage",
-                "empty"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Fist Fighting",
-            "level": 3
-        },
-        {
-            "name": "Awareness",
-            "level": 3
-        },
-        {
-            "name": "Strength",
-            "level": 2
-        },
-        {
-            "name": "Wrestling",
-            "level": 2
-        },
-        {
-            "name": "Axe Fighting",
-            "level": 2
-        }
-    ],
-    "special": [
-        "As 22 Dwarf but additionally: To non-Dwarfy eyes you look like any other Dwarf. Only Dwarfs can see the derivative or uninspired parts of your creation. Other Dwarfs will completely ignore you since you remind them of their fading novelty. You have +4 Sneak versus Dwarfs."
-    ]
+  "id": 43,
+  "name": "Derivative Dwarf",
+  "description": "Dwarfs are known for being the finest artisans of the million spheres. Give a Dwarf a rock and they will make gold, give a Dwarf a boulder and they will make a Dwarf. You were supposed to be the finest expression of Dwarfy craftsmanship, a true masterpiece, a brand new step in aesthetic design, a jump not seen since the old masters.",
+  "possessions": [
+    {
+      "name": "Woodsman's Axe",
+      "description": "A practical axe for cutting wood",
+      "category": "weapon",
+      "properties": [
+        "axe",
+        "woodsman"
+      ]
+    },
+    {
+      "name": "Empty Firkin",
+      "description": "A small barrel, currently empty",
+      "category": "tool",
+      "properties": [
+        "storage",
+        "empty"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Fist Fighting",
+      "rank": 3
+    },
+    {
+      "name": "Awareness",
+      "rank": 3
+    },
+    {
+      "name": "Strength",
+      "rank": 2
+    },
+    {
+      "name": "Wrestling",
+      "rank": 2
+    },
+    {
+      "name": "Axe Fighting",
+      "rank": 2
+    }
+  ],
+  "special": [
+    "As 22 Dwarf but additionally: To non-Dwarfy eyes you look like any other Dwarf. Only Dwarfs can see the derivative or uninspired parts of your creation. Other Dwarfs will completely ignore you since you remind them of their fading novelty. You have +4 Sneak versus Dwarfs."
+  ],
+  "spells": []
 }

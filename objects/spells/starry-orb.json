@@ -5,19 +5,14 @@
   "duration": "3 minutes",
   "range": "Line of sight",
   "testType": "rollUnder",
-  "target": "Self (affects all intelligent beings in sight)",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "enchantment",
-      "description": "All intelligent beings looking at orb must Test their Luck or marvel at it for 3 minutes"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "saveType": "luck",
   "saveEffect": "Intelligent beings may Test their Luck to resist marveling",
-  "tags": ["enchantment", "illusion", "mind-affecting"]
+  "tags": [
+    "enchantment",
+    "illusion"
+  ]
 }

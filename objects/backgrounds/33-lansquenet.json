@@ -1,68 +1,69 @@
 {
-    "id": "33",
-    "name": "Lansquenet",
-    "description": "You were a mercenary retained in the exclusive service of the Phoenix Throne, handsomely paid and sent to distant spheres on golden ships to spread the ineffable glory of your lords at the tip of your flaming sword.",
-    "possessions": [
-        {
-            "name": "Exquisite Pistolet",
-            "description": "Finely crafted energy weapon",
-            "category": "weapon",
-            "properties": [
-                "energy",
-                "ranged",
-                "exquisite"
-            ]
-        },
-        {
-            "name": "Bandolier containing 18 Plasmic Cores",
-            "description": "Ammunition for energy weapons",
-            "category": "component",
-            "properties": [
-                "energy",
-                "ammunition"
-            ]
-        },
-        {
-            "name": "Greatsword",
-            "description": "Large two-handed sword",
-            "category": "weapon",
-            "properties": [
-                "sword",
-                "two_handed"
-            ]
-        },
-        {
-            "name": "Brightly Coloured Clothing with lots of tassels and bells",
-            "description": "Impossible to sneak but counts as Modest Armour while weighing as normal clothing",
-            "category": "armor",
-            "properties": [
-                "modest_armor",
-                "distinctive",
-                "noisy"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Greatsword Fighting",
-            "level": 2
-        },
-        {
-            "name": "Pistolet Fighting",
-            "level": 2
-        },
-        {
-            "name": "Run",
-            "level": 1
-        },
-        {
-            "name": "Fist Fighting",
-            "level": 1
-        },
-        {
-            "name": "Astrology",
-            "level": 1
-        }
-    ],
-    "special": []
+  "id": 33,
+  "name": "Lansquenet",
+  "description": "You were a mercenary retained in the exclusive service of the Phoenix Throne, handsomely paid and sent to distant spheres on golden ships to spread the ineffable glory of your lords at the tip of your flaming sword.",
+  "possessions": [
+    {
+      "name": "Exquisite Pistolet",
+      "description": "Finely crafted energy weapon",
+      "category": "weapon",
+      "properties": [
+        "energy",
+        "ranged",
+        "exquisite"
+      ]
+    },
+    {
+      "name": "Bandolier containing 18 Plasmic Cores",
+      "description": "Ammunition for energy weapons",
+      "category": "component",
+      "properties": [
+        "energy",
+        "ammunition"
+      ]
+    },
+    {
+      "name": "Greatsword",
+      "description": "Large two-handed sword",
+      "category": "weapon",
+      "properties": [
+        "sword",
+        "two_handed"
+      ]
+    },
+    {
+      "name": "Brightly Coloured Clothing with lots of tassels and bells",
+      "description": "Impossible to sneak but counts as Modest Armour while weighing as normal clothing",
+      "category": "armor",
+      "properties": [
+        "modest_armor",
+        "distinctive",
+        "noisy"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Greatsword Fighting",
+      "rank": 2
+    },
+    {
+      "name": "Pistolet Fighting",
+      "rank": 2
+    },
+    {
+      "name": "Run",
+      "rank": 1
+    },
+    {
+      "name": "Fist Fighting",
+      "rank": 1
+    },
+    {
+      "name": "Astrology",
+      "rank": 1
+    }
+  ],
+  "special": [],
+  "spells": []
 }

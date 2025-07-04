@@ -1,44 +1,62 @@
 {
-    "id": "dolm",
-    "name": "Dolm",
+  "id": "dolm",
+  "name": "Dolm",
+  "description": "Somewhere beneath the earth they sit suspended in their cavities, peacefully contemplating the movements of the surface world. A witness to their intercrevice ambling would see a large, saggy-skinned humanoid with soulful grey eyes staggering as though carrying a heavy basin of water. The dolm never stops growing, as far as anyone can tell, and the oldest and wisest of their sort can tower above a typical townhouse while still being able to squeeze themselves under the door.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Unperturbed",
+        "behavior": "Unperturbed"
+      },
+      {
+        "roll": 2,
+        "mood": "Detached",
+        "behavior": "Detached"
+      },
+      {
+        "roll": 3,
+        "mood": "Tranquil",
+        "behavior": "Tranquil"
+      },
+      {
+        "roll": 4,
+        "mood": "Tired",
+        "behavior": "Tired"
+      },
+      {
+        "roll": 5,
+        "mood": "Curious",
+        "behavior": "Curious"
+      },
+      {
+        "roll": 6,
+        "mood": "Perturbed",
+        "behavior": "Perturbed"
+      }
+    ]
+  },
+  "special": [
+    {
+      "name": "Special Ability",
+      "description": "A dolm can compress itself to fit in any crack through which they can pass their eyes. These, unlike the rest of them, never grow beyond the size of a typical human eye.",
+      "type": "passive"
+    }
+  ],
+  "habitat": [
+    "underground",
+    "caves"
+  ],
+  "frequency": "uncommon",
+  "stats": {
     "skill": 7,
     "stamina": 21,
     "initiative": 2,
     "armor": 1,
-    "damage": "large_beast",
-    "description": "Somewhere beneath the earth they sit suspended in their cavities, peacefully contemplating the movements of the surface world. A witness to their intercrevice ambling would see a large, saggy-skinned humanoid with soulful grey eyes staggering as though carrying a heavy basin of water. The dolm never stops growing, as far as anyone can tell, and the oldest and wisest of their sort can tower above a typical townhouse while still being able to squeeze themselves under the door.",
-    "mien": [
-        {
-            "roll": 1,
-            "behavior": "Unperturbed"
-        },
-        {
-            "roll": 2,
-            "behavior": "Detached"
-        },
-        {
-            "roll": 3,
-            "behavior": "Tranquil"
-        },
-        {
-            "roll": 4,
-            "behavior": "Tired"
-        },
-        {
-            "roll": 5,
-            "behavior": "Curious"
-        },
-        {
-            "roll": 6,
-            "behavior": "Perturbed"
-        }
-    ],
-    "special": [
-        "A dolm can compress itself to fit in any crack through which they can pass their eyes. These, unlike the rest of them, never grow beyond the size of a typical human eye."
-    ],
-    "habitat": [
-        "underground",
-        "caves"
-    ],
-    "frequency": "uncommon"
+    "damage": "large_beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

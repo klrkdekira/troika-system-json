@@ -1,40 +1,44 @@
 {
-    "name": "Astrology",
-    "description": "An essential Skill for anyone intent on travelling the stars. Can be used to identify stars and constellations, to gather hints on the destination of interdimensional portals, and to make star charts.",
-    "category": "knowledge",
-    "testType": "rollUnder",
-    "examples": [
-        "Identify stars and constellations",
-        "Determine portal destinations",
-        "Create star charts",
-        "Navigate between spheres"
-    ],
-    "opposedBy": [],
-    "modifiers": [
-        {
-            "condition": "Using astrological equipment",
-            "modifier": 1,
-            "description": "Specialized tools aid in stargazing"
-        },
-        {
-            "condition": "During daylight",
-            "modifier": -2,
-            "description": "Stars are not visible during the day"
-        }
-    ],
-    "relatedItems": [
-        "Astrological Equipment",
-        "Large Astrolabe",
-        "Blue Star Map"
-    ],
-    "prerequisites": [],
-    "tags": [
-        "knowledge",
-        "navigation",
-        "magical"
-    ],
-    "specialRules": [
-        "Required for Golden Barge piloting",
-        "Can identify portal destinations with successful test"
-    ]
+  "name": "Astrology",
+  "description": "An essential Skill for anyone intent on travelling the stars. Can be used to identify stars and constellations, to gather hints on the destination of interdimensional portals, and to make star charts.",
+  "testType": "rollUnder",
+  "examples": [
+    "Identify stars and constellations",
+    "Determine portal destinations",
+    "Create star charts",
+    "Navigate between spheres"
+  ],
+  "opposedBy": [],
+  "modifiers": [
+    {
+      "condition": "Using astrological equipment",
+      "modifier": 1,
+      "description": "Specialized tools aid in stargazing"
+    },
+    {
+      "condition": "During daylight",
+      "modifier": -2,
+      "description": "Stars are not visible during the day"
+    }
+  ],
+  "relatedItems": [
+    "Astrological Equipment",
+    "Large Astrolabe",
+    "Blue Star Map"
+  ],
+  "prerequisites": [],
+  "tags": [
+    "knowledge",
+    "navigation",
+    "magical"
+  ],
+  "specialRules": [
+    "Required for Golden Barge piloting",
+    "Can identify portal destinations with successful test"
+  ],
+  "type": "general",
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

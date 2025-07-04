@@ -5,17 +5,9 @@
   "duration": "12 minutes",
   "range": "Close",
   "testType": "rollUnder",
-  "target": "Area",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "evocation",
-      "description": "Create a shimmering dome that causes 1d6 Damage when touched"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "damage": {
     "type": "energy",
@@ -25,5 +17,5 @@
     "Nothing may pass without wizard's permission",
     "Wizard must remember to allow air"
   ],
-  "tags": ["evocation", "barrier", "protection"]
+  "tags": []
 }

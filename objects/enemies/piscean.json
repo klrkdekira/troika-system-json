@@ -1,22 +1,67 @@
 {
   "name": "Piscean",
-  "skill": 3,
-  "stamina": 6,
-  "initiative": 2,
-  "armor": 0,
-  "damage": "Modest Beast",
-  "mien": [
-    "Mewling",
-    "Childish",
-    "Playful",
-    "Mischievous",
-    "Hungry",
-    "Starving"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Mewling",
+        "behavior": "Mewling"
+      },
+      {
+        "roll": 2,
+        "mood": "Childish",
+        "behavior": "Childish"
+      },
+      {
+        "roll": 3,
+        "mood": "Playful",
+        "behavior": "Playful"
+      },
+      {
+        "roll": 4,
+        "mood": "Mischievous",
+        "behavior": "Mischievous"
+      },
+      {
+        "roll": 5,
+        "mood": "Hungry",
+        "behavior": "Hungry"
+      },
+      {
+        "roll": 6,
+        "mood": "Starving",
+        "behavior": "Starving"
+      }
+    ]
+  },
   "description": "Legs of a man, torso and tail of a fish. They break into granaries, batter the nightguards with their blubbery tails, stuff their bellies full of feed, and run off into the night to digest in a local lake. They are menaces!",
   "special": [
-    "If they incapacitate a party member all Pisceans that are able will descend on them and eat all their Provisions",
-    "Each will consume one Provision per Turn"
+    {
+      "name": "Special Ability",
+      "description": "If they incapacitate a party member all Pisceans that are able will descend on them and eat all their Provisions",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Each will consume one Provision per Turn",
+      "type": "passive"
+    }
   ],
-  "tags": ["fish-man", "thief", "aquatic", "provisions"]
+  "tags": [
+    "fish-man",
+    "thief",
+    "aquatic",
+    "provisions"
+  ],
+  "stats": {
+    "skill": 3,
+    "stamina": 6,
+    "initiative": 2,
+    "armor": 0,
+    "damage": "Modest Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

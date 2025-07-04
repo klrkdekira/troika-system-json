@@ -1,65 +1,66 @@
 {
-    "id": "36",
-    "name": "Monkeymonger",
-    "description": "Life on The Wall is hard. One is never more than a few yards from an endless fall yet those precarious villages still need to eat. This is where you come in with your Edible Monkeys (the distinction is purely for appeal since all monkeys are of course edible). You used to spend days on end dangling your feet off the edge of the world, watching over your chittering livestock while they scampered hither and thither, but there was no future in monkey meat. You wanted much more and so stepped off. Or you fell off. Either way you and some unlucky monkeys are here now and that's all that matters.",
-    "possessions": [
-        {
-            "name": "Monkey Club",
-            "description": "Club used for monkey herding",
-            "category": "weapon",
-            "properties": [
-                "club",
-                "herding"
-            ]
-        },
-        {
-            "name": "Butcher's Knife",
-            "description": "For preparing monkey meat",
-            "category": "weapon",
-            "properties": [
-                "knife",
-                "butchering"
-            ]
-        },
-        {
-            "name": "1d6 Small Monkeys",
-            "description": "Do not heed commands but are too scared and hungry to travel far from you",
-            "category": "companion",
-            "properties": [
-                "animal",
-                "livestock",
-                "uncontrolled"
-            ]
-        },
-        {
-            "name": "A Pocket Full of Monkey Treats",
-            "description": "Food for keeping monkeys nearby",
-            "category": "tool",
-            "properties": [
-                "animal_care",
-                "food"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Climb",
-            "level": 4
-        },
-        {
-            "name": "Trapping",
-            "level": 2
-        },
-        {
-            "name": "Club Fighting",
-            "level": 1
-        },
-        {
-            "name": "Knife Fighting",
-            "level": 1
-        }
-    ],
-    "special": [
-        "The GM may choose to roll on this table anytime the Mien of monkeys must be determined: 1 Playful, 2 Stalking, 3 Hungry, 4 Tired, 5 Austere, 6 Aggressive"
-    ]
+  "id": 36,
+  "name": "Monkeymonger",
+  "description": "Life on The Wall is hard. One is never more than a few yards from an endless fall yet those precarious villages still need to eat. This is where you come in with your Edible Monkeys (the distinction is purely for appeal since all monkeys are of course edible). You used to spend days on end dangling your feet off the edge of the world, watching over your chittering livestock while they scampered hither and thither, but there was no future in monkey meat. You wanted much more and so stepped off. Or you fell off. Either way you and some unlucky monkeys are here now and that's all that matters.",
+  "possessions": [
+    {
+      "name": "Monkey Club",
+      "description": "Club used for monkey herding",
+      "category": "weapon",
+      "properties": [
+        "club",
+        "herding"
+      ]
+    },
+    {
+      "name": "Butcher's Knife",
+      "description": "For preparing monkey meat",
+      "category": "weapon",
+      "properties": [
+        "knife",
+        "butchering"
+      ]
+    },
+    {
+      "name": "1d6 Small Monkeys",
+      "description": "Do not heed commands but are too scared and hungry to travel far from you",
+      "category": "companion",
+      "properties": [
+        "animal",
+        "livestock",
+        "uncontrolled"
+      ]
+    },
+    {
+      "name": "A Pocket Full of Monkey Treats",
+      "description": "Food for keeping monkeys nearby",
+      "category": "tool",
+      "properties": [
+        "animal_care",
+        "food"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Climb",
+      "rank": 4
+    },
+    {
+      "name": "Trapping",
+      "rank": 2
+    },
+    {
+      "name": "Club Fighting",
+      "rank": 1
+    },
+    {
+      "name": "Knife Fighting",
+      "rank": 1
+    }
+  ],
+  "special": [
+    "The GM may choose to roll on this table anytime the Mien of monkeys must be determined: 1 Playful, 2 Stalking, 3 Hungry, 4 Tired, 5 Austere, 6 Aggressive"
+  ],
+  "spells": []
 }

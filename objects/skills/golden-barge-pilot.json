@@ -1,8 +1,7 @@
 {
   "name": "Golden Barge Pilot",
-  "type": "advanced",
+  "type": "general",
   "description": "Test this to navigate between the stars on a ship with golden mirror sails.",
-  "category": "technical",
   "mechanics": {
     "testType": "rollUnder"
   },
@@ -11,5 +10,14 @@
     "Pilot golden mirror sail ships",
     "Stellar navigation"
   ],
-  "tags": ["technical", "navigation", "stellar", "ships"]
+  "tags": [
+    "technical",
+    "navigation",
+    "stellar",
+    "ships"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

@@ -1,42 +1,56 @@
 {
-    "id": "boggart",
-    "name": "Boggart",
+  "id": "boggart",
+  "name": "Boggart",
+  "description": "You could be forgiven for thinking a boggart was a rangy man with an exceedingly bristly beard, but no, once upon a time it sprung fully formed from a Hole and has been ungrateful and ill prepared for everything since. They rarely travel far from their birth hole although there is no pixie compulsion to do so, it's more a point of principle and lack of imagination on their part. They can, if provoked, be violent in the defence of the land which they consider to be theirs but they are prideful, stupid, and easily tricked.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Belligerent",
+        "behavior": "Belligerent"
+      },
+      {
+        "roll": 2,
+        "mood": "Obstinate",
+        "behavior": "Obstinate"
+      },
+      {
+        "roll": 3,
+        "mood": "Petulant",
+        "behavior": "Petulant"
+      },
+      {
+        "roll": 4,
+        "mood": "Insolent",
+        "behavior": "Insolent"
+      },
+      {
+        "roll": 5,
+        "mood": "Sullen",
+        "behavior": "Sullen"
+      },
+      {
+        "roll": 6,
+        "mood": "Smug",
+        "behavior": "Smug"
+      }
+    ]
+  },
+  "special": [],
+  "habitat": [
+    "holes",
+    "countryside"
+  ],
+  "frequency": "uncommon",
+  "stats": {
     "skill": 6,
     "stamina": 9,
     "initiative": 2,
     "armor": 0,
-    "damage": "weapon_or_modest_beast",
-    "description": "You could be forgiven for thinking a boggart was a rangy man with an exceedingly bristly beard, but no, once upon a time it sprung fully formed from a Hole and has been ungrateful and ill prepared for everything since. They rarely travel far from their birth hole although there is no pixie compulsion to do so, it's more a point of principle and lack of imagination on their part. They can, if provoked, be violent in the defence of the land which they consider to be theirs but they are prideful, stupid, and easily tricked.",
-    "mien": [
-        {
-            "roll": 1,
-            "behavior": "Belligerent"
-        },
-        {
-            "roll": 2,
-            "behavior": "Obstinate"
-        },
-        {
-            "roll": 3,
-            "behavior": "Petulant"
-        },
-        {
-            "roll": 4,
-            "behavior": "Insolent"
-        },
-        {
-            "roll": 5,
-            "behavior": "Sullen"
-        },
-        {
-            "roll": 6,
-            "behavior": "Smug"
-        }
-    ],
-    "special": [],
-    "habitat": [
-        "holes",
-        "countryside"
-    ],
-    "frequency": "uncommon"
+    "damage": "weapon_or_modest_beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

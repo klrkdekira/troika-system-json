@@ -3,16 +3,9 @@
   "type": "armor",
   "description": "Rough robes caked in stinking mud and undergrowth, perfect for blending into marshy terrain but offensive everywhere else.",
   "slots": 2,
-  "value": {
-    "amount": 2,
-    "currency": "silver pence"
-  },
+  "value": 2,
   "armorType": "clothing",
   "armorValue": 0,
-  "properties": [
-    "+1 to Sneak rolls in marshy terrain",
-    "-1 to social interactions everywhere else due to stench"
-  ],
   "bonuses": [
     {
       "type": "skill",
@@ -21,6 +14,14 @@
       "condition": "in marshy terrain"
     }
   ],
-  "drawbacks": ["-1 to social rolls due to stench"],
-  "tags": ["armor", "clothing", "marshy", "stinky", "specialized"]
+  "drawbacks": [
+    "-1 to social rolls due to stench"
+  ],
+  "tags": [
+    "armor",
+    "clothing",
+    "marshy",
+    "stinky",
+    "specialized"
+  ]
 }

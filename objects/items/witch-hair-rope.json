@@ -1,14 +1,11 @@
 {
-  "$schema": "../../systems/item.schema.json",
-  "id": "witch-hair-rope",
   "name": "Witch-hair Rope",
   "description": "Witch-hair ropes are immune to manipulation via magical means.",
   "slots": 1,
-  "properties": [
-    "Immune to magical manipulation",
-    "+1 to Climb rolls",
-    "Standard rope functions"
-  ],
   "value": "25 silver pence",
-  "tags": ["tool", "magical"]
-} 
+  "tags": [
+    "tool",
+    "magical"
+  ],
+  "type": "misc"
+}

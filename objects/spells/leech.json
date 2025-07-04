@@ -1,25 +1,21 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "leech",
-    "name": "Leech",
-    "cost": 2,
-    "description": "The necromancer must place their hands on a living subject and allow their fingertips to transform into sucking apertures which drain the victim of blood. Deal 2d6 Damage to your victim and regain half as much Stamina.",
-    "testType": "roll_under",
-    "range": "touch",
-    "duration": "instantaneous",
-    "components": [
-        "somatic"
-    ],
-    "effect": "Drain target's blood to heal self",
-    "tags": [
-        "necromancy",
-        "healing"
-    ],
-    "damageRoll": "2d6",
-    "specialMechanics": [
-        "Fingertips transform into sucking apertures",
-        "Caster regains half damage dealt as Stamina",
-        "Must place hands on living subject"
-    ],
-    "oopsEntry": true
+  "name": "Leech",
+  "cost": 2,
+  "description": "The necromancer must place their hands on a living subject and allow their fingertips to transform into sucking apertures which drain the victim of blood. Deal 2d6 Damage to your victim and regain half as much Stamina.",
+  "testType": "rollUnder",
+  "range": "touch",
+  "duration": "instantaneous",
+  "components": [
+    "somatic"
+  ],
+  "tags": [
+    "necromancy"
+  ],
+  "damageRoll": "2d6",
+  "specialMechanics": [
+    "Fingertips transform into sucking apertures",
+    "Caster regains half damage dealt as Stamina",
+    "Must place hands on living subject"
+  ],
+  "oopsEntry": true
 }

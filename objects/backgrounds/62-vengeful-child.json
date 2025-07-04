@@ -1,44 +1,50 @@
 {
-    "$schema": "../../systems/background.schema.json",
-    "id": "62",
-    "name": "Vengeful Child",
-    "description": "Your village was burnt down by ruffians, or your mother was beheaded by snake cultists, or your father was hung by corrupt officials. Either way you took umbrage and entered the world with a chip on one shoulder and an oversized Sword on the other.",
-    "possessions": [
-        "Too-Large Sword that provides +1 to Longsword Fighting and Damage while using it. Only you may benefit from this bonus; it's not magic, just sentimental",
-        "Old Hunting Bow and 12 Arrows"
-    ],
-    "advanced_skills": [
-        {
-            "name": "Longsword Fighting",
-            "value": 3
-        },
-        {
-            "name": "Awareness",
-            "value": 1
-        },
-        {
-            "name": "Climb",
-            "value": 1
-        },
-        {
-            "name": "Bow Fighting",
-            "value": 1
-        },
-        {
-            "name": "Run",
-            "value": 1
-        },
-        {
-            "name": "Swim",
-            "value": 1
-        },
-        {
-            "name": "Vengeance",
-            "value": 1
-        }
-    ],
-    "special_abilities": [
-        "Too-Large Sword provides +1 to Longsword Fighting and Damage (only for this character)"
-    ],
-    "total_skill_points": 9
+  "id": 62,
+  "name": "Vengeful Child",
+  "description": "Your village was burnt down by ruffians, or your mother was beheaded by snake cultists, or your father was hung by corrupt officials. Either way you took umbrage and entered the world with a chip on one shoulder and an oversized Sword on the other.",
+  "possessions": [
+    {
+      "name": "Too-Large Sword that provides +1 to Longsword Fighting and Damage while using it. Only you may benefit from this bonus; it's not magic, just sentimental"
+    },
+    {
+      "name": "Old Hunting Bow and 12 Arrows"
+    }
+  ],
+  "advanced_skills": [
+    {
+      "name": "Longsword Fighting",
+      "value": 3
+    },
+    {
+      "name": "Awareness",
+      "value": 1
+    },
+    {
+      "name": "Climb",
+      "value": 1
+    },
+    {
+      "name": "Bow Fighting",
+      "value": 1
+    },
+    {
+      "name": "Run",
+      "value": 1
+    },
+    {
+      "name": "Swim",
+      "value": 1
+    },
+    {
+      "name": "Vengeance",
+      "value": 1
+    }
+  ],
+  "special_abilities": [
+    "Too-Large Sword provides +1 to Longsword Fighting and Damage (only for this character)"
+  ],
+  "total_skill_points": 9,
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

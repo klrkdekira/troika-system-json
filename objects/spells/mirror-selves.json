@@ -1,19 +1,21 @@
 {
-  "$schema": "../../systems/spell.schema.json",
-  "id": "mirror-selves",
   "name": "Mirror Selves",
   "cost": 3,
   "description": "In the minds of others the wizard appears to be, in fact, three wizards. All three will perform the same actions in unison, offering attackers only a 1 in 3 chance of targeting the right wizard. Lasts for 12 minutes.",
-  "testType": "roll_under",
+  "testType": "rollUnder",
   "range": "self",
   "duration": "12_minutes",
-  "components": ["somatic", "verbal"],
-  "effect": "Creates two illusory duplicates",
-  "tags": ["illusion", "defense"],
+  "components": [
+    "somatic",
+    "verbal"
+  ],
+  "tags": [
+    "illusion"
+  ],
   "specialMechanics": [
     "Attackers have 1 in 3 chance to hit real wizard",
     "All three perform same actions in unison",
     "Mental illusion affecting perception"
   ],
   "oopsEntry": true
-} 
+}

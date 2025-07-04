@@ -1,13 +1,11 @@
 {
-  "id": "darksee",
   "name": "Darksee",
   "cost": 1,
   "description": "The wizard reaches into their sockets and extricates their eyes. Thus freed, the dark void behind can see perfectly well in pitch blackness and suffer excruciating pain in light (-4 penalty to all rolls). Be careful not to lose those eyeballs as re-inserting them is the only way to end the Spell.",
-  "school": "divination",
   "range": "self",
   "duration": "until_eyes_reinserted",
-  "components": ["somatic"],
-  "effect": "Perfect darkvision, -4 in light",
-  "oopsEntry": null,
-  "damageTable": null
-} 
+  "components": [
+    "somatic"
+  ],
+  "testType": "rollUnder"
+}

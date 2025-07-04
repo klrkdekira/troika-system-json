@@ -5,18 +5,13 @@
   "duration": "Concentration",
   "range": "Self",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": true,
-    "somatic": false,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "divination",
-      "description": "Smell emotions, attitudes, and underlying feelings as impressions"
-    }
+  "components": [
+    "verbal"
   ],
-  "restrictions": ["Any strong odour will cause this Spell to fail"],
-  "tags": ["divination", "psychic", "sensory"]
+  "restrictions": [
+    "Any strong odour will cause this Spell to fail"
+  ],
+  "tags": [
+    "divination"
+  ]
 }

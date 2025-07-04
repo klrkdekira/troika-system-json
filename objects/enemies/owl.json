@@ -1,22 +1,67 @@
 {
   "name": "Owl",
-  "skill": 4,
-  "stamina": 4,
-  "initiative": 1,
-  "armor": 0,
-  "damage": "Small Beast",
-  "mien": [
-    "Curious",
-    "Watchful",
-    "Aggressive",
-    "Hungry",
-    "Guarded",
-    "Defensive"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Curious",
+        "behavior": "Curious"
+      },
+      {
+        "roll": 2,
+        "mood": "Watchful",
+        "behavior": "Watchful"
+      },
+      {
+        "roll": 3,
+        "mood": "Aggressive",
+        "behavior": "Aggressive"
+      },
+      {
+        "roll": 4,
+        "mood": "Hungry",
+        "behavior": "Hungry"
+      },
+      {
+        "roll": 5,
+        "mood": "Guarded",
+        "behavior": "Guarded"
+      },
+      {
+        "roll": 6,
+        "mood": "Defensive",
+        "behavior": "Defensive"
+      }
+    ]
+  },
   "description": "The rooftops of Troika are crenelated by owls. They watch the streets with dumb spite, waiting for a vole, a rat, or an errant, fat finger to come to their attention. They swoop after it, followed by other owls blindly responding to the motion. Together they descend like a rabid flock of razor sharp gulls blindly grasping. A perennial pest that the citizens of Troika are morbidly proud of tolerating.",
   "special": [
-    "Swoop attacks attract other owls",
-    "Flock behavior makes them more dangerous in groups"
+    {
+      "name": "Special Ability",
+      "description": "Swoop attacks attract other owls",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Flock behavior makes them more dangerous in groups",
+      "type": "passive"
+    }
   ],
-  "tags": ["bird", "urban", "swarm", "pest"]
+  "tags": [
+    "bird",
+    "urban",
+    "swarm",
+    "pest"
+  ],
+  "stats": {
+    "skill": 4,
+    "stamina": 4,
+    "initiative": 1,
+    "armor": 0,
+    "damage": "Small Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

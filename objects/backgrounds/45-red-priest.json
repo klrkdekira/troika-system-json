@@ -1,39 +1,47 @@
 {
-    "$schema": "../../systems/background.schema.json",
-    "id": "45",
-    "name": "Red Priest",
-    "description": "You are an evangelist of the Red Redemption, wandering confessor, cauterizer of the festering wound of sin: the constant accumulation and recreational consumption of Mass. How can your spirit fly free while shackled and flabby?",
-    "possessions": [
-        "Red Robes",
-        "Traditional Faceless Metal Helmet of your order (Modest Armour)",
-        "Symbolic (but fully sized and fully functional) Single Headed Greataxe, to help batter down the door to sin (Damage as Greatsword)"
-    ],
-    "advanced_skills": [
-        {
-            "name": "Spell - Ember",
-            "value": 2
-        },
-        {
-            "name": "Spell - Fire Bolt",
-            "value": 2
-        },
-        {
-            "name": "Spell - Flash",
-            "value": 2
-        },
-        {
-            "name": "Great Axe Fighting",
-            "value": 2
-        },
-        {
-            "name": "Second Sight",
-            "value": 1
-        },
-        {
-            "name": "Spell - Exorcism",
-            "value": 1
-        }
-    ],
-    "special_abilities": [],
-    "total_skill_points": 10
+  "id": 45,
+  "name": "Red Priest",
+  "description": "You are an evangelist of the Red Redemption, wandering confessor, cauterizer of the festering wound of sin: the constant accumulation and recreational consumption of Mass. How can your spirit fly free while shackled and flabby?",
+  "possessions": [
+    {
+      "name": "Red Robes"
+    },
+    {
+      "name": "Traditional Faceless Metal Helmet of your order (Modest Armour)"
+    },
+    {
+      "name": "Symbolic (but fully sized and fully functional) Single Headed Greataxe, to help batter down the door to sin (Damage as Greatsword)"
+    }
+  ],
+  "advanced_skills": [
+    {
+      "name": "Spell - Ember",
+      "value": 2
+    },
+    {
+      "name": "Spell - Fire Bolt",
+      "value": 2
+    },
+    {
+      "name": "Spell - Flash",
+      "value": 2
+    },
+    {
+      "name": "Great Axe Fighting",
+      "value": 2
+    },
+    {
+      "name": "Second Sight",
+      "value": 1
+    },
+    {
+      "name": "Spell - Exorcism",
+      "value": 1
+    }
+  ],
+  "special_abilities": [],
+  "total_skill_points": 10,
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

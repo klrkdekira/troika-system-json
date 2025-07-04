@@ -1,22 +1,67 @@
 {
   "name": "Loathsome Wurm That Will Consume The Sun",
-  "skill": 12,
-  "stamina": 46,
-  "initiative": 7,
-  "armor": 3,
-  "damage": "Gigantic Beast",
-  "mien": [
-    "Tormented",
-    "Writhing",
-    "Envious",
-    "Phlegmatic",
-    "Rancorous",
-    "Malevolent"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Tormented",
+        "behavior": "Tormented"
+      },
+      {
+        "roll": 2,
+        "mood": "Writhing",
+        "behavior": "Writhing"
+      },
+      {
+        "roll": 3,
+        "mood": "Envious",
+        "behavior": "Envious"
+      },
+      {
+        "roll": 4,
+        "mood": "Phlegmatic",
+        "behavior": "Phlegmatic"
+      },
+      {
+        "roll": 5,
+        "mood": "Rancorous",
+        "behavior": "Rancorous"
+      },
+      {
+        "roll": 6,
+        "mood": "Malevolent",
+        "behavior": "Malevolent"
+      }
+    ]
+  },
   "description": "Once upon a distant time the gods banded together to mould the dripping flesh of the Monad into all the creatures of the earth. One Divine Architect, sneaky, lazy, or mad, consistently came up short on their daily quota of flesh-given-shape. The Loathsome Wurm is the width of an elephant, with great tusks and grinding scales. Its unfinished, infinite body coils back into the depths and it can surely level the sunlit world were it not confined to the darkness from which it stares. If one listens closely at the thresholds of caves they may hear its whispers and promises. Treasures thrown down pits and left in cave mouths temporarily silence it.",
   "special": [
-    "If killed, the stub of the creature's neck can be descended and used as an entry to the Primary Underworld",
-    "The Wurm will reform in 5,125 years"
+    {
+      "name": "Special Ability",
+      "description": "If killed, the stub of the creature's neck can be descended and used as an entry to the Primary Underworld",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "The Wurm will reform in 5,125 years",
+      "type": "passive"
+    }
   ],
-  "tags": ["primordial", "underground", "divine", "massive"]
+  "tags": [
+    "primordial",
+    "underground",
+    "divine",
+    "massive"
+  ],
+  "stats": {
+    "skill": 12,
+    "stamina": 46,
+    "initiative": 7,
+    "armor": 3,
+    "damage": "Gigantic Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

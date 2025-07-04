@@ -5,20 +5,14 @@
   "duration": "Instantaneous (deafening effect duration varies)",
   "range": "24 metres radius",
   "testType": "rollUnder",
-  "target": "All creatures within range",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "evocation",
-      "description": "All within 24 metres must Test their Luck or be deafened"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
   "saveType": "luck",
   "saveEffect": "Test Luck to avoid deafening",
-  "notes": ["Regardless of save, all targets will be mightily impressed"],
-  "tags": ["evocation", "sonic", "area"]
+  "notes": [
+    "Regardless of save, all targets will be mightily impressed"
+  ],
+  "tags": []
 }

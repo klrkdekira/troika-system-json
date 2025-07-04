@@ -1,13 +1,12 @@
 {
-  "id": "cockroach",
   "name": "Cockroach",
   "cost": 5,
   "description": "A popular Spell that turns troublesome folk into humiliated animals. The target must Test their Luck (or Skill for Enemies) or be turned into an insignificant creature of the wizard's choice. Lasts forever.",
-  "school": "transmutation",
   "range": "sight",
   "duration": "permanent",
-  "components": ["verbal", "somatic"],
-  "effect": "Transform target into small animal",
-  "oopsEntry": null,
-  "damageTable": null
-} 
+  "components": [
+    "verbal",
+    "somatic"
+  ],
+  "testType": "rollUnder"
+}
