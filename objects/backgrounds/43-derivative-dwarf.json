@@ -7,19 +7,13 @@
       "name": "Woodsman's Axe",
       "description": "A practical axe for cutting wood",
       "category": "weapon",
-      "properties": [
-        "axe",
-        "woodsman"
-      ]
+      "properties": ["axe", "woodsman"]
     },
     {
       "name": "Empty Firkin",
       "description": "A small barrel, currently empty",
       "category": "tool",
-      "properties": [
-        "storage",
-        "empty"
-      ]
+      "properties": ["storage", "empty"]
     }
   ],
   "advancedSkills": [
@@ -46,6 +40,7 @@
   ],
   "spells": [],
   "special": [
-    "As 22 Dwarf but additionally: To non-Dwarfy eyes you look like any other Dwarf. Only Dwarfs can see the derivative or uninspired parts of your creation. Other Dwarfs will completely ignore you since you remind them of their fading novelty. You have +4 Sneak versus Dwarfs."
+    "As 22 Dwarf but additionally:",
+    "To non-Dwarfy eyes you look like any other Dwarf. Only Dwarfs can see the derivative or uninspired parts of your creation. Other Dwarfs will completely ignore you since you remind them of their fading novelty. You have +4 Sneak versus Dwarfs."
   ]
 }
