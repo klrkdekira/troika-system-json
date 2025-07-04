@@ -37,22 +37,23 @@
       "rank": 2
     },
     {
-      "name": "Spell - Posthumous Vitality",
-      "rank": 1
-    },
-    {
-      "name": "Spell - Skeletal Counsel",
-      "rank": 1
-    },
-    {
-      "name": "Spell - Torpor",
-      "rank": 1
-    },
-    {
       "name": "Sneak",
       "rank": 1
     }
   ],
-  "special": [],
-  "spells": []
+  "spells": [
+    {
+      "name": "Posthumous Vitality",
+      "rank": 1
+    },
+    {
+      "name": "Skeletal Counsel",
+      "rank": 1
+    },
+    {
+      "name": "Torpor",
+      "rank": 1
+    }
+  ],
+  "special": []
 }

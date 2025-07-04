@@ -5,48 +5,25 @@
   "possessions": [
     {
       "name": "Silver Sword",
-      "description": "A sword made from star metal that can harm creatures normally immune to material harm",
-      "category": "weapon",
-      "properties": [
-        "silver",
-        "anti-demonic"
-      ]
+      "description": "Star metal weapon effective against demons"
     },
     {
       "name": "16 Silver Arrows and Bow",
-      "description": "Silver arrows effective against demons and undead",
-      "category": "weapon",
-      "properties": [
-        "silver",
-        "ranged",
-        "anti-demonic"
-      ]
+      "description": "Silver ammunition for demon hunting"
     },
     {
       "name": "Pouch of Salt",
-      "description": "Poor man's silver, harms or bars demonic creatures",
-      "category": "tool",
-      "properties": [
-        "anti-demonic"
-      ]
+      "description": "Poor man's silver for warding"
     },
     {
       "name": "Vial of Demon Blood",
-      "description": "Blood from a defeated demon",
-      "category": "component",
-      "properties": [
-        "alchemical"
-      ]
+      "description": "Component for tracking rituals"
     }
   ],
   "advancedSkills": [
     {
-      "name": "Language - Abyssal",
+      "name": "Language – Abyssal",
       "rank": 5
-    },
-    {
-      "name": "Spell - Blood Shroud",
-      "rank": 3
     },
     {
       "name": "Second Sight",
@@ -69,6 +46,11 @@
       "rank": 1
     }
   ],
-  "special": [],
-  "spells": []
+  "spells": [
+    {
+      "name": "Blood Shroud",
+      "rank": 3
+    }
+  ],
+  "special": []
 }

@@ -42,22 +42,6 @@
   ],
   "advancedSkills": [
     {
-      "name": "Spell - Protection From Rain",
-      "rank": 2
-    },
-    {
-      "name": "Spell - Callous Strike",
-      "rank": 2
-    },
-    {
-      "name": "Spell - Quench",
-      "rank": 2
-    },
-    {
-      "name": "Spell - True Seeing",
-      "rank": 2
-    },
-    {
       "name": "Disguise",
       "rank": 2
     },
@@ -68,18 +52,35 @@
     {
       "name": "Healing",
       "rank": 1
+    }
+  ],
+  "spells": [
+    {
+      "name": "Protection From Rain",
+      "rank": 2
     },
     {
-      "name": "Spell - Undo",
+      "name": "Callous Strike",
+      "rank": 2
+    },
+    {
+      "name": "Quench",
+      "rank": 2
+    },
+    {
+      "name": "True Seeing",
+      "rank": 2
+    },
+    {
+      "name": "Undo",
       "rank": 1
     },
     {
-      "name": "Spell - Random",
+      "name": "Random",
       "rank": 1
     }
   ],
   "special": [
     "You are undead and so do not need to breathe or circulate blood. You take double Damage from Silver Weapons and regain Stamina half as effectively from all sources. You must Test your Luck if outside in the rain, are made wet, are close to open flames, or suffer generally grievous wounds. A failure will see your skin ruined. If your skin is compromised you are very obviously a walking corpse."
-  ],
-  "spells": []
+  ]
 }

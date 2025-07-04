@@ -22,29 +22,26 @@
       "name": "Half Full Firkin of Rhino-beer (20 Provisions worth)"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Spear Fighting",
-      "value": 3
+      "rank": 3
     },
     {
       "name": "Run",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Strength",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Gambling",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
-    "Rhino Men always count as being Modestly Armoured due to their thick skin"
-  ],
-  "total_skill_points": 8,
-  "advancedSkills": [],
   "spells": [],
-  "special": []
+  "special": [
+    "Rhino Men always count as being Modestly Armoured due to their thick skin"
+  ]
 }

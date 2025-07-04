@@ -10,41 +10,38 @@
       "name": "Old Hunting Bow and 12 Arrows"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Longsword Fighting",
-      "value": 3
+      "rank": 3
     },
     {
       "name": "Awareness",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Climb",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Bow Fighting",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Run",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Swim",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Vengeance",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
-    "Too-Large Sword provides +1 to Longsword Fighting and Damage (only for this character)"
-  ],
-  "total_skill_points": 9,
-  "advancedSkills": [],
   "spells": [],
-  "special": []
+  "special": [
+    "Too-Large Sword provides +1 to Longsword Fighting and Damage (only for this character)"
+  ]
 }

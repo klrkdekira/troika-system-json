@@ -19,38 +19,36 @@
       "name": "Journal"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Evaluate",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Astrology",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Healing",
-      "value": 1
-    },
-    {
-      "name": "Spell - Random",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Sword Fighting",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Sleight of Hand",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
+  "spells": [
+    {
+      "name": "Random",
+      "rank": 1
+    }
+  ],
+  "special": [
     "You may Test your Luck to recall facts that you might reasonably be expected to have encountered relating to the natural sciences and humanities.",
     "Cannot read without Reading Glasses"
-  ],
-  "total_skill_points": 8,
-  "advancedSkills": [],
-  "spells": [],
-  "special": []
+  ]
 }

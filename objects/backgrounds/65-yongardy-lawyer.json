@@ -13,25 +13,22 @@
       "name": "Barrister's Wig"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Fighting in chosen weapon",
-      "value": 4
+      "rank": 4
     },
     {
       "name": "Etiquette",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Healing",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
-    "Choose weapon combination when creating character - gain 4 points in that Fighting skill"
-  ],
-  "total_skill_points": 7,
-  "advancedSkills": [],
   "spells": [],
-  "special": []
+  "special": [
+    "Choose weapon combination when creating character - gain 4 points in that Fighting skill"
+  ]
 }

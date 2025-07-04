@@ -4,18 +4,16 @@
   "description": "As a second-story man you often have cause to wander. Enemies come naturally from both sides of the law and it pays to keep ahead of trouble.",
   "possessions": [
     {
-      "name": "Crossbow",
-      "quantity": 1
+      "name": "Crossbow and 18 Bolts",
+      "description": "Silent ranged weapon"
     },
     {
-      "name": "Bolts",
-      "quantity": 18
+      "name": "Roll of Lock Picks",
+      "description": "Tools for opening locks"
     },
     {
-      "name": "Roll of Lock Picks"
-    },
-    {
-      "name": "Grappling Hook"
+      "name": "Grappling Hook",
+      "description": "For climbing and second-story work"
     }
   ],
   "advancedSkills": [

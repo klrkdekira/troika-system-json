@@ -1,24 +1,19 @@
 {
   "id": 16,
   "name": "Claviger",
-  "description": "Keepers of the lock, guardians of the key, men and women of varied skills but singular purpose; to prevent the wrong people from opening doors. Most such doors don't open onto places the common man would want to go anyway but it is still good to be careful.",
+  "description": "The Key Masters wander the universe fathoming the workings of all entryways. Though they're quite fascinated with simple chests and doors they are most excited by metaphysical and metaphorical barriers. You might find small conclaves of Clavigers camped around the feet of Demon Gates, debating appropriate methods of attack, or building obscure machines of entry.",
   "possessions": [
     {
-      "name": "2d6 Keys",
-      "description": "Assorted keys to unknown locks",
-      "diceExpression": "2d6"
+      "name": "Festooned with Keys",
+      "description": "Counts as Modest Armour"
     },
     {
-      "name": "Small but Vicious Dog",
-      "description": "Trained guard animal"
+      "name": "Distinguished Sledgehammer",
+      "description": "Damage as Maul"
     },
     {
-      "name": "Lantern",
-      "description": "For checking dark spaces"
-    },
-    {
-      "name": "Crowbar",
-      "description": "For when keys don't work"
+      "name": "Lock Picking Tools",
+      "description": "Professional tools for opening locks"
     }
   ],
   "advancedSkills": [
@@ -27,20 +22,31 @@
       "rank": 4
     },
     {
-      "name": "Awareness",
+      "name": "Strength",
       "rank": 3
     },
     {
-      "name": "Club Fighting",
-      "rank": 2
+      "name": "Trapping",
+      "rank": 3
     },
     {
-      "name": "Tracking",
+      "name": "Maul Fighting",
       "rank": 1
     }
   ],
-  "spells": [],
-  "special": [
-    "You know the function and likely contents of any door you examine"
-  ]
+  "spells": [
+    {
+      "name": "Open",
+      "rank": 2
+    },
+    {
+      "name": "See Through",
+      "rank": 1
+    },
+    {
+      "name": "Lock",
+      "rank": 1
+    }
+  ],
+  "special": []
 }

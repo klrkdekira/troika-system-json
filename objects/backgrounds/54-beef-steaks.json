@@ -19,41 +19,38 @@
       "name": "Bottle of Strong but Fancy Wine"
     }
   ],
-  "advanced_skills": [
+  "advancedSkills": [
     {
       "name": "Fighting in chosen weapon",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Wrestling",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Swim",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Climb",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Run",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Fist Fighting",
-      "value": 2
+      "rank": 2
     },
     {
       "name": "Grilling",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
-    "Choose weapon type when creating character - gain 2 points in that Fighting skill"
-  ],
-  "total_skill_points": 13,
-  "advancedSkills": [],
   "spells": [],
-  "special": []
+  "special": [
+    "Choose weapon type when creating character - gain 2 points in that Fighting skill"
+  ]
 }

@@ -16,46 +16,44 @@
       "name": "Voluminous Robes"
     }
   ],
-  "advanced_skills": [
-    {
-      "name": "Spell - Undo",
-      "value": 3
-    },
-    {
-      "name": "Spell - Assume Shape",
-      "value": 2
-    },
-    {
-      "name": "Spell - Thunder",
-      "value": 2
-    },
-    {
-      "name": "Spell - Random",
-      "value": 2
-    },
-    {
-      "name": "Spell - Brittle Twigs",
-      "value": 1
-    },
-    {
-      "name": "Spell - Random",
-      "value": 1
-    },
+  "advancedSkills": [
     {
       "name": "Second Sight",
-      "value": 1
+      "rank": 1
     },
     {
       "name": "Astrology",
-      "value": 1
+      "rank": 1
     }
   ],
-  "special_abilities": [
+  "spells": [
+    {
+      "name": "Undo",
+      "rank": 3
+    },
+    {
+      "name": "Assume Shape",
+      "rank": 2
+    },
+    {
+      "name": "Thunder",
+      "rank": 2
+    },
+    {
+      "name": "Random",
+      "rank": 2
+    },
+    {
+      "name": "Brittle Twigs",
+      "rank": 1
+    },
+    {
+      "name": "Random",
+      "rank": 1
+    }
+  ],
+  "special": [
     "You may Test your Luck to just so happen to have exactly the (common) mystic tchotchke, bauble, or gewgaw the situation requires.",
     "Staff allows rerolling one die on Oops! Table but prevents sneaking due to noise"
-  ],
-  "total_skill_points": 13,
-  "advancedSkills": [],
-  "spells": [],
-  "special": []
+  ]
 }

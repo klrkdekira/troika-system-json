@@ -38,12 +38,13 @@
     {
       "name": "Astrology",
       "rank": 2
-    },
+    }
+  ],
+  "spells": [
     {
-      "name": "Spell - Find",
+      "name": "Find",
       "rank": 2
     }
   ],
-  "special": [],
-  "spells": []
+  "special": []
 }
