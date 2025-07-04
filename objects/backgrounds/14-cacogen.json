@@ -1,0 +1,65 @@
+{
+    "id": 14,
+    "name": "Cacogen",
+    "description": "You are Those-Filthy-Born, spawned in the hump-backed sky lit only by great black anti-suns and false light. Your mother was sailing on the golden barges or caught in some more abstract fate when she passed you, far from the protective malaise of the million spheres. You were receptive to the power and the glory at a generative time and it shows in your teratoid form.",
+    "possessions": [
+        {
+            "name": "Fusil"
+        },
+        {
+            "name": "Plasmic Cores",
+            "diceExpression": "2d6"
+        },
+        {
+            "name": "Sword"
+        },
+        {
+            "name": "Velare"
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Fusil Fighting",
+            "rank": 2,
+            "category": "combat"
+        },
+        {
+            "name": "Astrology",
+            "rank": 2,
+            "category": "knowledge"
+        },
+        {
+            "name": "Second Sight",
+            "rank": 2,
+            "category": "mental"
+        },
+        {
+            "name": "Golden Barge Pilot",
+            "rank": 2,
+            "category": "technical"
+        },
+        {
+            "name": "Sword Fighting",
+            "rank": 1,
+            "category": "combat"
+        }
+    ],
+    "spells": [
+        {
+            "name": "Random Spell",
+            "rank": 2,
+            "isRandom": true
+        },
+        {
+            "name": "Random Spell",
+            "rank": 2,
+            "isRandom": true
+        },
+        {
+            "name": "Random Spell",
+            "rank": 1,
+            "isRandom": true
+        }
+    ],
+    "special": []
+}

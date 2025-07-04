@@ -1,0 +1,16 @@
+{
+    "id": "fear",
+    "name": "Fear",
+    "cost": 1,
+    "description": "In the eyes of one poor target the wizard grows into a primal monster from the depths of their lizard brain. They will attempt to flee and if flight is impossible they will curl up in a ball and whimper. They may Test their Luck (or Skill for Enemies) to resist the illusion.",
+    "school": "illusion",
+    "range": "sight",
+    "duration": "until_resisted",
+    "components": [
+        "verbal",
+        "somatic"
+    ],
+    "effect": "Target flees or cowers in terror",
+    "oopsEntry": null,
+    "damageTable": null
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "posthumous-vitality",
+    "name": "Posthumous Vitality",
+    "cost": 5,
+    "description": "Necromancers, known for their social inadequacy, often find themselves having to make friends. This Spell requires a fresh, or at least whole and lubricated, corpse. The wizard rolls 2d6 plus their Posthumous Vitality Skill Total and consults the following chart (13+ counts for an Advancement tick): 4-12 Nothing happens. 13-14 The vitality is clumsily applied, causing the body to explode messily. A new one will need to be found. 15-16 The creature is animated and will last for 24 hours before literally falling to pieces. 17+ Perfect reanimation. The creature will last until destroyed.",
+    "testType": "special_roll",
+    "range": "touch",
+    "duration": "variable",
+    "components": [
+        "somatic",
+        "verbal",
+        "material"
+    ],
+    "effect": "Animates a corpse",
+    "tags": [
+        "necromancy",
+        "animation"
+    ],
+    "specialMechanics": [
+        "Requires fresh or whole corpse",
+        "Roll 2d6 + Skill Total for result:",
+        "4-12: Nothing happens",
+        "13-14: Body explodes",
+        "15-16: 24 hour animation",
+        "17+: Permanent until destroyed"
+    ],
+    "materialComponents": [
+        "fresh_corpse"
+    ],
+    "oopsEntry": true
+}

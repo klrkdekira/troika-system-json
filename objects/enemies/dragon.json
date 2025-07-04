@@ -1,0 +1,33 @@
+{
+    "name": "Dragon",
+    "skill": 16,
+    "stamina": 32,
+    "initiative": 8,
+    "armour": 4,
+    "damage": "Gigantic Beast",
+    "description": "Dragons are creatures of hyper-light, unburdened by base matter, able to soar across the dark sea of sky between worlds. Since their spirits are immortal and illuminated by the black-suns they may, and often do, indulge in base activities such as wanton slaughter, accumulating needless wealth, and plumbing the depths of forbidden knowledge. They do this because they know that nothing of these wicked spheres can harm them or their objective spiritual and physical perfection.",
+    "mien": [
+        "Sleeping",
+        "\"Playful\"",
+        "Hungry",
+        "Quizzical",
+        "Aggressive",
+        "Paranoid"
+    ],
+    "special": [
+        "Once per Round they may douse a 24 foot area in beautiful Dragon-Fire. Everyone in the area is automatically hit but may Test their Luck to reduce the Damage Roll by 1. Dragon-Fire damage: 1=6, 2=8, 3=12, 4=16, 5=18, 6=24, 7+=36",
+        "Dragons are immune to high temperatures, including Dragon-Fire."
+    ],
+    "spells": [],
+    "tags": [
+        "extraplanar",
+        "magical",
+        "flying",
+        "intelligent"
+    ],
+    "environment": [
+        "anywhere",
+        "lairs",
+        "between worlds"
+    ]
+}

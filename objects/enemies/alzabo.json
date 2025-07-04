@@ -1,0 +1,32 @@
+{
+    "name": "Alzabo",
+    "skill": 10,
+    "stamina": 21,
+    "initiative": 4,
+    "armour": 1,
+    "damage": "Large Beast",
+    "description": "The red furred ghoul-bear, which at its shoulder stands as tall as a horse, would be a frightful creature for no other reason than its immediate physical impression. The Alzabo can produce — for it is not truly mimicking, rather recalling — the exact sound of any creature it has ever eaten. Crying out in the night, it draws its prey from safety, typically by imitating a recently eaten family member and calling to its children or parents.",
+    "mien": [
+        "Hungry",
+        "Confused",
+        "Protective",
+        "Patient",
+        "Watchful",
+        "Evasive"
+    ],
+    "special": [
+        "Can perfectly mimic the voice of any creature it has eaten",
+        "Uses vocal mimicry to lure prey from safety"
+    ],
+    "spells": [],
+    "tags": [
+        "beast",
+        "magical",
+        "intelligent"
+    ],
+    "environment": [
+        "forests",
+        "wilderness",
+        "near settlements"
+    ]
+}

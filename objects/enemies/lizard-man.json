@@ -1,0 +1,21 @@
+{
+  "$schema": "../../systems/enemy.schema.json",
+  "id": "lizard-man",
+  "name": "Lizard-Man",
+  "skill": 8,
+  "stamina": 8,
+  "initiative": 2,
+  "armour": 2,
+  "damageType": "weapon_or_modest_beast",
+  "description": "Imagine a fat man but this man is a crocodile. Stand him on his hind legs, yank his head into a civilised position, shorten his snout, and give him some short horns and a large Weapon. This is a lizard-man, a preternaturally militaristic race who spontaneously regiment themselves from the moment they goose-step their way out of the egg. Their only social structure and interest is the army, making them excruciatingly dull dinner guests.",
+  "mien": [
+    "Severe",
+    "Hostile",
+    "Suspicious",
+    "Intolerant",
+    "Threatening",
+    "Inquisitive"
+  ],
+  "tags": ["humanoid", "reptilian", "military"],
+  "size": "medium"
+} 

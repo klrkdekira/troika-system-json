@@ -1,0 +1,22 @@
+{
+  "name": "Zed",
+  "cost": "?",
+  "description": "No one knows what this does but everyone who has cast it disappears instantly, never to be seen again.",
+  "duration": "Instantaneous",
+  "range": "Self",
+  "testType": "rollUnder",
+  "target": "Self",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "conjuration",
+      "description": "Caster disappears instantly, never to be seen again"
+    }
+  ],
+  "warning": "DANGER: Caster disappears permanently",
+  "tags": ["conjuration", "teleportation", "dangerous", "mystery"]
+}

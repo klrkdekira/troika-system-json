@@ -1,0 +1,15 @@
+{
+    "id": "cone-of-air",
+    "name": "Cone of Air",
+    "cost": 2,
+    "description": "Creates a mysterious and specifically shaped cone of air focused on a touched target's head. They may continue to breathe the freshest of air for 12 minutes.",
+    "school": "conjuration",
+    "range": "touch",
+    "duration": "12_minutes",
+    "components": [
+        "somatic"
+    ],
+    "effect": "Provides fresh air to target",
+    "oopsEntry": null,
+    "damageTable": null
+}

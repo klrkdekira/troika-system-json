@@ -1,0 +1,46 @@
+{
+  "$schema": "../../systems/background.schema.json",
+  "id": "64",
+  "name": "Wizard Hunter",
+  "description": "Some people say man is the most dangerous prey. They are wrong. Can men ignite the air and freeze your blood? Can men turn into flocks of seagulls when cornered in an alley? No, they cannot. Wizards are the most dangerous prey.",
+  "possessions": [
+    "Large Sack",
+    "Witch-hair Rope",
+    "Crossbow and 12 Bolts",
+    "Sword",
+    "1d6 Pocket Gods",
+    "Ruby Lorgnette"
+  ],
+  "advanced_skills": [
+    {
+      "name": "Tracking",
+      "value": 2
+    },
+    {
+      "name": "Disguise",
+      "value": 2
+    },
+    {
+      "name": "Crossbow Fighting",
+      "value": 2
+    },
+    {
+      "name": "Sword Fighting",
+      "value": 1
+    },
+    {
+      "name": "Sneak",
+      "value": 1
+    },
+    {
+      "name": "Locks",
+      "value": 1
+    },
+    {
+      "name": "Etiquette",
+      "value": 1
+    }
+  ],
+  "special_abilities": [],
+  "total_skill_points": 10
+}

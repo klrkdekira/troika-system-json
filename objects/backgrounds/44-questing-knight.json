@@ -1,0 +1,38 @@
+{
+    "$schema": "../../systems/background.schema.json",
+    "id": "44",
+    "name": "Questing Knight",
+    "description": "You are on a quest for the grail, or the sword, or the throne, or for god, or a lost love, or some other significant object. Your sort are common enough, wandering the worlds, acting out your romantic melodrama, accusing good folk of being demons or faeries. Questing Knights are generally considered to be harmless.",
+    "possessions": [
+        "Heavy Armour",
+        "Horse",
+        "Lance (Damage as Spear)",
+        "Sword",
+        "Shield",
+        "A Quixotic Undertaking"
+    ],
+    "advanced_skills": [
+        {
+            "name": "Jousting",
+            "value": 3
+        },
+        {
+            "name": "Sword Fighting",
+            "value": 2
+        },
+        {
+            "name": "Spear Fighting",
+            "value": 2
+        },
+        {
+            "name": "Shield Fighting",
+            "value": 1
+        },
+        {
+            "name": "Awareness",
+            "value": 1
+        }
+    ],
+    "special_abilities": [],
+    "total_skill_points": 9
+}

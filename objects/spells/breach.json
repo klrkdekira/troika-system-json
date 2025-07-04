@@ -1,0 +1,13 @@
+{
+  "id": "breach",
+  "name": "Breach",
+  "cost": 2,
+  "description": "The wizard's hands work elemental material as though it were soft clay. Fire, stone, goo, earth, fog, all of it behaves like clay under their touch. Lasts for 9 minutes.",
+  "school": "transmutation",
+  "range": "touch",
+  "duration": "9_minutes",
+  "components": ["somatic"],
+  "effect": "Manipulate elemental materials as clay",
+  "oopsEntry": null,
+  "damageTable": null
+} 

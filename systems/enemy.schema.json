@@ -1,0 +1,392 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-enemy",
+    "title": "Troika! Enemy",
+    "description": "An enemy or creature in the Troika! RPG system",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Creature name"
+        },
+        "description": {
+            "type": "string",
+            "description": "Creature lore and behavior description"
+        },
+        "stats": {
+            "$ref": "#/definitions/stats",
+            "description": "Core combat statistics"
+        },
+        "mien": {
+            "$ref": "#/definitions/mien",
+            "description": "Behavioral disposition table"
+        },
+        "special": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/specialAbility"
+            },
+            "description": "Special abilities and rules"
+        },
+        "spells": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/enemySpell"
+            },
+            "description": "Known spells (enemies don't spend Stamina)"
+        },
+        "loot": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/lootEntry"
+            },
+            "description": "Potential treasure and drops"
+        },
+        "habitat": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Where this creature is typically found"
+        },
+        "tactics": {
+            "type": "string",
+            "description": "Combat tactics and behavior"
+        },
+        "weaknesses": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Known vulnerabilities"
+        },
+        "immunities": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Damage types or effects the creature is immune to"
+        },
+        "resistances": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Damage types or effects the creature resists"
+        },
+        "size": {
+            "type": "string",
+            "enum": [
+                "tiny",
+                "small",
+                "medium",
+                "large",
+                "huge",
+                "gigantic"
+            ],
+            "default": "medium",
+            "description": "Creature size category"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "humanoid",
+                "beast",
+                "construct",
+                "undead",
+                "spirit",
+                "dragon",
+                "aberration",
+                "elemental",
+                "plant",
+                "ooze"
+            ],
+            "description": "Creature type"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Descriptive tags for organization"
+        },
+        "encounterNotes": {
+            "type": "string",
+            "description": "GM notes for running encounters with this creature"
+        }
+    },
+    "required": [
+        "name",
+        "description",
+        "stats",
+        "mien"
+    ],
+    "definitions": {
+        "stats": {
+            "type": "object",
+            "properties": {
+                "skill": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Universal skill value for all tests"
+                },
+                "stamina": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Hit points/durability"
+                },
+                "initiative": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Initiative tokens contributed to stack"
+                },
+                "armor": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4,
+                    "description": "Damage reduction value"
+                },
+                "damage": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "description": "Damage table reference (e.g., 'Large Beast', 'Weapon', 'Super Weapon')"
+                        },
+                        {
+                            "$ref": "#/definitions/customDamage"
+                        }
+                    ],
+                    "description": "Damage dealt by this creature"
+                }
+            },
+            "required": [
+                "skill",
+                "stamina",
+                "initiative",
+                "armor",
+                "damage"
+            ]
+        },
+        "mien": {
+            "type": "object",
+            "properties": {
+                "diceType": {
+                    "type": "string",
+                    "enum": [
+                        "d6",
+                        "2d6",
+                        "d66"
+                    ],
+                    "default": "d6",
+                    "description": "Dice used for mien table"
+                },
+                "entries": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "roll": {
+                                "oneOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            },
+                            "mood": {
+                                "type": "string",
+                                "description": "Creature's mood/disposition"
+                            },
+                            "behavior": {
+                                "type": "string",
+                                "description": "How the creature acts in this mood"
+                            }
+                        },
+                        "required": [
+                            "roll",
+                            "mood"
+                        ]
+                    },
+                    "minItems": 6,
+                    "description": "Mien table entries"
+                }
+            },
+            "required": [
+                "entries"
+            ]
+        },
+        "specialAbility": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Ability name"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Full ability description"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "passive",
+                        "triggered",
+                        "action",
+                        "reaction",
+                        "conditional"
+                    ],
+                    "description": "When/how the ability activates"
+                },
+                "trigger": {
+                    "type": "string",
+                    "description": "What triggers this ability"
+                },
+                "frequency": {
+                    "type": "string",
+                    "enum": [
+                        "always",
+                        "once-per-round",
+                        "once-per-combat",
+                        "once-per-day",
+                        "special"
+                    ],
+                    "description": "How often the ability can be used"
+                },
+                "mechanics": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Specific mechanical effects"
+                },
+                "saves": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "luck",
+                                    "skill"
+                                ]
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "onSuccess": {
+                                "type": "string"
+                            },
+                            "onFailure": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type"
+                        ]
+                    },
+                    "description": "Required saving throws"
+                }
+            },
+            "required": [
+                "name",
+                "description",
+                "type"
+            ]
+        },
+        "enemySpell": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Spell name"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Spell effect (may differ from player version)"
+                },
+                "noStaminaCost": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enemies don't spend Stamina for spells"
+                },
+                "frequency": {
+                    "type": "string",
+                    "description": "How often the creature can cast this"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "lootEntry": {
+            "type": "object",
+            "properties": {
+                "item": {
+                    "type": "string",
+                    "description": "Item name or description"
+                },
+                "chance": {
+                    "type": "string",
+                    "description": "Probability of finding this item"
+                },
+                "quantity": {
+                    "oneOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "description": "Amount found"
+                },
+                "condition": {
+                    "type": "string",
+                    "description": "Special conditions for obtaining this loot"
+                }
+            },
+            "required": [
+                "item"
+            ]
+        },
+        "customDamage": {
+            "type": "object",
+            "properties": {
+                "1": {
+                    "type": "integer"
+                },
+                "2": {
+                    "type": "integer"
+                },
+                "3": {
+                    "type": "integer"
+                },
+                "4": {
+                    "type": "integer"
+                },
+                "5": {
+                    "type": "integer"
+                },
+                "6": {
+                    "type": "integer"
+                },
+                "7+": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7+"
+            ],
+            "description": "Custom damage table for unique creatures"
+        }
+    }
+}

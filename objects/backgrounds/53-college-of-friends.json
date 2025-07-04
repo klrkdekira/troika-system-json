@@ -1,0 +1,71 @@
+{
+    "$schema": "../../systems/background.schema.json",
+    "id": "53",
+    "name": "Sorcerer of the College of Friends",
+    "description": "As an integral part of your tutelage in the sub-dimensional academy of the Cordial Wizard God you spent your childhood learning about the fate of pixies, the colour of magic, ritual grammar, and endless other theoretical topics. Now you're out in the world, discovering that your education hardly accounted for any of the things that you've seen.",
+    "possessions": [
+        "Pointed Wizard Hat you received at graduation",
+        "Pocket Full of Wizard Biscuits (2d6, each counts as a Provision)",
+        "Wand used to help focus new apprentices, now kept for sentimental reasons"
+    ],
+    "advanced_skills": [
+        {
+            "name": "Secret Signs - Witching Words",
+            "value": 4
+        },
+        {
+            "name": "Run",
+            "value": 2
+        },
+        {
+            "name": "Climb",
+            "value": 1
+        },
+        {
+            "name": "Sleight of Hand",
+            "value": 1
+        },
+        {
+            "name": "Swim",
+            "value": 1
+        },
+        {
+            "name": "Sneak",
+            "value": 1
+        },
+        {
+            "name": "Second Sight",
+            "value": 1
+        },
+        {
+            "name": "Spell - Jolt",
+            "value": 1
+        },
+        {
+            "name": "Spell - Amity",
+            "value": 1
+        },
+        {
+            "name": "Spell - Mirror Selves",
+            "value": 1
+        },
+        {
+            "name": "Spell - Protection from Rain",
+            "value": 1
+        },
+        {
+            "name": "Spell - Helping Hands",
+            "value": 1
+        },
+        {
+            "name": "Spell - Purple Lens",
+            "value": 1
+        },
+        {
+            "name": "Spell - Random",
+            "value": 1
+        }
+    ],
+    "special_abilities": [],
+    "total_skill_points": 18
+}

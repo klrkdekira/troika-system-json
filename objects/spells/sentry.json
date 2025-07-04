@@ -1,0 +1,25 @@
+{
+  "name": "Sentry",
+  "cost": 1,
+  "description": "The wizard plucks a bit of their mind out like candy floss and leaves it stuck to a wall somewhere. This psychic presence is invisible to the naked eye but extends the wizard's senses to that spot for the duration. While it lasts the wizard suffers -1 to all rolls due to the incredible confusion this generates. If the shard is discovered and harmed the wizard will lose 2d6 Stamina due to the shock.",
+  "duration": "Until dispelled or destroyed",
+  "range": "Touch",
+  "testType": "rollUnder",
+  "target": "Wall or surface",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "divination",
+      "description": "Extend senses to chosen location"
+    }
+  ],
+  "drawbacks": [
+    "Wizard suffers -1 to all rolls while active",
+    "If shard is harmed, wizard loses 2d6 Stamina"
+  ],
+  "tags": ["divination", "surveillance", "psychic"]
+}

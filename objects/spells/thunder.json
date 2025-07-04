@@ -1,0 +1,24 @@
+{
+  "name": "Thunder",
+  "cost": 2,
+  "description": "The wizard raises their arms and shouts something suitably ominous. All within 24 metres must Test their Luck (or Skill for Enemies) or be deafened by a riotous roll of thunder. Luck or no, they will be mightily impressed.",
+  "duration": "Instantaneous (deafening effect duration varies)",
+  "range": "24 metres radius",
+  "testType": "rollUnder",
+  "target": "All creatures within range",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "evocation",
+      "description": "All within 24 metres must Test their Luck or be deafened"
+    }
+  ],
+  "saveType": "luck",
+  "saveEffect": "Test Luck to avoid deafening",
+  "notes": ["Regardless of save, all targets will be mightily impressed"],
+  "tags": ["evocation", "sonic", "area"]
+}

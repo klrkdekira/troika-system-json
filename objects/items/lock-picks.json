@@ -1,0 +1,19 @@
+{
+  "name": "Lock Picks",
+  "type": "tool",
+  "description": "A set of delicate tools for opening locks without the proper key.",
+  "slots": 1,
+  "value": {
+    "amount": 10,
+    "currency": "silver pence"
+  },
+  "bonuses": [
+    {
+      "type": "skill",
+      "target": "Locks",
+      "value": 1,
+      "condition": "when picking locks"
+    }
+  ],
+  "tags": ["tool", "locks", "criminal", "delicate"]
+}

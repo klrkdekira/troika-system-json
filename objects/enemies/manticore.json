@@ -1,0 +1,22 @@
+{
+  "name": "Manticore",
+  "skill": 12,
+  "stamina": 18,
+  "initiative": 5,
+  "armor": 3,
+  "damage": "Large Beast",
+  "mien": [
+    "Lazy",
+    "Bored",
+    "Hungry",
+    "Busy",
+    "Aggressive",
+    "Bored and Aggressive"
+  ],
+  "description": "Manticores are rarely encountered outside of their homes, which they tend to construct on mountain sides, far out of reach of the common folk. The servants that attend them are kidnapped travellers plucked from the backs of wagons or dragged from their beds during the night. If you have been hired by a patron to retrieve a stolen son from a manticore's manse be sure to take some books. They are inveterate culture fiends and love nothing more than having new literature for the help to read to them.",
+  "special": [
+    "If a manticore strikes the same person twice in one Round they have been hit by the creature's tail",
+    "Target must Test their Luck (or Skill for Enemies) or become paralysed for 2d6 minutes"
+  ],
+  "tags": ["monster", "cultured", "mountain", "paralysis"]
+}

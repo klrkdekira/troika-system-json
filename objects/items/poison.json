@@ -1,0 +1,23 @@
+{
+  "name": "Poison",
+  "type": "component",
+  "description": "A vial of deadly poison. Can be applied to weapons or added to food and drink.",
+  "slots": 1,
+  "value": {
+    "amount": 20,
+    "currency": "silver pence"
+  },
+  "uses": 1,
+  "effects": [
+    {
+      "type": "poison",
+      "description": "Various effects depending on type - death, paralysis, or weapon coating"
+    }
+  ],
+  "varieties": [
+    "Causes 4d6 Stamina loss if ingested (Test Luck to resist)",
+    "Adds +1 to Damage Rolls when applied to piercing or edged weapons (wears off on roll of 1)",
+    "Causes unconsciousness for 1d6 hours if ingested"
+  ],
+  "tags": ["component", "poison", "deadly", "consumable"]
+}

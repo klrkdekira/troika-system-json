@@ -1,0 +1,17 @@
+{
+  "$schema": "../../systems/item.schema.json",
+  "id": "greatsword",
+  "name": "Greatsword",
+  "description": "A massive two-handed sword capable of devastating strikes.",
+  "category": "weapon",
+  "weaponType": "melee",
+  "damageType": "greatsword",
+  "weight": "large",
+  "slots": 2,
+  "properties": [
+    "two_handed",
+    "melee"
+  ],
+  "tags": ["weapon", "melee", "blade", "heavy"],
+  "rarity": "common"
+} 

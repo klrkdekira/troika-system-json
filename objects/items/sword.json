@@ -1,0 +1,21 @@
+{
+    "$schema": "../../systems/item.schema.json",
+    "id": "sword",
+    "name": "Sword",
+    "description": "A standard blade weapon, well-balanced and versatile.",
+    "category": "weapon",
+    "weaponType": "melee",
+    "damageType": "sword",
+    "weight": "normal",
+    "slots": 1,
+    "properties": [
+        "one_handed",
+        "melee"
+    ],
+    "tags": [
+        "weapon",
+        "melee",
+        "blade"
+    ],
+    "rarity": "common"
+}

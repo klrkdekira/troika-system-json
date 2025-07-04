@@ -1,0 +1,22 @@
+{
+  "name": "Ward",
+  "cost": 1,
+  "description": "A handy Spell only requiring the flick of a wrist. In response to being fired upon the wizard may cast this Spell to cause the missile to be deflected.",
+  "duration": "Instantaneous",
+  "range": "Self",
+  "testType": "rollUnder",
+  "target": "Self",
+  "components": {
+    "verbal": false,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "abjuration",
+      "description": "Deflect incoming missile attacks"
+    }
+  ],
+  "timing": "Reaction to being fired upon",
+  "tags": ["abjuration", "defense", "reaction"]
+}

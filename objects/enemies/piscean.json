@@ -1,0 +1,22 @@
+{
+  "name": "Piscean",
+  "skill": 3,
+  "stamina": 6,
+  "initiative": 2,
+  "armor": 0,
+  "damage": "Modest Beast",
+  "mien": [
+    "Mewling",
+    "Childish",
+    "Playful",
+    "Mischievous",
+    "Hungry",
+    "Starving"
+  ],
+  "description": "Legs of a man, torso and tail of a fish. They break into granaries, batter the nightguards with their blubbery tails, stuff their bellies full of feed, and run off into the night to digest in a local lake. They are menaces!",
+  "special": [
+    "If they incapacitate a party member all Pisceans that are able will descend on them and eat all their Provisions",
+    "Each will consume one Provision per Turn"
+  ],
+  "tags": ["fish-man", "thief", "aquatic", "provisions"]
+}

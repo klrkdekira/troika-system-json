@@ -1,0 +1,29 @@
+{
+    "name": "Fusil",
+    "description": "A long Weapon that looks like a rifle and can be used in melee as a Club. A Fusil holds 6 charges before the plasmic core needs replacing.",
+    "slots": 2,
+    "type": "weapon",
+    "weapon": {
+        "damageType": "Fusil",
+        "twoHanded": true,
+        "ignoresArmor": true,
+        "range": "Long",
+        "ammunition": "Plasmic Cores",
+        "capacity": 6
+    },
+    "skillBonus": [],
+    "properties": [
+        "Can be used as Club in melee",
+        "Requires plasmic cores for ammunition",
+        "Ignores 1 point of armor"
+    ],
+    "requirements": [
+        "Two hands to operate"
+    ],
+    "tags": [
+        "energy weapon",
+        "technological",
+        "ranged",
+        "melee"
+    ]
+}

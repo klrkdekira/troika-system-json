@@ -1,0 +1,497 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-system",
+    "title": "Troika! RPG System",
+    "description": "Complete schema for the Troika! RPG system including all game elements",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string",
+            "description": "Schema version"
+        },
+        "metadata": {
+            "$ref": "#/definitions/systemMetadata",
+            "description": "System metadata and information"
+        },
+        "characters": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-character"
+            },
+            "description": "Player characters"
+        },
+        "backgrounds": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-background"
+            },
+            "description": "Character backgrounds"
+        },
+        "spells": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-spell"
+            },
+            "description": "Spell library"
+        },
+        "skills": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-skill"
+            },
+            "description": "Skill definitions"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-item"
+            },
+            "description": "Equipment and items"
+        },
+        "enemies": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-enemy"
+            },
+            "description": "Bestiary and NPCs"
+        },
+        "tables": {
+            "type": "array",
+            "items": {
+                "$ref": "troika-table"
+            },
+            "description": "Game tables including Oops!, damage, and random tables"
+        },
+        "campaign": {
+            "$ref": "#/definitions/campaignData",
+            "description": "Campaign-specific data and settings"
+        },
+        "rules": {
+            "$ref": "#/definitions/rulesReference",
+            "description": "Core rules and mechanics reference"
+        },
+        "initiativeSystem": {
+            "$ref": "#/definitions/initiativeSystem",
+            "description": "Initiative system configuration and rules"
+        },
+        "optionalRules": {
+            "$ref": "#/definitions/optionalRules",
+            "description": "Optional rule variants and house rules"
+        }
+    },
+    "required": [
+        "version"
+    ],
+    "definitions": {
+        "systemMetadata": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "default": "Troika! RPG",
+                    "description": "System title"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "System description"
+                },
+                "publisher": {
+                    "type": "string",
+                    "default": "Melsonian Arts Council",
+                    "description": "System publisher"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "System version"
+                },
+                "sources": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "core",
+                                    "supplement",
+                                    "adventure",
+                                    "setting"
+                                ]
+                            },
+                            "isbn": {
+                                "type": "string"
+                            },
+                            "year": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "title",
+                            "type"
+                        ]
+                    },
+                    "description": "Source books and supplements"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "System tags"
+                },
+                "lastUpdated": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Last update timestamp"
+                }
+            },
+            "required": [
+                "title",
+                "publisher"
+            ]
+        },
+        "campaignData": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Campaign name"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Campaign description"
+                },
+                "gm": {
+                    "type": "string",
+                    "description": "Game Master name"
+                },
+                "players": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "characterId": {
+                                "type": "string"
+                            },
+                            "notes": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ]
+                    },
+                    "description": "Player information"
+                },
+                "session": {
+                    "type": "object",
+                    "properties": {
+                        "current": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "total": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "lastPlayed": {
+                            "type": "string",
+                            "format": "date"
+                        },
+                        "notes": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "description": "Session tracking"
+                },
+                "setting": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "locations": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "city",
+                                            "dungeon",
+                                            "wilderness",
+                                            "sphere",
+                                            "other"
+                                        ]
+                                    },
+                                    "connections": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "name"
+                                ]
+                            }
+                        }
+                    },
+                    "description": "Campaign setting information"
+                },
+                "house_rules": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "category": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "title",
+                            "description"
+                        ]
+                    },
+                    "description": "Campaign-specific house rules"
+                }
+            }
+        },
+        "rulesReference": {
+            "type": "object",
+            "properties": {
+                "coreRules": {
+                    "type": "object",
+                    "properties": {
+                        "attributeGeneration": {
+                            "type": "object",
+                            "properties": {
+                                "skill": {
+                                    "type": "string",
+                                    "default": "1d3+3"
+                                },
+                                "stamina": {
+                                    "type": "string",
+                                    "default": "2d6+12"
+                                },
+                                "luck": {
+                                    "type": "string",
+                                    "default": "1d6+6"
+                                }
+                            }
+                        },
+                        "testMechanics": {
+                            "type": "object",
+                            "properties": {
+                                "basicTest": {
+                                    "type": "string",
+                                    "default": "2d6 ≤ Skill+Rank"
+                                },
+                                "opposedTest": {
+                                    "type": "string",
+                                    "default": "Higher total wins"
+                                },
+                                "luckTest": {
+                                    "type": "string",
+                                    "default": "2d6 ≤ Current Luck"
+                                }
+                            }
+                        },
+                        "combat": {
+                            "type": "object",
+                            "properties": {
+                                "initiative": {
+                                    "type": "string",
+                                    "default": "Stack-based, add tokens equal to Initiative"
+                                },
+                                "damage": {
+                                    "type": "string",
+                                    "default": "Roll 2d6, consult damage table"
+                                },
+                                "armor": {
+                                    "type": "string",
+                                    "default": "Reduces damage after rolling"
+                                }
+                            }
+                        },
+                        "advancement": {
+                            "type": "object",
+                            "properties": {
+                                "skillImprovement": {
+                                    "type": "string",
+                                    "default": "Test at end of session, improve on 2d6 > current rank"
+                                },
+                                "stamina": {
+                                    "type": "string",
+                                    "default": "No improvement"
+                                },
+                                "luck": {
+                                    "type": "string",
+                                    "default": "Resets to maximum each session"
+                                }
+                            }
+                        }
+                    }
+                },
+                "optionalRules": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "mechanic": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "description"
+                        ]
+                    },
+                    "description": "Optional and variant rules"
+                },
+                "damageMatrices": {
+                    "type": "object",
+                    "patternProperties": {
+                        ".*": {
+                            "type": "object",
+                            "properties": {
+                                "1": {
+                                    "type": "integer"
+                                },
+                                "2": {
+                                    "type": "integer"
+                                },
+                                "3": {
+                                    "type": "integer"
+                                },
+                                "4": {
+                                    "type": "integer"
+                                },
+                                "5": {
+                                    "type": "integer"
+                                },
+                                "6": {
+                                    "type": "integer"
+                                },
+                                "7+": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "1",
+                                "2",
+                                "3",
+                                "4",
+                                "5",
+                                "6",
+                                "7+"
+                            ]
+                        }
+                    },
+                    "description": "Standard damage matrices for different weapon types"
+                },
+                "conditions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "mechanics": {
+                                "type": "string"
+                            },
+                            "duration": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "description"
+                        ]
+                    },
+                    "description": "Standard conditions and status effects"
+                }
+            }
+        },
+        "initiativeSystem": {
+            "type": "object",
+            "properties": {
+                "tokenBased": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether initiative uses token-based system"
+                },
+                "characterTokens": {
+                    "type": "integer",
+                    "default": 2,
+                    "description": "Number of tokens each character contributes"
+                },
+                "henchmanTokens": {
+                    "type": "integer",
+                    "default": 1,
+                    "description": "Number of tokens each henchman contributes"
+                },
+                "endOfRoundToken": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to include End of Round token"
+                },
+                "enemyInitiativeLimit": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether to limit enemy initiative tokens to double character tokens"
+                }
+            }
+        },
+        "optionalRules": {
+            "type": "object",
+            "properties": {
+                "luckVsDeath": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Allow characters to Test Luck to avoid death"
+                },
+                "enemyInitiativeLimit": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Limit enemy initiative tokens to prevent overwhelming players"
+                }
+            }
+        }
+    }
+}

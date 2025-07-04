@@ -1,0 +1,22 @@
+{
+  "name": "Owl",
+  "skill": 4,
+  "stamina": 4,
+  "initiative": 1,
+  "armor": 0,
+  "damage": "Small Beast",
+  "mien": [
+    "Curious",
+    "Watchful",
+    "Aggressive",
+    "Hungry",
+    "Guarded",
+    "Defensive"
+  ],
+  "description": "The rooftops of Troika are crenelated by owls. They watch the streets with dumb spite, waiting for a vole, a rat, or an errant, fat finger to come to their attention. They swoop after it, followed by other owls blindly responding to the motion. Together they descend like a rabid flock of razor sharp gulls blindly grasping. A perennial pest that the citizens of Troika are morbidly proud of tolerating.",
+  "special": [
+    "Swoop attacks attract other owls",
+    "Flock behavior makes them more dangerous in groups"
+  ],
+  "tags": ["bird", "urban", "swarm", "pest"]
+}

@@ -1,0 +1,22 @@
+{
+    "id": "pocket-gods",
+    "name": "Pocket Gods",
+    "description": "Pocket gods are little cloth puppets made in the image of your numerous gods. If you whisper a secret to one and throw it away you regain 1 Luck.",
+    "category": "consumable",
+    "encumbrance": 0,
+    "properties": [
+        "luck_restoration",
+        "cloth",
+        "divine",
+        "consumable"
+    ],
+    "effects": [
+        {
+            "type": "luck_restoration",
+            "amount": 1,
+            "condition": "whisper_secret_and_discard"
+        }
+    ],
+    "uses": 1,
+    "value": "1_silver"
+}

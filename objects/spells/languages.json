@@ -1,0 +1,24 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "languages",
+    "name": "Languages",
+    "cost": 1,
+    "description": "The wizard forms a mouth with their hands through which they can speak any language. They can simultaneously cup their other hand to their ear to understand them in return. Lasts for one conversation.",
+    "testType": "roll_under",
+    "range": "self",
+    "duration": "one_conversation",
+    "components": [
+        "somatic"
+    ],
+    "effect": "Speak and understand any language",
+    "tags": [
+        "divination",
+        "communication"
+    ],
+    "specialMechanics": [
+        "Form mouth with hands to speak",
+        "Cup hand to ear to understand",
+        "Works for any language"
+    ],
+    "oopsEntry": true
+}

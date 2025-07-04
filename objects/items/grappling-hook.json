@@ -1,0 +1,19 @@
+{
+  "name": "Grappling Hook",
+  "type": "tool",
+  "description": "A metal hook attached to a length of rope for climbing or retrieving objects.",
+  "slots": 2,
+  "value": {
+    "amount": 8,
+    "currency": "silver pence"
+  },
+  "bonuses": [
+    {
+      "type": "skill",
+      "target": "Climb",
+      "value": 1,
+      "condition": "when used for climbing"
+    }
+  ],
+  "tags": ["tool", "climbing", "rope", "hook"]
+}

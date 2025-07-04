@@ -1,0 +1,23 @@
+{
+  "name": "Zoanthrop",
+  "skill": 7,
+  "stamina": 12,
+  "initiative": 2,
+  "armor": 0,
+  "damage": "Modest Beast",
+  "mien": [
+    "Playful",
+    "Stalking",
+    "Hungry",
+    "Tired",
+    "Plagued by Thought",
+    "Aggressive"
+  ],
+  "description": "In the reign of the 35th Autarch it became fashionable to be seen as in-touch with the natural world. One could often witness Exultants abstaining from artificial cloth, conspicuously forgoing their flyers on shorter journeys, and walking barefoot through their palaces whilst their servants laid down petals in their path. This trend escalated until the more desperate social climbers ultimately committed to having their prefrontal cortexes partially removed in the pursuit of the greatest animal verisimilitude. While the results were undeniable, it prevented participation in even the most basic functions of state. The Autarch applauded their commitment but tastes soon moved on.",
+  "special": [
+    "Prefrontal cortexes partially removed",
+    "Cannot participate in basic functions of state",
+    "Occasionally plagued by fragments of thought"
+  ],
+  "tags": ["human", "modified", "bestial", "fashion"]
+}

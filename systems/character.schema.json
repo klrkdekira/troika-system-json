@@ -1,0 +1,536 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-character",
+    "title": "Troika! Character",
+    "description": "A player character in the Troika! RPG system",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Character name"
+        },
+        "background": {
+            "type": "string",
+            "description": "Character background name"
+        },
+        "attributes": {
+            "$ref": "#/definitions/attributes",
+            "description": "Core character attributes"
+        },
+        "advancedSkills": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/advancedSkill"
+            },
+            "description": "Character's advanced skills and spells"
+        },
+        "inventory": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/inventoryItem"
+            },
+            "maxItems": 18,
+            "description": "Character inventory (max 18 items before severe encumbrance)"
+        },
+        "baselinePossessions": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/inventoryItem"
+            },
+            "description": "Universal starting possessions: 2d6 Silver Pence, Knife, Lantern & Flask of Oil, Rucksack, 6 Provisions",
+            "default": []
+        },
+        "initiativeTokens": {
+            "type": "integer",
+            "minimum": 1,
+            "default": 2,
+            "description": "Number of initiative tokens contributed to initiative stack (default 2 for characters)"
+        },
+        "notes": {
+            "type": "string",
+            "description": "Character notes and background details"
+        },
+        "experience": {
+            "$ref": "#/definitions/experience",
+            "description": "Advancement tracking"
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/condition"
+            },
+            "description": "Current status effects and conditions"
+        },
+        "relationships": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/relationship"
+            },
+            "description": "NPCs and important relationships"
+        },
+        "henchmen": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/henchman"
+            },
+            "description": "Hired help and NPCs under character's employ"
+        },
+        "specialAbilities": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Special abilities from background or advancement"
+        },
+        "languages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Languages the character can speak"
+        },
+        "secretSigns": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Secret signs and symbols known"
+        }
+    },
+    "required": [
+        "name",
+        "background",
+        "attributes",
+        "advancedSkills",
+        "inventory"
+    ],
+    "definitions": {
+        "attributes": {
+            "type": "object",
+            "properties": {
+                "skill": {
+                    "type": "integer",
+                    "minimum": 4,
+                    "maximum": 6,
+                    "description": "Base skill attribute (rolled 1d3+3)"
+                },
+                "stamina": {
+                    "$ref": "#/definitions/staminaAttribute",
+                    "description": "Stamina attribute"
+                },
+                "luck": {
+                    "$ref": "#/definitions/luckAttribute",
+                    "description": "Luck attribute"
+                }
+            },
+            "required": [
+                "skill",
+                "stamina",
+                "luck"
+            ]
+        },
+        "staminaAttribute": {
+            "type": "object",
+            "properties": {
+                "current": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Current stamina value"
+                },
+                "maximum": {
+                    "type": "integer",
+                    "minimum": 14,
+                    "maximum": 24,
+                    "description": "Maximum stamina (rolled 2d6+12)"
+                },
+                "temporary": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "Temporary stamina modifiers"
+                }
+            },
+            "required": [
+                "current",
+                "maximum"
+            ]
+        },
+        "luckAttribute": {
+            "type": "object",
+            "properties": {
+                "current": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Current luck value"
+                },
+                "maximum": {
+                    "type": "integer",
+                    "minimum": 7,
+                    "maximum": 12,
+                    "description": "Starting luck value (rolled 1d6+6)"
+                },
+                "timesTestedThisSession": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "default": 0,
+                    "description": "Number of luck tests this session"
+                }
+            },
+            "required": [
+                "current",
+                "maximum"
+            ]
+        },
+        "advancedSkill": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Skill or spell name"
+                },
+                "rank": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Current rank (no upper limit beyond 12)"
+                },
+                "total": {
+                    "type": "integer",
+                    "minimum": 5,
+                    "description": "Skill + rank total for tests"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "skill",
+                        "spell",
+                        "language",
+                        "secret",
+                        "weapon"
+                    ],
+                    "default": "skill"
+                },
+                "specialization": {
+                    "type": "string",
+                    "description": "Specific focus or type"
+                },
+                "ticks": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "default": 0,
+                    "description": "Advancement ticks earned"
+                },
+                "advancementRestrictions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Special advancement restrictions (like Zoanthrop)"
+                }
+            },
+            "required": [
+                "name",
+                "rank",
+                "total",
+                "type"
+            ]
+        },
+        "henchman": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Henchman name"
+                },
+                "skill": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Universal skill value (like monsters)"
+                },
+                "stamina": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Current stamina"
+                },
+                "maximumStamina": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Maximum stamina"
+                },
+                "initiative": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "default": 1,
+                    "description": "Initiative tokens contributed (henchmen provide 1 each)"
+                },
+                "armor": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3,
+                    "default": 0,
+                    "description": "Armor protection value"
+                },
+                "weapons": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Weapons the henchman carries"
+                },
+                "specialAbilities": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Special abilities or traits"
+                },
+                "loyalty": {
+                    "type": "string",
+                    "enum": [
+                        "unquestioned",
+                        "loyal",
+                        "neutral",
+                        "wavering",
+                        "disloyal"
+                    ],
+                    "description": "Loyalty level to the character"
+                },
+                "wages": {
+                    "type": "string",
+                    "description": "Payment arrangement and amount"
+                },
+                "notes": {
+                    "type": "string",
+                    "description": "Additional notes about the henchman"
+                }
+            },
+            "required": [
+                "name",
+                "skill",
+                "stamina",
+                "maximumStamina"
+            ]
+        },
+        "inventoryItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Item name"
+                },
+                "quantity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "default": 1
+                },
+                "position": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 18,
+                    "description": "Position in inventory (affects retrieval difficulty - lower numbers are easier to retrieve)"
+                },
+                "slots": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "default": 1,
+                    "description": "Inventory slots occupied"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Item description"
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Special properties"
+                },
+                "readyForUse": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether item is in hands/ready for immediate use"
+                },
+                "charges": {
+                    "type": "object",
+                    "properties": {
+                        "current": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "maximum": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "rechargeMethod": {
+                            "type": "string",
+                            "description": "How to recharge (e.g., 'plasmic core', 'rest')"
+                        },
+                        "rechargeCost": {
+                            "type": "string",
+                            "description": "Cost to recharge (e.g., '1 stamina per charge', '1 plasmic core')"
+                        }
+                    },
+                    "description": "Charge tracking for energy weapons and magical items"
+                },
+                "condition": {
+                    "type": "string",
+                    "enum": [
+                        "excellent",
+                        "good",
+                        "fair",
+                        "poor",
+                        "broken"
+                    ],
+                    "default": "good",
+                    "description": "Item condition"
+                }
+            },
+            "required": [
+                "name",
+                "position",
+                "slots"
+            ]
+        },
+        "experience": {
+            "type": "object",
+            "properties": {
+                "totalSessions": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "default": 0
+                },
+                "lastAdvancement": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Date of last advancement check"
+                },
+                "skillsToCheck": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "maxItems": 3,
+                    "description": "Skills with ticks to check for advancement"
+                },
+                "training": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/trainingEntry"
+                    },
+                    "description": "Current training arrangements with teachers"
+                }
+            }
+        },
+        "trainingEntry": {
+            "type": "object",
+            "properties": {
+                "skill": {
+                    "type": "string",
+                    "description": "Skill being learned or improved"
+                },
+                "teacher": {
+                    "type": "string",
+                    "description": "Name of the teacher"
+                },
+                "teacherSkillTotal": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Teacher's skill total (must be higher than student's)"
+                },
+                "startDate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "When training began"
+                },
+                "duration": {
+                    "type": "string",
+                    "description": "Training duration (1 week + 1 week per current rank)"
+                },
+                "cost": {
+                    "type": "string",
+                    "description": "Payment arrangement for training"
+                },
+                "isNewSkill": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether this is learning a new skill vs improving existing one"
+                }
+            },
+            "required": [
+                "skill",
+                "teacher",
+                "teacherSkillTotal",
+                "startDate"
+            ]
+        },
+        "condition": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Condition name"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Effect description"
+                },
+                "duration": {
+                    "type": "string",
+                    "description": "How long it lasts"
+                },
+                "severity": {
+                    "type": "string",
+                    "enum": [
+                        "minor",
+                        "moderate",
+                        "severe",
+                        "critical"
+                    ]
+                },
+                "source": {
+                    "type": "string",
+                    "description": "What caused this condition"
+                }
+            },
+            "required": [
+                "name",
+                "description"
+            ]
+        },
+        "relationship": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "NPC or organization name"
+                },
+                "relationship": {
+                    "type": "string",
+                    "enum": [
+                        "ally",
+                        "friend",
+                        "neutral",
+                        "rival",
+                        "enemy",
+                        "family",
+                        "mentor",
+                        "student",
+                        "employer",
+                        "debtor"
+                    ]
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Relationship details"
+                },
+                "notes": {
+                    "type": "string",
+                    "description": "Additional notes"
+                }
+            },
+            "required": [
+                "name",
+                "relationship"
+            ]
+        }
+    }
+}

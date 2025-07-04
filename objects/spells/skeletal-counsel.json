@@ -1,0 +1,22 @@
+{
+  "name": "Skeletal Counsel",
+  "cost": 3,
+  "description": "Necromancers often talk to skulls. Sometimes they talk back. Use of this Spell enables speaking with the dead, who answer one question per casting. Requires a skull.",
+  "duration": "One conversation",
+  "range": "Touch",
+  "testType": "rollUnder",
+  "target": "Skull",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": "Skull"
+  },
+  "effects": [
+    {
+      "type": "necromancy",
+      "description": "Speak with the dead, who answer one question per casting"
+    }
+  ],
+  "requirements": ["Requires a skull"],
+  "tags": ["necromancy", "communication", "undead"]
+}

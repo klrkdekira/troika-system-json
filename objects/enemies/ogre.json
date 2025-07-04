@@ -1,0 +1,20 @@
+{
+    "$schema": "../../systems/enemy.schema.json",
+    "id": "ogre",
+    "name": "Ogre",
+    "description": "The ogre is a phenomenon common across the universe. A child will be born with a scowl on its face and a corded knot where their heart should be. They won't play with the other children, preferring to steal their toys and break them in privacy. As it ages it becomes worse, larger, severe, and monstrous. The scowl never leaves its face and it takes no sincere joy in anything other than the acquisition of wealth and the suffering of others.",
+    "skill": 9,
+    "stamina": 18,
+    "initiative": 3,
+    "armour": 1,
+    "damage": "Weapon or Large Beast",
+    "mien": [
+        "Smug",
+        "Generous",
+        "Covetous",
+        "Gregarious",
+        "Duplicitous",
+        "Offensive"
+    ],
+    "special_abilities": []
+}

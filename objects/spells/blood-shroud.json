@@ -1,0 +1,12 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "blood-shroud",
+    "name": "Blood Shroud",
+    "cost": 4,
+    "description": "Smear a small amount of a demon's blood on yourself to become completely invisible to them, even if you attack or speak to them, for 6 hours.",
+    "casting_instructions": "Smear demon blood on yourself to become invisible to demons",
+    "duration": "6 hours",
+    "range": "Self",
+    "oops_entry": null,
+    "damage_table": null
+}

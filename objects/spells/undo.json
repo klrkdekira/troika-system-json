@@ -1,0 +1,25 @@
+{
+  "name": "Undo",
+  "cost": "double cost of original Spell",
+  "description": "The wizard disentangles a Spell from this instance of reality. To do so they must Roll Versus the original casting if disentanglement is possible at all.",
+  "duration": "Instantaneous",
+  "range": "Touch or line of sight",
+  "testType": "rollVersus",
+  "target": "Active spell effect",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "abjuration",
+      "description": "Disentangle a Spell from reality"
+    }
+  ],
+  "mechanics": {
+    "rollType": "Roll Versus original casting",
+    "costCalculation": "Double the cost of the original Spell"
+  },
+  "tags": ["abjuration", "dispel", "counter-magic"]
+}

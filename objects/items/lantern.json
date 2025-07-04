@@ -1,0 +1,15 @@
+{
+  "$schema": "../../systems/item.schema.json",
+  "id": "lantern",
+  "name": "Lantern",
+  "description": "A portable light source. Starting equipment for all characters.",
+  "category": "equipment",
+  "weight": "normal",
+  "slots": 1,
+  "properties": [
+    "light_source",
+    "consumable_fuel"
+  ],
+  "tags": ["equipment", "light", "starting_equipment"],
+  "rarity": "common"
+} 

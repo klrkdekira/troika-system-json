@@ -1,0 +1,51 @@
+{
+    "id": "35",
+    "name": "Member of Miss Kinsey's Dining Club",
+    "description": "The Eaters know that there are only two worlds: the Without and the Within. They intend to insert as much of the prior into the latter as they can while experiencing the finest delights available. All culinary experience is open to them as nothing is forbidden at Miss Kinsey's. Try the other, other, other white meat.",
+    "possessions": [
+        {
+            "name": "Sharp metal dentures or forked metal dentures or blunt metal dentures",
+            "description": "Sharp (Damage as Sword), forked (Damage as Knife, Mighty Blow strips flesh from appendage), or blunt (Damage as Knife, may eat hard objects)",
+            "category": "weapon",
+            "properties": [
+                "metal",
+                "teeth",
+                "special"
+            ]
+        },
+        {
+            "name": "Embroidered napkin",
+            "description": "Fine dining accessory",
+            "category": "tool",
+            "properties": [
+                "dining",
+                "fine"
+            ]
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Etiquette",
+            "level": 3
+        },
+        {
+            "name": "Strength",
+            "level": 1
+        },
+        {
+            "name": "Tracking",
+            "level": 1
+        },
+        {
+            "name": "Trapping",
+            "level": 1
+        },
+        {
+            "name": "Gastrology",
+            "level": 1
+        }
+    ],
+    "special": [
+        "Eaters are immune to mundane ingested poisons. They may also identify any object if eaten, gaining knowledge of its material, its origin (if plausibly familiar), and its magical properties on a successful Test of Gastrology though the object must be thoroughly masticated, not merely swallowed and passed. This does not grant special immunity to any effects the object may possess."
+    ]
+}

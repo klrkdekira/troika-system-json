@@ -1,0 +1,19 @@
+{
+    "$schema": "../../systems/skill.schema.json",
+    "id": "awareness",
+    "name": "Awareness",
+    "description": "Anything worth having is well hidden so one must look very carefully. Use this to spot traps, things normally hidden, or things out of the ordinary.",
+    "category": "perception",
+    "testType": "roll_under",
+    "uses": [
+        "Spot traps",
+        "Find hidden objects",
+        "Notice things out of the ordinary",
+        "General perception"
+    ],
+    "tags": [
+        "perception",
+        "detection",
+        "general"
+    ]
+}

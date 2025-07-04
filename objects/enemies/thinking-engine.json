@@ -1,0 +1,23 @@
+{
+  "name": "Thinking Engine",
+  "skill": 8,
+  "stamina": 14,
+  "initiative": 2,
+  "armor": 1,
+  "damage": "Weapon",
+  "mien": [
+    "Absent Minded",
+    "Distracted",
+    "Enthusiastic",
+    "Maudlin",
+    "Sentimental",
+    "Engrossed"
+  ],
+  "description": "Built in the time of the First Empire, commissioned by the will of the Other Lords to pilot the golden ships of their cosmic civilisation. Each one is unfathomably ancient but by design or fault they don't remember more than a lifetime's worth of existence. We think of them in their common form of bakelite and chrome androids but their variety is a result of the chthonic imagination of the Other Lords and endless in its diversity. Most have been broken over their lifetimes and replaced their parts, some with new mechanical contrivances and others with organic flesh. Some have lost their original form altogether and walk the earth as flesh while others are large and hollow, waiting for an operator with dead knowledge.",
+  "special": [
+    "Unfathomably ancient but only remember a lifetime's worth of existence",
+    "Endless variety in form due to repairs and modifications",
+    "Some are large and hollow, waiting for an operator"
+  ],
+  "tags": ["construct", "ancient", "pilot", "variable"]
+}

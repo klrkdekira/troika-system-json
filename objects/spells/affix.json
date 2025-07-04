@@ -1,0 +1,17 @@
+{
+    "name": "Affix",
+    "cost": 3,
+    "description": "Cause a subject to be fixed in place. While they are so held they do not move, breathe, fall, perspire, acquire, or otherwise change. They are totally immune to harm, in fact.",
+    "duration": "3 minutes",
+    "range": "Touch",
+    "testType": "rollUnder",
+    "requirements": [
+        "free hand",
+        "speech"
+    ],
+    "tags": [
+        "utility",
+        "defensive"
+    ],
+    "oopsEntry": true
+}

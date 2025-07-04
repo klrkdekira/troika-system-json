@@ -1,0 +1,17 @@
+{
+    "name": "Animate",
+    "cost": 2,
+    "description": "Cause inanimate objects to question their place. One object up to the size of a human baby may be caused to hop around and do whatever else the wizard wishes.",
+    "duration": "Until ended",
+    "range": "Touch",
+    "testType": "rollUnder",
+    "requirements": [
+        "free hand",
+        "speech"
+    ],
+    "tags": [
+        "utility",
+        "movement"
+    ],
+    "oopsEntry": true
+}

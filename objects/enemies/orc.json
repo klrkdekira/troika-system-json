@@ -1,0 +1,20 @@
+{
+    "$schema": "../../systems/enemy.schema.json",
+    "id": "orc",
+    "name": "Orc",
+    "description": "The manifested people. By the order of the universe, as set in motion by the Unmoving Mover, they exist for the briefest time in the indivisible moment at the beginning and end of all things. Their duty is to tidy along the demiurge and all of their toys before the next go around, and as such they are people of words and shapes. Unfortunately for them this cycle has a proliferation of wilful wizard-folk with a thirst for learning the barest fundamentals of the Forms and Essences, just enough to reach out and disrupt things.",
+    "skill": 7,
+    "stamina": 8,
+    "initiative": 2,
+    "armour": 0,
+    "damage": "Club",
+    "mien": [
+        "Industrious",
+        "Confused",
+        "Homesick",
+        "Angry",
+        "Frustrated",
+        "Violent"
+    ],
+    "special_abilities": []
+}

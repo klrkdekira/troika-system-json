@@ -1,0 +1,16 @@
+{
+  "name": "Tiger",
+  "skill": 8,
+  "stamina": 12,
+  "initiative": 2,
+  "armor": 0,
+  "damage": "Large Beast",
+  "mien": ["Playful", "Stalking", "Hungry", "Tired", "Austere", "Aggressive"],
+  "description": "It is common knowledge that all tigers come from the Palace of Tigers. You may see one in a jungle somewhere and think they are at home, maybe they are even raising kittens and leading rich full tiger lives, but they are as alien to that forest as you or I, and the kittens are invariably stolen from lesser cats. They were born to leisure, to stalk fat little coati in palatial gardens, and to bask in crystal solariums. Take pity on these angry animals for they are lost and not used to your rude ways.",
+  "special": [
+    "All tigers originally come from the Palace of Tigers",
+    "Kittens are invariably stolen from lesser cats",
+    "They are lost and not used to wilderness life"
+  ],
+  "tags": ["feline", "displaced", "palace", "predator"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Night Pig",
+  "skill": 7,
+  "stamina": 14,
+  "initiative": 2,
+  "armor": 0,
+  "damage": "Modest Beast",
+  "mien": [
+    "Sinister",
+    "Suspicious",
+    "Unreal",
+    "Inquisitive",
+    "Shameful",
+    "Cowardly"
+  ],
+  "description": "There are those witches that don the skin of a pig and walk abroad amongst their sleeping neighbours. Through the power imbued by that most sinister animal they rub themselves against the exteriors of houses and snuffle at their hedges, thereby ensorcelling the household's wealth to them. As the night goes on they grow increasingly fat, limited only by their greed. When they return home and remove their pig cape all the treasure they have stolen tumbles out. For this reason it's wise to demand answers from any pig you see out at night. Their intentions will never be good.",
+  "special": [
+    "Steal wealth by rubbing against houses and snuffling at hedges",
+    "Grow increasingly fat as they steal more",
+    "When pig cape is removed, stolen treasure tumbles out"
+  ],
+  "tags": ["witch", "thief", "shapeshifter", "nocturnal"]
+}

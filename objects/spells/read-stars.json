@@ -1,0 +1,21 @@
+{
+  "name": "Read Stars",
+  "cost": 1,
+  "description": "Rather than physical stars the wizard navigates by astral starlight that peeks through the veil. This Spell enables the wizard to get a reasonable sense of direction regardless of any obscuring factors.",
+  "duration": "Instantaneous",
+  "range": "Self",
+  "testType": "rollUnder",
+  "target": "Self",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "divination",
+      "description": "Gain reasonable sense of direction regardless of obscuring factors"
+    }
+  ],
+  "tags": ["divination", "navigation", "astral"]
+}

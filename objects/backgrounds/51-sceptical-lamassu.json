@@ -1,0 +1,44 @@
+{
+  "$schema": "../../systems/background.schema.json",
+  "id": "51",
+  "name": "Sceptical Lamassu",
+  "description": "With the body of a bull, the head of a man, the forelegs of a cat, and the wings of a swan you are the sweetest of the children of the gods. You, however, were not content to rest on your cloud and instead descended from the heavens or crawled up from the abyss and set about finding your own path among the stars.",
+  "possessions": [
+    "Incidental Sacred Jewellery worth 10d6 Silver pence if traded",
+    "Pillbox Hat",
+    "Claws (Damage as Sword)",
+    "Hooves (Damage as Club)",
+    "Wings — able to fly as fast as a running man over clear ground"
+  ],
+  "advanced_skills": [
+    {
+      "name": "Fly",
+      "value": 3
+    },
+    {
+      "name": "Spell - Random",
+      "value": 3
+    },
+    {
+      "name": "Spell - Random",
+      "value": 3
+    },
+    {
+      "name": "Spell - Random",
+      "value": 3
+    },
+    {
+      "name": "Claw Fighting",
+      "value": 2
+    },
+    {
+      "name": "Hoof Fighting",
+      "value": 1
+    }
+  ],
+  "special_abilities": [
+    "Natural flight ability - able to fly as fast as a running man over clear ground",
+    "Has natural weapons: claws (Damage as Sword) and hooves (Damage as Club)"
+  ],
+  "total_skill_points": 15
+}

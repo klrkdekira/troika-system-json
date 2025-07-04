@@ -1,0 +1,170 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-table",
+    "title": "Troika! Table",
+    "description": "A game table in the Troika! RPG system",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Table name"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "damage",
+                "random",
+                "lookup",
+                "roll",
+                "oops",
+                "background",
+                "mien",
+                "success"
+            ],
+            "description": "Table type"
+        },
+        "description": {
+            "type": "string",
+            "description": "Table description and purpose"
+        },
+        "diceExpression": {
+            "type": "string",
+            "description": "Dice expression for rolling on this table (e.g., 'd6', '2d6', 'd66', 'd666')"
+        },
+        "entries": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/tableEntry"
+            },
+            "description": "Table entries"
+        },
+        "damageTable": {
+            "$ref": "#/definitions/damageTable",
+            "description": "Damage table data (for weapon damage tables)"
+        },
+        "notes": {
+            "type": "string",
+            "description": "Additional notes about using this table"
+        },
+        "source": {
+            "type": "string",
+            "description": "Source book or document"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Organizational tags"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ],
+    "definitions": {
+        "tableEntry": {
+            "type": "object",
+            "properties": {
+                "roll": {
+                    "oneOf": [
+                        {
+                            "type": "integer",
+                            "description": "Single roll value"
+                        },
+                        {
+                            "type": "string",
+                            "description": "Roll range or special value (e.g., '11-16', '21', 'double 1s')"
+                        }
+                    ]
+                },
+                "result": {
+                    "type": "string",
+                    "description": "Table result"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Detailed description of the result"
+                },
+                "mechanics": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Mechanical effects of this result"
+                },
+                "duration": {
+                    "type": "string",
+                    "description": "How long the effect lasts"
+                },
+                "conditions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Conditions that apply to this result"
+                }
+            },
+            "required": [
+                "roll",
+                "result"
+            ]
+        },
+        "damageTable": {
+            "type": "object",
+            "properties": {
+                "weaponType": {
+                    "type": "string",
+                    "description": "Type of weapon this damage table applies to"
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Special properties (e.g., 'two-handed', 'ignores armor')"
+                },
+                "damages": {
+                    "type": "object",
+                    "properties": {
+                        "1": {
+                            "type": "integer"
+                        },
+                        "2": {
+                            "type": "integer"
+                        },
+                        "3": {
+                            "type": "integer"
+                        },
+                        "4": {
+                            "type": "integer"
+                        },
+                        "5": {
+                            "type": "integer"
+                        },
+                        "6": {
+                            "type": "integer"
+                        },
+                        "7+": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7+"
+                    ],
+                    "description": "Damage values for each roll result"
+                }
+            },
+            "required": [
+                "weaponType",
+                "damages"
+            ]
+        }
+    }
+}

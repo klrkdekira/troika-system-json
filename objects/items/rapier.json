@@ -1,0 +1,23 @@
+{
+  "name": "Rapier",
+  "type": "weapon",
+  "description": "A slender, elegant thrusting sword favored by duelists and nobles.",
+  "slots": 2,
+  "value": {
+    "amount": 25,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Sword",
+  "damageTable": {
+    "1": 4,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 6,
+    "6": 8,
+    "7+": 10
+  },
+  "properties": ["Finesse weapon", "Excellent for dueling"],
+  "tags": ["weapon", "melee", "sword", "finesse"]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "True Seeing",
+  "cost": 3,
+  "description": "The wizard focuses their sight on the unambiguous truth of matter, enabling them to see through illusions for the next 10 minutes.",
+  "duration": "10 minutes",
+  "range": "Self",
+  "testType": "rollUnder",
+  "target": "Self",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "divination",
+      "description": "See through illusions and perceive the truth of matter"
+    }
+  ],
+  "tags": ["divination", "vision", "illusion"]
+}

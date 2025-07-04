@@ -1,0 +1,310 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-background",
+    "title": "Troika! Background",
+    "description": "A character background in the Troika! RPG system",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "minimum": 11,
+            "maximum": 66,
+            "description": "Background ID for d66 table"
+        },
+        "name": {
+            "type": "string",
+            "description": "Background name"
+        },
+        "description": {
+            "type": "string",
+            "description": "Background lore and setting description"
+        },
+        "possessions": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/possession"
+            },
+            "description": "Starting possessions for this background"
+        },
+        "advancedSkills": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/advancedSkill"
+            },
+            "description": "Advanced skills granted by this background"
+        },
+        "spells": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/backgroundSpell"
+            },
+            "description": "Spells granted by this background"
+        },
+        "special": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Special abilities and rules for this background"
+        },
+        "overrideBaselinePossessions": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, this background overrides universal starting possessions (e.g., Zoanthrop gets no starting possessions)"
+        },
+        "rollTable": {
+            "type": "string",
+            "pattern": "^d\\d+$",
+            "description": "Die type for background table (e.g., 'd66')"
+        },
+        "rollValue": {
+            "oneOf": [
+                {
+                    "type": "integer",
+                    "description": "Single roll value"
+                },
+                {
+                    "type": "string",
+                    "description": "Roll range (e.g., '11-16', '21-26')"
+                }
+            ],
+            "description": "Roll value(s) for this background on the table"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Thematic tags for organization"
+        },
+        "restrictions": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Restrictions or limitations of this background"
+        },
+        "advancement": {
+            "type": "object",
+            "properties": {
+                "restrictions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Skills that have advancement restrictions"
+                },
+                "bonuses": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Advancement bonuses or special rules"
+                }
+            },
+            "description": "Special advancement rules for this background"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description",
+        "possessions",
+        "advancedSkills"
+    ],
+    "definitions": {
+        "possession": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Item name"
+                },
+                "quantity": {
+                    "oneOf": [
+                        {
+                            "type": "integer",
+                            "minimum": 1,
+                            "description": "Fixed quantity"
+                        },
+                        {
+                            "type": "string",
+                            "description": "Dice expression (e.g., '1d6', '2d6')"
+                        }
+                    ],
+                    "default": 1,
+                    "description": "Number of items"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Item description or special properties"
+                },
+                "alternatives": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/possession"
+                    },
+                    "description": "Alternative items to choose from (e.g., 'or', 'either/or')"
+                },
+                "conditional": {
+                    "type": "string",
+                    "description": "Conditions for receiving this item"
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Special mechanical properties"
+                },
+                "bonuses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/bonus"
+                    },
+                    "description": "Bonuses this item provides"
+                },
+                "damageAs": {
+                    "type": "string",
+                    "description": "Damage table reference for weapons"
+                },
+                "armor": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3,
+                    "description": "Armor value if this is armor"
+                },
+                "slots": {
+                    "oneOf": [
+                        {
+                            "type": "integer",
+                            "minimum": 0,
+                            "description": "Fixed inventory slots"
+                        },
+                        {
+                            "type": "string",
+                            "description": "Variable slots formula"
+                        }
+                    ],
+                    "description": "Inventory slots required"
+                },
+                "charges": {
+                    "type": "integer",
+                    "description": "Number of charges for energy weapons"
+                },
+                "capacity": {
+                    "type": "integer",
+                    "description": "Carrying capacity bonus"
+                },
+                "livingCreature": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether this is a living creature (animal companion, etc.)"
+                },
+                "creatureStats": {
+                    "type": "object",
+                    "properties": {
+                        "skill": {
+                            "type": "integer"
+                        },
+                        "stamina": {
+                            "type": "integer"
+                        },
+                        "initiative": {
+                            "type": "integer"
+                        },
+                        "armor": {
+                            "type": "integer"
+                        },
+                        "mien": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "special": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "description": "Stats for living creature possessions"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "advancedSkill": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Skill name"
+                },
+                "rank": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Starting rank in this skill"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "skill",
+                        "spell",
+                        "language",
+                        "secret",
+                        "weapon"
+                    ],
+                    "default": "skill",
+                    "description": "Type of advanced skill"
+                },
+                "specialization": {
+                    "type": "string",
+                    "description": "Specialization or specific focus (e.g., language name, secret sign type)"
+                },
+                "conditional": {
+                    "type": "string",
+                    "description": "Conditions or restrictions on this skill"
+                }
+            },
+            "required": [
+                "name",
+                "rank"
+            ]
+        },
+        "bonus": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "skill",
+                        "damage",
+                        "armor",
+                        "special",
+                        "carry"
+                    ]
+                },
+                "target": {
+                    "type": "string",
+                    "description": "What the bonus applies to"
+                },
+                "value": {
+                    "type": "integer",
+                    "description": "Bonus amount"
+                },
+                "condition": {
+                    "type": "string",
+                    "description": "When the bonus applies"
+                }
+            },
+            "required": [
+                "type",
+                "target",
+                "value"
+            ]
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "../../systems/enemy.schema.json",
+    "id": "knight-of-the-road",
+    "name": "Knight of the Road",
+    "skill": 7,
+    "stamina": 7,
+    "initiative": 2,
+    "armour": 1,
+    "damageType": "weapon",
+    "description": "Contrary to what the farmers tell you the life of a vagabond is not an easy one. First you must find a road, but not a quiet road or else you'll wait for weeks without a client, nor should it be too busy or else you'll no sooner have belayed the first about the bonce before another comes along and interrupts your exchange. After all that you go back to your camp in the woods to sleep on the filthy ground and eat your meagre meals. Farmers should have more respect for a hard day's work.",
+    "mien": [
+        "Curious",
+        "Wary",
+        "Drunk",
+        "Rowdy",
+        "Predatory",
+        "Friendly"
+    ],
+    "tags": [
+        "humanoid",
+        "bandit",
+        "vagabond"
+    ],
+    "size": "medium"
+}

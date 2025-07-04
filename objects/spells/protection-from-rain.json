@@ -1,0 +1,25 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "protection-from-rain",
+    "name": "Protection from Rain",
+    "cost": 1,
+    "description": "This Spell prevents the wizard from getting rained upon for one shower.",
+    "testType": "roll_under",
+    "range": "self",
+    "duration": "one_shower",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Prevents getting wet from rain",
+    "tags": [
+        "abjuration",
+        "utility"
+    ],
+    "specialMechanics": [
+        "Lasts for exactly one rain shower",
+        "Only affects the caster",
+        "Prevents all rain contact"
+    ],
+    "oopsEntry": true
+}

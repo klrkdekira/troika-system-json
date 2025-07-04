@@ -1,0 +1,36 @@
+{
+    "$schema": "../../systems/background.schema.json",
+    "id": "46",
+    "name": "Rhino-Man",
+    "description": "The original Rhino-Men were created by an insane sorcerer several centuries ago but rebelled and killed him. They are fairly rare creatures, serving as formidable and loyal guards to those who can afford their services.",
+    "possessions": [
+        "Horn (Damage as Knife)",
+        "Thick Skin (Rhino Men always count as being Modestly Armoured)",
+        "Undersized Spear",
+        "Tiny, Useless Helmet",
+        "Knuckle Dice",
+        "Half Full Firkin of Rhino-beer (20 Provisions worth)"
+    ],
+    "advanced_skills": [
+        {
+            "name": "Spear Fighting",
+            "value": 3
+        },
+        {
+            "name": "Run",
+            "value": 2
+        },
+        {
+            "name": "Strength",
+            "value": 2
+        },
+        {
+            "name": "Gambling",
+            "value": 1
+        }
+    ],
+    "special_abilities": [
+        "Rhino Men always count as being Modestly Armoured due to their thick skin"
+    ],
+    "total_skill_points": 8
+}

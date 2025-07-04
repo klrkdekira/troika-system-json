@@ -1,0 +1,21 @@
+{
+  "$schema": "../../systems/enemy.schema.json",
+  "id": "feathered-folk",
+  "name": "Feathered Folk",
+  "skill": 7,
+  "stamina": 6,
+  "initiative": 2,
+  "armour": 0,
+  "damageType": "bow",
+  "description": "Profoundly religious though unfocused. Their civilisation worshiped the Egg of Time, which sat at the heart of their temple city on their holy mountain, until the day the Egg cracked and the god that leaped forth instantly shattered into a trillion shards of glass that flew off into the cosmos. Since then they have been eager to join any religion founded after that point, believing it to be a shard of the Born God.",
+  "mien": [
+    "Pious",
+    "Sincere",
+    "Beatific",
+    "Rapt",
+    "Abstracted",
+    "Doubting"
+  ],
+  "tags": ["humanoid", "religious", "winged"],
+  "size": "medium"
+} 

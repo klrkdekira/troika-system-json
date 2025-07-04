@@ -1,0 +1,26 @@
+{
+  "$schema": "../../systems/spell.schema.json",
+  "id": "gills",
+  "name": "Gills",
+  "cost": 3,
+  "description": "The wizard may permanently gift a touched subject with gills, replacing their usual breathing arrangement if they fail to Test their Luck (or Skill for Enemies). Useful for underwater excursions but less so when inflicted upon a chap in the middle of town. The wizard may end this at will.",
+  "testType": "roll_under",
+  "range": "touch",
+  "duration": "permanent_until_ended",
+  "components": ["somatic"],
+  "effect": "Target gains gills, replaces normal breathing",
+  "tags": ["transmutation", "utility"],
+  "saves": [
+    {
+      "type": "luck",
+      "description": "Target may Test Luck (or Skill for Enemies) to resist",
+      "onSuccess": "No effect",
+      "onFailure": "Breathing replaced with gills"
+    }
+  ],
+  "specialMechanics": [
+    "Wizard may end effect at will",
+    "Permanently changes breathing method"
+  ],
+  "oopsEntry": true
+} 

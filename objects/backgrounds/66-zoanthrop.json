@@ -1,0 +1,41 @@
+{
+  "$schema": "../../systems/background.schema.json",
+  "id": "66",
+  "name": "Zoanthrop",
+  "description": "At some point in your past you decided you did not need it anymore: you found a Zoanthropologist and paid them well to remove your troublesome forebrain and elevate you to the pure and unburdened beast you are today.",
+  "possessions": [
+    "No starting possessions; you have thrown off the shackles of civilisation. You are probably nude."
+  ],
+  "advanced_skills": [
+    {
+      "name": "Climb",
+      "value": 3
+    },
+    {
+      "name": "Run",
+      "value": 3
+    },
+    {
+      "name": "Strength",
+      "value": 2
+    },
+    {
+      "name": "Fist Fighting",
+      "value": 2
+    },
+    {
+      "name": "Club Fighting",
+      "value": 2
+    },
+    {
+      "name": "Wrestling",
+      "value": 2
+    }
+  ],
+  "special_abilities": [
+    "You are immune to all mind altering effects.",
+    "You are able to speak but usually choose not to.",
+    "When making Advancement Checks for Skills related to abstract thought, such as Spells or Astrology, you must roll twice and succeed on both to improve them."
+  ],
+  "total_skill_points": 14
+}

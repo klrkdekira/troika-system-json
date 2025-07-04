@@ -1,0 +1,29 @@
+{
+  "$schema": "../../systems/background.schema.json",
+  "id": "65",
+  "name": "Yongardy Lawyer",
+  "description": "Down in Yongardy they do things differently. They respect the Law. Every day there is a queue outside the courts to get a seat to see the latest up and coming barrister defend their case with a metre of steel. The people follow the careers of their favourite solicitors, watch all their cases, collect their portraits, and sneak into the court after hours to dab the patches of blood on white handkerchiefs. In Yongardy, they love the Law.",
+  "possessions": [
+    "Rapier (Damage as Sword) and Puffy Shirt or Sjambok (Damage as Club) and Lots of Scars or Longsword and Heavy Armour or Hammer and Gargantuan Shield",
+    "Manual on Yongardy Law",
+    "Barrister's Wig"
+  ],
+  "advanced_skills": [
+    {
+      "name": "Fighting in chosen weapon",
+      "value": 4
+    },
+    {
+      "name": "Etiquette",
+      "value": 2
+    },
+    {
+      "name": "Healing",
+      "value": 1
+    }
+  ],
+  "special_abilities": [
+    "Choose weapon combination when creating character - gain 4 points in that Fighting skill"
+  ],
+  "total_skill_points": 7
+}

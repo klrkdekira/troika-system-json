@@ -1,0 +1,23 @@
+{
+  "name": "Lance",
+  "type": "weapon",
+  "description": "A long cavalry weapon designed for mounted combat and jousting.",
+  "slots": 2,
+  "value": {
+    "amount": 15,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Spear",
+  "damageTable": {
+    "1": 4,
+    "2": 4,
+    "3": 6,
+    "4": 6,
+    "5": 8,
+    "6": 8,
+    "7+": 10
+  },
+  "properties": ["Two-handed", "Reach", "Best when mounted"],
+  "tags": ["weapon", "melee", "polearm", "cavalry", "jousting"]
+}

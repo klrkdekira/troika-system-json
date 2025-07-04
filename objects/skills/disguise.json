@@ -1,0 +1,15 @@
+{
+  "name": "Disguise",
+  "type": "advanced",
+  "description": "Covers the use of props to change your appearance. When in disguise you must Roll Under this when someone is liable to see through it. Opposed by Awareness when under scrutiny.",
+  "category": "social",
+  "mechanics": {
+    "testType": "rollUnder",
+    "opposedBy": "Awareness"
+  },
+  "notes": [
+    "Requires appropriate props and materials",
+    "Quality of disguise affects difficulty"
+  ],
+  "tags": ["social", "deception", "infiltration"]
+}

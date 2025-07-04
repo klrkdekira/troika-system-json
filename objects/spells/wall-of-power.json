@@ -1,0 +1,29 @@
+{
+  "name": "Wall of Power",
+  "cost": 2,
+  "description": "What they call a wall is in fact a dome, but wizards always have worked in mysterious ways. The wall is a shimmering bubble that causes 1d6 Damage when touched. Nothing may pass without the wizard's permission (it is recommended that they remember to allow air). Lasts for 12 minutes.",
+  "duration": "12 minutes",
+  "range": "Close",
+  "testType": "rollUnder",
+  "target": "Area",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "evocation",
+      "description": "Create a shimmering dome that causes 1d6 Damage when touched"
+    }
+  ],
+  "damage": {
+    "type": "energy",
+    "amount": "1d6"
+  },
+  "notes": [
+    "Nothing may pass without wizard's permission",
+    "Wizard must remember to allow air"
+  ],
+  "tags": ["evocation", "barrier", "protection"]
+}

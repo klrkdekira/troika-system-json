@@ -1,0 +1,12 @@
+{
+  "$schema": "../../systems/spell.schema.json",
+  "id": "explode",
+  "name": "Explode",
+  "cost": 5,
+  "description": "So simple that it's arguably not even a Spell but rather a premeditated failure of catastrophic proportions. The wizard causes a one cubic metre object to explode and deal Damage to everyone within 24 metres depending on proximity. Those within 6 metres take Damage as a Gigantic Beast, within 12 as a Large Beast, 18 as a Modest Beast and 24 as a Small Beast.",
+  "casting_instructions": "Explode 1 cubic metre object - damage by proximity: 6m=Gigantic Beast, 12m=Large Beast, 18m=Modest Beast, 24m=Small Beast",
+  "duration": "Instantaneous",
+  "range": "Target object within sight",
+  "oops_entry": null,
+  "damage_table": null
+} 

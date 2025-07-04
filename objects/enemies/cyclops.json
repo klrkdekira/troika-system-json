@@ -1,0 +1,30 @@
+{
+    "name": "Cyclops",
+    "skill": 9,
+    "stamina": 14,
+    "initiative": 3,
+    "armour": 2,
+    "damage": "Large Beast",
+    "description": "Once upon a time a nation of man asked one of the Aeons to grant them the power of immortality and foresight. The Aeons, being an arbitrary bunch, took one eye from each as fair exchange. The men found that their foresight was indeed present but extended only to knowledge of their eventual deaths by accident or violence.",
+    "mien": [
+        "Tearful",
+        "Depressed",
+        "Melancholic",
+        "Sombre",
+        "Resigned",
+        "Mercurial"
+    ],
+    "special": [
+        "When a cyclops is given Initiative it may draw the next three Initiatives in order, thus granting them knowledge of who is going next",
+        "They know when and how they die and this might not be it"
+    ],
+    "spells": [],
+    "tags": [
+        "humanoid",
+        "cursed",
+        "intelligent"
+    ],
+    "environment": [
+        "any"
+    ]
+}

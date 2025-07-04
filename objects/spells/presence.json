@@ -1,0 +1,25 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "presence",
+    "name": "Presence",
+    "cost": 1,
+    "description": "This Spell creates the sense of being watched by a patriarchal figure. Some find it comforting, others, not so much.",
+    "testType": "roll_under",
+    "range": "area",
+    "duration": "while_concentrating",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Creates sense of patriarchal presence",
+    "tags": [
+        "illusion",
+        "psychic"
+    ],
+    "specialMechanics": [
+        "Affects all in area",
+        "Some find comforting, others disturbing",
+        "Patriarchal watching sensation"
+    ],
+    "oopsEntry": true
+}

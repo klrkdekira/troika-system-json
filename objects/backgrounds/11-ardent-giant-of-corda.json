@@ -1,0 +1,35 @@
+{
+    "id": 11,
+    "name": "Ardent Giant of Corda",
+    "description": "Every giant has a different story about Corda, well told and interrupted with tears and laughter, of how they lost it and mean to find it soon enough but oh, what of today? We should drink and cheer, we'll search once again in the morning!",
+    "possessions": [
+        {
+            "name": "Artefact of Lost Corda",
+            "description": "Being either an enormous Blue Star Map which can tell you where any portal leads (with a successful Astrology test) or a pocket barometer for forecasting the weather (5 in 6 accuracy) or a Ruby Lorgnette granting +2 Second Sight"
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Strength",
+            "rank": 4,
+            "category": "physical"
+        },
+        {
+            "name": "Astrology",
+            "rank": 3,
+            "category": "knowledge"
+        },
+        {
+            "name": "Run",
+            "rank": 2,
+            "category": "physical"
+        },
+        {
+            "name": "Climb",
+            "rank": 2,
+            "category": "physical"
+        }
+    ],
+    "spells": [],
+    "special": []
+}

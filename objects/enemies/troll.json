@@ -1,0 +1,32 @@
+{
+    "name": "Troll",
+    "skill": 7,
+    "stamina": 12,
+    "initiative": 1,
+    "armour": 2,
+    "damage": "Weapon",
+    "description": "Trolls are ill-tempered creatures often spied leaning on a pike in the town square, gabbing with other guards while taking the occasional break to shout at a child, or tripping up an old lady. You'd think they'd stop hiring them.",
+    "mien": [
+        "Rude",
+        "Standoffish",
+        "Spiteful",
+        "Disrespectful",
+        "Sarcastic",
+        "Sullen"
+    ],
+    "special": [
+        "Trolls regenerate 1 Stamina every time they hold the Initiative. They will regenerate back from anything other than decapitation or fire."
+    ],
+    "spells": [],
+    "tags": [
+        "humanoid",
+        "regenerating",
+        "natural"
+    ],
+    "environment": [
+        "towns",
+        "cities",
+        "bridges",
+        "guard posts"
+    ]
+}

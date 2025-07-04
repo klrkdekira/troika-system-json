@@ -1,0 +1,15 @@
+{
+  "name": "Golden Barge Pilot",
+  "type": "advanced",
+  "description": "Test this to navigate between the stars on a ship with golden mirror sails.",
+  "category": "technical",
+  "mechanics": {
+    "testType": "rollUnder"
+  },
+  "applications": [
+    "Navigate between stars",
+    "Pilot golden mirror sail ships",
+    "Stellar navigation"
+  ],
+  "tags": ["technical", "navigation", "stellar", "ships"]
+}

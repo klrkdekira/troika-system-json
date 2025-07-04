@@ -1,0 +1,23 @@
+{
+  "id": "ruby-lorgnette",
+  "name": "Ruby Lorgnette",
+  "description": "Ruby lorgnettes are collapsable spectacles made with ruby lenses that require a free hand to use. While wearing them your sight is impaired but you can see sorcerous activity clearly (+2 Second Sight).",
+  "category": "tool",
+  "encumbrance": 0,
+  "properties": ["second_sight", "ruby", "collapsible", "one_handed"],
+  "effects": [
+    {
+      "type": "skill_bonus",
+      "skill": "Second Sight",
+      "bonus": 2,
+      "condition": "while_worn"
+    },
+    {
+      "type": "penalty",
+      "effect": "impaired_normal_sight",
+      "condition": "while_worn"
+    }
+  ],
+  "requires": "free_hand",
+  "value": "30_silver"
+} 

@@ -1,0 +1,343 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-skill",
+    "title": "Troika! Skill",
+    "description": "A skill definition in the Troika! RPG system",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Skill name"
+        },
+        "description": {
+            "type": "string",
+            "description": "What this skill represents and how it's used"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "general",
+                "advanced",
+                "weapon",
+                "spell",
+                "language",
+                "secret"
+            ],
+            "description": "Skill category"
+        },
+        "baseAttribute": {
+            "type": "string",
+            "enum": [
+                "skill",
+                "luck",
+                "stamina",
+                "special"
+            ],
+            "default": "skill",
+            "description": "Which attribute this skill is tested against"
+        },
+        "specializations": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Possible specializations for this skill"
+        },
+        "examples": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Example uses of this skill"
+        },
+        "testDifficulty": {
+            "type": "object",
+            "properties": {
+                "trivial": {
+                    "type": "string",
+                    "description": "Examples of trivial tests"
+                },
+                "moderate": {
+                    "type": "string",
+                    "description": "Examples of moderate tests"
+                },
+                "hard": {
+                    "type": "string",
+                    "description": "Examples of hard tests"
+                },
+                "extreme": {
+                    "type": "string",
+                    "description": "Examples of extreme tests"
+                }
+            },
+            "description": "Difficulty guidelines for this skill"
+        },
+        "opposedTests": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Common opposed test scenarios"
+        },
+        "weaponProperties": {
+            "type": "object",
+            "properties": {
+                "damageTable": {
+                    "type": "string",
+                    "description": "Which damage table to use"
+                },
+                "range": {
+                    "type": "string",
+                    "enum": [
+                        "melee",
+                        "close",
+                        "medium",
+                        "long",
+                        "extreme"
+                    ],
+                    "description": "Weapon range category"
+                },
+                "twoHanded": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether weapon requires two hands"
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "reload",
+                            "slow",
+                            "defensive",
+                            "reach",
+                            "thrown",
+                            "precise",
+                            "blast"
+                        ]
+                    },
+                    "description": "Special weapon properties"
+                }
+            },
+            "description": "Properties for weapon skills"
+        },
+        "spellProperties": {
+            "type": "object",
+            "properties": {
+                "school": {
+                    "type": "string",
+                    "description": "School of magic"
+                },
+                "complexity": {
+                    "type": "string",
+                    "enum": [
+                        "cantrip",
+                        "basic",
+                        "intermediate",
+                        "advanced",
+                        "master"
+                    ],
+                    "description": "Spell complexity level"
+                },
+                "components": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "verbal",
+                            "somatic",
+                            "material",
+                            "focus"
+                        ]
+                    },
+                    "description": "Required spell components"
+                }
+            },
+            "description": "Properties for spell skills"
+        },
+        "languageProperties": {
+            "type": "object",
+            "properties": {
+                "family": {
+                    "type": "string",
+                    "description": "Language family or group"
+                },
+                "script": {
+                    "type": "string",
+                    "description": "Writing system used"
+                },
+                "commonality": {
+                    "type": "string",
+                    "enum": [
+                        "common",
+                        "uncommon",
+                        "rare",
+                        "ancient",
+                        "secret"
+                    ],
+                    "description": "How widespread this language is"
+                },
+                "relatedLanguages": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Languages that provide bonuses to learning this one"
+                }
+            },
+            "description": "Properties for language skills"
+        },
+        "secretProperties": {
+            "type": "object",
+            "properties": {
+                "organization": {
+                    "type": "string",
+                    "description": "Which group uses this secret sign"
+                },
+                "complexity": {
+                    "type": "string",
+                    "enum": [
+                        "simple",
+                        "moderate",
+                        "complex"
+                    ],
+                    "description": "How complex the sign system is"
+                },
+                "detection": {
+                    "type": "string",
+                    "description": "How to detect or recognize these signs"
+                }
+            },
+            "description": "Properties for secret sign skills"
+        },
+        "advancementRules": {
+            "type": "object",
+            "properties": {
+                "canImprove": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether this skill can be improved"
+                },
+                "maxRank": {
+                    "type": "integer",
+                    "description": "Maximum rank (null for unlimited)"
+                },
+                "specialRestrictions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Special advancement restrictions"
+                },
+                "prerequisites": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Required skills or conditions"
+                }
+            },
+            "description": "Rules governing skill advancement"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Organizational tags"
+        },
+        "source": {
+            "type": "string",
+            "description": "Which book or supplement this skill comes from"
+        },
+        "alternatives": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Alternative names or similar skills"
+        },
+        "synergies": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "skill": {
+                        "type": "string",
+                        "description": "Related skill name"
+                    },
+                    "bonus": {
+                        "type": "string",
+                        "description": "Bonus provided by having both skills"
+                    }
+                },
+                "required": [
+                    "skill",
+                    "bonus"
+                ]
+            },
+            "description": "Bonuses for having related skills"
+        }
+    },
+    "required": [
+        "name",
+        "description",
+        "type"
+    ],
+    "oneOf": [
+        {
+            "properties": {
+                "type": {
+                    "const": "weapon"
+                }
+            },
+            "required": [
+                "weaponProperties"
+            ]
+        },
+        {
+            "properties": {
+                "type": {
+                    "const": "spell"
+                }
+            },
+            "required": [
+                "spellProperties"
+            ]
+        },
+        {
+            "properties": {
+                "type": {
+                    "const": "language"
+                }
+            },
+            "required": [
+                "languageProperties"
+            ]
+        },
+        {
+            "properties": {
+                "type": {
+                    "const": "secret"
+                }
+            },
+            "required": [
+                "secretProperties"
+            ]
+        },
+        {
+            "properties": {
+                "type": {
+                    "not": {
+                        "enum": [
+                            "weapon",
+                            "spell",
+                            "language",
+                            "secret"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

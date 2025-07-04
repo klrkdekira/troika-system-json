@@ -1,0 +1,23 @@
+{
+  "name": "Maul",
+  "type": "weapon",
+  "description": "A massive two-handed hammer capable of devastating blows.",
+  "slots": 2,
+  "value": {
+    "amount": 25,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Maul",
+  "damageTable": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 6,
+    "5": 12,
+    "6": 13,
+    "7+": 14
+  },
+  "properties": ["Two-handed", "Ignores 1 point of Armour"],
+  "tags": ["weapon", "melee", "blunt", "two-handed", "armor-piercing"]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Jolt",
+    "cost": 1,
+    "description": "The mischievous apprentice's favourite Spell, Jolt sends an arc of electricity from the wizard's outstretched hand towards a target. Ignores Armour.",
+    "duration": "Instantaneous",
+    "range": "Touch/Close",
+    "testType": "rollUnder",
+    "requirements": [
+        "free hand",
+        "speech"
+    ],
+    "tags": [
+        "offensive",
+        "elemental"
+    ],
+    "damageTable": {
+        "1": 2,
+        "2": 2,
+        "3": 3,
+        "4": 3,
+        "5": 5,
+        "6": 7,
+        "7+": 9
+    },
+    "oopsEntry": true
+}

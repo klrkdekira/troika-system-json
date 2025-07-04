@@ -1,0 +1,57 @@
+{
+    "id": "41",
+    "name": "Necromancer",
+    "description": "The least popular of magical practitioners, Necromancers are shunned by the major centres of learning, left to their own devices on the edges of society, passing on knowledge in the time honoured master–student dynamic. This loneliness encourages students to make their own friends.",
+    "possessions": [
+        {
+            "name": "Dusty Robes",
+            "description": "Traditional necromancer attire",
+            "category": "clothing",
+            "properties": [
+                "necromantic",
+                "dusty"
+            ]
+        },
+        {
+            "name": "The Skull of your Master or Zombie Servant or Ghost",
+            "description": "A companion with whom you have developed a codependent relationship",
+            "category": "companion",
+            "properties": [
+                "undead",
+                "advisor",
+                "codependent"
+            ]
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Healing",
+            "level": 2
+        },
+        {
+            "name": "Mortuary Science",
+            "level": 2
+        },
+        {
+            "name": "Relationship Counseling",
+            "level": 2
+        },
+        {
+            "name": "Spell - Posthumous Vitality",
+            "level": 1
+        },
+        {
+            "name": "Spell - Skeletal Counsel",
+            "level": 1
+        },
+        {
+            "name": "Spell - Torpor",
+            "level": 1
+        },
+        {
+            "name": "Sneak",
+            "level": 1
+        }
+    ],
+    "special": []
+}

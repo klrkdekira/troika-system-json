@@ -1,0 +1,410 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "troika-item",
+    "title": "Troika! Item",
+    "description": "An item in the Troika! RPG system",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Item name"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "weapon",
+                "armor",
+                "tool",
+                "provision",
+                "currency",
+                "treasure",
+                "component",
+                "mount",
+                "container",
+                "clothing",
+                "jewelry",
+                "book",
+                "misc"
+            ],
+            "description": "Item category"
+        },
+        "description": {
+            "type": "string",
+            "description": "Item description"
+        },
+        "slots": {
+            "oneOf": [
+                {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Fixed number of inventory slots"
+                },
+                {
+                    "type": "string",
+                    "description": "Variable slots based on formula (e.g., 'double armor value', 'varies')"
+                }
+            ],
+            "description": "Number of inventory slots the item takes up"
+        },
+        "value": {
+            "oneOf": [
+                {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Fixed value in silver pence"
+                },
+                {
+                    "type": "string",
+                    "description": "Variable value (e.g., '10d6 silver pence', 'priceless')"
+                }
+            ],
+            "description": "Item's monetary value"
+        },
+        "quantity": {
+            "oneOf": [
+                {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Fixed quantity"
+                },
+                {
+                    "type": "string",
+                    "description": "Dice expression for quantity (e.g., '1d6', '2d6')"
+                }
+            ],
+            "default": 1,
+            "description": "Quantity of the item"
+        },
+        "weapon": {
+            "$ref": "#/definitions/weapon",
+            "description": "Weapon properties if this is a weapon"
+        },
+        "armor": {
+            "$ref": "#/definitions/armor",
+            "description": "Armor properties if this is armor"
+        },
+        "tool": {
+            "$ref": "#/definitions/tool",
+            "description": "Tool properties if this is a tool"
+        },
+        "provision": {
+            "$ref": "#/definitions/provision",
+            "description": "Provision properties if this is a provision"
+        },
+        "container": {
+            "$ref": "#/definitions/container",
+            "description": "Container properties if this is a container"
+        },
+        "mount": {
+            "$ref": "#/definitions/mount",
+            "description": "Mount properties if this is a mount"
+        },
+        "specialProperties": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Special magical or unique properties"
+        },
+        "bonuses": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/bonus"
+            },
+            "description": "Bonuses provided by the item"
+        },
+        "requirements": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Requirements to use the item effectively"
+        },
+        "durability": {
+            "type": "object",
+            "properties": {
+                "current": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "maximum": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "fragile",
+                        "normal",
+                        "durable",
+                        "indestructible"
+                    ]
+                }
+            },
+            "description": "Item durability tracking"
+        },
+        "charges": {
+            "type": "object",
+            "properties": {
+                "current": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "maximum": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "rechargeMethod": {
+                    "type": "string",
+                    "description": "How to recharge (e.g., 'plasmic core', 'rest', 'stamina')"
+                },
+                "rechargeCost": {
+                    "type": "string",
+                    "description": "Cost to recharge (e.g., '1 stamina per charge', '1 plasmic core')"
+                },
+                "rechargeTime": {
+                    "type": "string",
+                    "description": "Time required to recharge (e.g., '6 minutes per charge')"
+                }
+            },
+            "description": "Charge tracking for items like fusils and pistolets"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Descriptive tags for organization and searching"
+        },
+        "alternatives": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "properties": {
+                        "type": "object"
+                    }
+                },
+                "required": [
+                    "description"
+                ]
+            },
+            "description": "Alternative versions or configurations of the item"
+        }
+    },
+    "required": [
+        "name",
+        "type",
+        "description"
+    ],
+    "definitions": {
+        "weapon": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "type": "string",
+                    "enum": [
+                        "melee",
+                        "ranged",
+                        "thrown",
+                        "natural"
+                    ]
+                },
+                "skill": {
+                    "type": "string",
+                    "description": "Associated weapon skill"
+                },
+                "damageAs": {
+                    "type": "string",
+                    "description": "Damage table reference (e.g., 'Sword', 'Bow', 'Large Beast')"
+                },
+                "range": {
+                    "type": "string",
+                    "description": "Weapon range"
+                },
+                "twoHanded": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "ignoresArmor": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "default": 0,
+                    "description": "Points of armor ignored"
+                },
+                "ammunition": {
+                    "type": "string",
+                    "description": "Type of ammunition used"
+                },
+                "capacity": {
+                    "type": "integer",
+                    "description": "Ammunition capacity for weapons like fusils"
+                },
+                "specialRules": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "category",
+                "damageAs"
+            ]
+        },
+        "armor": {
+            "type": "object",
+            "properties": {
+                "protection": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3,
+                    "description": "Armor protection value (0=Unarmored, 1=Light, 2=Modest, 3=Heavy)"
+                },
+                "coverage": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "head",
+                            "torso",
+                            "arms",
+                            "legs",
+                            "full"
+                        ]
+                    }
+                },
+                "specialRules": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "protection"
+            ]
+        },
+        "tool": {
+            "type": "object",
+            "properties": {
+                "skillBonus": {
+                    "type": "integer",
+                    "description": "Bonus to related skill rolls"
+                },
+                "applicableSkills": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Skills this tool applies to"
+                },
+                "setupTime": {
+                    "type": "string",
+                    "description": "Time required to set up and use"
+                },
+                "specialRules": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "provision": {
+            "type": "object",
+            "properties": {
+                "healingValue": {
+                    "type": "string",
+                    "description": "Healing provided (e.g., '1d6', '20 provisions worth')"
+                },
+                "specialEffects": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "container": {
+            "type": "object",
+            "properties": {
+                "capacity": {
+                    "type": "integer",
+                    "description": "Additional slots provided"
+                },
+                "restrictions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "What can be stored in this container"
+                }
+            },
+            "required": [
+                "capacity"
+            ]
+        },
+        "mount": {
+            "type": "object",
+            "properties": {
+                "carryCapacity": {
+                    "type": "integer",
+                    "description": "Additional carrying capacity provided"
+                },
+                "speed": {
+                    "type": "string",
+                    "description": "Movement speed description"
+                },
+                "temperament": {
+                    "type": "string",
+                    "description": "Animal's typical behavior"
+                },
+                "specialAbilities": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "bonus": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "skill",
+                        "attribute",
+                        "damage",
+                        "armor",
+                        "special"
+                    ]
+                },
+                "target": {
+                    "type": "string",
+                    "description": "What the bonus applies to"
+                },
+                "value": {
+                    "type": "integer",
+                    "description": "Bonus amount"
+                },
+                "condition": {
+                    "type": "string",
+                    "description": "When the bonus applies"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "target",
+                "value"
+            ]
+        }
+    }
+}

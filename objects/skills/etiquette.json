@@ -1,0 +1,19 @@
+{
+    "$schema": "../../systems/skill.schema.json",
+    "id": "etiquette",
+    "name": "Etiquette",
+    "description": "When making a good impression is important Roll Versus your host's Etiquette. Represents a mechanical understanding of social conduct and those who are better at it are more discerning.",
+    "category": "social",
+    "testType": "roll_versus",
+    "uses": [
+        "Make good impressions",
+        "Navigate social situations",
+        "Understand proper conduct",
+        "Formal occasions"
+    ],
+    "tags": [
+        "social",
+        "culture",
+        "general"
+    ]
+}

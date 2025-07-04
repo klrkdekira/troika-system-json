@@ -1,0 +1,30 @@
+{
+    "$schema": "../../systems/enemy.schema.json",
+    "id": "living-dead",
+    "name": "Living Dead",
+    "skill": 6,
+    "stamina": 12,
+    "initiative": 1,
+    "armour": 0,
+    "damageType": "weapon_or_modest_beast",
+    "description": "The definition of 'dead' varies from place to place. In some spheres you might be considered dead when unconscious or still living until buried. Now consider the ambulatory deceased and the definition is even more nebulous and near the point of irrelevance. Let's just say they have a fluid vitality.",
+    "mien": [
+        "Oblivious",
+        "Pondering",
+        "Distracted",
+        "Hungry",
+        "Aggressive",
+        "Distressed"
+    ],
+    "specialAbilities": [
+        {
+            "name": "Silver Vulnerability",
+            "description": "They take double Damage from Silver."
+        }
+    ],
+    "tags": [
+        "undead",
+        "zombie"
+    ],
+    "size": "medium"
+}

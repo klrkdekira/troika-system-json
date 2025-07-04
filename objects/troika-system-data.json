@@ -1,0 +1,104 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "name": "Troika!",
+        "description": "Science Fantasy RPG System Data",
+        "publisher": "Melsonian Arts Council",
+        "license": "Third Party Compatible - see Terms in SRD"
+    },
+    "characterCreation": {
+        "skillGeneration": "1d3+3",
+        "staminaGeneration": "2d6+12",
+        "luckGeneration": "1d6+6",
+        "baselinePossessions": [
+            "2d6 Silver Pence",
+            "Knife",
+            "Lantern & Flask of Oil",
+            "Rucksack",
+            "6 Provisions"
+        ]
+    },
+    "backgrounds": [
+        {
+            "$ref": "./backgrounds/11-ardent-giant-of-corda.json"
+        },
+        {
+            "$ref": "./backgrounds/12-befouler-of-ponds.json"
+        },
+        {
+            "$ref": "./backgrounds/13-burglar.json"
+        },
+        {
+            "$ref": "./backgrounds/14-cacogen.json"
+        },
+        {
+            "$ref": "./backgrounds/22-dwarf.json"
+        }
+    ],
+    "skills": [
+        {
+            "$ref": "./skills/astrology.json"
+        },
+        {
+            "$ref": "./skills/sword-fighting.json"
+        }
+    ],
+    "spells": [
+        {
+            "$ref": "./spells/affix.json"
+        },
+        {
+            "$ref": "./spells/fire-bolt.json"
+        },
+        {
+            "$ref": "./spells/jolt.json"
+        }
+    ],
+    "items": [
+        {
+            "$ref": "./items/fusil.json"
+        },
+        {
+            "$ref": "./items/silver-sword.json"
+        },
+        {
+            "$ref": "./items/heavy-armour.json"
+        }
+    ],
+    "enemies": [
+        {
+            "$ref": "./enemies/goblin.json"
+        },
+        {
+            "$ref": "./enemies/dragon.json"
+        }
+    ],
+    "tables": [
+        {
+            "$ref": "./tables/melee-damage-table.json"
+        },
+        {
+            "$ref": "./tables/random-spell-table.json"
+        }
+    ],
+    "rules": {
+        "initiative": {
+            "playerTokens": 2,
+            "endOfRoundToken": true
+        },
+        "combat": {
+            "mightyBlowThreshold": 12,
+            "fumbleThreshold": 2,
+            "doubleDamageOnMightyBlow": true
+        },
+        "advancement": {
+            "maxAdvancementChecks": 3,
+            "advancementThreshold": "2d6 > current skill total"
+        },
+        "encumbrance": {
+            "maxSlots": 12,
+            "overburdenedPenalty": -4,
+            "severelyOverburdenedThreshold": 18
+        }
+    }
+}

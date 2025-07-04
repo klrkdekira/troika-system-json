@@ -1,0 +1,33 @@
+{
+    "$schema": "../../systems/background.schema.json",
+    "id": "55",
+    "name": "Temple Knight of Telak the Swordbringer",
+    "description": "You were once (and possibly still are) a fanatical monk set to maintain constant, vigilant martial readiness in preparation for the end times, when all doorways crumble inwards. You are always prepared and never unready.",
+    "possessions": [
+        "The Blessing of Telak",
+        "6 Swords of your choice"
+    ],
+    "advanced_skills": [
+        {
+            "name": "Awareness",
+            "value": 3
+        },
+        {
+            "name": "Blacksmithing",
+            "value": 2
+        },
+        {
+            "name": "Sword Fighting",
+            "value": 1
+        },
+        {
+            "name": "Greatsword Fighting",
+            "value": 1
+        }
+    ],
+    "special_abilities": [
+        "The blessing of Telak awards you Armour equal to half (rounded down) the number of Swords you carry. If you carried 6 Swords your Armour would be 3 while if you carried 9 it would be 4.",
+        "You must be overtly armed at all times or else Telak will take this blessing away until you forge and donate to the unarmed a brand new Sword."
+    ],
+    "total_skill_points": 7
+}
