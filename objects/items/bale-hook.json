@@ -1,0 +1,18 @@
+{
+  "id": "bale-hook",
+  "name": "Bale Hook",
+  "description": "A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects.",
+  "category": "weapon",
+  "encumbrance": 1,
+  "properties": ["knife", "lifting", "utility"],
+  "damage": "knife",
+  "effects": [
+    {
+      "type": "skill_bonus",
+      "skill": "lifting",
+      "bonus": 1,
+      "condition": "when_lifting_heavy_objects"
+    }
+  ],
+  "value": "5_silver"
+} 

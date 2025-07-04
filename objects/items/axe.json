@@ -1,0 +1,23 @@
+{
+  "name": "Axe",
+  "type": "weapon",
+  "description": "A sturdy chopping weapon with a heavy head and wooden handle.",
+  "slots": 2,
+  "value": {
+    "amount": 15,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Axe",
+  "damageTable": {
+    "1": 2,
+    "2": 2,
+    "3": 6,
+    "4": 6,
+    "5": 8,
+    "6": 10,
+    "7+": 12
+  },
+  "properties": ["Ignores 1 point of Armour"],
+  "tags": ["weapon", "melee", "chopping", "armor-piercing"]
+}

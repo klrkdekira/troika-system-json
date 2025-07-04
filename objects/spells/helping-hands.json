@@ -1,0 +1,25 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "helping-hands",
+    "name": "Helping Hands",
+    "cost": 1,
+    "description": "Animate hands spring forth from an inanimate surface and perform any task the wizard requires but are limited to being rooted to the spot from which they sprang. They last until the wizard wills it or leaves the location.",
+    "testType": "roll_under",
+    "range": "touch",
+    "duration": "until_ended_or_wizard_leaves",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Animates hands from surface to perform tasks",
+    "tags": [
+        "conjuration",
+        "utility"
+    ],
+    "specialMechanics": [
+        "Hands are rooted to the surface they spring from",
+        "Can perform any task within reach",
+        "Lasts until wizard ends or leaves location"
+    ],
+    "oopsEntry": true
+}

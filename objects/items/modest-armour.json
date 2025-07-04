@@ -1,0 +1,14 @@
+{
+  "name": "Modest Armour",
+  "type": "armor",
+  "description": "Decent protection such as chain mail or reinforced leather.",
+  "slots": 4,
+  "value": {
+    "amount": 50,
+    "currency": "silver pence"
+  },
+  "armorType": "modest",
+  "armorValue": 2,
+  "properties": ["Reduces Damage Rolls by 2 to a minimum of 1"],
+  "tags": ["armor", "modest", "chain", "reinforced"]
+}

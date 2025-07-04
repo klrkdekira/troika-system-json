@@ -1,0 +1,16 @@
+{
+    "id": "grow",
+    "name": "Grow",
+    "cost": 2,
+    "description": "Cause an item to grow half its size again if it fails to Test its Luck (or Skill for Enemies). Lasts for 3 minutes.",
+    "school": "transmutation",
+    "range": "sight",
+    "duration": "3_minutes",
+    "components": [
+        "verbal",
+        "somatic"
+    ],
+    "effect": "Increases object size by 50%",
+    "oopsEntry": null,
+    "damageTable": null
+}

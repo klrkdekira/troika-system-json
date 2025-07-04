@@ -1,0 +1,25 @@
+{
+  "name": "Salamander",
+  "skill": 8,
+  "stamina": 16,
+  "initiative": 3,
+  "armor": 3,
+  "damage": "Large Beast",
+  "mien": [
+    "Convulsing",
+    "Expanding",
+    "Retracting",
+    "Surging",
+    "Revolving",
+    "Blooming"
+  ],
+  "description": "A star creature that sailors are accustomed to removing from their golden ships like terrestrial barnacles. They are attracted to the heat of the sails and interfere with their correct operation if not dealt with. When removed they are low and squat, so dark as to force your eyes to run off them, so hot that you can feel it from across a room. They move like tar, slow then fast, able to expand themselves to attack, in the moment looking like a quickly blooming rose. Even fatalistic golden sailors are careful when poking at shadows.",
+  "special": [
+    "Attracted to heat of golden ship sails",
+    "Interfere with ship operation if not removed",
+    "So dark that eyes run off them",
+    "So hot you can feel it from across a room",
+    "Can expand themselves to attack like a blooming rose"
+  ],
+  "tags": ["star-creature", "heat", "ship", "expandable"]
+}

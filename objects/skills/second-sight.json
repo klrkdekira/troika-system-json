@@ -1,0 +1,16 @@
+{
+  "name": "Second Sight",
+  "type": "advanced",
+  "description": "Use of this allows the detection of magic. On a successful Test you focus your inner eye and all sorcerous activity glows faintly for a moment.",
+  "category": "mystical",
+  "mechanics": {
+    "testType": "rollUnder"
+  },
+  "effects": [
+    "Detect magical activity",
+    "See sorcerous auras",
+    "Identify magical effects"
+  ],
+  "relatedItems": ["Ruby Lorgnette"],
+  "tags": ["mystical", "detection", "magic"]
+}

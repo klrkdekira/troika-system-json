@@ -1,0 +1,22 @@
+{
+  "$schema": "../../systems/enemy.schema.json",
+  "id": "tower-wizard",
+  "name": "Tower Wizard",
+  "description": "The majority of sorcery enthusiasts are either members of a college or well respected freelance lecturers with a nice manse in a seaside town, esteemed members of society who buy their groceries the same as us. However, when people think \"wizard\" they most likely go straight to the tower wizards, those feral old men who have given up all pretence of civility and fled to the wilderness. There they build their eponymous towers to work on unpleasant projects and terrorise the neighbourhood. They give magic a bad name.",
+  "skill": 10,
+  "stamina": 12,
+  "initiative": 3,
+  "armour": 0,
+  "damage": "Weapon",
+  "mien": [
+    "Offensive",
+    "Confused",
+    "Friendly",
+    "Suspicious",
+    "Inappropriate",
+    "Transgressive"
+  ],
+  "special_abilities": [
+    "The Tower Wizard has access to Jolt or Ember and 4 other Spells rolled randomly or chosen ahead of time."
+  ]
+}

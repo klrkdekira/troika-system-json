@@ -1,0 +1,46 @@
+{
+    "name": "Sword Fighting",
+    "description": "The art of combat with swords and similar bladed weapons. Used in Roll Versus combat when wielding appropriate weapons.",
+    "category": "combat",
+    "testType": "rollVersus",
+    "examples": [
+        "Attacking with a sword",
+        "Parrying sword attacks",
+        "Disarming opponents",
+        "Fighting defensively"
+    ],
+    "opposedBy": [
+        "Sword Fighting",
+        "Shield Fighting",
+        "Dodge",
+        "Other weapon skills"
+    ],
+    "modifiers": [
+        {
+            "condition": "Using appropriate sword",
+            "modifier": 0,
+            "description": "No modifier for proper weapon"
+        },
+        {
+            "condition": "Using improvised weapon",
+            "modifier": -2,
+            "description": "Penalty for unsuitable weapon"
+        }
+    ],
+    "relatedItems": [
+        "Sword",
+        "Silver Sword",
+        "Longsword",
+        "Curved Sword"
+    ],
+    "prerequisites": [],
+    "tags": [
+        "combat",
+        "melee",
+        "weapon"
+    ],
+    "specialRules": [
+        "Can be used with any sword-type weapon",
+        "Grants proficiency with sword damage table"
+    ]
+}

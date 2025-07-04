@@ -1,0 +1,23 @@
+{
+  "name": "Man-Beast",
+  "skill": 8,
+  "stamina": 11,
+  "initiative": 2,
+  "armor": 1,
+  "damage": "Fusil or Modest Beast",
+  "mien": [
+    "Heedful",
+    "Observing",
+    "Watchful",
+    "Questioning",
+    "Challenging",
+    "Aggressive"
+  ],
+  "description": "The Autarchs couldn't rely on the aristocracy for delicate or controversial matters; even for thoroughly mundane requests they were worshipful in word and recalcitrant in action and so towards the beginning of their reign an Autarch had their vizier fabricate armies of beastly chimera, utterly loyal to the Phoenix Throne, obeying orders to the letter unto death. The man-beasts are far from mindless, rather they never question their lot in life, being unable to comprehend an alternative existence. Indeed, you might find man-beast guards still defending doorways to caches of Weapons and treasure the Autarchs are known to have hidden away for times of trouble, vigilant as a sleepless, incorruptible watchdog.",
+  "special": [
+    "Utterly loyal to the Phoenix Throne",
+    "Never question their lot in life",
+    "May be found guarding Autarch treasure caches"
+  ],
+  "tags": ["chimera", "guard", "loyal", "autarch"]
+}

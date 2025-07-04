@@ -1,0 +1,44 @@
+{
+    "$schema": "../../systems/background.schema.json",
+    "id": "63",
+    "name": "Venturesome Academic",
+    "description": "You're a classically trained Academic, a product of the universities of the Brass City, the Palace of Tigers, or some other less prestigious centre of learning among the spheres.",
+    "possessions": [
+        "Reading Glasses in a sturdy case (you cannot read without them)",
+        "Small Sword",
+        "Bundle of Candles and Matches",
+        "Writing materials",
+        "Journal"
+    ],
+    "advanced_skills": [
+        {
+            "name": "Evaluate",
+            "value": 2
+        },
+        {
+            "name": "Astrology",
+            "value": 2
+        },
+        {
+            "name": "Healing",
+            "value": 1
+        },
+        {
+            "name": "Spell - Random",
+            "value": 1
+        },
+        {
+            "name": "Sword Fighting",
+            "value": 1
+        },
+        {
+            "name": "Sleight of Hand",
+            "value": 1
+        }
+    ],
+    "special_abilities": [
+        "You may Test your Luck to recall facts that you might reasonably be expected to have encountered relating to the natural sciences and humanities.",
+        "Cannot read without Reading Glasses"
+    ],
+    "total_skill_points": 8
+}

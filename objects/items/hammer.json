@@ -1,0 +1,23 @@
+{
+  "name": "Hammer",
+  "type": "weapon",
+  "description": "A heavy blunt weapon designed for crushing blows.",
+  "slots": 2,
+  "value": {
+    "amount": 12,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Hammer",
+  "damageTable": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 6,
+    "5": 8,
+    "6": 10,
+    "7+": 12
+  },
+  "properties": ["Ignores 1 point of Armour"],
+  "tags": ["weapon", "melee", "blunt", "armor-piercing"]
+}

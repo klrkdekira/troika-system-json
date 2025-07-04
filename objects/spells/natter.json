@@ -1,0 +1,24 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "natter",
+    "name": "Natter",
+    "cost": 1,
+    "description": "As everyone knows, wizards are excellent ventriloquists, so good, in fact, that they can throw their voice inside another's mouth. They can target anyone within sight and transmit a short sentence.",
+    "testType": "roll_under",
+    "range": "sight",
+    "duration": "instantaneous",
+    "components": [
+        "verbal"
+    ],
+    "effect": "Throws voice into target's mouth",
+    "tags": [
+        "illusion",
+        "communication"
+    ],
+    "specialMechanics": [
+        "Target appears to speak the words",
+        "Can transmit one short sentence",
+        "Works on anyone within sight"
+    ],
+    "oopsEntry": true
+}

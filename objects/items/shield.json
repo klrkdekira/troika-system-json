@@ -1,0 +1,28 @@
+{
+  "name": "Shield",
+  "type": "armor",
+  "description": "A defensive item that can be used to block attacks and also as a weapon.",
+  "slots": 2,
+  "value": {
+    "amount": 8,
+    "currency": "silver pence"
+  },
+  "armorType": "shield",
+  "armorValue": 0,
+  "weaponType": "melee",
+  "damage": "Shield",
+  "damageTable": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 4,
+    "5": 4,
+    "6": 6,
+    "7+": 8
+  },
+  "properties": [
+    "Reduces Damage Rolls by 1 to a minimum of 1",
+    "Can be used as a weapon"
+  ],
+  "tags": ["armor", "shield", "defensive", "weapon"]
+}

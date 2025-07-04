@@ -1,0 +1,14 @@
+{
+  "name": "Sympathy Serpent",
+  "skill": 5,
+  "stamina": 6,
+  "initiative": 2,
+  "armor": 0,
+  "damage": "Small Beast",
+  "mien": ["Shy", "Friendly", "Sympathetic", "Fearful", "Sad", "Inconsolable"],
+  "description": "Dark, thick as a man's thigh, and as long as three destriers, they crush their prey as you'd expect such a snake to do but their hunting style is idiosyncratic: they do not wrestle with their quarry but offer a gentle embrace, telling them it's okay to let go, they're here now. Together prey and predator mourn the crushing awfulness of reality as one swallows the other whole.",
+  "special": [
+    "Sleeping or unsuspecting targets must Test their Luck (or Skill for Enemies) or be paralysed with misery and allow the serpent to quietly eat them"
+  ],
+  "tags": ["serpent", "emotional", "constrictor", "psychological"]
+}

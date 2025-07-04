@@ -1,0 +1,12 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "brittle-twigs",
+    "name": "Brittle Twigs",
+    "cost": 2,
+    "description": "You snap a twig or other brittle object to cause an injury in another. They must Test their Luck (or Skill for Enemies) or suffer a broken bone.",
+    "casting_instructions": "Snap a twig - target must Test their Luck or suffer a broken bone",
+    "duration": "Permanent injury until healed",
+    "range": "Target within sight",
+    "oops_entry": null,
+    "damage_table": null
+}

@@ -1,0 +1,16 @@
+{
+    "id": "assume-shape",
+    "name": "Assume Shape",
+    "cost": 4,
+    "description": "The wizard undergoes a distressing transformation into an inanimate object no larger than a piano and no smaller than a cup. Lasts until ended.",
+    "school": "transmutation",
+    "range": "self",
+    "duration": "until_ended",
+    "components": [
+        "verbal",
+        "somatic"
+    ],
+    "effect": "Transform into inanimate object",
+    "oopsEntry": null,
+    "damageTable": null
+}

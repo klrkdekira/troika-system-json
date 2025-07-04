@@ -1,0 +1,12 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "drown",
+    "name": "Drown",
+    "cost": 4,
+    "description": "Cause a target's lungs to fill with water. They must Test their Luck (or Skill for Enemies). If they fail they start to Drown (7.9) and are incapacitated as water pours from their mouth. They may Test again once per Turn until they pass, at which point the Spell ends.",
+    "casting_instructions": "Target must Test Luck or start drowning - may Test again each Turn to end",
+    "duration": "Until target passes Luck test",
+    "range": "Target within sight",
+    "oops_entry": null,
+    "damage_table": null
+}

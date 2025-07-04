@@ -1,0 +1,14 @@
+{
+  "name": "Light Armour",
+  "type": "armor",
+  "description": "Basic protective gear such as leather or padded clothing.",
+  "slots": 2,
+  "value": {
+    "amount": 25,
+    "currency": "silver pence"
+  },
+  "armorType": "light",
+  "armorValue": 1,
+  "properties": ["Reduces Damage Rolls by 1 to a minimum of 1"],
+  "tags": ["armor", "light", "leather", "padded"]
+}

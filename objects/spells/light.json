@@ -1,0 +1,25 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "light",
+    "name": "Light",
+    "cost": 1,
+    "description": "Create an ethereal orb of light that glows like a torch. Lasts 6 hours and can be extinguished at will.",
+    "testType": "roll_under",
+    "range": "close",
+    "duration": "6_hours",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Creates glowing orb of light",
+    "tags": [
+        "evocation",
+        "utility"
+    ],
+    "specialMechanics": [
+        "Light equivalent to a torch",
+        "Can be extinguished at will",
+        "Ethereal orb that follows caster"
+    ],
+    "oopsEntry": true
+}

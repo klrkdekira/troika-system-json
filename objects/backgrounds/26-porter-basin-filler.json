@@ -1,0 +1,69 @@
+{
+    "id": "26",
+    "name": "Fellow of the Peerage of Porters & Basin Fillers",
+    "description": "Luggers are a servile group by nature, most often found in the service of others, weighed down by loads that would buckle a donkey. You take pride in this, so much so that the everyday assignments of the guild cannot sate your desire to serve, causing you to venture out in search of a real challenge for such a talented varlet.",
+    "possessions": [
+        {
+            "name": "A Wooden Yoke",
+            "description": "Gives +4 carry capacity while worn but can't use hands",
+            "category": "tool",
+            "properties": [
+                "carrying",
+                "restrictive"
+            ]
+        },
+        {
+            "name": "Brown Overcoat and Soft Doffing Cap of the Guild",
+            "description": "Guild uniform",
+            "category": "clothing",
+            "properties": [
+                "guild",
+                "distinctive"
+            ]
+        },
+        {
+            "name": "A Bale Hook",
+            "description": "Damage as Knife and +1 on rolls to lift heavy objects",
+            "category": "weapon",
+            "properties": [
+                "knife",
+                "lifting"
+            ]
+        },
+        {
+            "name": "Length of Rope",
+            "description": "For lifting and securing loads",
+            "category": "tool",
+            "properties": [
+                "utility"
+            ]
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Strength",
+            "level": 4
+        },
+        {
+            "name": "Fist Fighting",
+            "level": 2
+        },
+        {
+            "name": "Run",
+            "level": 2
+        },
+        {
+            "name": "Hook Fighting",
+            "level": 1
+        },
+        {
+            "name": "Sneak",
+            "level": 1
+        },
+        {
+            "name": "Awareness",
+            "level": 1
+        }
+    ],
+    "special": []
+}

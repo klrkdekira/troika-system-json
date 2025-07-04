@@ -1,0 +1,19 @@
+{
+  "name": "Rope",
+  "type": "tool",
+  "description": "A length of sturdy rope useful for climbing, binding, or pulling.",
+  "slots": 1,
+  "value": {
+    "amount": 3,
+    "currency": "silver pence"
+  },
+  "bonuses": [
+    {
+      "type": "skill",
+      "target": "Climb",
+      "value": 1,
+      "condition": "when used for climbing"
+    }
+  ],
+  "tags": ["tool", "climbing", "binding", "utility"]
+}

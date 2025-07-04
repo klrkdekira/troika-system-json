@@ -1,0 +1,22 @@
+{
+    "$schema": "../../systems/enemy.schema.json",
+    "id": "notule",
+    "name": "Notule",
+    "description": "A star-creature, sometimes caught roosting in the rigging of golden barges, formless, freezing to the touch, and valued for its utility as a tool of murder. By utilizing only the smallest bit of physical remains a knowledgeable sorcerer may set the creature hunting. It will fly by night until it reaches the intended victim, whereupon it will envelop them, suffocating and freezing their target all at once and leaving a relatively unmarked corpse before sluggishly returning home to enjoy its newfound warmth.",
+    "skill": 6,
+    "stamina": 8,
+    "initiative": 3,
+    "armour": 0,
+    "damage": "Small Beast",
+    "mien": [
+        "Hungry",
+        "Hunting",
+        "Cold",
+        "Formless",
+        "Pursuing",
+        "Enveloping"
+    ],
+    "special_abilities": [
+        "Anyone successfully hit by a notule must Test their Luck (or Skill for Enemies) or start to Drown. The notule wraps itself around their face and begins to suffocate them."
+    ]
+}

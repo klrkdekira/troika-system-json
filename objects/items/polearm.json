@@ -1,0 +1,23 @@
+{
+  "name": "Polearm",
+  "type": "weapon",
+  "description": "A long-hafted weapon with various blade configurations, devastating in skilled hands.",
+  "slots": 2,
+  "value": {
+    "amount": 20,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Polearm",
+  "damageTable": {
+    "1": 2,
+    "2": 4,
+    "3": 4,
+    "4": 8,
+    "5": 12,
+    "6": 14,
+    "7+": 18
+  },
+  "properties": ["Two-handed", "Reach", "Ignores 1 point of Armour"],
+  "tags": ["weapon", "melee", "polearm", "reach", "armor-piercing"]
+}

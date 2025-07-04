@@ -1,0 +1,27 @@
+{
+    "id": "astrological-equipment",
+    "name": "Astrological Equipment",
+    "description": "Requires twenty minutes to set up and use but doesn't need to be outside. Consists of a ruby specular, charms against reciprocal observation, and complicated charts of the spheres. Grants +1 to Astrology.",
+    "category": "tool",
+    "encumbrance": 2,
+    "properties": [
+        "astrology",
+        "bonus",
+        "setup_time"
+    ],
+    "effects": [
+        {
+            "type": "skill_bonus",
+            "skill": "Astrology",
+            "bonus": 1,
+            "condition": "when_set_up"
+        }
+    ],
+    "setupTime": "20_minutes",
+    "components": [
+        "ruby_specular",
+        "protective_charms",
+        "star_charts"
+    ],
+    "value": "50_silver"
+}

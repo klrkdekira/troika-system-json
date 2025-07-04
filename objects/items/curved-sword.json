@@ -1,0 +1,23 @@
+{
+  "name": "Curved Sword",
+  "type": "weapon",
+  "description": "An exotic blade with a distinctive curve, favored by assassins and duelists.",
+  "slots": 2,
+  "value": {
+    "amount": 20,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Sword",
+  "damageTable": {
+    "1": 4,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 6,
+    "6": 8,
+    "7+": 10
+  },
+  "properties": ["Curved blade design"],
+  "tags": ["weapon", "melee", "sword", "exotic"]
+}

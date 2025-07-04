@@ -1,0 +1,12 @@
+{
+  "$schema": "../../systems/spell.schema.json",
+  "id": "darkness",
+  "name": "Darkness",
+  "cost": 3,
+  "description": "Summon a stationary, perfect sphere of darkness up to five metres from the wizard for up to 3 minutes.",
+  "casting_instructions": "Summon sphere of perfect darkness within 5 metres",
+  "duration": "3 minutes",
+  "range": "Up to 5 metres",
+  "oops_entry": null,
+  "damage_table": null
+}

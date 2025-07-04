@@ -1,0 +1,25 @@
+{
+    "name": "Heavy Armour",
+    "description": "The heaviest protection available, offering substantial damage reduction but taking up significant inventory space.",
+    "slots": 6,
+    "type": "armor",
+    "armor": {
+        "protection": 3,
+        "type": "heavy"
+    },
+    "skillBonus": [],
+    "properties": [
+        "Reduces damage by 3 points",
+        "Very heavy and cumbersome"
+    ],
+    "value": {
+        "amount": 100,
+        "currency": "silver"
+    },
+    "requirements": [],
+    "tags": [
+        "armor",
+        "heavy",
+        "protection"
+    ]
+}

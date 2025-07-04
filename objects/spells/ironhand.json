@@ -1,0 +1,31 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "ironhand",
+    "name": "Ironhand",
+    "cost": 3,
+    "description": "The common man does not appreciate exactly how close flesh and iron are when considered relative to, say, flesh and the smell of hot tea. With some slight convincing the wizard may cause a target's flesh to behave as though it had the desirable properties of metal. They get +1 Skill and immunity to modestly proportioned fires for 3 minutes.",
+    "testType": "roll_under",
+    "range": "touch",
+    "duration": "3_minutes",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Target's flesh gains metallic properties",
+    "tags": [
+        "transmutation",
+        "enhancement"
+    ],
+    "modifiers": [
+        {
+            "type": "skill_bonus",
+            "value": "+1",
+            "description": "+1 to Skill"
+        }
+    ],
+    "specialMechanics": [
+        "Immunity to modestly proportioned fires",
+        "Flesh behaves like metal"
+    ],
+    "oopsEntry": true
+}

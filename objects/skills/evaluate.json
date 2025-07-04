@@ -1,0 +1,15 @@
+{
+  "name": "Evaluate",
+  "type": "advanced",
+  "description": "Test this to get an idea of how much something is worth.",
+  "category": "knowledge",
+  "mechanics": {
+    "testType": "rollUnder"
+  },
+  "applications": [
+    "Determine item value",
+    "Assess treasure worth",
+    "Identify valuable components"
+  ],
+  "tags": ["knowledge", "commerce", "appraisal"]
+}

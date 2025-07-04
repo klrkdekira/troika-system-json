@@ -1,0 +1,23 @@
+{
+  "name": "Garrotte",
+  "type": "weapon",
+  "description": "A silent strangling weapon used by assassins, consisting of a cord or wire with handles.",
+  "slots": 1,
+  "value": {
+    "amount": 5,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Knife",
+  "damageTable": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 4,
+    "6": 8,
+    "7+": 10
+  },
+  "properties": ["Silent", "Concealable", "Requires surprise or grapple"],
+  "tags": ["weapon", "assassination", "silent", "concealable"]
+}

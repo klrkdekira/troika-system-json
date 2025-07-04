@@ -1,0 +1,27 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "poison",
+    "name": "Poison",
+    "cost": 1,
+    "description": "When cast upon a liquid this Spell causes it to become deadly poison. The liquid deals 4 Damage if drunk and 1 Damage per Turn until the target successfully Tests their Luck (or Skill for Enemies). The liquid loses its potency after an hour.",
+    "testType": "roll_under",
+    "range": "touch",
+    "duration": "1_hour",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Turns liquid into deadly poison",
+    "tags": [
+        "transmutation",
+        "poison"
+    ],
+    "damageRoll": "4",
+    "specialMechanics": [
+        "Initial damage: 4",
+        "Ongoing damage: 1 per Turn",
+        "Victim may Test Luck to end ongoing damage",
+        "Potency expires after 1 hour"
+    ],
+    "oopsEntry": true
+}

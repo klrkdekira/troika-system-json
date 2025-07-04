@@ -1,0 +1,19 @@
+{
+    "$schema": "../../systems/item.schema.json",
+    "id": "flask-of-oil",
+    "name": "Flask of Oil",
+    "description": "Fuel for lanterns and other purposes. Starting equipment for all characters.",
+    "category": "equipment",
+    "weight": "normal",
+    "slots": 1,
+    "properties": [
+        "fuel",
+        "flammable"
+    ],
+    "tags": [
+        "equipment",
+        "fuel",
+        "starting_equipment"
+    ],
+    "rarity": "common"
+}

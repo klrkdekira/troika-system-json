@@ -1,0 +1,50 @@
+{
+  "id": 16,
+  "name": "Claviger",
+  "description": "Keepers of the lock, guardians of the key, men and women of varied skills but singular purpose; to prevent the wrong people from opening doors. Most such doors don't open onto places the common man would want to go anyway but it is still good to be careful.",
+  "possessions": [
+    {
+      "name": "2d6 Keys",
+      "description": "Assorted keys to unknown locks",
+      "diceExpression": "2d6"
+    },
+    {
+      "name": "Small but Vicious Dog",
+      "description": "Trained guard animal"
+    },
+    {
+      "name": "Lantern",
+      "description": "For checking dark spaces"
+    },
+    {
+      "name": "Crowbar",
+      "description": "For when keys don't work"
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Locks",
+      "rank": 4,
+      "category": "technical"
+    },
+    {
+      "name": "Awareness",
+      "rank": 3,
+      "category": "mental"
+    },
+    {
+      "name": "Club Fighting",
+      "rank": 2,
+      "category": "combat"
+    },
+    {
+      "name": "Tracking",
+      "rank": 1,
+      "category": "survival"
+    }
+  ],
+  "spells": [],
+  "special": [
+    "You know the function and likely contents of any door you examine"
+  ]
+}

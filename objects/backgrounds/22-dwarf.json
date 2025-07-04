@@ -1,0 +1,66 @@
+{
+    "id": "22",
+    "name": "Dwarf",
+    "description": "You are a short, hairy, belligerent, alcohol dependent creature. Dwarfs are a sculpted people, ungendered, and thus there are no Dwarf children or Dwarf families to prevent you from fully committing to the important Dwarfy endeavours of creating fine art in unusual places. You intend to find the most unusual places in all the million spheres.",
+    "possessions": [
+        {
+            "name": "Masonry Hammer",
+            "description": "A heavy hammer used for stone work",
+            "category": "tool",
+            "properties": [
+                "crafting",
+                "weapon"
+            ]
+        },
+        {
+            "name": "Roll of Artist's Supplies",
+            "description": "Materials for creating art and sculptures",
+            "category": "tool",
+            "properties": [
+                "crafting"
+            ]
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Awareness",
+            "level": 3
+        },
+        {
+            "name": "Sculpting",
+            "level": 2
+        },
+        {
+            "name": "Painting",
+            "level": 2
+        },
+        {
+            "name": "Metalworking",
+            "level": 2
+        },
+        {
+            "name": "Construction",
+            "level": 2
+        },
+        {
+            "name": "Strength",
+            "level": 2
+        },
+        {
+            "name": "Fist Fighting",
+            "level": 2
+        },
+        {
+            "name": "Wrestling",
+            "level": 2
+        },
+        {
+            "name": "Hammer Fighting",
+            "level": 1
+        }
+    ],
+    "spells": [],
+    "special": [
+        "Dwarfs may eat gems and rare metals as food replacements. You, in fact, vastly prefer the taste of rare minerals to mundane food."
+    ]
+}

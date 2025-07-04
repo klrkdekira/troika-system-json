@@ -1,0 +1,22 @@
+{
+  "name": "Thought Vapour",
+  "cost": 1,
+  "description": "The wizard can cause their nose to exist in multiple alternative realities, travel through various spheres, and enable the olfactory sensation of thought. Emotions, attitudes, and underlying feelings can be smelled. No words or images are formed, just impressions. Any strong odour will cause this Spell to fail.",
+  "duration": "Concentration",
+  "range": "Self",
+  "testType": "rollUnder",
+  "target": "Self",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "divination",
+      "description": "Smell emotions, attitudes, and underlying feelings as impressions"
+    }
+  ],
+  "restrictions": ["Any strong odour will cause this Spell to fail"],
+  "tags": ["divination", "psychic", "sensory"]
+}

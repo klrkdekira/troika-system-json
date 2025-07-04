@@ -1,0 +1,15 @@
+{
+    "id": "banish-spirit",
+    "name": "Banish Spirit",
+    "cost": 6,
+    "description": "The wizard explains, clearly, sternly, why it is impossible that the spirit could be here at this time. The spirit must Test its Luck (or Skill for Enemies) or be sent to somewhere less improbable.",
+    "school": "abjuration",
+    "range": "speaking",
+    "duration": "permanent",
+    "components": [
+        "verbal"
+    ],
+    "effect": "Banishes spirit to improbable location",
+    "oopsEntry": null,
+    "damageTable": null
+}

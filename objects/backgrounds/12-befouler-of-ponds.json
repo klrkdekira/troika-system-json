@@ -1,0 +1,53 @@
+{
+    "id": 12,
+    "name": "Befouler of Ponds",
+    "description": "You're a wise man, a high priest, a pond-pisser, a typical but committed adherent of P!P!Ssshrp. The bloated Toad God has no church other than the periphery of ponds where the foulness catches in the reeds and no congregation other than the gnats and dragonflies. You minister to them all the same.",
+    "possessions": [
+        {
+            "name": "Sackcloth Robes",
+            "description": "Caked in stinking mud and undergrowth. +1 to Sneak rolls in marshy terrain while wearing them, -1 everywhere else 'cos it stinks!"
+        },
+        {
+            "name": "Large, Worn Wooden Ladle",
+            "description": "Damage as Mace"
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Swim",
+            "rank": 3,
+            "category": "physical"
+        },
+        {
+            "name": "Sneak",
+            "rank": 1,
+            "category": "physical"
+        },
+        {
+            "name": "Second Sight",
+            "rank": 1,
+            "category": "mental"
+        }
+    ],
+    "spells": [
+        {
+            "name": "Drown",
+            "rank": 3
+        },
+        {
+            "name": "Tongue Twister",
+            "rank": 2
+        },
+        {
+            "name": "Undo",
+            "rank": 2
+        },
+        {
+            "name": "Web",
+            "rank": 1
+        }
+    ],
+    "special": [
+        "You never contract disease as a result of drinking stagnant liquids."
+    ]
+}

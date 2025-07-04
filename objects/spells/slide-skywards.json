@@ -1,0 +1,28 @@
+{
+  "name": "Slide Skywards",
+  "cost": 6,
+  "description": "Requires mirrors or other highly reflective surfaces. The wizard stands between two reflective surfaces so that they are infinitely repeated. They then step out from between them but as a different incidence of themselves. To those watching the wizard moves in the direction not seen and reappears between two mirrors elsewhere. If the location has been compromised the wizard arrives in a random mirrored location somewhere across the million crystal spheres.",
+  "duration": "Instantaneous",
+  "range": "Between mirrors",
+  "testType": "rollUnder",
+  "target": "Self",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": "Two mirrors or highly reflective surfaces"
+  },
+  "effects": [
+    {
+      "type": "conjuration",
+      "description": "Teleport between mirrored locations"
+    }
+  ],
+  "requirements": [
+    "Requires mirrors or other highly reflective surfaces",
+    "Must stand between two reflective surfaces"
+  ],
+  "risks": [
+    "If location compromised, arrive at random mirrored location across the million crystal spheres"
+  ],
+  "tags": ["conjuration", "teleportation", "mirrors"]
+}

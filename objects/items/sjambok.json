@@ -1,0 +1,23 @@
+{
+  "name": "Sjambok",
+  "type": "weapon",
+  "description": "A heavy leather whip traditionally used as both tool and weapon.",
+  "slots": 1,
+  "value": {
+    "amount": 8,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Club",
+  "damageTable": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 6,
+    "6": 8,
+    "7+": 10
+  },
+  "properties": ["Flexible weapon", "Can strike at reach"],
+  "tags": ["weapon", "melee", "whip", "flexible"]
+}

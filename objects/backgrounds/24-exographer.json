@@ -1,0 +1,70 @@
+{
+    "id": "24",
+    "name": "Exographer",
+    "description": "Where you come from it's become quite normal to traverse the Spheres. Idle academics like yourself have even begun to study these more remote reaches of the divine effluvia. Though these rural indwellers may never appreciate your important work, you continually, thanklessly measure their latent phlogiston. For posterity.",
+    "possessions": [
+        {
+            "name": "Hermetically Sealed Rubber Suit",
+            "description": "Counts as Heavy Armour",
+            "category": "armor",
+            "properties": [
+                "heavy_armor",
+                "sealed"
+            ]
+        },
+        {
+            "name": "Exographical Surveyors Box",
+            "description": "Tools for measuring dimensional phenomena",
+            "category": "tool",
+            "properties": [
+                "scientific",
+                "dimensional"
+            ]
+        },
+        {
+            "name": "Spring-Loaded Measuring Tape",
+            "description": "For precise measurements",
+            "category": "tool",
+            "properties": [
+                "precision"
+            ]
+        },
+        {
+            "name": "Pistolet",
+            "description": "Hand-held energy weapon, holds 8 shots",
+            "category": "weapon",
+            "properties": [
+                "energy",
+                "ranged"
+            ]
+        },
+        {
+            "name": "1d6 Plasmic Cores",
+            "description": "Crystallised starlight used as fuel",
+            "category": "component",
+            "properties": [
+                "energy",
+                "fuel"
+            ]
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Exography",
+            "level": 4
+        },
+        {
+            "name": "Golden Barge Pilot",
+            "level": 3
+        },
+        {
+            "name": "Astrology",
+            "level": 2
+        },
+        {
+            "name": "Pistolet Fighting",
+            "level": 2
+        }
+    ],
+    "special": []
+}

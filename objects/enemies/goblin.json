@@ -1,0 +1,29 @@
+{
+    "name": "Goblin",
+    "skill": 5,
+    "stamina": 6,
+    "initiative": 1,
+    "armour": 1,
+    "damage": "Weapon",
+    "description": "Goblins are the vanguard of civilisation. The moment a sphere bobs to the surface the goblins will creep out of the nooks and crannies to start expanding their labyrinth. Left to their own devices they will eventually tame and cover every surface in walls and hedges and tunnels and steel and whatever else is in goblin-vogue, though more usually they are distracted with an accidentally awakened evil, or recalled by the Goblin King, or cut off from the centre of the labyrinth and turned feral to live in the man-cities. A most terrible fate. Better to bury their labyrinths and leave.",
+    "mien": [
+        "Curious",
+        "Dismissive",
+        "Preoccupied",
+        "Gossipy",
+        "Overly Friendly",
+        "Paranoid"
+    ],
+    "special": [],
+    "spells": [],
+    "tags": [
+        "humanoid",
+        "intelligent",
+        "natural"
+    ],
+    "environment": [
+        "underground",
+        "labyrinths",
+        "cities"
+    ]
+}

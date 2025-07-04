@@ -1,0 +1,23 @@
+{
+  "name": "Mace",
+  "type": "weapon",
+  "description": "A heavy clubbing weapon with a weighted head, designed to crush armor.",
+  "slots": 2,
+  "value": {
+    "amount": 10,
+    "currency": "silver pence"
+  },
+  "weaponType": "melee",
+  "damage": "Mace",
+  "damageTable": {
+    "1": 2,
+    "2": 4,
+    "3": 4,
+    "4": 6,
+    "5": 6,
+    "6": 8,
+    "7+": 10
+  },
+  "properties": ["Ignores 1 point of Armour"],
+  "tags": ["weapon", "melee", "blunt", "armor-piercing"]
+}

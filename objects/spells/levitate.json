@@ -1,0 +1,25 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "levitate",
+    "name": "Levitate",
+    "cost": 2,
+    "description": "Elevates the wizard or another on the backs of tiny invisible sprites who answer only to their summoner. May float about for 3 minutes.",
+    "testType": "roll_under",
+    "range": "touch",
+    "duration": "3_minutes",
+    "components": [
+        "somatic",
+        "verbal"
+    ],
+    "effect": "Target floats in the air",
+    "tags": [
+        "transmutation",
+        "movement"
+    ],
+    "specialMechanics": [
+        "Carried by tiny invisible sprites",
+        "Can float and move freely in air",
+        "Works on wizard or other target"
+    ],
+    "oopsEntry": true
+}

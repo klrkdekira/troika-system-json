@@ -1,0 +1,89 @@
+{
+    "id": "31",
+    "name": "Gremlin Catcher",
+    "description": "No matter what country, sphere, or abstract dimension you may find yourself in, be assured that gremlins will be there digging their warrens and bothering nice people willing to pay you a shiny penny to bash their little heads in.",
+    "possessions": [
+        {
+            "name": "Small but Vicious Dog",
+            "description": "A loyal companion for hunting gremlins",
+            "category": "companion",
+            "properties": [
+                "animal",
+                "vicious"
+            ]
+        },
+        {
+            "name": "Flat Cap",
+            "description": "Traditional gremlin catcher headwear",
+            "category": "clothing",
+            "properties": [
+                "distinctive"
+            ]
+        },
+        {
+            "name": "A Club",
+            "description": "For bashing gremlin heads",
+            "category": "weapon",
+            "properties": [
+                "club"
+            ]
+        },
+        {
+            "name": "A Sack",
+            "description": "For collecting gremlins",
+            "category": "tool",
+            "properties": [
+                "storage"
+            ]
+        },
+        {
+            "name": "1d6 Empty Gremlin Jars",
+            "description": "For storing captured gremlins",
+            "category": "tool",
+            "properties": [
+                "storage",
+                "trapping"
+            ]
+        },
+        {
+            "name": "A Jar with a Pissed-off Gremlin Inside",
+            "description": "Evidence of your profession",
+            "category": "specimen",
+            "properties": [
+                "dangerous",
+                "proof"
+            ]
+        }
+    ],
+    "advancedSkills": [
+        {
+            "name": "Tunnel Fighting",
+            "level": 4
+        },
+        {
+            "name": "Trapping",
+            "level": 4
+        },
+        {
+            "name": "Sneak",
+            "level": 2
+        },
+        {
+            "name": "Awareness",
+            "level": 2
+        },
+        {
+            "name": "Club Fighting",
+            "level": 2
+        },
+        {
+            "name": "Tracking",
+            "level": 2
+        },
+        {
+            "name": "Swim",
+            "level": 1
+        }
+    ],
+    "special": []
+}

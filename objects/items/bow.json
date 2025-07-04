@@ -1,0 +1,17 @@
+{
+  "$schema": "../../systems/item.schema.json",
+  "id": "bow",
+  "name": "Bow",
+  "description": "A traditional ranged weapon that fires arrows.",
+  "category": "weapon",
+  "weaponType": "ranged",
+  "damageType": "bow",
+  "weight": "large",
+  "slots": 2,
+  "properties": [
+    "two_handed",
+    "ranged"
+  ],
+  "tags": ["weapon", "ranged", "traditional"],
+  "rarity": "common"
+} 

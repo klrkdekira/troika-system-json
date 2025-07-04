@@ -1,0 +1,46 @@
+{
+    "$schema": "../../systems/background.schema.json",
+    "id": "61",
+    "name": "Thinking Engine",
+    "description": "Your eyes are dull ruby spheres, your skin is hard and smooth like ivory but brown and whorled like wood. You are clearly broken, you have no memory of your creation or purpose, and some days your white internal juices ooze thickly from cracks in your skin.",
+    "possessions": [
+        "Soldering iron",
+        "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3"
+    ],
+    "advanced_skills": [
+        {
+            "name": "Golden Barge Pilot",
+            "value": 3
+        },
+        {
+            "name": "Astrology",
+            "value": 2
+        },
+        {
+            "name": "Pistolet Fighting",
+            "value": 2
+        },
+        {
+            "name": "Healing",
+            "value": 2
+        },
+        {
+            "name": "Run",
+            "value": 1
+        },
+        {
+            "name": "Strength",
+            "value": 1
+        },
+        {
+            "name": "Cooking",
+            "value": 1
+        }
+    ],
+    "special_abilities": [
+        "You don't recover Stamina by resting in the usual manner — instead you must spend a full rest period with a hot iron welding your skin back together like putty. For each hour of rest with access to the right tools you regain 3 Stamina.",
+        "You may recharge plasmic machines by hooking your fluids to them and spending Stamina at a rate of 1 Stamina and 6 minutes per charge.",
+        "You always count as being at least Lightly Armoured."
+    ],
+    "total_skill_points": 12
+}

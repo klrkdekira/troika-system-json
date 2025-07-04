@@ -1,0 +1,15 @@
+{
+  "name": "Trapping",
+  "type": "advanced",
+  "description": "Use this to set and disarm traps. When setting traps Roll Under your Trapping Skill and describe how the trap is made with the materials at hand. When someone wishes to disarm a trap they must Roll Versus the original trap-setter's Trapping Skill.",
+  "category": "technical",
+  "mechanics": {
+    "setting": "rollUnder",
+    "disarming": "rollVersus"
+  },
+  "notes": [
+    "Requires appropriate materials",
+    "GM should scale difficulty from 6 (simple) to 12 (incredibly hard)"
+  ],
+  "tags": ["technical", "tactical", "dangerous"]
+}

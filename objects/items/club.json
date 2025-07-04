@@ -1,0 +1,21 @@
+{
+    "$schema": "../../systems/item.schema.json",
+    "id": "club",
+    "name": "Club",
+    "description": "A simple wooden weapon, crude but effective.",
+    "category": "weapon",
+    "weaponType": "melee",
+    "damageType": "club",
+    "weight": "normal",
+    "slots": 1,
+    "properties": [
+        "one_handed",
+        "melee"
+    ],
+    "tags": [
+        "weapon",
+        "melee",
+        "simple"
+    ],
+    "rarity": "common"
+}

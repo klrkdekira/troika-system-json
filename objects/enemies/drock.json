@@ -1,0 +1,46 @@
+{
+    "id": "drock",
+    "name": "Drock",
+    "skill": 6,
+    "stamina": 13,
+    "initiative": 2,
+    "armor": 0,
+    "damage": "small_beast",
+    "description": "Dwarfs are creatures of purpose; they set their minds on a course and follow it until they finish or run aground. Occasionally a Dwarf is forcibly prevented from finishing a project, possibly by dropping dead at an inopportune moment; it happens. Usually this is a sad but inconsequential occasion, but sometimes it happens while they pursue the highest art a Dwarf can engage in: creation of a new Dwarf. These creatures of raw surfaces, untreated stucco, brass armature, and soggy wet clay seek meaning, Dwarfiness, and to be finished by a sure and careful hand.",
+    "mien": [
+        {
+            "roll": 1,
+            "behavior": "Happy"
+        },
+        {
+            "roll": 2,
+            "behavior": "Contemplative"
+        },
+        {
+            "roll": 3,
+            "behavior": "Hungry"
+        },
+        {
+            "roll": 4,
+            "behavior": "Tired"
+        },
+        {
+            "roll": 5,
+            "behavior": "Unhappy"
+        },
+        {
+            "roll": 6,
+            "behavior": "Confused"
+        }
+    ],
+    "special": [
+        "Unfinished Dwarf creation",
+        "Seeks completion and Dwarfiness",
+        "Made of stucco, brass, and clay"
+    ],
+    "habitat": [
+        "dwarf_workshops",
+        "abandoned_places"
+    ],
+    "frequency": "uncommon"
+}

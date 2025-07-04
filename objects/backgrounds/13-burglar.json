@@ -1,0 +1,62 @@
+{
+  "id": 13,
+  "name": "Burglar",
+  "description": "As a second-story man you often have cause to wander. Enemies come naturally from both sides of the law and it pays to keep ahead of trouble.",
+  "possessions": [
+    {
+      "name": "Crossbow",
+      "quantity": 1
+    },
+    {
+      "name": "Bolts",
+      "quantity": 18
+    },
+    {
+      "name": "Roll of Lock Picks"
+    },
+    {
+      "name": "Grappling Hook"
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Sneak",
+      "rank": 2,
+      "category": "physical"
+    },
+    {
+      "name": "Locks",
+      "rank": 2,
+      "category": "technical"
+    },
+    {
+      "name": "Awareness",
+      "rank": 1,
+      "category": "mental"
+    },
+    {
+      "name": "Climb",
+      "rank": 1,
+      "category": "physical"
+    },
+    {
+      "name": "Trapping",
+      "rank": 1,
+      "category": "technical"
+    },
+    {
+      "name": "Knife Fighting",
+      "rank": 1,
+      "category": "combat"
+    },
+    {
+      "name": "Crossbow Fighting",
+      "rank": 1,
+      "category": "combat"
+    }
+  ],
+  "spells": [],
+  "special": [
+    "You may Test your Luck to find and get in with the local criminal underbelly if one exists."
+  ]
+} 

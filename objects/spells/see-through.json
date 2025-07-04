@@ -1,0 +1,22 @@
+{
+  "name": "See Through",
+  "cost": 1,
+  "description": "The wizard rubs a surface vigorously, making it translucent. Can penetrate up to 12 inches of material. Lead and Silver are immune.",
+  "duration": "Permanent until dispelled",
+  "range": "Touch",
+  "testType": "rollUnder",
+  "target": "Surface",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "effects": [
+    {
+      "type": "transmutation",
+      "description": "Make surface translucent, penetrating up to 12 inches of material"
+    }
+  ],
+  "restrictions": ["Lead and Silver are immune"],
+  "tags": ["transmutation", "vision"]
+}

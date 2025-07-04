@@ -1,0 +1,12 @@
+{
+    "$schema": "../../systems/spell.schema.json",
+    "id": "astral-reach",
+    "name": "Astral Reach",
+    "cost": 1,
+    "description": "The Sorcerers of the Academy of Doors are most famous for this one Spell. With it they may reach through any portal and into another known receptacle. For example they might use it to reach through to a safe in their manse via their purse. This Spell only allows partial translocation— the wizard cannot fully or permanently enter.",
+    "casting_instructions": "Reach through any portal into another known receptacle",
+    "duration": "Instantaneous action",
+    "range": "Through known portals to known locations",
+    "oops_entry": null,
+    "damage_table": null
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../systems/item.schema.json",
+  "id": "provisions",
+  "name": "Provisions",
+  "description": "Food and drink for sustenance. Can be consumed to regain 1d6 Stamina (max 3 per day). Starting equipment includes 6 provisions.",
+  "category": "consumable",
+  "weight": "normal",
+  "slots": 1,
+  "properties": [
+    "consumable",
+    "healing"
+  ],
+  "effect": "Restore 1d6 Stamina when consumed",
+  "limitations": "Maximum 3 healing provisions per day",
+  "tags": ["consumable", "food", "healing", "starting_equipment"],
+  "rarity": "common"
+} 
