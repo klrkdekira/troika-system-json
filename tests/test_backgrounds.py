@@ -229,10 +229,10 @@ class TestBackgroundData(unittest.TestCase):
                 "possessions": [
                     "Small but Vicious Dog",
                     "Flat Cap",
-                    "Club",
-                    "Sack",
+                    "A Club",
+                    "A Sack",
                     "1d6 Empty Gremlin Jars",
-                    "Jar with Pissed-off Gremlin",
+                    "A Jar with a Pissed-off Gremlin Inside",
                 ],
                 "special": [],
             },
@@ -312,9 +312,11 @@ class TestBackgroundData(unittest.TestCase):
                     "Monkey Club",
                     "Butcher's Knife",
                     "1d6 Small Monkeys",
-                    "Pocket Full of Monkey Treats",
+                    "A Pocket Full of Monkey Treats",
                 ],
-                "special": [],
+                "special": [
+                    "The GM may choose to roll on this table anytime the Mien of monkeys must be determined: 1 Playful, 2 Stalking, 3 Hungry, 4 Tired, 5 Austere, 6 Aggressive"
+                ],
             },
             41: {
                 "name": "Necromancer",
@@ -403,8 +405,8 @@ class TestBackgroundData(unittest.TestCase):
                 ],
                 "possessions": [
                     "Red Robes",
-                    "Traditional Faceless Metal Helmet",
-                    "Symbolic Single Headed Greataxe",
+                    "Traditional Faceless Metal Helmet of your order",
+                    "Symbolic (but fully sized and fully functional) Single Headed Greataxe, to help batter down the door to sin",
                 ],
                 "special": [],
             },
@@ -550,7 +552,7 @@ class TestBackgroundData(unittest.TestCase):
                 "spells": [],
                 "possessions": [
                     "Soldering iron",
-                    "Detachable autonomous hands or centaur body or inbuilt particle detector or one random Spell at rank 3",
+                    "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3",
                 ],
                 "special": [
                     "You don't recover Stamina by resting in the usual manner — instead you must spend a full rest period with a hot iron welding your skin back together like putty. For each hour of rest with access to the right tools you regain 3 Stamina.",
@@ -621,11 +623,13 @@ class TestBackgroundData(unittest.TestCase):
                 "skills": [("Etiquette", 2), ("Healing", 1)],
                 "spells": [],
                 "possessions": [
-                    "Rapier and Puffy Shirt or Sjambok and Lots of Scars or Longsword and Heavy Armour or Hammer and Gargantuan Shield",
+                    "Rapier (Damage as Sword) and Puffy Shirt or Sjambok (Damage as Club) and Lots of Scars or Longsword and Heavy Armour or Hammer and Gargantuan Shield",
                     "Manual on Yongardy Law",
                     "Barrister's Wig",
                 ],
-                "special": [],
+                "special": [
+                    "Choose weapon combination when creating character - gain 4 points in that Fighting skill"
+                ],
             },
             66: {
                 "name": "Zoanthrop",

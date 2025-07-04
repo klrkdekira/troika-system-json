@@ -1,7 +1,7 @@
 {
   "name": "Poison",
   "description": "You may Test this Skill during down time to create a single dose of poison. Pick which kind it is when you make it. This list is not exhaustive — more exotic ones may be available if you possess the knowledge and ingredients. 1d3 Common Poisons of Troika: 1 Causes anyone ingesting it to Test their Luck (or Skill for Enemies) or lose 4d6 Stamina. 2 Add 1 to all Damage Rolls while this is applied to piercing or edged Weapons. If you Roll a 1 for Damage the poison has worn off. 3 Causes anyone ingesting it to fall unconscious for 1d6 hours.",
-  "type": "craft",
+  "type": "general",
   "related_attribute": "intelligence",
   "difficulty_notes": "Crafting and applying various poisons during downtime",
   "common_poisons": [
