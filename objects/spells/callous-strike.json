@@ -1,12 +1,8 @@
 {
-  "$schema": "../../systems/spell.schema.json",
-  "id": "callous-strike",
   "name": "Callous Strike",
   "cost": 1,
   "description": "The Wizard-Knights are most famous for their remote combat whereby they swing their Silver Swords seemingly at nothing only for their opponents, many metres away, to be torn to tatters. This Spell can be used in place of a melee attack by Rolling Versus as normal and inflicting Damage according to the Weapon used. May only be used against targets within clear sight.",
-  "casting_instructions": "Use in place of melee attack - Roll Versus and inflict Weapon damage at range",
   "duration": "Instantaneous",
   "range": "Clear sight",
-  "oops_entry": null,
-  "damage_table": null
-} 
+  "testType": "rollUnder"
+}

@@ -5,18 +5,9 @@
   "duration": "Instantaneous",
   "range": "Self",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": false,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "abjuration",
-      "description": "Deflect incoming missile attacks"
-    }
+  "components": [
+    "somatic"
   ],
   "timing": "Reaction to being fired upon",
-  "tags": ["abjuration", "defense", "reaction"]
+  "tags": []
 }

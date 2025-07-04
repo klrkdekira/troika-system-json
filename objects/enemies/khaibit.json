@@ -1,25 +1,58 @@
 {
-    "$schema": "../../systems/enemy.schema.json",
-    "id": "khaibit",
-    "name": "Khaibit",
+  "id": "khaibit",
+  "name": "Khaibit",
+  "damageType": "weapon",
+  "description": "The Shadow Exultants make up the bulk of the Autarch's lower nobility, being the handmaids and officers filling out attendance at highborn social events. Each one possesses an uncanny resemblance to one Exultant or other, blood of their very blood as they are. They live in hope that their clone-parent dies and passes their Exultancy on to them but it is far more likely that they are at some point harvested for their life-extending component parts. Such is the noblesse oblige.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Austere",
+        "behavior": "Austere"
+      },
+      {
+        "roll": 2,
+        "mood": "Bemused",
+        "behavior": "Bemused"
+      },
+      {
+        "roll": 3,
+        "mood": "Ecstatic",
+        "behavior": "Ecstatic"
+      },
+      {
+        "roll": 4,
+        "mood": "Bored",
+        "behavior": "Bored"
+      },
+      {
+        "roll": 5,
+        "mood": "Impassive",
+        "behavior": "Impassive"
+      },
+      {
+        "roll": 6,
+        "mood": "Arresting",
+        "behavior": "Arresting"
+      }
+    ]
+  },
+  "tags": [
+    "humanoid",
+    "nobility",
+    "clone"
+  ],
+  "size": "medium",
+  "stats": {
     "skill": 9,
     "stamina": 10,
     "initiative": 3,
-    "armour": 1,
-    "damageType": "weapon",
-    "description": "The Shadow Exultants make up the bulk of the Autarch's lower nobility, being the handmaids and officers filling out attendance at highborn social events. Each one possesses an uncanny resemblance to one Exultant or other, blood of their very blood as they are. They live in hope that their clone-parent dies and passes their Exultancy on to them but it is far more likely that they are at some point harvested for their life-extending component parts. Such is the noblesse oblige.",
-    "mien": [
-        "Austere",
-        "Bemused",
-        "Ecstatic",
-        "Bored",
-        "Impassive",
-        "Arresting"
-    ],
-    "tags": [
-        "humanoid",
-        "nobility",
-        "clone"
-    ],
-    "size": "medium"
+    "armor": 1,
+    "damage": "Unarmed"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

@@ -1,158 +1,162 @@
 {
-    "name": "Random Spell Table",
-    "description": "Table for generating random spells using d66",
-    "diceType": "d66",
-    "type": "random",
-    "entries": [
-        {
-            "roll": 11,
-            "result": "Assassin's Dagger"
-        },
-        {
-            "roll": 12,
-            "result": "Animate"
-        },
-        {
-            "roll": 13,
-            "result": "Affix"
-        },
-        {
-            "roll": 14,
-            "result": "Assume Shape"
-        },
-        {
-            "roll": 15,
-            "result": "Befuddle"
-        },
-        {
-            "roll": 16,
-            "result": "Breach"
-        },
-        {
-            "roll": 21,
-            "result": "Cone of Air"
-        },
-        {
-            "roll": 22,
-            "result": "Banish Spirit"
-        },
-        {
-            "roll": 23,
-            "result": "Ember"
-        },
-        {
-            "roll": 24,
-            "result": "Cockroach"
-        },
-        {
-            "roll": 25,
-            "result": "Darksee"
-        },
-        {
-            "roll": 26,
-            "result": "Diminish"
-        },
-        {
-            "roll": 31,
-            "result": "Earthquake"
-        },
-        {
-            "roll": 32,
-            "result": "Fear"
-        },
-        {
-            "roll": 33,
-            "result": "Fire Bolt"
-        },
-        {
-            "roll": 34,
-            "result": "Flash"
-        },
-        {
-            "roll": 35,
-            "result": "Farseeing"
-        },
-        {
-            "roll": 36,
-            "result": "Find"
-        },
-        {
-            "roll": 41,
-            "result": "Grow"
-        },
-        {
-            "roll": 42,
-            "result": "Hurricane"
-        },
-        {
-            "roll": 43,
-            "result": "Helping Hands"
-        },
-        {
-            "roll": 44,
-            "result": "Illusion"
-        },
-        {
-            "roll": 45,
-            "result": "Invisibility"
-        },
-        {
-            "roll": 46,
-            "result": "Jolt"
-        },
-        {
-            "roll": 51,
-            "result": "Light"
-        },
-        {
-            "roll": 52,
-            "result": "Lock"
-        },
-        {
-            "roll": 53,
-            "result": "Languages"
-        },
-        {
-            "roll": 54,
-            "result": "Levitate"
-        },
-        {
-            "roll": 55,
-            "result": "Sentry"
-        },
-        {
-            "roll": 56,
-            "result": "Shatter"
-        },
-        {
-            "roll": 61,
-            "result": "Sleep"
-        },
-        {
-            "roll": 62,
-            "result": "Thunder"
-        },
-        {
-            "roll": 63,
-            "result": "Tongue Twister"
-        },
-        {
-            "roll": 64,
-            "result": "Undo"
-        },
-        {
-            "roll": 65,
-            "result": "Ward"
-        },
-        {
-            "roll": 66,
-            "result": "Wall of Power"
-        }
-    ],
-    "tags": [
-        "magic",
-        "random",
-        "generator",
-        "spells"
-    ]
+  "name": "Random Spell Table",
+  "description": "Table for generating random spells using d66",
+  "type": "random",
+  "entries": [
+    {
+      "roll": 11,
+      "result": "Assassin's Dagger"
+    },
+    {
+      "roll": 12,
+      "result": "Animate"
+    },
+    {
+      "roll": 13,
+      "result": "Affix"
+    },
+    {
+      "roll": 14,
+      "result": "Assume Shape"
+    },
+    {
+      "roll": 15,
+      "result": "Befuddle"
+    },
+    {
+      "roll": 16,
+      "result": "Breach"
+    },
+    {
+      "roll": 21,
+      "result": "Cone of Air"
+    },
+    {
+      "roll": 22,
+      "result": "Banish Spirit"
+    },
+    {
+      "roll": 23,
+      "result": "Ember"
+    },
+    {
+      "roll": 24,
+      "result": "Cockroach"
+    },
+    {
+      "roll": 25,
+      "result": "Darksee"
+    },
+    {
+      "roll": 26,
+      "result": "Diminish"
+    },
+    {
+      "roll": 31,
+      "result": "Earthquake"
+    },
+    {
+      "roll": 32,
+      "result": "Fear"
+    },
+    {
+      "roll": 33,
+      "result": "Fire Bolt"
+    },
+    {
+      "roll": 34,
+      "result": "Flash"
+    },
+    {
+      "roll": 35,
+      "result": "Farseeing"
+    },
+    {
+      "roll": 36,
+      "result": "Find"
+    },
+    {
+      "roll": 41,
+      "result": "Grow"
+    },
+    {
+      "roll": 42,
+      "result": "Hurricane"
+    },
+    {
+      "roll": 43,
+      "result": "Helping Hands"
+    },
+    {
+      "roll": 44,
+      "result": "Illusion"
+    },
+    {
+      "roll": 45,
+      "result": "Invisibility"
+    },
+    {
+      "roll": 46,
+      "result": "Jolt"
+    },
+    {
+      "roll": 51,
+      "result": "Light"
+    },
+    {
+      "roll": 52,
+      "result": "Lock"
+    },
+    {
+      "roll": 53,
+      "result": "Languages"
+    },
+    {
+      "roll": 54,
+      "result": "Levitate"
+    },
+    {
+      "roll": 55,
+      "result": "Sentry"
+    },
+    {
+      "roll": 56,
+      "result": "Shatter"
+    },
+    {
+      "roll": 61,
+      "result": "Sleep"
+    },
+    {
+      "roll": 62,
+      "result": "Thunder"
+    },
+    {
+      "roll": 63,
+      "result": "Tongue Twister"
+    },
+    {
+      "roll": 64,
+      "result": "Undo"
+    },
+    {
+      "roll": 65,
+      "result": "Ward"
+    },
+    {
+      "roll": 66,
+      "result": "Wall of Power"
+    }
+  ],
+  "tags": [
+    "magic",
+    "random",
+    "generator",
+    "spells"
+  ],
+  "diceExpression": "d66",
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

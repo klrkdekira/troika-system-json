@@ -1,20 +1,52 @@
 {
-    "$schema": "../../systems/enemy.schema.json",
-    "id": "orc",
-    "name": "Orc",
-    "description": "The manifested people. By the order of the universe, as set in motion by the Unmoving Mover, they exist for the briefest time in the indivisible moment at the beginning and end of all things. Their duty is to tidy along the demiurge and all of their toys before the next go around, and as such they are people of words and shapes. Unfortunately for them this cycle has a proliferation of wilful wizard-folk with a thirst for learning the barest fundamentals of the Forms and Essences, just enough to reach out and disrupt things.",
+  "id": "orc",
+  "name": "Orc",
+  "description": "The manifested people. By the order of the universe, as set in motion by the Unmoving Mover, they exist for the briefest time in the indivisible moment at the beginning and end of all things. Their duty is to tidy along the demiurge and all of their toys before the next go around, and as such they are people of words and shapes. Unfortunately for them this cycle has a proliferation of wilful wizard-folk with a thirst for learning the barest fundamentals of the Forms and Essences, just enough to reach out and disrupt things.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Industrious",
+        "behavior": "Industrious"
+      },
+      {
+        "roll": 2,
+        "mood": "Confused",
+        "behavior": "Confused"
+      },
+      {
+        "roll": 3,
+        "mood": "Homesick",
+        "behavior": "Homesick"
+      },
+      {
+        "roll": 4,
+        "mood": "Angry",
+        "behavior": "Angry"
+      },
+      {
+        "roll": 5,
+        "mood": "Frustrated",
+        "behavior": "Frustrated"
+      },
+      {
+        "roll": 6,
+        "mood": "Violent",
+        "behavior": "Violent"
+      }
+    ]
+  },
+  "special_abilities": [],
+  "stats": {
     "skill": 7,
     "stamina": 8,
     "initiative": 2,
-    "armour": 0,
-    "damage": "Club",
-    "mien": [
-        "Industrious",
-        "Confused",
-        "Homesick",
-        "Angry",
-        "Frustrated",
-        "Violent"
-    ],
-    "special_abilities": []
+    "armor": 0,
+    "damage": "Club"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

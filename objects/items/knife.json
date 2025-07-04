@@ -1,23 +1,21 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "knife",
-    "name": "Knife",
-    "description": "A small blade, useful as both tool and weapon. Starting equipment for all characters.",
-    "category": "weapon",
-    "weaponType": "melee",
-    "damageType": "knife",
-    "weight": "normal",
-    "slots": 1,
-    "properties": [
-        "one_handed",
-        "melee",
-        "tool"
-    ],
-    "tags": [
-        "weapon",
-        "melee",
-        "tool",
-        "starting_equipment"
-    ],
-    "rarity": "common"
+  "name": "Knife",
+  "description": "A small blade, useful as both tool and weapon. Starting equipment for all characters.",
+  "slots": 1,
+  "tags": [
+    "weapon",
+    "melee",
+    "tool",
+    "starting_equipment"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "knife",
+    "specialRules": [
+      "one_handed",
+      "melee",
+      "tool"
+    ]
+  },
+  "type": "weapon"
 }

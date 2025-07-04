@@ -1,26 +1,26 @@
 {
-    "name": "Fire Bolt",
-    "cost": 1,
-    "description": "Shoot impressive flames from your fingertips, dealing Damage to one target within 20 metres.",
-    "duration": "Instantaneous",
-    "range": "20 metres",
-    "testType": "rollUnder",
-    "requirements": [
-        "free hand",
-        "speech"
-    ],
-    "tags": [
-        "offensive",
-        "elemental"
-    ],
-    "damageTable": {
-        "1": 3,
-        "2": 3,
-        "3": 5,
-        "4": 7,
-        "5": 9,
-        "6": 12,
-        "7+": 16
-    },
-    "oopsEntry": true
+  "name": "Fire Bolt",
+  "cost": 1,
+  "description": "Shoot impressive flames from your fingertips, dealing Damage to one target within 20 metres.",
+  "duration": "Instantaneous",
+  "range": "20 metres",
+  "testType": "rollUnder",
+  "requirements": [
+    "free hand",
+    "speech"
+  ],
+  "tags": [
+    "offensive",
+    "elemental"
+  ],
+  "damageTable": {
+    "1": 3,
+    "2": 3,
+    "3": 5,
+    "4": 7,
+    "5": 9,
+    "6": 12,
+    "7+": 16
+  },
+  "oopsEntry": true
 }

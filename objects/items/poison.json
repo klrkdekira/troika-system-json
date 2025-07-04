@@ -3,10 +3,7 @@
   "type": "component",
   "description": "A vial of deadly poison. Can be applied to weapons or added to food and drink.",
   "slots": 1,
-  "value": {
-    "amount": 20,
-    "currency": "silver pence"
-  },
+  "value": 20,
   "uses": 1,
   "effects": [
     {
@@ -19,5 +16,10 @@
     "Adds +1 to Damage Rolls when applied to piercing or edged weapons (wears off on roll of 1)",
     "Causes unconsciousness for 1d6 hours if ingested"
   ],
-  "tags": ["component", "poison", "deadly", "consumable"]
+  "tags": [
+    "component",
+    "poison",
+    "deadly",
+    "consumable"
+  ]
 }

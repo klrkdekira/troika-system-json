@@ -1,23 +1,72 @@
 {
   "name": "Thinking Engine",
-  "skill": 8,
-  "stamina": 14,
-  "initiative": 2,
-  "armor": 1,
-  "damage": "Weapon",
-  "mien": [
-    "Absent Minded",
-    "Distracted",
-    "Enthusiastic",
-    "Maudlin",
-    "Sentimental",
-    "Engrossed"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Absent Minded",
+        "behavior": "Absent Minded"
+      },
+      {
+        "roll": 2,
+        "mood": "Distracted",
+        "behavior": "Distracted"
+      },
+      {
+        "roll": 3,
+        "mood": "Enthusiastic",
+        "behavior": "Enthusiastic"
+      },
+      {
+        "roll": 4,
+        "mood": "Maudlin",
+        "behavior": "Maudlin"
+      },
+      {
+        "roll": 5,
+        "mood": "Sentimental",
+        "behavior": "Sentimental"
+      },
+      {
+        "roll": 6,
+        "mood": "Engrossed",
+        "behavior": "Engrossed"
+      }
+    ]
+  },
   "description": "Built in the time of the First Empire, commissioned by the will of the Other Lords to pilot the golden ships of their cosmic civilisation. Each one is unfathomably ancient but by design or fault they don't remember more than a lifetime's worth of existence. We think of them in their common form of bakelite and chrome androids but their variety is a result of the chthonic imagination of the Other Lords and endless in its diversity. Most have been broken over their lifetimes and replaced their parts, some with new mechanical contrivances and others with organic flesh. Some have lost their original form altogether and walk the earth as flesh while others are large and hollow, waiting for an operator with dead knowledge.",
   "special": [
-    "Unfathomably ancient but only remember a lifetime's worth of existence",
-    "Endless variety in form due to repairs and modifications",
-    "Some are large and hollow, waiting for an operator"
+    {
+      "name": "Special Ability",
+      "description": "Unfathomably ancient but only remember a lifetime's worth of existence",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Endless variety in form due to repairs and modifications",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Some are large and hollow, waiting for an operator",
+      "type": "passive"
+    }
   ],
-  "tags": ["construct", "ancient", "pilot", "variable"]
+  "tags": [
+    "construct",
+    "ancient",
+    "pilot",
+    "variable"
+  ],
+  "stats": {
+    "skill": 8,
+    "stamina": 14,
+    "initiative": 2,
+    "armor": 1,
+    "damage": "Weapon"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

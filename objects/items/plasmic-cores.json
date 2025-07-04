@@ -1,22 +1,13 @@
 {
-    "name": "Plasmic Cores",
-    "description": "Crystalised starlight cast in metal. Or astral vapours captured in glass. Or maybe hard-ghosts? Whatever it is, it's pretty and used as a fuel source for exotic Weapons and reckless magicians. A plasmic core can be cracked open and huffed by a wizard in place of spending Stamina on a Spell. However, if an Oops! Table roll is called for the wizard has overdosed and drops dead, foaming at the mouth.",
-    "slots": 1,
-    "type": "consumable",
-    "properties": [
-        "Ammunition for energy weapons",
-        "Can be consumed by wizards to avoid Stamina cost",
-        "If Oops! occurs while using, wizard dies instantly"
-    ],
-    "value": {
-        "amount": 10,
-        "currency": "silver"
-    },
-    "requirements": [],
-    "tags": [
-        "ammunition",
-        "energy",
-        "magical",
-        "dangerous"
-    ]
+  "name": "Plasmic Cores",
+  "description": "Crystalised starlight cast in metal. Or astral vapours captured in glass. Or maybe hard-ghosts? Whatever it is, it's pretty and used as a fuel source for exotic Weapons and reckless magicians. A plasmic core can be cracked open and huffed by a wizard in place of spending Stamina on a Spell. However, if an Oops! Table roll is called for the wizard has overdosed and drops dead, foaming at the mouth.",
+  "slots": 1,
+  "type": "provision",
+  "value": 10,
+  "tags": [
+    "ammunition",
+    "energy",
+    "magical",
+    "dangerous"
+  ]
 }

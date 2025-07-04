@@ -1,21 +1,56 @@
 {
   "id": "bonshad",
   "name": "Bonshad",
-  "skill": 12,
-  "stamina": 20,
-  "initiative": 3,
-  "armor": 2,
-  "damage": "gigantic_beast",
   "description": "The Bonshad is the source of an amusing piece of trivia amongst diabolists. While it is well known that the Bonshads know the method of creating the Elixir of Shazmazm it is less well known (at least amongst impatient apprentices) that The 17th Incantation of Ignis Baxter: Bring Up What Bonshad Come contains a typo in the 5th chorus. You can imagine the embarrassment this would have caused Master Baxter had he not been tragically caught up in the Oblation Wars soon after completing his seminal work. Regardless, calling up this hook-beaked betentacled fiend without the reformed texts will see one dragged off to the bottom of the Demon Sea to work their curious mines. What a lark!",
-  "mien": [
-    {"roll": 1, "behavior": "Wrathful"},
-    {"roll": 2, "behavior": "Virulent"},
-    {"roll": 3, "behavior": "Spiteful"},
-    {"roll": 4, "behavior": "Nauseated"},
-    {"roll": 5, "behavior": "Acquisitive"},
-    {"roll": 6, "behavior": "Imperious"}
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Wrathful",
+        "behavior": "Wrathful"
+      },
+      {
+        "roll": 2,
+        "mood": "Virulent",
+        "behavior": "Virulent"
+      },
+      {
+        "roll": 3,
+        "mood": "Spiteful",
+        "behavior": "Spiteful"
+      },
+      {
+        "roll": 4,
+        "mood": "Nauseated",
+        "behavior": "Nauseated"
+      },
+      {
+        "roll": 5,
+        "mood": "Acquisitive",
+        "behavior": "Acquisitive"
+      },
+      {
+        "roll": 6,
+        "mood": "Imperious",
+        "behavior": "Imperious"
+      }
+    ]
+  },
   "special": [],
-  "habitat": ["demon_sea", "summoned"],
-  "frequency": "rare"
-} 
+  "habitat": [
+    "demon_sea",
+    "summoned"
+  ],
+  "frequency": "rare",
+  "stats": {
+    "skill": 12,
+    "stamina": 20,
+    "initiative": 3,
+    "armor": 2,
+    "damage": "gigantic_beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
+}

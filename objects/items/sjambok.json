@@ -3,12 +3,7 @@
   "type": "weapon",
   "description": "A heavy leather whip traditionally used as both tool and weapon.",
   "slots": 1,
-  "value": {
-    "amount": 8,
-    "currency": "silver pence"
-  },
-  "weaponType": "melee",
-  "damage": "Club",
+  "value": 8,
   "damageTable": {
     "1": 1,
     "2": 1,
@@ -18,6 +13,18 @@
     "6": 8,
     "7+": 10
   },
-  "properties": ["Flexible weapon", "Can strike at reach"],
-  "tags": ["weapon", "melee", "whip", "flexible"]
+  "tags": [
+    "weapon",
+    "melee",
+    "whip",
+    "flexible"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Club",
+    "specialRules": [
+      "Flexible weapon",
+      "Can strike at reach"
+    ]
+  }
 }

@@ -1,14 +1,62 @@
 {
   "name": "Sympathy Serpent",
-  "skill": 5,
-  "stamina": 6,
-  "initiative": 2,
-  "armor": 0,
-  "damage": "Small Beast",
-  "mien": ["Shy", "Friendly", "Sympathetic", "Fearful", "Sad", "Inconsolable"],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Shy",
+        "behavior": "Shy"
+      },
+      {
+        "roll": 2,
+        "mood": "Friendly",
+        "behavior": "Friendly"
+      },
+      {
+        "roll": 3,
+        "mood": "Sympathetic",
+        "behavior": "Sympathetic"
+      },
+      {
+        "roll": 4,
+        "mood": "Fearful",
+        "behavior": "Fearful"
+      },
+      {
+        "roll": 5,
+        "mood": "Sad",
+        "behavior": "Sad"
+      },
+      {
+        "roll": 6,
+        "mood": "Inconsolable",
+        "behavior": "Inconsolable"
+      }
+    ]
+  },
   "description": "Dark, thick as a man's thigh, and as long as three destriers, they crush their prey as you'd expect such a snake to do but their hunting style is idiosyncratic: they do not wrestle with their quarry but offer a gentle embrace, telling them it's okay to let go, they're here now. Together prey and predator mourn the crushing awfulness of reality as one swallows the other whole.",
   "special": [
-    "Sleeping or unsuspecting targets must Test their Luck (or Skill for Enemies) or be paralysed with misery and allow the serpent to quietly eat them"
+    {
+      "name": "Special Ability",
+      "description": "Sleeping or unsuspecting targets must Test their Luck (or Skill for Enemies) or be paralysed with misery and allow the serpent to quietly eat them",
+      "type": "passive"
+    }
   ],
-  "tags": ["serpent", "emotional", "constrictor", "psychological"]
+  "tags": [
+    "serpent",
+    "emotional",
+    "constrictor",
+    "psychological"
+  ],
+  "stats": {
+    "skill": 5,
+    "stamina": 6,
+    "initiative": 2,
+    "armor": 0,
+    "damage": "Small Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

@@ -1,104 +1,536 @@
 {
-    "metadata": {
-        "version": "1.0",
-        "name": "Troika!",
-        "description": "Science Fantasy RPG System Data",
-        "publisher": "Melsonian Arts Council",
-        "license": "Third Party Compatible - see Terms in SRD"
+  "version": "1.0",
+  "metadata": {
+    "title": "Troika!",
+    "description": "Science Fantasy RPG System Data",
+    "publisher": "Melsonian Arts Council",
+    "version": "1.0",
+    "license": "Third Party Compatible - see Terms in SRD"
+  },
+  "backgrounds": [
+    {
+      "$ref": "./backgrounds/11-ardent-giant-of-corda.json"
     },
-    "characterCreation": {
-        "skillGeneration": "1d3+3",
-        "staminaGeneration": "2d6+12",
-        "luckGeneration": "1d6+6",
-        "baselinePossessions": [
-            "2d6 Silver Pence",
-            "Knife",
-            "Lantern & Flask of Oil",
-            "Rucksack",
-            "6 Provisions"
-        ]
+    {
+      "$ref": "./backgrounds/12-befouler-of-ponds.json"
     },
-    "backgrounds": [
-        {
-            "$ref": "./backgrounds/11-ardent-giant-of-corda.json"
-        },
-        {
-            "$ref": "./backgrounds/12-befouler-of-ponds.json"
-        },
-        {
-            "$ref": "./backgrounds/13-burglar.json"
-        },
-        {
-            "$ref": "./backgrounds/14-cacogen.json"
-        },
-        {
-            "$ref": "./backgrounds/22-dwarf.json"
-        }
-    ],
-    "skills": [
-        {
-            "$ref": "./skills/astrology.json"
-        },
-        {
-            "$ref": "./skills/sword-fighting.json"
-        }
-    ],
-    "spells": [
-        {
-            "$ref": "./spells/affix.json"
-        },
-        {
-            "$ref": "./spells/fire-bolt.json"
-        },
-        {
-            "$ref": "./spells/jolt.json"
-        }
-    ],
-    "items": [
-        {
-            "$ref": "./items/fusil.json"
-        },
-        {
-            "$ref": "./items/silver-sword.json"
-        },
-        {
-            "$ref": "./items/heavy-armour.json"
-        }
-    ],
-    "enemies": [
-        {
-            "$ref": "./enemies/goblin.json"
-        },
-        {
-            "$ref": "./enemies/dragon.json"
-        }
-    ],
-    "tables": [
-        {
-            "$ref": "./tables/melee-damage-table.json"
-        },
-        {
-            "$ref": "./tables/random-spell-table.json"
-        }
-    ],
-    "rules": {
-        "initiative": {
-            "playerTokens": 2,
-            "endOfRoundToken": true
-        },
-        "combat": {
-            "mightyBlowThreshold": 12,
-            "fumbleThreshold": 2,
-            "doubleDamageOnMightyBlow": true
-        },
-        "advancement": {
-            "maxAdvancementChecks": 3,
-            "advancementThreshold": "2d6 > current skill total"
-        },
-        "encumbrance": {
-            "maxSlots": 12,
-            "overburdenedPenalty": -4,
-            "severelyOverburdenedThreshold": 18
-        }
+    {
+      "$ref": "./backgrounds/13-burglar.json"
+    },
+    {
+      "$ref": "./backgrounds/14-cacogen.json"
+    },
+    {
+      "$ref": "./backgrounds/15-chaos-champion.json"
+    },
+    {
+      "$ref": "./backgrounds/16-claviger.json"
+    },
+    {
+      "$ref": "./backgrounds/21-demon-stalker.json"
+    },
+    {
+      "$ref": "./backgrounds/22-dwarf.json"
+    },
+    {
+      "$ref": "./backgrounds/23-epopt.json"
+    },
+    {
+      "$ref": "./backgrounds/24-exographer.json"
+    },
+    {
+      "$ref": "./backgrounds/25-fellowship-of-knidos.json"
+    },
+    {
+      "$ref": "./backgrounds/26-porter-basin-filler.json"
+    },
+    {
+      "$ref": "./backgrounds/31-gremlin-catcher.json"
+    },
+    {
+      "$ref": "./backgrounds/32-journeyman-sharp-corners.json"
+    },
+    {
+      "$ref": "./backgrounds/33-lansquenet.json"
+    },
+    {
+      "$ref": "./backgrounds/34-lonesome-monarch.json"
+    },
+    {
+      "$ref": "./backgrounds/35-miss-kinsey-dining-club.json"
+    },
+    {
+      "$ref": "./backgrounds/36-monkeymonger.json"
+    },
+    {
+      "$ref": "./backgrounds/41-necromancer.json"
+    },
+    {
+      "$ref": "./backgrounds/42-parchment-witch.json"
+    },
+    {
+      "$ref": "./backgrounds/43-derivative-dwarf.json"
+    },
+    {
+      "$ref": "./backgrounds/44-questing-knight.json"
+    },
+    {
+      "$ref": "./backgrounds/45-red-priest.json"
+    },
+    {
+      "$ref": "./backgrounds/46-rhino-man.json"
+    },
+    {
+      "$ref": "./backgrounds/51-sceptical-lamassu.json"
+    },
+    {
+      "$ref": "./backgrounds/52-academy-of-doors.json"
+    },
+    {
+      "$ref": "./backgrounds/53-college-of-friends.json"
+    },
+    {
+      "$ref": "./backgrounds/54-beef-steaks.json"
+    },
+    {
+      "$ref": "./backgrounds/55-temple-knight.json"
+    },
+    {
+      "$ref": "./backgrounds/56-thaumaturge.json"
+    },
+    {
+      "$ref": "./backgrounds/61-thinking-engine.json"
+    },
+    {
+      "$ref": "./backgrounds/62-vengeful-child.json"
+    },
+    {
+      "$ref": "./backgrounds/63-venturesome-academic.json"
+    },
+    {
+      "$ref": "./backgrounds/64-wizard-hunter.json"
+    },
+    {
+      "$ref": "./backgrounds/65-yongardy-lawyer.json"
+    },
+    {
+      "$ref": "./backgrounds/66-zoanthrop.json"
     }
+  ],
+  "skills": [
+    {
+      "$ref": "./skills/astrology.json"
+    },
+    {
+      "$ref": "./skills/awareness.json"
+    },
+    {
+      "$ref": "./skills/climb.json"
+    },
+    {
+      "$ref": "./skills/disguise.json"
+    },
+    {
+      "$ref": "./skills/etiquette.json"
+    },
+    {
+      "$ref": "./skills/evaluate.json"
+    },
+    {
+      "$ref": "./skills/golden-barge-pilot.json"
+    },
+    {
+      "$ref": "./skills/healing.json"
+    },
+    {
+      "$ref": "./skills/locks.json"
+    },
+    {
+      "$ref": "./skills/ride.json"
+    },
+    {
+      "$ref": "./skills/run.json"
+    },
+    {
+      "$ref": "./skills/second-sight.json"
+    },
+    {
+      "$ref": "./skills/sneak.json"
+    },
+    {
+      "$ref": "./skills/strength.json"
+    },
+    {
+      "$ref": "./skills/swim.json"
+    },
+    {
+      "$ref": "./skills/sword-fighting.json"
+    },
+    {
+      "$ref": "./skills/tracking.json"
+    },
+    {
+      "$ref": "./skills/trapping.json"
+    }
+  ],
+  "spells": [
+    {
+      "$ref": "./spells/affix.json"
+    },
+    {
+      "$ref": "./spells/assume-shape.json"
+    },
+    {
+      "$ref": "./spells/blood-shroud.json"
+    },
+    {
+      "$ref": "./spells/cockroach.json"
+    },
+    {
+      "$ref": "./spells/cone-of-air.json"
+    },
+    {
+      "$ref": "./spells/exorcism.json"
+    },
+    {
+      "$ref": "./spells/fire-bolt.json"
+    },
+    {
+      "$ref": "./spells/flash.json"
+    },
+    {
+      "$ref": "./spells/helping-hand.json"
+    },
+    {
+      "$ref": "./spells/invisibility.json"
+    },
+    {
+      "$ref": "./spells/ironhand.json"
+    },
+    {
+      "$ref": "./spells/jolt.json"
+    },
+    {
+      "$ref": "./spells/languages.json"
+    },
+    {
+      "$ref": "./spells/leech.json"
+    },
+    {
+      "$ref": "./spells/light.json"
+    },
+    {
+      "$ref": "./spells/lock.json"
+    },
+    {
+      "$ref": "./spells/matron.json"
+    },
+    {
+      "$ref": "./spells/mirror-mirror.json"
+    },
+    {
+      "$ref": "./spells/morph.json"
+    },
+    {
+      "$ref": "./spells/nod.json"
+    },
+    {
+      "$ref": "./spells/prayer.json"
+    },
+    {
+      "$ref": "./spells/presence.json"
+    },
+    {
+      "$ref": "./spells/protection.json"
+    },
+    {
+      "$ref": "./spells/quench.json"
+    },
+    {
+      "$ref": "./spells/read-stars.json"
+    },
+    {
+      "$ref": "./spells/see-through.json"
+    },
+    {
+      "$ref": "./spells/skeletal-counsel.json"
+    },
+    {
+      "$ref": "./spells/thunder.json"
+    },
+    {
+      "$ref": "./spells/tongue-twister.json"
+    },
+    {
+      "$ref": "./spells/wall-of-power.json"
+    }
+  ],
+  "items": [
+    {
+      "$ref": "./items/astrological-equipment.json"
+    },
+    {
+      "$ref": "./items/axe.json"
+    },
+    {
+      "$ref": "./items/bale-hook.json"
+    },
+    {
+      "$ref": "./items/blue-star-maps.json"
+    },
+    {
+      "$ref": "./items/bow.json"
+    },
+    {
+      "$ref": "./items/club.json"
+    },
+    {
+      "$ref": "./items/crossbow.json"
+    },
+    {
+      "$ref": "./items/curved-sword.json"
+    },
+    {
+      "$ref": "./items/epopt-staff.json"
+    },
+    {
+      "$ref": "./items/flask-of-oil.json"
+    },
+    {
+      "$ref": "./items/fusil.json"
+    },
+    {
+      "$ref": "./items/garrotte.json"
+    },
+    {
+      "$ref": "./items/golden-barge.json"
+    },
+    {
+      "$ref": "./items/grappling-hook.json"
+    },
+    {
+      "$ref": "./items/hammer.json"
+    },
+    {
+      "$ref": "./items/heavy-armour.json"
+    },
+    {
+      "$ref": "./items/knife.json"
+    },
+    {
+      "$ref": "./items/lance.json"
+    },
+    {
+      "$ref": "./items/lantern.json"
+    },
+    {
+      "$ref": "./items/large-wooden-ladle.json"
+    },
+    {
+      "$ref": "./items/lock-picks.json"
+    },
+    {
+      "$ref": "./items/mace.json"
+    },
+    {
+      "$ref": "./items/modest-armour.json"
+    },
+    {
+      "$ref": "./items/pistolet.json"
+    },
+    {
+      "$ref": "./items/pocket-barometer.json"
+    },
+    {
+      "$ref": "./items/polearm.json"
+    },
+    {
+      "$ref": "./items/provisions.json"
+    },
+    {
+      "$ref": "./items/ruby-lorgnette.json"
+    },
+    {
+      "$ref": "./items/shield.json"
+    },
+    {
+      "$ref": "./items/silver-sword.json"
+    },
+    {
+      "$ref": "./items/spear.json"
+    },
+    {
+      "$ref": "./items/sword.json"
+    },
+    {
+      "$ref": "./items/tea-set.json"
+    },
+    {
+      "$ref": "./items/yoke.json"
+    }
+  ],
+  "enemies": [
+    {
+      "$ref": "./enemies/alzabo.json"
+    },
+    {
+      "$ref": "./enemies/boggart.json"
+    },
+    {
+      "$ref": "./enemies/bonshad.json"
+    },
+    {
+      "$ref": "./enemies/cyclops.json"
+    },
+    {
+      "$ref": "./enemies/dolm.json"
+    },
+    {
+      "$ref": "./enemies/donestre.json"
+    },
+    {
+      "$ref": "./enemies/dragon.json"
+    },
+    {
+      "$ref": "./enemies/drock.json"
+    },
+    {
+      "$ref": "./enemies/ekodat.json"
+    },
+    {
+      "$ref": "./enemies/feathered-folk.json"
+    },
+    {
+      "$ref": "./enemies/goblin.json"
+    },
+    {
+      "$ref": "./enemies/gremlin.json"
+    },
+    {
+      "$ref": "./enemies/harpy.json"
+    },
+    {
+      "$ref": "./enemies/khaibit.json"
+    },
+    {
+      "$ref": "./enemies/knight-of-the-road.json"
+    },
+    {
+      "$ref": "./enemies/living-dead.json"
+    },
+    {
+      "$ref": "./enemies/lizard-man.json"
+    },
+    {
+      "$ref": "./enemies/loathsome-wurm.json"
+    },
+    {
+      "$ref": "./enemies/man-beast.json"
+    },
+    {
+      "$ref": "./enemies/manticore.json"
+    },
+    {
+      "$ref": "./enemies/night-pig.json"
+    },
+    {
+      "$ref": "./enemies/notule.json"
+    },
+    {
+      "$ref": "./enemies/ogre.json"
+    },
+    {
+      "$ref": "./enemies/orc.json"
+    },
+    {
+      "$ref": "./enemies/owl.json"
+    },
+    {
+      "$ref": "./enemies/parchment-witch.json"
+    },
+    {
+      "$ref": "./enemies/piscean.json"
+    },
+    {
+      "$ref": "./enemies/salamander.json"
+    },
+    {
+      "$ref": "./enemies/separator.json"
+    },
+    {
+      "$ref": "./enemies/sympathy-serpent.json"
+    },
+    {
+      "$ref": "./enemies/thinking-engine.json"
+    },
+    {
+      "$ref": "./enemies/tiger.json"
+    },
+    {
+      "$ref": "./enemies/tower-wizard.json"
+    },
+    {
+      "$ref": "./enemies/troll.json"
+    },
+    {
+      "$ref": "./enemies/ven.json"
+    },
+    {
+      "$ref": "./enemies/zoanthrop.json"
+    }
+  ],
+  "tables": [
+    {
+      "$ref": "./tables/beastly-damage-table.json"
+    },
+    {
+      "$ref": "./tables/melee-damage-table.json"
+    },
+    {
+      "$ref": "./tables/oops-table.json"
+    },
+    {
+      "$ref": "./tables/ranged-damage-table.json"
+    },
+    {
+      "$ref": "./tables/random-spell-table.json"
+    }
+  ],
+  "rules": {
+    "coreRules": {
+      "attributeGeneration": {
+        "skill": "1d3+3",
+        "stamina": "2d6+12",
+        "luck": "1d6+6"
+      },
+      "baselinePossessions": [
+        "2d6 Silver Pence",
+        "Knife",
+        "Lantern & Flask of Oil",
+        "Rucksack",
+        "6 Provisions"
+      ]
+    },
+    "initiative": {
+      "playerTokens": 2,
+      "endOfRoundToken": true
+    },
+    "combat": {
+      "mightyBlowThreshold": 12,
+      "fumbleThreshold": 2,
+      "doubleDamageOnMightyBlow": true
+    },
+    "advancement": {
+      "maxAdvancementChecks": 3,
+      "advancementThreshold": "2d6 > current skill total"
+    },
+    "encumbrance": {
+      "maxSlots": 12,
+      "overburdenedPenalty": -4,
+      "severelyOverburdenedThreshold": 18
+    }
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "special": []
 }

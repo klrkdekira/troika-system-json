@@ -1,46 +1,72 @@
 {
-    "id": "gremlin",
-    "name": "Gremlin",
+  "id": "gremlin",
+  "name": "Gremlin",
+  "description": "Vicious little creatures dressed in potato sacks they stole from an old mother's cupboards. When you see footprints in the pie crust it's time to call the Gremlin Catcher because where there's one there's a hundred and underneath your home will be a veritable maze of warrens stretching off to gods know where. No proven link between the gremlins' habit of appearing seemingly everywhere and the goblins' interdimensional labyrinth have been made but fingers are firmly pointed.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Inveigling",
+        "behavior": "Inveigling"
+      },
+      {
+        "roll": 2,
+        "mood": "Fearful",
+        "behavior": "Fearful"
+      },
+      {
+        "roll": 3,
+        "mood": "Fearful",
+        "behavior": "Fearful"
+      },
+      {
+        "roll": 4,
+        "mood": "Aggressive",
+        "behavior": "Aggressive"
+      },
+      {
+        "roll": 5,
+        "mood": "Aggressive",
+        "behavior": "Aggressive"
+      },
+      {
+        "roll": 6,
+        "mood": "Fake Inveigling (Aggressive)",
+        "behavior": "Fake Inveigling (Aggressive)"
+      }
+    ]
+  },
+  "special": [
+    {
+      "name": "Special Ability",
+      "description": "Create extensive warren systems",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Appear in large numbers",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Steal food and cause mischief",
+      "type": "passive"
+    }
+  ],
+  "habitat": [
+    "underground_warrens",
+    "inhabited_areas"
+  ],
+  "frequency": "common",
+  "stats": {
     "skill": 3,
     "stamina": 4,
     "initiative": 3,
     "armor": 0,
-    "damage": "small_beast",
-    "description": "Vicious little creatures dressed in potato sacks they stole from an old mother's cupboards. When you see footprints in the pie crust it's time to call the Gremlin Catcher because where there's one there's a hundred and underneath your home will be a veritable maze of warrens stretching off to gods know where. No proven link between the gremlins' habit of appearing seemingly everywhere and the goblins' interdimensional labyrinth have been made but fingers are firmly pointed.",
-    "mien": [
-        {
-            "roll": 1,
-            "behavior": "Inveigling"
-        },
-        {
-            "roll": 2,
-            "behavior": "Fearful"
-        },
-        {
-            "roll": 3,
-            "behavior": "Fearful"
-        },
-        {
-            "roll": 4,
-            "behavior": "Aggressive"
-        },
-        {
-            "roll": 5,
-            "behavior": "Aggressive"
-        },
-        {
-            "roll": 6,
-            "behavior": "Fake Inveigling (Aggressive)"
-        }
-    ],
-    "special": [
-        "Create extensive warren systems",
-        "Appear in large numbers",
-        "Steal food and cause mischief"
-    ],
-    "habitat": [
-        "underground_warrens",
-        "inhabited_areas"
-    ],
-    "frequency": "common"
+    "damage": "small_beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

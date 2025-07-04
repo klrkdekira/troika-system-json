@@ -1,16 +1,12 @@
 {
-    "id": "assassins-dagger",
-    "name": "Assassin's Dagger",
-    "cost": 3,
-    "description": "Evocatively named but actually quite mundane. The wizard whispers to an object and that object then seeks out and vigorously and repeatedly bumps into the desired target. Obviously if you whisper to a poisoned dagger the result is one thing while doing it to a letter is another. Travels any distance and always arrives (eventually).",
-    "school": "general",
-    "range": "unlimited",
-    "duration": "until_arrival",
-    "components": [
-        "verbal",
-        "object"
-    ],
-    "effect": "Animated object seeks target",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Assassin's Dagger",
+  "cost": 3,
+  "description": "Evocatively named but actually quite mundane. The wizard whispers to an object and that object then seeks out and vigorously and repeatedly bumps into the desired target. Obviously if you whisper to a poisoned dagger the result is one thing while doing it to a letter is another. Travels any distance and always arrives (eventually).",
+  "range": "unlimited",
+  "duration": "until_arrival",
+  "components": [
+    "verbal",
+    "object"
+  ],
+  "testType": "rollUnder"
 }

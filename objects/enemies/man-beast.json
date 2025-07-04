@@ -1,23 +1,72 @@
 {
   "name": "Man-Beast",
-  "skill": 8,
-  "stamina": 11,
-  "initiative": 2,
-  "armor": 1,
-  "damage": "Fusil or Modest Beast",
-  "mien": [
-    "Heedful",
-    "Observing",
-    "Watchful",
-    "Questioning",
-    "Challenging",
-    "Aggressive"
-  ],
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Heedful",
+        "behavior": "Heedful"
+      },
+      {
+        "roll": 2,
+        "mood": "Observing",
+        "behavior": "Observing"
+      },
+      {
+        "roll": 3,
+        "mood": "Watchful",
+        "behavior": "Watchful"
+      },
+      {
+        "roll": 4,
+        "mood": "Questioning",
+        "behavior": "Questioning"
+      },
+      {
+        "roll": 5,
+        "mood": "Challenging",
+        "behavior": "Challenging"
+      },
+      {
+        "roll": 6,
+        "mood": "Aggressive",
+        "behavior": "Aggressive"
+      }
+    ]
+  },
   "description": "The Autarchs couldn't rely on the aristocracy for delicate or controversial matters; even for thoroughly mundane requests they were worshipful in word and recalcitrant in action and so towards the beginning of their reign an Autarch had their vizier fabricate armies of beastly chimera, utterly loyal to the Phoenix Throne, obeying orders to the letter unto death. The man-beasts are far from mindless, rather they never question their lot in life, being unable to comprehend an alternative existence. Indeed, you might find man-beast guards still defending doorways to caches of Weapons and treasure the Autarchs are known to have hidden away for times of trouble, vigilant as a sleepless, incorruptible watchdog.",
   "special": [
-    "Utterly loyal to the Phoenix Throne",
-    "Never question their lot in life",
-    "May be found guarding Autarch treasure caches"
+    {
+      "name": "Special Ability",
+      "description": "Utterly loyal to the Phoenix Throne",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Never question their lot in life",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "May be found guarding Autarch treasure caches",
+      "type": "passive"
+    }
   ],
-  "tags": ["chimera", "guard", "loyal", "autarch"]
+  "tags": [
+    "chimera",
+    "guard",
+    "loyal",
+    "autarch"
+  ],
+  "stats": {
+    "skill": 8,
+    "stamina": 11,
+    "initiative": 2,
+    "armor": 1,
+    "damage": "Fusil or Modest Beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

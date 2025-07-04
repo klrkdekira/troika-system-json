@@ -24,23 +24,19 @@
   "advancedSkills": [
     {
       "name": "Locks",
-      "rank": 4,
-      "category": "technical"
+      "rank": 4
     },
     {
       "name": "Awareness",
-      "rank": 3,
-      "category": "mental"
+      "rank": 3
     },
     {
       "name": "Club Fighting",
-      "rank": 2,
-      "category": "combat"
+      "rank": 2
     },
     {
       "name": "Tracking",
-      "rank": 1,
-      "category": "survival"
+      "rank": 1
     }
   ],
   "spells": [],

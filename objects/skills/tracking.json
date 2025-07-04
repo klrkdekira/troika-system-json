@@ -1,15 +1,25 @@
 {
   "name": "Tracking",
-  "type": "advanced",
+  "type": "general",
   "description": "Used to stalk prey and find tracks. When stalking a quarry this is treated as an opposed Roll Versus the opponent's Tracking or Sneaking.",
-  "category": "survival",
   "mechanics": {
     "testType": "rollVersus",
-    "opposedBy": ["Tracking", "Sneaking"]
+    "opposedBy": [
+      "Tracking",
+      "Sneaking"
+    ]
   },
   "notes": [
     "Can be used to follow tracks or actively hunt quarry",
     "Opposed by target's evasion abilities"
   ],
-  "tags": ["survival", "hunting", "outdoors"]
+  "tags": [
+    "survival",
+    "hunting",
+    "outdoors"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

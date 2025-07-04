@@ -21,42 +21,35 @@
   "advancedSkills": [
     {
       "name": "Sneak",
-      "rank": 2,
-      "category": "physical"
+      "rank": 2
     },
     {
       "name": "Locks",
-      "rank": 2,
-      "category": "technical"
+      "rank": 2
     },
     {
       "name": "Awareness",
-      "rank": 1,
-      "category": "mental"
+      "rank": 1
     },
     {
       "name": "Climb",
-      "rank": 1,
-      "category": "physical"
+      "rank": 1
     },
     {
       "name": "Trapping",
-      "rank": 1,
-      "category": "technical"
+      "rank": 1
     },
     {
       "name": "Knife Fighting",
-      "rank": 1,
-      "category": "combat"
+      "rank": 1
     },
     {
       "name": "Crossbow Fighting",
-      "rank": 1,
-      "category": "combat"
+      "rank": 1
     }
   ],
   "spells": [],
   "special": [
     "You may Test your Luck to find and get in with the local criminal underbelly if one exists."
   ]
-} 
+}

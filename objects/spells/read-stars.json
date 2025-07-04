@@ -5,17 +5,11 @@
   "duration": "Instantaneous",
   "range": "Self",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "divination",
-      "description": "Gain reasonable sense of direction regardless of obscuring factors"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
-  "tags": ["divination", "navigation", "astral"]
+  "tags": [
+    "divination"
+  ]
 }

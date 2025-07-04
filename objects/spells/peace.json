@@ -1,33 +1,29 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "peace",
-    "name": "Peace",
-    "cost": 2,
-    "description": "Open up the mind to universal love and cause two subjects to Test their Luck (or Skill for Enemies) or cease hostilities. They will still defend themselves if attacked but will at least appreciate the pettiness of it.",
-    "testType": "roll_under",
-    "range": "sight",
-    "duration": "until_attacked",
-    "components": [
-        "somatic",
-        "verbal"
-    ],
-    "effect": "Causes two subjects to cease hostilities",
-    "tags": [
-        "enchantment",
-        "peace"
-    ],
-    "saves": [
-        {
-            "type": "luck",
-            "description": "Targets may Test Luck (or Skill for Enemies) to resist",
-            "onSuccess": "No effect",
-            "onFailure": "Cease hostilities"
-        }
-    ],
-    "specialMechanics": [
-        "Affects exactly two subjects",
-        "Will still defend if attacked",
-        "Appreciate pettiness of conflict"
-    ],
-    "oopsEntry": true
+  "name": "Peace",
+  "cost": 2,
+  "description": "Open up the mind to universal love and cause two subjects to Test their Luck (or Skill for Enemies) or cease hostilities. They will still defend themselves if attacked but will at least appreciate the pettiness of it.",
+  "testType": "rollUnder",
+  "range": "sight",
+  "duration": "until_attacked",
+  "components": [
+    "somatic",
+    "verbal"
+  ],
+  "tags": [
+    "enchantment"
+  ],
+  "saves": [
+    {
+      "type": "luck",
+      "description": "Targets may Test Luck (or Skill for Enemies) to resist",
+      "onSuccess": "No effect",
+      "onFailure": "Cease hostilities"
+    }
+  ],
+  "specialMechanics": [
+    "Affects exactly two subjects",
+    "Will still defend if attacked",
+    "Appreciate pettiness of conflict"
+  ],
+  "oopsEntry": true
 }

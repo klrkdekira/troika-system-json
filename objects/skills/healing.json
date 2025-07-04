@@ -1,8 +1,7 @@
 {
   "name": "Healing",
-  "type": "advanced",
+  "type": "general",
   "description": "Used to stitch wounds and apply ointments, stop bleeding, slow poison and the like. Also used for stabilising dying people.",
-  "category": "medical",
   "mechanics": {
     "testType": "rollUnder"
   },
@@ -13,5 +12,13 @@
     "Slow poison effects",
     "Stabilise dying people"
   ],
-  "tags": ["medical", "support", "healing"]
+  "tags": [
+    "medical",
+    "support",
+    "healing"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

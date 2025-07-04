@@ -1,24 +1,21 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "quench",
-    "name": "Quench",
-    "cost": 1,
-    "description": "Snuff a small flame with the wave of a hand.",
-    "testType": "roll_under",
-    "range": "close",
-    "duration": "instantaneous",
-    "components": [
-        "somatic"
-    ],
-    "effect": "Extinguishes small flame",
-    "tags": [
-        "transmutation",
-        "utility"
-    ],
-    "specialMechanics": [
-        "Works on small flames only",
-        "Simple hand gesture",
-        "Instantaneous effect"
-    ],
-    "oopsEntry": true
+  "name": "Quench",
+  "cost": 1,
+  "description": "Snuff a small flame with the wave of a hand.",
+  "testType": "rollUnder",
+  "range": "close",
+  "duration": "instantaneous",
+  "components": [
+    "somatic"
+  ],
+  "tags": [
+    "transmutation",
+    "utility"
+  ],
+  "specialMechanics": [
+    "Works on small flames only",
+    "Simple hand gesture",
+    "Instantaneous effect"
+  ],
+  "oopsEntry": true
 }

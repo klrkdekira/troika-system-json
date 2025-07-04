@@ -1,8 +1,7 @@
 {
   "name": "Ride",
-  "type": "advanced",
+  "type": "general",
   "description": "Everyone is assumed to have basic animal riding Skill though anything more than trotting slowly will require some kind of roll to avoid trouble.",
-  "category": "physical",
   "mechanics": {
     "testType": "rollUnder"
   },
@@ -16,5 +15,13 @@
     "Fast riding",
     "Trick riding"
   ],
-  "tags": ["physical", "mounted", "travel"]
+  "tags": [
+    "physical",
+    "mounted",
+    "travel"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

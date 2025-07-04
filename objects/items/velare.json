@@ -1,18 +1,12 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "velare",
-    "name": "Velare",
-    "description": "When inactive, looks like an ornate piece of costume jewellery, usually a brooch or a circlet. When active it produces a full body disguise on the wearer formed from hard-light. Grants +4 Disguise. Lasts for 24 hours before needing to be recharged with a plasmic core.",
-    "slots": 1,
-    "properties": [
-        "+4 Disguise when active",
-        "Lasts 24 hours per plasmic core",
-        "Produces hard-light full body disguise"
-    ],
-    "value": "500 silver pence",
-    "tags": [
-        "magical",
-        "disguise",
-        "technology"
-    ]
+  "name": "Velare",
+  "description": "When inactive, looks like an ornate piece of costume jewellery, usually a brooch or a circlet. When active it produces a full body disguise on the wearer formed from hard-light. Grants +4 Disguise. Lasts for 24 hours before needing to be recharged with a plasmic core.",
+  "slots": 1,
+  "value": "500 silver pence",
+  "tags": [
+    "magical",
+    "disguise",
+    "technology"
+  ],
+  "type": "misc"
 }

@@ -3,12 +3,7 @@
   "type": "weapon",
   "description": "A long wooden pole, useful for walking, fighting, and casting spells.",
   "slots": 2,
-  "value": {
-    "amount": 5,
-    "currency": "silver pence"
-  },
-  "weaponType": "melee",
-  "damage": "Staff",
+  "value": 5,
   "damageTable": {
     "1": 2,
     "2": 4,
@@ -18,6 +13,18 @@
     "6": 6,
     "7+": 8
   },
-  "properties": ["Two-handed", "Reach"],
-  "tags": ["weapon", "melee", "staff", "reach"]
+  "tags": [
+    "weapon",
+    "melee",
+    "staff",
+    "reach"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Staff",
+    "specialRules": [
+      "Two-handed",
+      "Reach"
+    ]
+  }
 }

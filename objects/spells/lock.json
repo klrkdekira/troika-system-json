@@ -1,25 +1,21 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "lock",
-    "name": "Lock",
-    "cost": 1,
-    "description": "Magically lock an object. The object must have a lockable aspect to it but is now magically sealed. Permanent until undone or dismissed.",
-    "testType": "roll_under",
-    "range": "touch",
-    "duration": "permanent",
-    "components": [
-        "somatic",
-        "verbal"
-    ],
-    "effect": "Magically locks an object",
-    "tags": [
-        "abjuration",
-        "utility"
-    ],
-    "specialMechanics": [
-        "Object must have lockable aspect",
-        "Permanent until dispelled",
-        "Can be dismissed by caster"
-    ],
-    "oopsEntry": true
+  "name": "Lock",
+  "cost": 1,
+  "description": "Magically lock an object. The object must have a lockable aspect to it but is now magically sealed. Permanent until undone or dismissed.",
+  "testType": "rollUnder",
+  "range": "touch",
+  "duration": "permanent",
+  "components": [
+    "somatic",
+    "verbal"
+  ],
+  "tags": [
+    "utility"
+  ],
+  "specialMechanics": [
+    "Object must have lockable aspect",
+    "Permanent until dispelled",
+    "Can be dismissed by caster"
+  ],
+  "oopsEntry": true
 }

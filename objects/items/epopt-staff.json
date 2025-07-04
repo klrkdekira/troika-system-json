@@ -1,22 +1,16 @@
 {
-    "id": "epopt-staff",
-    "name": "Epopt Staff",
-    "description": "An Epopt's Staff is a tool, an advert, and, in a pinch, a Weapon. In its head is set a cloudy ruby, like a useless magnifying glass, which grants the user +1 Second Sight while peering through it.",
-    "category": "weapon",
-    "encumbrance": 1,
-    "properties": [
-        "staff",
-        "crystal",
-        "second_sight"
-    ],
-    "damage": "staff",
-    "effects": [
-        {
-            "type": "skill_bonus",
-            "skill": "Second Sight",
-            "bonus": 1,
-            "condition": "when_peering_through_crystal"
-        }
-    ],
-    "value": "25_silver"
+  "name": "Epopt Staff",
+  "description": "An Epopt's Staff is a tool, an advert, and, in a pinch, a Weapon. In its head is set a cloudy ruby, like a useless magnifying glass, which grants the user +1 Second Sight while peering through it.",
+  "encumbrance": 1,
+  "damage": "staff",
+  "effects": [
+    {
+      "type": "skill_bonus",
+      "skill": "Second Sight",
+      "bonus": 1,
+      "condition": "when_peering_through_crystal"
+    }
+  ],
+  "value": "25_silver",
+  "type": "weapon"
 }

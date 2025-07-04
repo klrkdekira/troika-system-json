@@ -1,8 +1,7 @@
 {
   "name": "Sneak",
-  "type": "advanced",
+  "type": "general",
   "description": "The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker's score detects them.",
-  "category": "stealth",
   "mechanics": {
     "testType": "rollVersus",
     "opposedBy": "Awareness"
@@ -11,5 +10,13 @@
     "Only tested when actively being searched for",
     "Multiple searchers may each roll separately"
   ],
-  "tags": ["stealth", "infiltration", "evasion"]
+  "tags": [
+    "stealth",
+    "infiltration",
+    "evasion"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

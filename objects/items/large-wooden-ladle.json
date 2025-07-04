@@ -3,12 +3,7 @@
   "type": "weapon",
   "description": "A large, worn wooden ladle that has seen better days but still serves as an effective improvised weapon.",
   "slots": 2,
-  "value": {
-    "amount": 1,
-    "currency": "silver pence"
-  },
-  "weaponType": "melee",
-  "damage": "Mace",
+  "value": 1,
   "damageTable": {
     "1": 2,
     "2": 4,
@@ -18,6 +13,18 @@
     "6": 8,
     "7+": 10
   },
-  "properties": ["Improvised weapon", "Can also serve as cooking utensil"],
-  "tags": ["weapon", "improvised", "cooking", "wooden"]
+  "tags": [
+    "weapon",
+    "improvised",
+    "cooking",
+    "wooden"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Mace",
+    "specialRules": [
+      "Improvised weapon",
+      "Can also serve as cooking utensil"
+    ]
+  }
 }

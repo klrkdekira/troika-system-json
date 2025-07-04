@@ -1,51 +1,61 @@
 {
-    "$schema": "../../systems/background.schema.json",
-    "id": "56",
-    "name": "Thaumaturge",
-    "description": "Wandering miracle workers, the depths of whose clothes are filled with pouches of unguents, holy icons and herbs. No matter the metaphysical need, you are always prepared.",
-    "possessions": [
-        "Thaumaturgic Fez",
-        "Staff, bedecked with charms and bells. May reroll one die on the Oops! Table if using this staff, however, may never sneak up on anyone because of the ringing and clattering it makes",
-        "Curled Shoes",
-        "Voluminous Robes"
-    ],
-    "advanced_skills": [
-        {
-            "name": "Spell - Undo",
-            "value": 3
-        },
-        {
-            "name": "Spell - Assume Shape",
-            "value": 2
-        },
-        {
-            "name": "Spell - Thunder",
-            "value": 2
-        },
-        {
-            "name": "Spell - Random",
-            "value": 2
-        },
-        {
-            "name": "Spell - Brittle Twigs",
-            "value": 1
-        },
-        {
-            "name": "Spell - Random",
-            "value": 1
-        },
-        {
-            "name": "Second Sight",
-            "value": 1
-        },
-        {
-            "name": "Astrology",
-            "value": 1
-        }
-    ],
-    "special_abilities": [
-        "You may Test your Luck to just so happen to have exactly the (common) mystic tchotchke, bauble, or gewgaw the situation requires.",
-        "Staff allows rerolling one die on Oops! Table but prevents sneaking due to noise"
-    ],
-    "total_skill_points": 13
+  "id": 56,
+  "name": "Thaumaturge",
+  "description": "Wandering miracle workers, the depths of whose clothes are filled with pouches of unguents, holy icons and herbs. No matter the metaphysical need, you are always prepared.",
+  "possessions": [
+    {
+      "name": "Thaumaturgic Fez"
+    },
+    {
+      "name": "Staff, bedecked with charms and bells. May reroll one die on the Oops! Table if using this staff, however, may never sneak up on anyone because of the ringing and clattering it makes"
+    },
+    {
+      "name": "Curled Shoes"
+    },
+    {
+      "name": "Voluminous Robes"
+    }
+  ],
+  "advanced_skills": [
+    {
+      "name": "Spell - Undo",
+      "value": 3
+    },
+    {
+      "name": "Spell - Assume Shape",
+      "value": 2
+    },
+    {
+      "name": "Spell - Thunder",
+      "value": 2
+    },
+    {
+      "name": "Spell - Random",
+      "value": 2
+    },
+    {
+      "name": "Spell - Brittle Twigs",
+      "value": 1
+    },
+    {
+      "name": "Spell - Random",
+      "value": 1
+    },
+    {
+      "name": "Second Sight",
+      "value": 1
+    },
+    {
+      "name": "Astrology",
+      "value": 1
+    }
+  ],
+  "special_abilities": [
+    "You may Test your Luck to just so happen to have exactly the (common) mystic tchotchke, bauble, or gewgaw the situation requires.",
+    "Staff allows rerolling one die on Oops! Table but prevents sneaking due to noise"
+  ],
+  "total_skill_points": 13,
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

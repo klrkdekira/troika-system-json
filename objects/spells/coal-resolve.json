@@ -1,12 +1,8 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "coal-resolve",
-    "name": "Coal Resolve",
-    "cost": 1,
-    "description": "This Spell turns one's heart into a burning ember of grief. Those under its effect are so consumed by grief that they are immune to mind controlling effects and the non-physical impact of pain. Lasts until the next rest.",
-    "casting_instructions": "Target becomes immune to mind control and non-physical pain",
-    "duration": "Until next rest",
-    "range": "Touch or self",
-    "oops_entry": null,
-    "damage_table": null
+  "name": "Coal Resolve",
+  "cost": 1,
+  "description": "This Spell turns one's heart into a burning ember of grief. Those under its effect are so consumed by grief that they are immune to mind controlling effects and the non-physical impact of pain. Lasts until the next rest.",
+  "duration": "Until next rest",
+  "range": "Touch or self",
+  "testType": "rollUnder"
 }

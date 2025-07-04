@@ -1,18 +1,17 @@
 {
-    "name": "Ember",
-    "cost": 2,
-    "description": "A simple but effective summoning of fire. Flames the size of a small bonfire appear somewhere within 12 metres of the wizard. Once present there is no accounting for its actions.",
-    "duration": "Until naturally extinguished",
-    "range": "12 metres",
-    "testType": "rollUnder",
-    "requirements": [
-        "free hand",
-        "speech"
-    ],
-    "tags": [
-        "offensive",
-        "elemental",
-        "fire"
-    ],
-    "oopsEntry": true
+  "name": "Ember",
+  "cost": 2,
+  "description": "A simple but effective summoning of fire. Flames the size of a small bonfire appear somewhere within 12 metres of the wizard. Once present there is no accounting for its actions.",
+  "duration": "Until naturally extinguished",
+  "range": "12 metres",
+  "testType": "rollUnder",
+  "requirements": [
+    "free hand",
+    "speech"
+  ],
+  "tags": [
+    "offensive",
+    "elemental"
+  ],
+  "oopsEntry": true
 }

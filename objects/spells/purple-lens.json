@@ -1,26 +1,22 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "purple-lens",
-    "name": "Purple Lens",
-    "cost": 1,
-    "description": "The recipient's eyes glow purple as they experience an alternative reality where people are kind, their surroundings are beautiful, their food is indulgent, and so on. This doesn't change the reality of things but it does make them more palatable. Lasts until they want it to end.",
-    "testType": "roll_under",
-    "range": "touch",
-    "duration": "until_ended_by_target",
-    "components": [
-        "somatic",
-        "verbal"
-    ],
-    "effect": "Target sees pleasant alternative reality",
-    "tags": [
-        "illusion",
-        "enhancement"
-    ],
-    "specialMechanics": [
-        "Eyes glow purple",
-        "Reality appears more pleasant",
-        "Doesn't change actual reality",
-        "Target can end at will"
-    ],
-    "oopsEntry": true
+  "name": "Purple Lens",
+  "cost": 1,
+  "description": "The recipient's eyes glow purple as they experience an alternative reality where people are kind, their surroundings are beautiful, their food is indulgent, and so on. This doesn't change the reality of things but it does make them more palatable. Lasts until they want it to end.",
+  "testType": "rollUnder",
+  "range": "touch",
+  "duration": "until_ended_by_target",
+  "components": [
+    "somatic",
+    "verbal"
+  ],
+  "tags": [
+    "illusion"
+  ],
+  "specialMechanics": [
+    "Eyes glow purple",
+    "Reality appears more pleasant",
+    "Doesn't change actual reality",
+    "Target can end at will"
+  ],
+  "oopsEntry": true
 }

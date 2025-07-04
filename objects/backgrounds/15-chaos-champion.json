@@ -1,54 +1,49 @@
 {
-    "id": 15,
-    "name": "Chaos Champion",
-    "description": "You no longer don the spiked brass armour but you still have the ear of your Chaos patron. They're happy for you to experiment with not plunging your world into disorder and, ultimately, darkness, but the door is always open.",
-    "possessions": [
-        {
-            "name": "Ritual Scars",
-            "description": "Ceremonial markings from your service"
-        },
-        {
-            "name": "Huge Maul",
-            "description": "Massive two-handed weapon"
-        },
-        {
-            "name": "Assortment of Ragged Armour",
-            "description": "Counts as Modest Armour"
-        },
-        {
-            "name": "Dream Journal",
-            "description": "Almost full with visions from your patron"
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Language – Kurgan",
-            "rank": 6,
-            "category": "knowledge"
-        },
-        {
-            "name": "Maul Fighting",
-            "rank": 3,
-            "category": "combat"
-        },
-        {
-            "name": "Secret Signs – Chaos Patron",
-            "rank": 3,
-            "category": "knowledge"
-        },
-        {
-            "name": "Spell – Random",
-            "rank": 1,
-            "category": "magic"
-        },
-        {
-            "name": "Second Sight",
-            "rank": 1,
-            "category": "mental"
-        }
-    ],
-    "spells": [],
-    "special": [
-        "Name your patron. You may call upon your patron for aid once per day. To do so roll three 6s on 3d6. The GM interprets their intervention."
-    ]
+  "id": 15,
+  "name": "Chaos Champion",
+  "description": "You no longer don the spiked brass armour but you still have the ear of your Chaos patron. They're happy for you to experiment with not plunging your world into disorder and, ultimately, darkness, but the door is always open.",
+  "possessions": [
+    {
+      "name": "Ritual Scars",
+      "description": "Ceremonial markings from your service"
+    },
+    {
+      "name": "Huge Maul",
+      "description": "Massive two-handed weapon"
+    },
+    {
+      "name": "Assortment of Ragged Armour",
+      "description": "Counts as Modest Armour"
+    },
+    {
+      "name": "Dream Journal",
+      "description": "Almost full with visions from your patron"
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Language \u2013 Kurgan",
+      "rank": 6
+    },
+    {
+      "name": "Maul Fighting",
+      "rank": 3
+    },
+    {
+      "name": "Secret Signs \u2013 Chaos Patron",
+      "rank": 3
+    },
+    {
+      "name": "Spell \u2013 Random",
+      "rank": 1
+    },
+    {
+      "name": "Second Sight",
+      "rank": 1
+    }
+  ],
+  "spells": [],
+  "special": [
+    "Name your patron. You may call upon your patron for aid once per day. To do so roll three 6s on 3d6. The GM interprets their intervention."
+  ]
 }

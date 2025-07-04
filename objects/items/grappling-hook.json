@@ -3,10 +3,7 @@
   "type": "tool",
   "description": "A metal hook attached to a length of rope for climbing or retrieving objects.",
   "slots": 2,
-  "value": {
-    "amount": 8,
-    "currency": "silver pence"
-  },
+  "value": 8,
   "bonuses": [
     {
       "type": "skill",
@@ -15,5 +12,10 @@
       "condition": "when used for climbing"
     }
   ],
-  "tags": ["tool", "climbing", "rope", "hook"]
+  "tags": [
+    "tool",
+    "climbing",
+    "rope",
+    "hook"
+  ]
 }

@@ -1,70 +1,74 @@
 {
-    "name": "Beastly Weapons Damage Table",
-    "description": "Damage values for natural and creature attacks based on damage roll",
-    "diceType": "d6",
-    "type": "damage",
-    "damageMatrix": {
-        "weapons": [
-            "Small Beast",
-            "Modest Beast",
-            "Large Beast",
-            "Gigantic Beast"
-        ],
-        "rollColumns": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7+"
-        ],
-        "matrix": {
-            "Small Beast": {
-                "1": 2,
-                "2": 2,
-                "3": 3,
-                "4": 3,
-                "5": 4,
-                "6": 5,
-                "7+": 6
-            },
-            "Modest Beast": {
-                "1": 4,
-                "2": 6,
-                "3": 6,
-                "4": 8,
-                "5": 8,
-                "6": 10,
-                "7+": 12
-            },
-            "Large Beast": {
-                "1": 4,
-                "2": 6,
-                "3": 8,
-                "4": 10,
-                "5": 12,
-                "6": 14,
-                "7+": 16
-            },
-            "Gigantic Beast": {
-                "1": 4,
-                "2": 8,
-                "3": 12,
-                "4": 12,
-                "5": 16,
-                "6": 18,
-                "7+": 24
-            }
-        },
-        "special": [
-            "# indicates a Weapon that ignores 1 point of Armour"
-        ]
+  "name": "Beastly Weapons Damage Table",
+  "description": "Damage values for natural and creature attacks based on damage roll",
+  "type": "damage",
+  "damageMatrix": {
+    "weapons": [
+      "Small Beast",
+      "Modest Beast",
+      "Large Beast",
+      "Gigantic Beast"
+    ],
+    "rollColumns": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7+"
+    ],
+    "matrix": {
+      "Small Beast": {
+        "1": 2,
+        "2": 2,
+        "3": 3,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7+": 6
+      },
+      "Modest Beast": {
+        "1": 4,
+        "2": 6,
+        "3": 6,
+        "4": 8,
+        "5": 8,
+        "6": 10,
+        "7+": 12
+      },
+      "Large Beast": {
+        "1": 4,
+        "2": 6,
+        "3": 8,
+        "4": 10,
+        "5": 12,
+        "6": 14,
+        "7+": 16
+      },
+      "Gigantic Beast": {
+        "1": 4,
+        "2": 8,
+        "3": 12,
+        "4": 12,
+        "5": 16,
+        "6": 18,
+        "7+": 24
+      }
     },
-    "tags": [
-        "weapons",
-        "damage",
-        "creatures",
-        "reference"
+    "special": [
+      "# indicates a Weapon that ignores 1 point of Armour"
     ]
+  },
+  "tags": [
+    "weapons",
+    "damage",
+    "creatures",
+    "reference"
+  ],
+  "diceExpression": "d6",
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

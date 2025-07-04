@@ -1,15 +1,11 @@
 {
-    "id": "farseeing",
-    "name": "Farseeing",
-    "cost": 2,
-    "description": "Endows the wizard with engorged, plate-like eyes that are able to see in minute detail for miles around but are unable to see anything up close. Lasts until ended.",
-    "school": "transmutation",
-    "range": "self",
-    "duration": "until_ended",
-    "components": [
-        "somatic"
-    ],
-    "effect": "Telescopic vision, unable to see close objects",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Farseeing",
+  "cost": 2,
+  "description": "Endows the wizard with engorged, plate-like eyes that are able to see in minute detail for miles around but are unable to see anything up close. Lasts until ended.",
+  "range": "self",
+  "duration": "until_ended",
+  "components": [
+    "somatic"
+  ],
+  "testType": "rollUnder"
 }

@@ -1,33 +1,29 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "illusion",
-    "name": "Illusion",
-    "cost": 2,
-    "description": "Those viewing this illusion may Test their Luck (or Skill for Enemies) to unveil the trickery. Lasts until the wizard leaves or falls asleep.",
-    "testType": "roll_under",
-    "range": "sight",
-    "duration": "until_wizard_leaves_or_sleeps",
-    "components": [
-        "somatic",
-        "verbal"
-    ],
-    "effect": "Creates visual illusion",
-    "tags": [
-        "illusion",
-        "deception"
-    ],
-    "costModifier": "per_viewer",
-    "saves": [
-        {
-            "type": "luck",
-            "description": "Viewers may Test Luck (or Skill for Enemies) to see through illusion",
-            "onSuccess": "Sees through illusion",
-            "onFailure": "Believes illusion"
-        }
-    ],
-    "specialMechanics": [
-        "Cost is 2 per viewer",
-        "Lasts until wizard leaves area or falls asleep"
-    ],
-    "oopsEntry": true
+  "name": "Illusion",
+  "cost": 2,
+  "description": "Those viewing this illusion may Test their Luck (or Skill for Enemies) to unveil the trickery. Lasts until the wizard leaves or falls asleep.",
+  "testType": "rollUnder",
+  "range": "sight",
+  "duration": "until_wizard_leaves_or_sleeps",
+  "components": [
+    "somatic",
+    "verbal"
+  ],
+  "tags": [
+    "illusion"
+  ],
+  "costModifier": "per_viewer",
+  "saves": [
+    {
+      "type": "luck",
+      "description": "Viewers may Test Luck (or Skill for Enemies) to see through illusion",
+      "onSuccess": "Sees through illusion",
+      "onFailure": "Believes illusion"
+    }
+  ],
+  "specialMechanics": [
+    "Cost is 2 per viewer",
+    "Lasts until wizard leaves area or falls asleep"
+  ],
+  "oopsEntry": true
 }

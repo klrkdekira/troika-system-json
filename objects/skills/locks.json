@@ -1,9 +1,10 @@
 {
   "name": "Locks",
-  "type": "advanced",
+  "type": "general",
   "description": "This allows a character to examine and open locks but does not detect traps. Roll Versus an imaginary locksmith whose Skill is somewhere between 6 and 12 with 6 being easy and 12 being very hard.",
-  "category": "technical",
-  "relatedItems": ["Lock Picks"],
+  "relatedItems": [
+    "Lock Picks"
+  ],
   "mechanics": {
     "testType": "rollVersus",
     "difficulty": {
@@ -16,5 +17,13 @@
     "Does not detect traps",
     "Requires appropriate tools for best results"
   ],
-  "tags": ["technical", "criminal", "security"]
+  "tags": [
+    "technical",
+    "criminal",
+    "security"
+  ],
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

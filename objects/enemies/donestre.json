@@ -1,46 +1,72 @@
 {
-    "id": "donestre",
-    "name": "Donestre",
+  "id": "donestre",
+  "name": "Donestre",
+  "description": "There is a certain race of a solitary nature whose multitudinous heads are all lions and flowing manes. They glitter with numinous light and speak the language of all thinking beings. They dazzle travellers with knowledge of their past and the places they have been and are going. Indeed their knowledge seems deep, broad, and generously given. Their hunger for company is an honest one, their enthusiasm is endless, but they can't control themselves. As the conversation flows they become more and more fervent until their passion ignites and they devour their companion up to the neck. They continue to sadly converse with the head for a time before shamefully burying it and moving on.",
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Gregarious",
+        "behavior": "Gregarious"
+      },
+      {
+        "roll": 2,
+        "mood": "Urbane",
+        "behavior": "Urbane"
+      },
+      {
+        "roll": 3,
+        "mood": "Exhilarated",
+        "behavior": "Exhilarated"
+      },
+      {
+        "roll": 4,
+        "mood": "Impassioned",
+        "behavior": "Impassioned"
+      },
+      {
+        "roll": 5,
+        "mood": "Shameful",
+        "behavior": "Shameful"
+      },
+      {
+        "roll": 6,
+        "mood": "Grieving",
+        "behavior": "Grieving"
+      }
+    ]
+  },
+  "special": [
+    {
+      "name": "Special Ability",
+      "description": "Speaks all languages",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Knows travellers' histories and destinations",
+      "type": "passive"
+    },
+    {
+      "name": "Special Ability",
+      "description": "Becomes increasingly passionate during conversation until they devour companion",
+      "type": "passive"
+    }
+  ],
+  "habitat": [
+    "solitary",
+    "wilderness"
+  ],
+  "frequency": "rare",
+  "stats": {
     "skill": 9,
     "stamina": 14,
     "initiative": 3,
     "armor": 0,
-    "damage": "modest_beast",
-    "description": "There is a certain race of a solitary nature whose multitudinous heads are all lions and flowing manes. They glitter with numinous light and speak the language of all thinking beings. They dazzle travellers with knowledge of their past and the places they have been and are going. Indeed their knowledge seems deep, broad, and generously given. Their hunger for company is an honest one, their enthusiasm is endless, but they can't control themselves. As the conversation flows they become more and more fervent until their passion ignites and they devour their companion up to the neck. They continue to sadly converse with the head for a time before shamefully burying it and moving on.",
-    "mien": [
-        {
-            "roll": 1,
-            "behavior": "Gregarious"
-        },
-        {
-            "roll": 2,
-            "behavior": "Urbane"
-        },
-        {
-            "roll": 3,
-            "behavior": "Exhilarated"
-        },
-        {
-            "roll": 4,
-            "behavior": "Impassioned"
-        },
-        {
-            "roll": 5,
-            "behavior": "Shameful"
-        },
-        {
-            "roll": 6,
-            "behavior": "Grieving"
-        }
-    ],
-    "special": [
-        "Speaks all languages",
-        "Knows travellers' histories and destinations",
-        "Becomes increasingly passionate during conversation until they devour companion"
-    ],
-    "habitat": [
-        "solitary",
-        "wilderness"
-    ],
-    "frequency": "rare"
+    "damage": "modest_beast"
+  },
+  "possessions": [],
+  "advancedSkills": [],
+  "spells": []
 }

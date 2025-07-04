@@ -1,24 +1,20 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "invisibility",
-    "name": "Invisibility",
-    "cost": 3,
-    "description": "The wizard turns flesh into refractive crystal sheets. It's very uncomfortable and you make a slight shish-ing sound as you move but are quite invisible and don't suffer from the usual limitations of illusions. Lasts for 3 minutes after which you noisily reform into dull and frustratingly opaque flesh.",
-    "testType": "roll_under",
-    "range": "self",
-    "duration": "3_minutes",
-    "components": [
-        "somatic"
-    ],
-    "effect": "Caster becomes invisible",
-    "tags": [
-        "illusion",
-        "stealth"
-    ],
-    "specialMechanics": [
-        "Makes slight shish-ing sound when moving",
-        "True invisibility, not an illusion",
-        "Noisily reforms at end of duration"
-    ],
-    "oopsEntry": true
+  "name": "Invisibility",
+  "cost": 3,
+  "description": "The wizard turns flesh into refractive crystal sheets. It's very uncomfortable and you make a slight shish-ing sound as you move but are quite invisible and don't suffer from the usual limitations of illusions. Lasts for 3 minutes after which you noisily reform into dull and frustratingly opaque flesh.",
+  "testType": "rollUnder",
+  "range": "self",
+  "duration": "3_minutes",
+  "components": [
+    "somatic"
+  ],
+  "tags": [
+    "illusion"
+  ],
+  "specialMechanics": [
+    "Makes slight shish-ing sound when moving",
+    "True invisibility, not an illusion",
+    "Noisily reforms at end of duration"
+  ],
+  "oopsEntry": true
 }

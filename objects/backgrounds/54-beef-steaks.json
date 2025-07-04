@@ -1,47 +1,59 @@
 {
-    "$schema": "../../systems/background.schema.json",
-    "id": "54",
-    "name": "Fellow of The Sublime Society of Beef Steaks",
-    "description": "Brawlers believe the application of might and a good beef steak is the universal truth. Words have no power and can no more define the universe than they can build a house, lift a cup, or sear a steak. Might can! Really, they have thought a lot about this.",
-    "possessions": [
-        "Weapon of your choice",
-        "Small Gridiron",
-        "2kg of Premium Meat Cuts",
-        "Waistcoat",
-        "Bottle of Strong but Fancy Wine"
-    ],
-    "advanced_skills": [
-        {
-            "name": "Fighting in chosen weapon",
-            "value": 2
-        },
-        {
-            "name": "Wrestling",
-            "value": 2
-        },
-        {
-            "name": "Swim",
-            "value": 2
-        },
-        {
-            "name": "Climb",
-            "value": 2
-        },
-        {
-            "name": "Run",
-            "value": 2
-        },
-        {
-            "name": "Fist Fighting",
-            "value": 2
-        },
-        {
-            "name": "Grilling",
-            "value": 1
-        }
-    ],
-    "special_abilities": [
-        "Choose weapon type when creating character - gain 2 points in that Fighting skill"
-    ],
-    "total_skill_points": 13
+  "id": 54,
+  "name": "Fellow of The Sublime Society of Beef Steaks",
+  "description": "Brawlers believe the application of might and a good beef steak is the universal truth. Words have no power and can no more define the universe than they can build a house, lift a cup, or sear a steak. Might can! Really, they have thought a lot about this.",
+  "possessions": [
+    {
+      "name": "Weapon of your choice"
+    },
+    {
+      "name": "Small Gridiron"
+    },
+    {
+      "name": "2kg of Premium Meat Cuts"
+    },
+    {
+      "name": "Waistcoat"
+    },
+    {
+      "name": "Bottle of Strong but Fancy Wine"
+    }
+  ],
+  "advanced_skills": [
+    {
+      "name": "Fighting in chosen weapon",
+      "value": 2
+    },
+    {
+      "name": "Wrestling",
+      "value": 2
+    },
+    {
+      "name": "Swim",
+      "value": 2
+    },
+    {
+      "name": "Climb",
+      "value": 2
+    },
+    {
+      "name": "Run",
+      "value": 2
+    },
+    {
+      "name": "Fist Fighting",
+      "value": 2
+    },
+    {
+      "name": "Grilling",
+      "value": 1
+    }
+  ],
+  "special_abilities": [
+    "Choose weapon type when creating character - gain 2 points in that Fighting skill"
+  ],
+  "total_skill_points": 13,
+  "advancedSkills": [],
+  "spells": [],
+  "special": []
 }

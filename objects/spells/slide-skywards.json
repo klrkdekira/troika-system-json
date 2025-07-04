@@ -5,17 +5,10 @@
   "duration": "Instantaneous",
   "range": "Between mirrors",
   "testType": "rollUnder",
-  "target": "Self",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": "Two mirrors or highly reflective surfaces"
-  },
-  "effects": [
-    {
-      "type": "conjuration",
-      "description": "Teleport between mirrored locations"
-    }
+  "components": [
+    "verbal",
+    "somatic",
+    "Two mirrors or highly reflective surfaces"
   ],
   "requirements": [
     "Requires mirrors or other highly reflective surfaces",
@@ -24,5 +17,7 @@
   "risks": [
     "If location compromised, arrive at random mirrored location across the million crystal spheres"
   ],
-  "tags": ["conjuration", "teleportation", "mirrors"]
+  "tags": [
+    "conjuration"
+  ]
 }

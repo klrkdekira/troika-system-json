@@ -1,25 +1,22 @@
 {
-    "$schema": "../../systems/spell.schema.json",
-    "id": "open",
-    "name": "Open",
-    "cost": 1,
-    "description": "The wizard chooses a reality wherein the lock was open all along. May be used to open any mundane door or container and counteract a Lock Spell.",
-    "testType": "roll_under",
-    "range": "touch",
-    "duration": "instantaneous",
-    "components": [
-        "somatic",
-        "verbal"
-    ],
-    "effect": "Opens any mundane lock or door",
-    "tags": [
-        "transmutation",
-        "utility"
-    ],
-    "specialMechanics": [
-        "Opens any mundane lock",
-        "Counteracts Lock spell",
-        "Reality alteration effect"
-    ],
-    "oopsEntry": true
+  "name": "Open",
+  "cost": 1,
+  "description": "The wizard chooses a reality wherein the lock was open all along. May be used to open any mundane door or container and counteract a Lock Spell.",
+  "testType": "rollUnder",
+  "range": "touch",
+  "duration": "instantaneous",
+  "components": [
+    "somatic",
+    "verbal"
+  ],
+  "tags": [
+    "transmutation",
+    "utility"
+  ],
+  "specialMechanics": [
+    "Opens any mundane lock",
+    "Counteracts Lock spell",
+    "Reality alteration effect"
+  ],
+  "oopsEntry": true
 }

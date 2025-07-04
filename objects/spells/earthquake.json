@@ -1,16 +1,12 @@
 {
-    "id": "earthquake",
-    "name": "Earthquake",
-    "cost": 5,
-    "description": "The wizard hikes up their wizard robe and stomps their wizard feet. An area 30 metres around them suffers a massive earthquake. Everyone must Test their Luck (or Skill for Enemies) or fall through a crack in the earth, taking falling Damage and being stuck in a bloody great big hole. Buildings may be wrecked unless especially sturdy.",
-    "school": "evocation",
-    "range": "30_metres",
-    "duration": "instantaneous",
-    "components": [
-        "verbal",
-        "somatic"
-    ],
-    "effect": "Creates massive earthquake in 30m radius",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Earthquake",
+  "cost": 5,
+  "description": "The wizard hikes up their wizard robe and stomps their wizard feet. An area 30 metres around them suffers a massive earthquake. Everyone must Test their Luck (or Skill for Enemies) or fall through a crack in the earth, taking falling Damage and being stuck in a bloody great big hole. Buildings may be wrecked unless especially sturdy.",
+  "range": "30_metres",
+  "duration": "instantaneous",
+  "components": [
+    "verbal",
+    "somatic"
+  ],
+  "testType": "rollUnder"
 }

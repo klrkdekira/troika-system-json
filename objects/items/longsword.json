@@ -1,21 +1,19 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "longsword",
-    "name": "Longsword",
-    "description": "A longer, more deadly version of the standard sword.",
-    "category": "weapon",
-    "weaponType": "melee",
-    "damageType": "longsword",
-    "weight": "normal",
-    "slots": 1,
-    "properties": [
-        "one_handed",
-        "melee"
-    ],
-    "tags": [
-        "weapon",
-        "melee",
-        "blade"
-    ],
-    "rarity": "common"
+  "name": "Longsword",
+  "description": "A longer, more deadly version of the standard sword.",
+  "slots": 1,
+  "tags": [
+    "weapon",
+    "melee",
+    "blade"
+  ],
+  "weapon": {
+    "category": "melee",
+    "damageAs": "longsword",
+    "specialRules": [
+      "one_handed",
+      "melee"
+    ]
+  },
+  "type": "weapon"
 }

@@ -1,90 +1,91 @@
 {
-    "id": "32",
-    "name": "Journeyman of the Guild of Sharp Corners",
-    "description": "You are an assassin in training, graduated from fighting dummies and branding practise clients, freshly imbued with a license to ply your trade. You haven't fully developed the idiosyncratic methods required of a master but you are on the path.",
-    "possessions": [
-        {
-            "name": "Black Clothes of the Apprentice",
-            "description": "Distinctive black garb of the assassin's guild",
-            "category": "clothing",
-            "properties": [
-                "stealth",
-                "guild"
-            ]
-        },
-        {
-            "name": "Garrotte",
-            "description": "Silent strangling weapon",
-            "category": "weapon",
-            "properties": [
-                "silent",
-                "stealth"
-            ]
-        },
-        {
-            "name": "Curved Sword",
-            "description": "Assassin's blade",
-            "category": "weapon",
-            "properties": [
-                "sword"
-            ]
-        },
-        {
-            "name": "3 Vials of Poison",
-            "description": "Various toxins for coating weapons",
-            "category": "component",
-            "properties": [
-                "poison",
-                "deadly"
-            ]
-        },
-        {
-            "name": "Crossbow and 6 Bolts",
-            "description": "Ranged assassination weapon",
-            "category": "weapon",
-            "properties": [
-                "ranged",
-                "stealth"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Poison",
-            "level": 1
-        },
-        {
-            "name": "Sneak",
-            "level": 1
-        },
-        {
-            "name": "Locks",
-            "level": 1
-        },
-        {
-            "name": "Knife Fighting",
-            "level": 1
-        },
-        {
-            "name": "Climb",
-            "level": 1
-        },
-        {
-            "name": "Awareness",
-            "level": 1
-        },
-        {
-            "name": "Crossbow Fighting",
-            "level": 1
-        },
-        {
-            "name": "Swim",
-            "level": 1
-        },
-        {
-            "name": "Disguise",
-            "level": 1
-        }
-    ],
-    "special": []
+  "id": 32,
+  "name": "Journeyman of the Guild of Sharp Corners",
+  "description": "You are an assassin in training, graduated from fighting dummies and branding practise clients, freshly imbued with a license to ply your trade. You haven't fully developed the idiosyncratic methods required of a master but you are on the path.",
+  "possessions": [
+    {
+      "name": "Black Clothes of the Apprentice",
+      "description": "Distinctive black garb of the assassin's guild",
+      "category": "clothing",
+      "properties": [
+        "stealth",
+        "guild"
+      ]
+    },
+    {
+      "name": "Garrotte",
+      "description": "Silent strangling weapon",
+      "category": "weapon",
+      "properties": [
+        "silent",
+        "stealth"
+      ]
+    },
+    {
+      "name": "Curved Sword",
+      "description": "Assassin's blade",
+      "category": "weapon",
+      "properties": [
+        "sword"
+      ]
+    },
+    {
+      "name": "3 Vials of Poison",
+      "description": "Various toxins for coating weapons",
+      "category": "component",
+      "properties": [
+        "poison",
+        "deadly"
+      ]
+    },
+    {
+      "name": "Crossbow and 6 Bolts",
+      "description": "Ranged assassination weapon",
+      "category": "weapon",
+      "properties": [
+        "ranged",
+        "stealth"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Poison",
+      "rank": 1
+    },
+    {
+      "name": "Sneak",
+      "rank": 1
+    },
+    {
+      "name": "Locks",
+      "rank": 1
+    },
+    {
+      "name": "Knife Fighting",
+      "rank": 1
+    },
+    {
+      "name": "Climb",
+      "rank": 1
+    },
+    {
+      "name": "Awareness",
+      "rank": 1
+    },
+    {
+      "name": "Crossbow Fighting",
+      "rank": 1
+    },
+    {
+      "name": "Swim",
+      "rank": 1
+    },
+    {
+      "name": "Disguise",
+      "rank": 1
+    }
+  ],
+  "special": [],
+  "spells": []
 }

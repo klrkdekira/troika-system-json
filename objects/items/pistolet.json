@@ -1,28 +1,20 @@
 {
-    "name": "Pistolet",
-    "description": "A hand held energy Weapon. Holds enough energy for 8 shots.",
-    "slots": 1,
-    "type": "weapon",
-    "weapon": {
-        "damageType": "Pistolet",
-        "twoHanded": false,
-        "ignoresArmor": true,
-        "range": "Medium",
-        "ammunition": "Energy",
-        "capacity": 8
-    },
-    "skillBonus": [],
-    "properties": [
-        "Energy weapon",
-        "Ignores 1 point of armor",
-        "8 shots before recharging"
-    ],
-    "requirements": [
-        "Pistolet Fighting skill for best effectiveness"
-    ],
-    "tags": [
-        "energy weapon",
-        "technological",
-        "ranged"
-    ]
+  "name": "Pistolet",
+  "description": "A hand held energy Weapon. Holds enough energy for 8 shots.",
+  "slots": 1,
+  "type": "weapon",
+  "weapon": {
+    "twoHanded": false,
+    "ignoresArmor": 1,
+    "range": "Medium",
+    "ammunition": "Energy",
+    "capacity": 8,
+    "category": "ranged",
+    "damageAs": "Pistolet"
+  },
+  "tags": [
+    "energy weapon",
+    "technological",
+    "ranged"
+  ]
 }

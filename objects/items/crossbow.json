@@ -1,21 +1,19 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "crossbow",
-    "name": "Crossbow",
-    "description": "A mechanical bow that fires bolts with great force and accuracy.",
-    "category": "weapon",
-    "weaponType": "ranged",
-    "damageType": "crossbow",
-    "weight": "large",
-    "slots": 2,
-    "properties": [
-        "two_handed",
-        "ranged"
-    ],
-    "tags": [
-        "weapon",
-        "ranged",
-        "mechanical"
-    ],
-    "rarity": "common"
+  "name": "Crossbow",
+  "description": "A mechanical bow that fires bolts with great force and accuracy.",
+  "slots": 2,
+  "tags": [
+    "weapon",
+    "ranged",
+    "mechanical"
+  ],
+  "weapon": {
+    "category": "ranged",
+    "damageAs": "crossbow",
+    "specialRules": [
+      "two_handed",
+      "ranged"
+    ]
+  },
+  "type": "weapon"
 }

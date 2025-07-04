@@ -1,5 +1,5 @@
 {
-  "id": "25",
+  "id": 25,
   "name": "The Fellowship of Knidos",
   "description": "Mathmologists honour the clean and unambiguous truths of mathematics and coordinate them with their observations of the multiverse. All things can be measured and predicted with the application of the correct mathmological ratios, those methods applied to penetrate the ethereal surface and glimpse the fundamental numbers below.",
   "possessions": [
@@ -7,25 +7,43 @@
       "name": "Large Astrolabe",
       "description": "Damage as Mace",
       "category": "weapon",
-      "properties": ["mathematical", "mace"]
+      "properties": [
+        "mathematical",
+        "mace"
+      ]
     },
     {
       "name": "Abacus",
       "description": "For mathematical calculations",
       "category": "tool",
-      "properties": ["mathematical"]
+      "properties": [
+        "mathematical"
+      ]
     },
     {
       "name": "Lots of Scrolls and Writing Equipment",
       "description": "Mathematical texts and writing implements",
       "category": "tool",
-      "properties": ["scholarly", "writing"]
+      "properties": [
+        "scholarly",
+        "writing"
+      ]
     }
   ],
   "advancedSkills": [
-    {"name": "Mathmology", "level": 3},
-    {"name": "Astrology", "level": 2},
-    {"name": "Spell - Find", "level": 2}
+    {
+      "name": "Mathmology",
+      "rank": 3
+    },
+    {
+      "name": "Astrology",
+      "rank": 2
+    },
+    {
+      "name": "Spell - Find",
+      "rank": 2
+    }
   ],
-  "special": []
-} 
+  "special": [],
+  "spells": []
+}

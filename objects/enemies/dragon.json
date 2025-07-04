@@ -1,33 +1,72 @@
 {
-    "name": "Dragon",
+  "name": "Dragon",
+  "description": "Dragons are creatures of hyper-light, unburdened by base matter, able to soar across the dark sea of sky between worlds. Since their spirits are immortal and illuminated by the black-suns they may, and often do, indulge in base activities such as wanton slaughter, accumulating needless wealth, and plumbing the depths of forbidden knowledge. They do this because they know that nothing of these wicked spheres can harm them or their objective spiritual and physical perfection.",
+  "stats": {
     "skill": 16,
     "stamina": 32,
     "initiative": 8,
-    "armour": 4,
-    "damage": "Gigantic Beast",
-    "description": "Dragons are creatures of hyper-light, unburdened by base matter, able to soar across the dark sea of sky between worlds. Since their spirits are immortal and illuminated by the black-suns they may, and often do, indulge in base activities such as wanton slaughter, accumulating needless wealth, and plumbing the depths of forbidden knowledge. They do this because they know that nothing of these wicked spheres can harm them or their objective spiritual and physical perfection.",
-    "mien": [
-        "Sleeping",
-        "\"Playful\"",
-        "Hungry",
-        "Quizzical",
-        "Aggressive",
-        "Paranoid"
-    ],
-    "special": [
-        "Once per Round they may douse a 24 foot area in beautiful Dragon-Fire. Everyone in the area is automatically hit but may Test their Luck to reduce the Damage Roll by 1. Dragon-Fire damage: 1=6, 2=8, 3=12, 4=16, 5=18, 6=24, 7+=36",
-        "Dragons are immune to high temperatures, including Dragon-Fire."
-    ],
-    "spells": [],
-    "tags": [
-        "extraplanar",
-        "magical",
-        "flying",
-        "intelligent"
-    ],
-    "environment": [
-        "anywhere",
-        "lairs",
-        "between worlds"
+    "armor": 4,
+    "damage": "Gigantic Beast"
+  },
+  "mien": {
+    "diceType": "d6",
+    "entries": [
+      {
+        "roll": 1,
+        "mood": "Sleeping",
+        "behavior": "Sleeping"
+      },
+      {
+        "roll": 2,
+        "mood": "\"Playful\"",
+        "behavior": "\"Playful\""
+      },
+      {
+        "roll": 3,
+        "mood": "Hungry",
+        "behavior": "Hungry"
+      },
+      {
+        "roll": 4,
+        "mood": "Quizzical",
+        "behavior": "Quizzical"
+      },
+      {
+        "roll": 5,
+        "mood": "Aggressive",
+        "behavior": "Aggressive"
+      },
+      {
+        "roll": 6,
+        "mood": "Paranoid",
+        "behavior": "Paranoid"
+      }
     ]
+  },
+  "special": [
+    {
+      "name": "Dragon-Fire",
+      "description": "Once per Round they may douse a 24 foot area in beautiful Dragon-Fire. Everyone in the area is automatically hit but may Test their Luck to reduce the Damage Roll by 1. Dragon-Fire damage: 1=6, 2=8, 3=12, 4=16, 5=18, 6=24, 7+=36",
+      "type": "passive"
+    },
+    {
+      "name": "Temperature Immunity",
+      "description": "Dragons are immune to high temperatures, including Dragon-Fire.",
+      "type": "passive"
+    }
+  ],
+  "spells": [],
+  "tags": [
+    "extraplanar",
+    "magical",
+    "flying",
+    "intelligent"
+  ],
+  "habitat": [
+    "anywhere",
+    "lairs",
+    "treasure hoards"
+  ],
+  "possessions": [],
+  "advancedSkills": []
 }

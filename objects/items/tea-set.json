@@ -1,15 +1,11 @@
 {
-    "$schema": "../../systems/item.schema.json",
-    "id": "tea-set",
-    "name": "Tea Set",
-    "description": "A tea set grants +1 to Etiquette when you have the time to sit down and make tea for those you are trying to impress.",
-    "slots": 2,
-    "properties": [
-        "+1 to Etiquette when used to make tea for others"
-    ],
-    "value": "15 silver pence",
-    "tags": [
-        "tool",
-        "social"
-    ]
+  "name": "Tea Set",
+  "description": "A tea set grants +1 to Etiquette when you have the time to sit down and make tea for those you are trying to impress.",
+  "slots": 2,
+  "value": "15 silver pence",
+  "tags": [
+    "tool",
+    "social"
+  ],
+  "type": "misc"
 }

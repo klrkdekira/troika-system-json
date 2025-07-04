@@ -5,18 +5,15 @@
   "duration": "One conversation",
   "range": "Touch",
   "testType": "rollUnder",
-  "target": "Skull",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": "Skull"
-  },
-  "effects": [
-    {
-      "type": "necromancy",
-      "description": "Speak with the dead, who answer one question per casting"
-    }
+  "components": [
+    "verbal",
+    "somatic",
+    "Skull"
   ],
-  "requirements": ["Requires a skull"],
-  "tags": ["necromancy", "communication", "undead"]
+  "requirements": [
+    "Requires a skull"
+  ],
+  "tags": [
+    "necromancy"
+  ]
 }

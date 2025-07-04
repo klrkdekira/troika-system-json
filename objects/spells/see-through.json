@@ -5,18 +5,14 @@
   "duration": "Permanent until dispelled",
   "range": "Touch",
   "testType": "rollUnder",
-  "target": "Surface",
-  "components": {
-    "verbal": true,
-    "somatic": true,
-    "material": false
-  },
-  "effects": [
-    {
-      "type": "transmutation",
-      "description": "Make surface translucent, penetrating up to 12 inches of material"
-    }
+  "components": [
+    "verbal",
+    "somatic"
   ],
-  "restrictions": ["Lead and Silver are immune"],
-  "tags": ["transmutation", "vision"]
+  "restrictions": [
+    "Lead and Silver are immune"
+  ],
+  "tags": [
+    "transmutation"
+  ]
 }

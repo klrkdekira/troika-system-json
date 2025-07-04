@@ -1,15 +1,11 @@
 {
-    "id": "hurricane",
-    "name": "Hurricane",
-    "cost": 5,
-    "description": "The wizard waves their hands in the air like they just don't care, which, being wizards, they likely don't. A mighty gust knocks everyone over within 30 metres who fails to Test their Luck (or Skill for Enemies), dealing 1d3 Damage and making an awful mess. Lasts for 10 minutes. Test Luck every Turn if not taking cover or else take further Damage.",
-    "school": "evocation",
-    "range": "30_metres",
-    "duration": "10_minutes",
-    "components": [
-        "somatic"
-    ],
-    "effect": "Knocks down targets, 1d3 damage, ongoing wind",
-    "oopsEntry": null,
-    "damageTable": null
+  "name": "Hurricane",
+  "cost": 5,
+  "description": "The wizard waves their hands in the air like they just don't care, which, being wizards, they likely don't. A mighty gust knocks everyone over within 30 metres who fails to Test their Luck (or Skill for Enemies), dealing 1d3 Damage and making an awful mess. Lasts for 10 minutes. Test Luck every Turn if not taking cover or else take further Damage.",
+  "range": "30_metres",
+  "duration": "10_minutes",
+  "components": [
+    "somatic"
+  ],
+  "testType": "rollUnder"
 }

@@ -1,53 +1,54 @@
 {
-    "id": "34",
-    "name": "Lonesome Monarch",
-    "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as well. Either way you are now a lost and lonely sovereign without a kingdom — no one has heard of you or your people. Most don't believe you and laugh, or worse, they do believe you and shrug at the vagaries of fate.",
-    "possessions": [
-        {
-            "name": "Nice Weapon of your choice",
-            "description": "A fine weapon befitting royalty",
-            "category": "weapon",
-            "properties": [
-                "fine",
-                "royal"
-            ]
-        },
-        {
-            "name": "Crown",
-            "description": "Symbol of lost authority",
-            "category": "regalia",
-            "properties": [
-                "royal",
-                "distinctive"
-            ]
-        },
-        {
-            "name": "Tired Horse",
-            "description": "Your faithful but weary mount",
-            "category": "companion",
-            "properties": [
-                "mount",
-                "tired"
-            ]
-        }
-    ],
-    "advancedSkills": [
-        {
-            "name": "Etiquette",
-            "level": 3
-        },
-        {
-            "name": "Fighting in your Nice Weapon",
-            "level": 3
-        },
-        {
-            "name": "Ride",
-            "level": 3
-        },
-        {
-            "name": "Tracking",
-            "level": 1
-        }
-    ],
-    "special": []
+  "id": 34,
+  "name": "Lonesome Monarch",
+  "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as well. Either way you are now a lost and lonely sovereign without a kingdom — no one has heard of you or your people. Most don't believe you and laugh, or worse, they do believe you and shrug at the vagaries of fate.",
+  "possessions": [
+    {
+      "name": "Nice Weapon of your choice",
+      "description": "A fine weapon befitting royalty",
+      "category": "weapon",
+      "properties": [
+        "fine",
+        "royal"
+      ]
+    },
+    {
+      "name": "Crown",
+      "description": "Symbol of lost authority",
+      "category": "regalia",
+      "properties": [
+        "royal",
+        "distinctive"
+      ]
+    },
+    {
+      "name": "Tired Horse",
+      "description": "Your faithful but weary mount",
+      "category": "companion",
+      "properties": [
+        "mount",
+        "tired"
+      ]
+    }
+  ],
+  "advancedSkills": [
+    {
+      "name": "Etiquette",
+      "rank": 3
+    },
+    {
+      "name": "Fighting in your Nice Weapon",
+      "rank": 3
+    },
+    {
+      "name": "Ride",
+      "rank": 3
+    },
+    {
+      "name": "Tracking",
+      "rank": 1
+    }
+  ],
+  "special": [],
+  "spells": []
 }
