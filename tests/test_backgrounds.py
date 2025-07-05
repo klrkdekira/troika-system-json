@@ -232,7 +232,7 @@ class TestBackgroundData(unittest.TestCase):
                     "A Club",
                     "A Sack",
                     "1d6 Empty Gremlin Jars",
-                    "A Jar with a Pissed-off Gremlin Inside",
+                    "A Jar with a Pissed–off Gremlin Inside",
                 ],
                 "special": [],
             },
@@ -312,10 +312,10 @@ class TestBackgroundData(unittest.TestCase):
                     "Monkey Club",
                     "Butcher's Knife",
                     "1d6 Small Monkeys",
-                    "A Pocket Full of Monkey Treats",
+                    "Pocket Full of Monkey Treats",
                 ],
                 "special": [
-                    "The GM may choose to roll on this table anytime the Mien of monkeys must be determined: 1 Playful, 2 Stalking, 3 Hungry, 4 Tired, 5 Austere, 6 Aggressive"
+                    "The GM may choose to roll on this table anytime the Mien of monkeys must be determined."
                 ],
             },
             41: {
@@ -627,9 +627,7 @@ class TestBackgroundData(unittest.TestCase):
                     "Manual on Yongardy Law",
                     "Barrister's Wig",
                 ],
-                "special": [
-                    "Choose weapon combination when creating character - gain 4 points in that Fighting skill"
-                ],
+                "special": [],
             },
             66: {
                 "name": "Zoanthrop",

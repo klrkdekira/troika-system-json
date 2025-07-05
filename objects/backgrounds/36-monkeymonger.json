@@ -7,38 +7,25 @@
       "name": "Monkey Club",
       "description": "Club used for monkey herding",
       "category": "weapon",
-      "properties": [
-        "club",
-        "herding"
-      ]
+      "properties": ["club", "herding"]
     },
     {
       "name": "Butcher's Knife",
       "description": "For preparing monkey meat",
       "category": "weapon",
-      "properties": [
-        "knife",
-        "butchering"
-      ]
+      "properties": ["knife", "butchering"]
     },
     {
       "name": "1d6 Small Monkeys",
       "description": "Do not heed commands but are too scared and hungry to travel far from you",
       "category": "companion",
-      "properties": [
-        "animal",
-        "livestock",
-        "uncontrolled"
-      ]
+      "properties": ["animal", "livestock", "uncontrolled"]
     },
     {
       "name": "A Pocket Full of Monkey Treats",
       "description": "Food for keeping monkeys nearby",
       "category": "tool",
-      "properties": [
-        "animal_care",
-        "food"
-      ]
+      "properties": ["animal_care", "food"]
     }
   ],
   "advancedSkills": [
@@ -61,6 +48,6 @@
   ],
   "spells": [],
   "special": [
-    "The GM may choose to roll on this table anytime the Mien of monkeys must be determined: 1 Playful, 2 Stalking, 3 Hungry, 4 Tired, 5 Austere, 6 Aggressive"
+    "The GM may choose to roll on this table anytime the Mien of monkeys must be determined. Mien: 1 Playful, 2 Stalking, 3 Hungry, 4 Tired, 5 Austere, 6 Aggressive."
   ]
 }

@@ -7,52 +7,37 @@
       "name": "Small but Vicious Dog",
       "description": "A loyal companion for hunting gremlins",
       "category": "companion",
-      "properties": [
-        "animal",
-        "vicious"
-      ]
+      "properties": ["animal", "vicious"]
     },
     {
       "name": "Flat Cap",
       "description": "Traditional gremlin catcher headwear",
       "category": "clothing",
-      "properties": [
-        "distinctive"
-      ]
+      "properties": ["distinctive"]
     },
     {
       "name": "A Club",
       "description": "For bashing gremlin heads",
       "category": "weapon",
-      "properties": [
-        "club"
-      ]
+      "properties": ["club"]
     },
     {
       "name": "A Sack",
       "description": "For collecting gremlins",
       "category": "tool",
-      "properties": [
-        "storage"
-      ]
+      "properties": ["storage"]
     },
     {
       "name": "1d6 Empty Gremlin Jars",
       "description": "For storing captured gremlins",
       "category": "tool",
-      "properties": [
-        "storage",
-        "trapping"
-      ]
+      "properties": ["storage", "trapping"]
     },
     {
-      "name": "A Jar with a Pissed-off Gremlin Inside",
+      "name": "A Jar with a Pissed–off Gremlin Inside",
       "description": "Evidence of your profession",
       "category": "specimen",
-      "properties": [
-        "dangerous",
-        "proof"
-      ]
+      "properties": ["dangerous", "proof"]
     }
   ],
   "advancedSkills": [

@@ -81,15 +81,6 @@ This project has reached a stable state with comprehensive data coverage:
 - ✅ Skill data (18/18 complete)
 - ✅ Table data (5/5 complete)
 
-### Additional Features
-
-- ✅ JSON Schema validation system
-- ✅ Modular file structure with references
-- ✅ Complete SRD compliance documentation
-- 🔄 Ongoing data validation and quality assurance
-- 🔄 Community tools and integrations
-- 🔄 Extended documentation and examples
-
 ### Project Health
 
 - **Total Files**: 220+ JSON data files
@@ -115,17 +106,8 @@ This is an independent production and is not affiliated with the Melsonian Arts 
 - The mechanics and concepts of "Troika!" are used under the terms of the SRD
 - This data structure may be used freely for compatible projects
 - Original game content remains copyright of the Melsonian Arts Council
-- See `srd.md` for complete licensing terms
+- See the [SRD](<(https://troika-srd.netlify.app/#/)>) for complete licensing terms
 
 ### Original Work
 
 "Troika!" is a trademark of the Melsonian Arts Council. This project provides a data structure for the system but does not include the complete game text. Please support the original creators by purchasing the official Troika! rulebook.
-
-## 🤝 Contributing
-
-This project is under active development. Contributions are welcome for:
-
-- Data validation and error correction
-- Schema improvements
-- Documentation enhancements
-- Tool development for data consumption
