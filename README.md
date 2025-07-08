@@ -1,10 +1,5 @@
 # Troika! System JSON
 
-<p align="center">
-  <strong>🚧 WORK IN PROGRESS 🚧</strong><br>
-  <em>This project is actively being developed and data may be incomplete or subject to change.</em>
-</p>
-
 A comprehensive JSON data structure for the Troika! tabletop RPG system, providing structured access to all game content including backgrounds, enemies, items, skills, spells, and tables.
 
 ## 📁 Directory Structure
@@ -99,7 +94,7 @@ This project is based on the **Troika!** tabletop RPG system by the **Melsonian 
 
 This is an independent production and is not affiliated with the Melsonian Arts Council. It is published under the terms outlined in the [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/#/).
 
-**Troika! System JSON is an independent production by Chee Leong and is not affiliated with the Melsonian Arts Council.**
+**Troika! System JSON is an independent production by [Chee Leong](https://cheeleong.dev) and is not affiliated with the Melsonian Arts Council.**
 
 ### Terms of Use
 
