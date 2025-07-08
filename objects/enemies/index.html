@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Troika! Enemies</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f8f9fa;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        color: #6c757d;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      .breadcrumb {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .breadcrumb a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      .link-grid {
+        display: grid;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .link-item {
+        display: block;
+        padding: 0.75rem 1rem;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #495057;
+        transition: all 0.2s ease;
+      }
+
+      .link-item:hover {
+        background: #e9ecef;
+        border-color: #adb5bd;
+        color: #212529;
+      }
+
+      .link-item code {
+        background: none;
+        color: #6f42c1;
+        font-weight: 500;
+      }
+
+      .file-count {
+        color: #6c757d;
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> > <a href="/objects/">Objects</a> > Enemies
+      </div>
+
+      <h1>Enemies & Creatures</h1>
+      <p class="subtitle">JSON data files for Troika! bestiary entries</p>
+
+      <p class="file-count">36 enemy files available</p>
+
+      <div class="link-grid">
+        <a href="alzabo.json" class="link-item">
+          <code>alzabo.json</code>
+        </a>
+        <a href="boggart.json" class="link-item">
+          <code>boggart.json</code>
+        </a>
+        <a href="bonshad.json" class="link-item">
+          <code>bonshad.json</code>
+        </a>
+        <a href="cyclops.json" class="link-item">
+          <code>cyclops.json</code>
+        </a>
+        <a href="dolm.json" class="link-item">
+          <code>dolm.json</code>
+        </a>
+        <a href="donestre.json" class="link-item">
+          <code>donestre.json</code>
+        </a>
+        <a href="dragon.json" class="link-item">
+          <code>dragon.json</code>
+        </a>
+        <a href="drock.json" class="link-item">
+          <code>drock.json</code>
+        </a>
+        <a href="ekodat.json" class="link-item">
+          <code>ekodat.json</code>
+        </a>
+        <a href="feathered-folk.json" class="link-item">
+          <code>feathered-folk.json</code>
+        </a>
+        <a href="goblin.json" class="link-item">
+          <code>goblin.json</code>
+        </a>
+        <a href="gremlin.json" class="link-item">
+          <code>gremlin.json</code>
+        </a>
+        <a href="harpy.json" class="link-item">
+          <code>harpy.json</code>
+        </a>
+        <a href="khaibit.json" class="link-item">
+          <code>khaibit.json</code>
+        </a>
+        <a href="knight-of-the-road.json" class="link-item">
+          <code>knight-of-the-road.json</code>
+        </a>
+        <a href="lizard-man.json" class="link-item">
+          <code>lizard-man.json</code>
+        </a>
+        <a href="living-dead.json" class="link-item">
+          <code>living-dead.json</code>
+        </a>
+        <a href="loathsome-wurm.json" class="link-item">
+          <code>loathsome-wurm.json</code>
+        </a>
+        <a href="man-beast.json" class="link-item">
+          <code>man-beast.json</code>
+        </a>
+        <a href="manticore.json" class="link-item">
+          <code>manticore.json</code>
+        </a>
+        <a href="night-pig.json" class="link-item">
+          <code>night-pig.json</code>
+        </a>
+        <a href="notule.json" class="link-item">
+          <code>notule.json</code>
+        </a>
+        <a href="ogre.json" class="link-item">
+          <code>ogre.json</code>
+        </a>
+        <a href="orc.json" class="link-item">
+          <code>orc.json</code>
+        </a>
+        <a href="owl.json" class="link-item">
+          <code>owl.json</code>
+        </a>
+        <a href="parchment-witch.json" class="link-item">
+          <code>parchment-witch.json</code>
+        </a>
+        <a href="piscean.json" class="link-item">
+          <code>piscean.json</code>
+        </a>
+        <a href="salamander.json" class="link-item">
+          <code>salamander.json</code>
+        </a>
+        <a href="separator.json" class="link-item">
+          <code>separator.json</code>
+        </a>
+        <a href="sympathy-serpent.json" class="link-item">
+          <code>sympathy-serpent.json</code>
+        </a>
+        <a href="thinking-engine.json" class="link-item">
+          <code>thinking-engine.json</code>
+        </a>
+        <a href="tiger.json" class="link-item">
+          <code>tiger.json</code>
+        </a>
+        <a href="tower-wizard.json" class="link-item">
+          <code>tower-wizard.json</code>
+        </a>
+        <a href="troll.json" class="link-item">
+          <code>troll.json</code>
+        </a>
+        <a href="ven.json" class="link-item">
+          <code>ven.json</code>
+        </a>
+        <a href="zoanthrop.json" class="link-item">
+          <code>zoanthrop.json</code>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
