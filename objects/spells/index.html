@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Troika! Spells</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f8f9fa;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        color: #6c757d;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      .breadcrumb {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .breadcrumb a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      .link-grid {
+        display: grid;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .link-item {
+        display: block;
+        padding: 0.75rem 1rem;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #495057;
+        transition: all 0.2s ease;
+      }
+
+      .link-item:hover {
+        background: #e9ecef;
+        border-color: #adb5bd;
+        color: #212529;
+      }
+
+      .link-item code {
+        background: none;
+        color: #6f42c1;
+        font-weight: 500;
+      }
+
+      .file-count {
+        color: #6c757d;
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> > <a href="/objects/">Objects</a> > Spells
+      </div>
+
+      <h1>Magic Spells</h1>
+      <p class="subtitle">JSON data files for Troika! magic spells</p>
+
+      <p class="file-count">74 spell files available</p>
+
+      <div class="link-grid">
+        <a href="affix.json" class="link-item">
+          <code>affix.json</code>
+        </a>
+        <a href="amity.json" class="link-item">
+          <code>amity.json</code>
+        </a>
+        <a href="animate.json" class="link-item">
+          <code>animate.json</code>
+        </a>
+        <a href="assassins-dagger.json" class="link-item">
+          <code>assassins-dagger.json</code>
+        </a>
+        <a href="assume-shape.json" class="link-item">
+          <code>assume-shape.json</code>
+        </a>
+        <a href="astral-reach.json" class="link-item">
+          <code>astral-reach.json</code>
+        </a>
+        <a href="babble.json" class="link-item">
+          <code>babble.json</code>
+        </a>
+        <a href="banish-spirit.json" class="link-item">
+          <code>banish-spirit.json</code>
+        </a>
+        <a href="befuddle.json" class="link-item">
+          <code>befuddle.json</code>
+        </a>
+        <a href="blood-shroud.json" class="link-item">
+          <code>blood-shroud.json</code>
+        </a>
+        <a href="breach.json" class="link-item">
+          <code>breach.json</code>
+        </a>
+        <a href="brittle-twigs.json" class="link-item">
+          <code>brittle-twigs.json</code>
+        </a>
+        <a href="callous-strike.json" class="link-item">
+          <code>callous-strike.json</code>
+        </a>
+        <a href="coal-resolve.json" class="link-item">
+          <code>coal-resolve.json</code>
+        </a>
+        <a href="cockroach.json" class="link-item">
+          <code>cockroach.json</code>
+        </a>
+        <a href="cone-of-air.json" class="link-item">
+          <code>cone-of-air.json</code>
+        </a>
+        <a href="darkness.json" class="link-item">
+          <code>darkness.json</code>
+        </a>
+        <a href="darksee.json" class="link-item">
+          <code>darksee.json</code>
+        </a>
+        <a href="diminish.json" class="link-item">
+          <code>diminish.json</code>
+        </a>
+        <a href="drown.json" class="link-item">
+          <code>drown.json</code>
+        </a>
+        <a href="earthquake.json" class="link-item">
+          <code>earthquake.json</code>
+        </a>
+        <a href="ember.json" class="link-item">
+          <code>ember.json</code>
+        </a>
+        <a href="exchange-shape.json" class="link-item">
+          <code>exchange-shape.json</code>
+        </a>
+        <a href="exorcism.json" class="link-item">
+          <code>exorcism.json</code>
+        </a>
+        <a href="explode.json" class="link-item">
+          <code>explode.json</code>
+        </a>
+        <a href="farseeing.json" class="link-item">
+          <code>farseeing.json</code>
+        </a>
+        <a href="fear.json" class="link-item">
+          <code>fear.json</code>
+        </a>
+        <a href="find.json" class="link-item">
+          <code>find.json</code>
+        </a>
+        <a href="fire-bolt.json" class="link-item">
+          <code>fire-bolt.json</code>
+        </a>
+        <a href="flash.json" class="link-item">
+          <code>flash.json</code>
+        </a>
+        <a href="gills.json" class="link-item">
+          <code>gills.json</code>
+        </a>
+        <a href="grow.json" class="link-item">
+          <code>grow.json</code>
+        </a>
+        <a href="helping-hands.json" class="link-item">
+          <code>helping-hands.json</code>
+        </a>
+        <a href="hurricane.json" class="link-item">
+          <code>hurricane.json</code>
+        </a>
+        <a href="illusion.json" class="link-item">
+          <code>illusion.json</code>
+        </a>
+        <a href="invisibility.json" class="link-item">
+          <code>invisibility.json</code>
+        </a>
+        <a href="ironhand.json" class="link-item">
+          <code>ironhand.json</code>
+        </a>
+        <a href="jolt.json" class="link-item">
+          <code>jolt.json</code>
+        </a>
+        <a href="languages.json" class="link-item">
+          <code>languages.json</code>
+        </a>
+        <a href="leech.json" class="link-item">
+          <code>leech.json</code>
+        </a>
+        <a href="levitate.json" class="link-item">
+          <code>levitate.json</code>
+        </a>
+        <a href="life-line.json" class="link-item">
+          <code>life-line.json</code>
+        </a>
+        <a href="light.json" class="link-item">
+          <code>light.json</code>
+        </a>
+        <a href="lock.json" class="link-item">
+          <code>lock.json</code>
+        </a>
+        <a href="mirror-selves.json" class="link-item">
+          <code>mirror-selves.json</code>
+        </a>
+        <a href="natter.json" class="link-item">
+          <code>natter.json</code>
+        </a>
+        <a href="open.json" class="link-item">
+          <code>open.json</code>
+        </a>
+        <a href="peace.json" class="link-item">
+          <code>peace.json</code>
+        </a>
+        <a href="poison.json" class="link-item">
+          <code>poison.json</code>
+        </a>
+        <a href="posthumous-vitality.json" class="link-item">
+          <code>posthumous-vitality.json</code>
+        </a>
+        <a href="presence.json" class="link-item">
+          <code>presence.json</code>
+        </a>
+        <a href="protection-from-rain.json" class="link-item">
+          <code>protection-from-rain.json</code>
+        </a>
+        <a href="purple-lens.json" class="link-item">
+          <code>purple-lens.json</code>
+        </a>
+        <a href="quench.json" class="link-item">
+          <code>quench.json</code>
+        </a>
+        <a href="read-entrails.json" class="link-item">
+          <code>read-entrails.json</code>
+        </a>
+        <a href="read-stars.json" class="link-item">
+          <code>read-stars.json</code>
+        </a>
+        <a href="see-through.json" class="link-item">
+          <code>see-through.json</code>
+        </a>
+        <a href="sentry.json" class="link-item">
+          <code>sentry.json</code>
+        </a>
+        <a href="shatter.json" class="link-item">
+          <code>shatter.json</code>
+        </a>
+        <a href="skeletal-counsel.json" class="link-item">
+          <code>skeletal-counsel.json</code>
+        </a>
+        <a href="sleep.json" class="link-item">
+          <code>sleep.json</code>
+        </a>
+        <a href="slide-skywards.json" class="link-item">
+          <code>slide-skywards.json</code>
+        </a>
+        <a href="starry-orb.json" class="link-item">
+          <code>starry-orb.json</code>
+        </a>
+        <a href="teleport.json" class="link-item">
+          <code>teleport.json</code>
+        </a>
+        <a href="thought-vapour.json" class="link-item">
+          <code>thought-vapour.json</code>
+        </a>
+        <a href="thunder.json" class="link-item">
+          <code>thunder.json</code>
+        </a>
+        <a href="tongue-twister.json" class="link-item">
+          <code>tongue-twister.json</code>
+        </a>
+        <a href="torpor.json" class="link-item">
+          <code>torpor.json</code>
+        </a>
+        <a href="true-seeing.json" class="link-item">
+          <code>true-seeing.json</code>
+        </a>
+        <a href="undo.json" class="link-item">
+          <code>undo.json</code>
+        </a>
+        <a href="wall-of-power.json" class="link-item">
+          <code>wall-of-power.json</code>
+        </a>
+        <a href="ward.json" class="link-item">
+          <code>ward.json</code>
+        </a>
+        <a href="web.json" class="link-item">
+          <code>web.json</code>
+        </a>
+        <a href="zed.json" class="link-item">
+          <code>zed.json</code>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
