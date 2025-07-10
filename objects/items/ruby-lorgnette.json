@@ -16,6 +16,6 @@
     }
   ],
   "requires": "free_hand",
-  "value": "30_silver",
+  "value": 30,
   "type": "tool"
 }

@@ -11,6 +11,6 @@
       "condition": "when_peering_through_crystal"
     }
   ],
-  "value": "25_silver",
+  "value": 25,
   "type": "weapon"
 }

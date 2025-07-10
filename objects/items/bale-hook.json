@@ -11,6 +11,6 @@
       "condition": "when_lifting_heavy_objects"
     }
   ],
-  "value": "5_silver",
+  "value": 5,
   "type": "weapon"
 }
