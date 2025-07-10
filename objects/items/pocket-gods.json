@@ -10,6 +10,6 @@
     }
   ],
   "uses": 1,
-  "value": "1_silver",
+  "value": 1,
   "type": "provision"
 }
