@@ -111,7 +111,8 @@
                 "skill": {
                     "type": "integer",
                     "minimum": 4,
-                    "description": "Base skill attribute (rolled 1d3+3)"
+                    "maximum": 30,
+                    "description": "Base skill attribute. Standard starting range 4-6 (1d3+3)."
                 },
                 "stamina": {
                     "$ref": "#/definitions/staminaAttribute",
@@ -139,8 +140,8 @@
                 "maximum": {
                     "type": "integer",
                     "minimum": 14,
-                    "maximum": 24,
-                    "description": "Maximum stamina (rolled 2d6+12)"
+                    "maximum": 100,
+                    "description": "Maximum stamina. Standard starting range 14-24 (2d6+12)."
                 },
                 "temporary": {
                     "type": "integer",
