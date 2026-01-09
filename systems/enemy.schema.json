@@ -143,7 +143,6 @@
                 "armor": {
                     "type": "integer",
                     "minimum": 0,
-                    "maximum": 4,
                     "description": "Damage reduction value"
                 },
                 "damage": {

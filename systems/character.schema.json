@@ -111,7 +111,6 @@
                 "skill": {
                     "type": "integer",
                     "minimum": 4,
-                    "maximum": 6,
                     "description": "Base skill attribute (rolled 1d3+3)"
                 },
                 "stamina": {

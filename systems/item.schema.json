@@ -261,7 +261,6 @@
                 "protection": {
                     "type": "integer",
                     "minimum": 0,
-                    "maximum": 3,
                     "description": "Armor protection value (0=Unarmored, 1=Light, 2=Modest, 3=Heavy)"
                 },
                 "coverage": {
