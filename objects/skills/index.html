@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>Troika! Skills</title>
     <style>
       * {
@@ -17,158 +18,181 @@
         line-height: 1.6;
         color: #333;
         background: #f8f9fa;
-        padding: 2rem;
+        padding: 2rem 1rem;
       }
 
       .container {
-        max-width: 800px;
+        max-width: 720px;
         margin: 0 auto;
         background: white;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-      }
-
-      h1 {
-        color: #2c3e50;
-        margin-bottom: 0.5rem;
-        font-size: 2rem;
-      }
-
-      .subtitle {
-        color: #6c757d;
-        margin-bottom: 2rem;
-        font-size: 1.1rem;
+        padding: 2.5rem;
       }
 
       .breadcrumb {
         margin-bottom: 1rem;
         font-size: 0.9rem;
+        color: #6c757d;
       }
 
-      .breadcrumb a {
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 0.25rem;
+        font-size: 1.75rem;
+      }
+
+      .subtitle {
+        color: #6c757d;
+        margin-bottom: 2rem;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+      }
+
+      a {
         color: #007bff;
         text-decoration: none;
       }
 
-      .breadcrumb a:hover {
+      a:hover {
         text-decoration: underline;
       }
 
-      .link-grid {
-        display: grid;
-        gap: 0.5rem;
-        margin-bottom: 2rem;
-      }
-
-      .link-item {
-        display: block;
-        padding: 0.75rem 1rem;
-        background: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 4px;
-        text-decoration: none;
-        color: #495057;
-        transition: all 0.2s ease;
-      }
-
-      .link-item:hover {
-        background: #e9ecef;
-        border-color: #adb5bd;
-        color: #212529;
-      }
-
-      .link-item code {
-        background: none;
+      a code {
         color: #6f42c1;
-        font-weight: 500;
       }
 
-      .file-count {
+      .file-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        column-gap: 2rem;
+      }
+
+      .file-list a {
+        display: block;
+        padding: 0.35rem 0.25rem;
+        border-bottom: 1px solid #e9ecef;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .file-list a:hover {
+        background: #f8f9fa;
+        text-decoration: none;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      th {
+        text-align: left;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
         color: #6c757d;
-        font-style: italic;
-        margin-bottom: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 0.75rem;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      td {
+        padding: 0.6rem 0.75rem;
+        border-bottom: 1px solid #e9ecef;
+        white-space: nowrap;
+      }
+
+      tbody tr:hover {
+        background: #f8f9fa;
+      }
+
+      td.count,
+      th.count {
+        text-align: right;
+        color: #6c757d;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .muted {
+        color: #adb5bd;
+      }
+
+      .subtitle a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+
+      footer img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+      }
+
+      footer p {
+        font-size: 0.85rem;
+        color: #6c757d;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 1.5rem;
+        }
+
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="breadcrumb">
-        <a href="/">Home</a> > <a href="/objects/">Objects</a> > Skills
-      </div>
+      <div class="breadcrumb"><a href="/">Home</a> / <a href="/objects/">objects</a> / skills</div>
+      <h1>Skills</h1>
+      <p class="subtitle">22 advanced skills</p>
 
-      <h1>Character Skills</h1>
-      <p class="subtitle">JSON data files for Troika! character skills</p>
-
-      <p class="file-count">22 skill files available</p>
-
-      <div class="link-grid">
-        <a href="acrobatics.json" class="link-item">
-          <code>acrobatics.json</code>
-        </a>
-        <a href="astrology.json" class="link-item">
-          <code>astrology.json</code>
-        </a>
-        <a href="awareness.json" class="link-item">
-          <code>awareness.json</code>
-        </a>
-        <a href="climb.json" class="link-item">
-          <code>climb.json</code>
-        </a>
-        <a href="disguise.json" class="link-item">
-          <code>disguise.json</code>
-        </a>
-        <a href="etiquette.json" class="link-item">
-          <code>etiquette.json</code>
-        </a>
-        <a href="evaluate.json" class="link-item">
-          <code>evaluate.json</code>
-        </a>
-        <a href="fly.json" class="link-item">
-          <code>fly.json</code>
-        </a>
-        <a href="golden-barge-pilot.json" class="link-item">
-          <code>golden-barge-pilot.json</code>
-        </a>
-        <a href="healing.json" class="link-item">
-          <code>healing.json</code>
-        </a>
-        <a href="locks.json" class="link-item">
-          <code>locks.json</code>
-        </a>
-        <a href="mathmology.json" class="link-item">
-          <code>mathmology.json</code>
-        </a>
-        <a href="poison.json" class="link-item">
-          <code>poison.json</code>
-        </a>
-        <a href="ride.json" class="link-item">
-          <code>ride.json</code>
-        </a>
-        <a href="run.json" class="link-item">
-          <code>run.json</code>
-        </a>
-        <a href="second-sight.json" class="link-item">
-          <code>second-sight.json</code>
-        </a>
-        <a href="sneak.json" class="link-item">
-          <code>sneak.json</code>
-        </a>
-        <a href="strength.json" class="link-item">
-          <code>strength.json</code>
-        </a>
-        <a href="swim.json" class="link-item">
-          <code>swim.json</code>
-        </a>
-        <a href="sword-fighting.json" class="link-item">
-          <code>sword-fighting.json</code>
-        </a>
-        <a href="tracking.json" class="link-item">
-          <code>tracking.json</code>
-        </a>
-        <a href="trapping.json" class="link-item">
-          <code>trapping.json</code>
-        </a>
+      <div class="file-list">
+        <a href="acrobatics.json"><code>acrobatics.json</code></a>
+        <a href="astrology.json"><code>astrology.json</code></a>
+        <a href="awareness.json"><code>awareness.json</code></a>
+        <a href="climb.json"><code>climb.json</code></a>
+        <a href="disguise.json"><code>disguise.json</code></a>
+        <a href="etiquette.json"><code>etiquette.json</code></a>
+        <a href="evaluate.json"><code>evaluate.json</code></a>
+        <a href="fly.json"><code>fly.json</code></a>
+        <a href="golden-barge-pilot.json"><code>golden-barge-pilot.json</code></a>
+        <a href="healing.json"><code>healing.json</code></a>
+        <a href="locks.json"><code>locks.json</code></a>
+        <a href="mathmology.json"><code>mathmology.json</code></a>
+        <a href="poison.json"><code>poison.json</code></a>
+        <a href="ride.json"><code>ride.json</code></a>
+        <a href="run.json"><code>run.json</code></a>
+        <a href="second-sight.json"><code>second-sight.json</code></a>
+        <a href="sneak.json"><code>sneak.json</code></a>
+        <a href="strength.json"><code>strength.json</code></a>
+        <a href="swim.json"><code>swim.json</code></a>
+        <a href="sword-fighting.json"><code>sword-fighting.json</code></a>
+        <a href="tracking.json"><code>tracking.json</code></a>
+        <a href="trapping.json"><code>trapping.json</code></a>
       </div>
     </div>
   </body>
