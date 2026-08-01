@@ -25,7 +25,8 @@
       ]
     },
     {
-      "name": "1d6 Small Monkeys",
+      "name": "Small Monkeys",
+      "quantity": "1d6",
       "description": "Do not heed commands but are too scared and hungry to travel far from you",
       "category": "companion",
       "properties": [

@@ -10,7 +10,9 @@
       "name": "Pointed Wizard Hat you received at graduation"
     },
     {
-      "name": "Pocket Full of Wizard Biscuits (2d6, each counts as a Provision)"
+      "name": "Wizard Biscuits",
+      "quantity": "2d6",
+      "description": "Pocket full of wizard biscuits, each counts as a Provision"
     },
     {
       "name": "Wand used to help focus new apprentices, now kept for sentimental reasons"

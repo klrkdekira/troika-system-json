@@ -11,7 +11,8 @@
       "description": "Energy weapon"
     },
     {
-      "name": "2d6 Plasmic Cores",
+      "name": "Plasmic Cores",
+      "quantity": "2d6",
       "description": "Energy source for weapons"
     },
     {

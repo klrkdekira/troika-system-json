@@ -7,7 +7,8 @@
   "description": "Known for their smooth skin, midnight gatherings, and preternatural fear of rain and open flames; the Parchment Witches are long-dead sorcerers who cannot give up the vanity of life. They cover themselves in perfect paper skin, a patiently painted and immaculately folded imitation of life intended to hide ancient bone and gristle.",
   "possessions": [
     {
-      "name": "d6 Rolls of Parchment",
+      "name": "Rolls of Parchment",
+      "quantity": "1d6",
       "description": "For replacing damaged skin",
       "category": "component",
       "properties": [

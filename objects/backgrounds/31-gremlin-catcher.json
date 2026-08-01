@@ -40,7 +40,8 @@
       ]
     },
     {
-      "name": "1d6 Empty Gremlin Jars",
+      "name": "Empty Gremlin Jars",
+      "quantity": "1d6",
       "description": "For storing captured gremlins",
       "category": "tool",
       "properties": [

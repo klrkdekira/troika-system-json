@@ -42,7 +42,8 @@
       ]
     },
     {
-      "name": "1d6 Plasmic Cores",
+      "name": "Plasmic Cores",
+      "quantity": "1d6",
       "description": "Crystallised starlight used as fuel",
       "category": "component",
       "properties": [
