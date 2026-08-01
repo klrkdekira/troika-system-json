@@ -4,10 +4,49 @@
 Run from anywhere: python3 scripts/generate_indexes.py
 """
 
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OBJECTS = ROOT / "objects"
+SYSTEMS = ROOT / "systems"
+
+
+def generate_bundled_data():
+    master_file = OBJECTS / "troika-system-data.json"
+    with open(master_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    categories = [
+        "backgrounds",
+        "skills",
+        "spells",
+        "items",
+        "enemies",
+        "tables",
+        "characters",
+    ]
+    for cat in categories:
+        if cat in data and isinstance(data[cat], list):
+            new_items = []
+            for item in data[cat]:
+                if isinstance(item, dict) and "$ref" in item:
+                    ref_str = item["$ref"]
+                    if ref_str.startswith("./"):
+                        ref_str = ref_str[2:]
+                    ref_path = OBJECTS / ref_str
+                    with open(ref_path, "r", encoding="utf-8") as rf:
+                        new_items.append(json.load(rf))
+                else:
+                    new_items.append(item)
+            data[cat] = new_items
+
+    bundled_file = OBJECTS / "troika-system-data.bundled.json"
+    with open(bundled_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print("wrote objects/troika-system-data.bundled.json")
+
 
 STYLE = """\
       * {
@@ -281,13 +320,43 @@ def table(header_cells, rows):
       </div>"""
 
 
+def system_files(directory):
+    return sorted(
+        p.name for p in directory.glob("*") if p.is_file() and p.name != "index.html"
+    )
+
+
+def systems_page():
+    files = system_files(SYSTEMS)
+    links = "\n".join(f'        <a href="{f}"><code>{f}</code></a>' for f in files)
+    body = f'      <div class="file-list">\n{links}\n      </div>'
+    return PAGE.format(
+        title="Troika! Schemas & Context",
+        style=STYLE,
+        header=breadcrumb('<a href="/">Home</a> / <a href="/systems/">systems</a>'),
+        heading="Schemas & Context",
+        subtitle=f"{len(files)} JSON schemas and JSON-LD context file for validation and semantic representation",
+        body=body,
+        footer="",
+    )
+
+
 def objects_page():
     rows = [
         [
-            ('<td><a href="troika-system-data.json">'
-            "<code>troika-system-data.json</code></a></td>"),
+            (
+                '<td><a href="troika-system-data.json">'
+                "<code>troika-system-data.json</code></a></td>"
+            ),
             '<td class="count">1</td>',
-        ]
+        ],
+        [
+            (
+                '<td><a href="troika-system-data.bundled.json">'
+                "<code>troika-system-data.bundled.json</code></a></td>"
+            ),
+            '<td class="count">1</td>',
+        ],
     ]
     for name in SECTIONS:
         count = len(data_files(OBJECTS / name))
@@ -315,11 +384,21 @@ def root_page():
 
     rows = [
         [
-            ('<td><a href="/objects/troika-system-data.json">'
-            "<code>troika-system-data.json</code></a></td>"),
+            (
+                '<td><a href="/objects/troika-system-data.json">'
+                "<code>troika-system-data.json</code></a></td>"
+            ),
             '<td class="count">1</td>',
             schema_cell("troika-system.schema.json"),
-        ]
+        ],
+        [
+            (
+                '<td><a href="/objects/troika-system-data.bundled.json">'
+                "<code>troika-system-data.bundled.json</code></a></td>"
+            ),
+            '<td class="count">1</td>',
+            schema_cell("troika-system.schema.json"),
+        ],
     ]
     for name, (_, _, schema) in SECTIONS.items():
         count = len(data_files(OBJECTS / name))
@@ -330,8 +409,15 @@ def root_page():
                 schema_cell(schema),
             ]
         )
+    rows.append(
+        [
+            '<td><a href="/systems/"><code>systems/</code></a></td>',
+            f'<td class="count">{len(system_files(SYSTEMS))}</td>',
+            '<td><a href="/systems/context.jsonld"><code>context.jsonld</code></a></td>',
+        ]
+    )
     body = table(
-        ["<th>Data</th>", '<th class="count">Files</th>', "<th>Schema</th>"],
+        ["<th>Data</th>", '<th class="count">Files</th>', "<th>Schema / Spec</th>"],
         rows,
     )
     subtitle = (
@@ -351,15 +437,28 @@ def root_page():
     )
 
 
+def sync_root_context():
+    context_src = SYSTEMS / "context.jsonld"
+    context_dst = ROOT / "context.jsonld"
+    if context_src.exists():
+        context_dst.write_bytes(context_src.read_bytes())
+        print("synced context.jsonld to root")
+
+
 def main():
+    generate_bundled_data()
+    sync_root_context()
     (ROOT / "index.html").write_text(root_page())
     print("wrote index.html")
     (OBJECTS / "index.html").write_text(objects_page())
     print("wrote objects/index.html")
+    (SYSTEMS / "index.html").write_text(systems_page())
+    print("wrote systems/index.html")
     for name, (heading, subtitle_tpl, _) in SECTIONS.items():
         page = listing_page(name, heading, subtitle_tpl)
         (OBJECTS / name / "index.html").write_text(page)
         print(f"wrote objects/{name}/index.html")
+
 
 
 if __name__ == "__main__":

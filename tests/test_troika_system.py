@@ -80,6 +80,39 @@ class TestTroikaSystemData(unittest.TestCase):
             with self.subTest(rule_key=key):
                 self.assertIn(key, rules, f"Rules block missing '{key}'")
 
+    def test_bundled_file_valid_and_inlined(self):
+        """Test that objects/troika-system-data.bundled.json exists and has inlined objects"""
+        bundled_file = self.objects_dir / "troika-system-data.bundled.json"
+        self.assertTrue(
+            bundled_file.exists(),
+            f"Bundled data file missing: {bundled_file}",
+        )
+        with open(bundled_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        self.assertIn("version", data)
+        self.assertIn("metadata", data)
+
+        categories = ["backgrounds", "skills", "spells", "items", "enemies", "tables", "characters"]
+        for category in categories:
+            with self.subTest(category=category):
+                self.assertIn(category, data)
+                items = data[category]
+                self.assertIsInstance(items, list)
+                self.assertGreater(len(items), 0)
+                for index, item in enumerate(items):
+                    self.assertNotIn(
+                        "$ref",
+                        item,
+                        f"Bundled item at {category}[{index}] still contains '$ref'",
+                    )
+                    self.assertIn(
+                        "name",
+                        item,
+                        f"Inlined item at {category}[{index}] missing 'name' field",
+                    )
+
 
 if __name__ == "__main__":
     unittest.main()
+
