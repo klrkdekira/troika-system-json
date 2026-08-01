@@ -212,7 +212,7 @@ PAGE = """\
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="{favicon}" type="image/svg+xml" />
     <title>{title}</title>
     <style>
 {style}
@@ -234,7 +234,7 @@ FOOTER = """
 
 
       <footer>
-        <img src="/fortle.svg" alt="Fortle Logo" />
+        <img src="{fortle}" alt="Fortle Logo" />
         <p>
           Troika! System JSON is an independent production by
           <a href="https://cheeleong.dev">Chee Leong</a> and is not affiliated
@@ -287,8 +287,9 @@ def listing_page(name, heading, subtitle_tpl):
     return PAGE.format(
         title=f"Troika! {heading}",
         style=STYLE,
+        favicon="../../favicon.svg",
         header=breadcrumb(
-            f'<a href="/">Home</a> / <a href="/objects/">objects</a> / {name}'
+            f'<a href="../../">Home</a> / <a href="../">objects</a> / {name}'
         ),
         heading=heading,
         subtitle=subtitle,
@@ -333,7 +334,8 @@ def systems_page():
     return PAGE.format(
         title="Troika! Schemas & Context",
         style=STYLE,
-        header=breadcrumb('<a href="/">Home</a> / <a href="/systems/">systems</a>'),
+        favicon="../favicon.svg",
+        header=breadcrumb('<a href="../">Home</a> / systems'),
         heading="Schemas & Context",
         subtitle=f"{len(files)} JSON schemas and JSON-LD context file for validation and semantic representation",
         body=body,
@@ -370,7 +372,8 @@ def objects_page():
     return PAGE.format(
         title="Troika! Data Objects",
         style=STYLE,
-        header=breadcrumb('<a href="/">Home</a> / objects'),
+        favicon="../favicon.svg",
+        header=breadcrumb('<a href="../">Home</a> / objects'),
         heading="Data Objects",
         subtitle="JSON data files for the Troika! tabletop RPG",
         body=body,
@@ -380,12 +383,12 @@ def objects_page():
 
 def root_page():
     def schema_cell(schema):
-        return f'<td><a href="/systems/{schema}"><code>{schema}</code></a></td>'
+        return f'<td><a href="systems/{schema}"><code>{schema}</code></a></td>'
 
     rows = [
         [
             (
-                '<td><a href="/objects/troika-system-data.json">'
+                '<td><a href="objects/troika-system-data.json">'
                 "<code>troika-system-data.json</code></a></td>"
             ),
             '<td class="count">1</td>',
@@ -393,7 +396,7 @@ def root_page():
         ],
         [
             (
-                '<td><a href="/objects/troika-system-data.bundled.json">'
+                '<td><a href="objects/troika-system-data.bundled.json">'
                 "<code>troika-system-data.bundled.json</code></a></td>"
             ),
             '<td class="count">1</td>',
@@ -404,16 +407,16 @@ def root_page():
         count = len(data_files(OBJECTS / name))
         rows.append(
             [
-                f'<td><a href="/objects/{name}/"><code>{name}/</code></a></td>',
+                f'<td><a href="objects/{name}/"><code>{name}/</code></a></td>',
                 f'<td class="count">{count}</td>',
                 schema_cell(schema),
             ]
         )
     rows.append(
         [
-            '<td><a href="/systems/"><code>systems/</code></a></td>',
+            '<td><a href="systems/"><code>systems/</code></a></td>',
             f'<td class="count">{len(system_files(SYSTEMS))}</td>',
-            '<td><a href="/systems/context.jsonld"><code>context.jsonld</code></a></td>',
+            '<td><a href="systems/context.jsonld"><code>context.jsonld</code></a></td>',
         ]
     )
     body = table(
@@ -429,11 +432,12 @@ def root_page():
     return PAGE.format(
         title="Troika! System JSON",
         style=STYLE,
+        favicon="favicon.svg",
         header="",
         heading="Troika! System JSON",
         subtitle=subtitle,
         body=body,
-        footer=FOOTER,
+        footer=FOOTER.format(fortle="fortle.svg"),
     )
 
 
