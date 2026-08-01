@@ -1,62 +1,39 @@
 # Troika! System JSON
 
-The Troika! tabletop RPG as structured JSON. Backgrounds, enemies, items, skills, spells and tables each live in their own file, with JSON Schemas to validate against. If you'd rather fetch than clone, everything is served at [troika-system-json.cheeleong.dev](https://troika-system-json.cheeleong.dev).
+Structured JSON and JSON Schemas for the [Troika!](https://www.troika-rpg.com/) tabletop RPG System Reference Document (SRD).
 
-## What's in here
+Available online at [troika-system-json.cheeleong.dev](https://troika-system-json.cheeleong.dev).
+
+## Structure
 
 ```
 troika-system-json/
-├── objects/                    # Game data
-│   ├── troika-system-data.json # Aggregates everything via JSON references
-│   ├── backgrounds/            # 36 character backgrounds (the d66 table)
-│   ├── enemies/                # 36 bestiary entries
-│   ├── items/                  # 50 pieces of equipment
-│   ├── skills/                 # 22 advanced skills
-│   ├── spells/                 # 74 spells
-│   └── tables/                 # 5 random tables
-└── systems/                    # JSON Schemas, one per data type
-    ├── troika-system.schema.json
-    ├── background.schema.json
-    ├── character.schema.json
-    ├── enemy.schema.json
-    ├── item.schema.json
-    ├── skill.schema.json
-    ├── spell.schema.json
-    └── table.schema.json
+├── objects/                    # Game data (JSON & JSON-LD)
+│   ├── troika-system-data.json # Aggregated data bundle
+│   ├── backgrounds/            # 36 character backgrounds (d66 table)
+│   ├── characters/             # Sample characters
+│   ├── enemies/                # Bestiary entries
+│   ├── items/                  # Equipment & items
+│   ├── skills/                 # Advanced skills
+│   ├── spells/                 # Spells
+│   └── tables/                 # Random tables
+└── systems/                    # JSON Schemas & JSON-LD Context
+    ├── context.jsonld          # Shared JSON-LD context
+    └── *.schema.json           # Schemas for validation
 ```
 
-## Usage
+## Quick Start
 
-Start with `objects/troika-system-data.json` if you want the whole system in one go. It stitches the individual files together with JSON references. If you only need part of it, grab files straight from the relevant directory; every background, enemy, item and so on is self-contained and follows the schema for its type in `systems/`.
+- **Full Data Bundle:** Use [`objects/troika-system-data.json`](objects/troika-system-data.json) for all data stitched via JSON references.
+- **Individual Entities:** Fetch individual JSON files from `objects/<category>/`.
+- **Validation & Testing:** Validate entities against schemas in [`systems/`](systems/). Run tests with `python -m unittest`.
 
-All the data from the Troika! SRD is covered.
-
-## Licence & Attribution
+## License & Attribution
 
 <p align="center">
-  <img src="fortle.svg" alt="Fortle Logo" width="200" height="200">
+  <img src="fortle.svg" alt="Fortle Logo" width="120" height="120">
 </p>
 
-This project is based on the **Troika!** tabletop RPG system by the **Melsonian Arts Council**, sourced from the official [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/) and its open source repository [`dialectrical/troika-srd`](https://github.com/dialectrical/troika-srd).
+*Troika! System JSON* (the code, schemas, and data structure) is an independent production by [Chee Leong](https://cheeleong.dev) under the MIT License. Original Troika! game content remains copyright of the Melsonian Arts Council; this project is not affiliated with the Melsonian Arts Council.
 
-### Third Party Compatibility
-
-This is an independent production and is not affiliated with the Melsonian Arts Council. It is published under the terms outlined in the [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/).
-
-**Troika! System JSON is an independent production by [Chee Leong](https://cheeleong.dev) and is not affiliated with the Melsonian Arts Council.**
-
-### Attribution & Sources
-
-* **Troika! SRD Web**: [https://troika-srd.netlify.app/](https://troika-srd.netlify.app/)
-* **Troika! SRD Repository**: [https://github.com/dialectrical/troika-srd](https://github.com/dialectrical/troika-srd)
-
-### Terms of Use
-
-- The mechanics and concepts of "Troika!" are used under the terms of the SRD
-- This data structure may be used freely for compatible projects
-- Original game content remains copyright of the Melsonian Arts Council
-- See the [SRD](https://troika-srd.netlify.app/) and [`dialectrical/troika-srd`](https://github.com/dialectrical/troika-srd) for complete licensing terms
-
-### Original Work
-
-"Troika!" is a trademark of the Melsonian Arts Council. This project provides a data structure for the system but does not include the complete game text. Please support the original creators by buying the official Troika! rulebook.
+Based on the official [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/) ([repository](https://github.com/dialectrical/troika-srd)). *Troika!* is a trademark of the Melsonian Arts Council.
