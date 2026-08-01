@@ -728,7 +728,7 @@
   "possessions": [],
   "advancedSkills": [],
   "special": [],
-  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
   "@id": "https://cheeleong.dev/troika-system-json/objects/troika-system-data.json",
   "@type": "TroikaSystemData",
   "characters": [

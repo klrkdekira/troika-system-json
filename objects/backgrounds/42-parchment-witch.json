@@ -1,5 +1,5 @@
 {
-  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
   "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/42-parchment-witch.json",
   "@type": "Background",
   "id": 42,
@@ -59,7 +59,7 @@
   ],
   "spells": [
     {
-      "name": "Protection From Rain",
+      "name": "Protection from Rain",
       "rank": 2
     },
     {

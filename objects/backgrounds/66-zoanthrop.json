@@ -1,11 +1,12 @@
 {
-  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
   "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/66-zoanthrop.json",
   "@type": "Background",
   "id": 66,
   "name": "Zoanthrop",
   "description": "At some point in your past you decided you didn't need it anymore: you found a Zoanthropologist and paid them well to remove your troublesome forebrain and elevate you to the pure and unburdened beast you are today.",
   "possessions": [],
+  "overrideBaselinePossessions": true,
   "advancedSkills": [
     {
       "name": "Climb",

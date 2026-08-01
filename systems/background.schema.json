@@ -176,6 +176,20 @@
                     },
                     "description": "Special mechanical properties"
                 },
+                "category": {
+                    "type": "string",
+                    "enum": [
+                        "armor",
+                        "clothing",
+                        "companion",
+                        "component",
+                        "regalia",
+                        "specimen",
+                        "tool",
+                        "weapon"
+                    ],
+                    "description": "Broad grouping of this possession for UI organization"
+                },
                 "bonuses": {
                     "type": "array",
                     "items": {
@@ -253,6 +267,24 @@
             },
             "required": [
                 "name"
+            ]
+        },
+        "backgroundSpell": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Spell name"
+                },
+                "rank": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Starting rank in this spell"
+                }
+            },
+            "required": [
+                "name",
+                "rank"
             ]
         },
         "advancedSkill": {

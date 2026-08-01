@@ -341,7 +341,7 @@ class TestBackgroundData(unittest.TestCase):
                 "name": "Parchment Witch",
                 "skills": [("Disguise", 2), ("Second Sight", 2), ("Healing", 1)],
                 "spells": [
-                    ("Protection From Rain", 2),
+                    ("Protection from Rain", 2),
                     ("Callous Strike", 2),
                     ("Quench", 2),
                     ("True Seeing", 2),

@@ -1,5 +1,5 @@
 {
-  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
   "@id": "https://cheeleong.dev/troika-system-json/objects/items/spear.json",
   "@type": "Item",
   "name": "Spear",
