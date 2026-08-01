@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/skeletal-counsel.json",
+  "@type": "Spell",
   "name": "Skeletal Counsel",
   "cost": 3,
   "description": "Necromancers often talk to skulls. Sometimes they talk back. Use of this Spell enables speaking with the dead, who answer one question per casting. Requires a skull.",

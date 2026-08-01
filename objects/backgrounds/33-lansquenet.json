@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/33-lansquenet.json",
+  "@type": "Background",
   "id": 33,
   "name": "Lansquenet",
   "description": "You were a mercenary retained in the exclusive service of the Phoenix Throne, handsomely paid and sent to distant spheres on golden ships to spread the ineffable glory of your lords at the tip of your flaming sword.",

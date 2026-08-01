@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/35-miss-kinsey-dining-club.json",
+  "@type": "Background",
   "id": 35,
   "name": "Member of Miss Kinsey's Dining Club",
   "description": "The Eaters know that there are only two worlds: the Without and the Within. They intend to insert as much of the prior into the latter as they can while experiencing the finest delights available. All culinary experience is open to them as nothing is forbidden at Miss Kinsey's. Try the other, other, other white meat.",

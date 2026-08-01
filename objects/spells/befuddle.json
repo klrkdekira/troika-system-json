@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/befuddle.json",
+  "@type": "Spell",
   "name": "Befuddle",
   "cost": 1,
   "description": "A wizard's touch can shake up someone's mind like a snow globe. The target makes all rolls at a -1 penalty until their head clears. Lasts for 3 minutes.",

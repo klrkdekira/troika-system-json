@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/ride.json",
+  "@type": "Skill",
   "name": "Ride",
   "type": "general",
   "description": "Everyone is assumed to have basic animal riding Skill though anything more than trotting slowly will require some kind of roll to avoid trouble.",

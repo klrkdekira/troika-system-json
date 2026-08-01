@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/42-parchment-witch.json",
+  "@type": "Background",
   "id": 42,
   "name": "Parchment Witch",
   "description": "Known for their smooth skin, midnight gatherings, and preternatural fear of rain and open flames; the Parchment Witches are long-dead sorcerers who cannot give up the vanity of life. They cover themselves in perfect paper skin, a patiently painted and immaculately folded imitation of life intended to hide ancient bone and gristle.",

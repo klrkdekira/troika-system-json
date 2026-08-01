@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/gills.json",
+  "@type": "Spell",
   "name": "Gills",
   "cost": 3,
   "description": "The wizard may permanently gift a touched subject with gills, replacing their usual breathing arrangement if they fail to Test their Luck (or Skill for Enemies). Useful for underwater excursions but less so when inflicted upon a chap in the middle of town. The wizard may end this at will.",

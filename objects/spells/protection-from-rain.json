@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/protection-from-rain.json",
+  "@type": "Spell",
   "name": "Protection from Rain",
   "cost": 1,
   "description": "This Spell prevents the wizard from getting rained upon for one shower.",

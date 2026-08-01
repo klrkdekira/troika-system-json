@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/assume-shape.json",
+  "@type": "Spell",
   "name": "Assume Shape",
   "cost": 4,
   "description": "The wizard undergoes a distressing transformation into an inanimate object no larger than a piano and no smaller than a cup. Lasts until ended.",

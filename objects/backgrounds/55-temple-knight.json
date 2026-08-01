@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/55-temple-knight.json",
+  "@type": "Background",
   "id": 55,
   "name": "Temple Knight of Telak the Swordbringer",
   "description": "You were once (and possibly still are) a fanatical monk set to maintain constant, vigilant martial readiness in preparation for the end times, when all doorways crumble inwards. You are always prepared and never unready.",

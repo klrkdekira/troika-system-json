@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/harpy.json",
+  "@type": "Enemy",
   "id": "harpy",
   "name": "Harpy",
   "description": "Immortal creatures of bitterness and spite, they look like vultures with human heads and unusually large claws. Their immortal nature precludes the need to eat yet they hunt mercilessly, most usually by lifting their quarry up into the sky and dropping them after spending some time verbally tormenting them. A greater pleasure still is when their victims survive the fall, whereupon they descend and eat the exposed sweetmeats and cackle with their mouths full. Altogether a reprehensible blight on creation.",

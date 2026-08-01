@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/lock.json",
+  "@type": "Spell",
   "name": "Lock",
   "cost": 1,
   "description": "Magically lock an object. The object must have a lockable aspect to it but is now magically sealed. Permanent until undone or dismissed.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/farseeing.json",
+  "@type": "Spell",
   "name": "Farseeing",
   "cost": 2,
   "description": "Endows the wizard with engorged, plate-like eyes that are able to see in minute detail for miles around but are unable to see anything up close. Lasts until ended.",

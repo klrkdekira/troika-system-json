@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/languages.json",
+  "@type": "Spell",
   "name": "Languages",
   "cost": 1,
   "description": "The wizard forms a mouth with their hands through which they can speak any language. They can simultaneously cup their other hand to their ear to understand them in return. Lasts for one conversation.",

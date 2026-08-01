@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/illusion.json",
+  "@type": "Spell",
   "name": "Illusion",
   "cost": 2,
   "description": "Those viewing this illusion may Test their Luck (or Skill for Enemies) to unveil the trickery. Lasts until the wizard leaves or falls asleep.",

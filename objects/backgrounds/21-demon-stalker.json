@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/21-demon-stalker.json",
+  "@type": "Background",
   "id": 21,
   "name": "Demon Stalker",
   "description": "You stake your reputation upon your ability to hunt and kill demonic creatures and those who break bread with them. Goat men in the wilds or the Angel cults of the slums, all need to be driven back off the edge of the map and onto the shores of chaos.",
@@ -22,7 +25,7 @@
   ],
   "advancedSkills": [
     {
-      "name": "Language – Abyssal",
+      "name": "Language \u2013 Abyssal",
       "rank": 5
     },
     {

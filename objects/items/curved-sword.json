@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/curved-sword.json",
+  "@type": "Item",
   "name": "Curved Sword",
   "type": "weapon",
   "description": "An exotic blade with a distinctive curve, favored by assassins and duelists.",

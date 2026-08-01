@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/zoanthrop.json",
+  "@type": "Enemy",
   "name": "Zoanthrop",
   "mien": {
     "diceType": "d6",

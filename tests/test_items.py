@@ -6,7 +6,7 @@ import glob
 import json
 import os
 import unittest
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 
 class TestItemData(unittest.TestCase):
@@ -71,7 +71,7 @@ class TestItemData(unittest.TestCase):
             },
         }
 
-    def load_item_json(self, item_id: str) -> Optional[Dict[str, Any]]:
+    def load_item_json(self, item_id: str) -> dict[str, Any] | None:
         """Load an item JSON file"""
         file_path = f"{self.items_dir}{item_id}.json"
         if os.path.exists(file_path):
@@ -79,14 +79,14 @@ class TestItemData(unittest.TestCase):
                 return json.load(f)
         return None
 
-    def get_all_item_files(self) -> List[str]:
+    def get_all_item_files(self) -> list[str]:
         """Get all item file IDs"""
         files = glob.glob(f"{self.items_dir}*.json")
         return [os.path.basename(f).replace(".json", "") for f in files]
 
     def test_expected_items_present(self):
         """Test that expected items are present"""
-        for item_id in self.expected_items.keys():
+        for item_id in self.expected_items:
             with self.subTest(item_id=item_id):
                 item_data = self.load_item_json(item_id)
                 self.assertIsNotNone(item_data, f"Item {item_id} JSON file not found")
@@ -105,7 +105,7 @@ class TestItemData(unittest.TestCase):
 
     def test_item_has_description(self):
         """Test that all items have descriptions"""
-        for item_id in self.expected_items.keys():
+        for item_id in self.expected_items:
             with self.subTest(item_id=item_id):
                 item_data = self.load_item_json(item_id)
                 if item_data:
@@ -194,6 +194,8 @@ class TestItemData(unittest.TestCase):
                             "damage" in item_desc
                             or "weapon" in item_desc
                             or "fighting" in item_desc
+                            or "weapon" in item_data
+                            or "damageTable" in item_data
                         )
                         if not has_damage_info:
                             print(

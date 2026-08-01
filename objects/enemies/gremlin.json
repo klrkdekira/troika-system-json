@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/gremlin.json",
+  "@type": "Enemy",
   "id": "gremlin",
   "name": "Gremlin",
   "description": "Vicious little creatures dressed in potato sacks they stole from an old mother's cupboards. When you see footprints in the pie crust it's time to call the Gremlin Catcher because where there's one there's a hundred and underneath your home will be a veritable maze of warrens stretching off to gods know where. No proven link between the gremlins' habit of appearing seemingly everywhere and the goblins' interdimensional labyrinth have been made but fingers are firmly pointed.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/diminish.json",
+  "@type": "Spell",
   "name": "Diminish",
   "cost": 2,
   "description": "Cause something to Test its Luck (or Skill for Enemies) or reduce its size by half. Lasts 3 minutes.",

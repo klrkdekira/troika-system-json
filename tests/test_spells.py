@@ -6,7 +6,7 @@ import glob
 import json
 import os
 import unittest
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 
 class TestSpellData(unittest.TestCase):
@@ -71,7 +71,7 @@ class TestSpellData(unittest.TestCase):
             },
         }
 
-    def load_spell_json(self, spell_id: str) -> Optional[Dict[str, Any]]:
+    def load_spell_json(self, spell_id: str) -> dict[str, Any] | None:
         """Load a spell JSON file"""
         file_path = f"{self.spells_dir}{spell_id}.json"
         if os.path.exists(file_path):
@@ -79,14 +79,14 @@ class TestSpellData(unittest.TestCase):
                 return json.load(f)
         return None
 
-    def get_all_spell_files(self) -> List[str]:
+    def get_all_spell_files(self) -> list[str]:
         """Get all spell file IDs"""
         files = glob.glob(f"{self.spells_dir}*.json")
         return [os.path.basename(f).replace(".json", "") for f in files]
 
     def test_expected_spells_present(self):
         """Test that expected spells are present"""
-        for spell_id in self.expected_spells.keys():
+        for spell_id in self.expected_spells:
             with self.subTest(spell_id=spell_id):
                 spell_data = self.load_spell_json(spell_id)
                 self.assertIsNotNone(
@@ -119,7 +119,7 @@ class TestSpellData(unittest.TestCase):
 
     def test_spell_has_description(self):
         """Test that all spells have descriptions"""
-        for spell_id in self.expected_spells.keys():
+        for spell_id in self.expected_spells:
             with self.subTest(spell_id=spell_id):
                 spell_data = self.load_spell_json(spell_id)
                 if spell_data:

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/jolt.json",
+  "@type": "Spell",
   "name": "Jolt",
   "cost": 1,
   "description": "The mischievous apprentice's favourite Spell, Jolt sends an arc of electricity from the wizard's outstretched hand towards a target. Ignores Armour.",

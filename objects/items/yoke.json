@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/yoke.json",
+  "@type": "Item",
   "name": "Yoke",
   "description": "A yoke gives you +4 carry capacity while worn but you can not use your hands while wearing it.",
   "slots": 2,

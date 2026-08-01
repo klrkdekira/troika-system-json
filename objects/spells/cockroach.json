@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/cockroach.json",
+  "@type": "Spell",
   "name": "Cockroach",
   "cost": 5,
   "description": "A popular Spell that turns troublesome folk into humiliated animals. The target must Test their Luck (or Skill for Enemies) or be turned into an insignificant creature of the wizard's choice. Lasts forever.",

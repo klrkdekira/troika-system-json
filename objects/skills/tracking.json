@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/tracking.json",
+  "@type": "Skill",
   "name": "Tracking",
   "type": "general",
   "description": "Used to stalk prey and find tracks. When stalking a quarry this is treated as an opposed Roll Versus the opponent's Tracking or Sneaking.",

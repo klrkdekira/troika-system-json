@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/tower-wizard.json",
+  "@type": "Enemy",
   "id": "tower-wizard",
   "name": "Tower Wizard",
   "description": "The majority of sorcery enthusiasts are either members of a college or well respected freelance lecturers with a nice manse in a seaside town, esteemed members of society who buy their groceries the same as us. However, when people think \"wizard\" they most likely go straight to the tower wizards, those feral old men who have given up all pretence of civility and fled to the wilderness. There they build their eponymous towers to work on unpleasant projects and terrorise the neighbourhood. They give magic a bad name.",

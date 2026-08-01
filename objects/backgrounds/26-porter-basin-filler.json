@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/26-porter-basin-filler.json",
+  "@type": "Background",
   "id": 26,
   "name": "Fellow of the Peerage of Porters & Basin Fillers",
   "description": "Luggers are a servile group by nature, most often found in the service of others, weighed down by loads that would buckle a donkey. You take pride in this, so much so that the everyday assignments of the guild cannot sate your desire to serve, causing you to venture out in search of a real challenge for such a talented varlet.",

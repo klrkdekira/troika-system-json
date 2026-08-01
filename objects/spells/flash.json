@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/flash.json",
+  "@type": "Spell",
   "name": "Flash",
   "cost": 3,
   "description": "The wizard claps neatly and issues forth the light of a thousand suns from their hands. All within 20 metres must Test their Luck (or Skill for Enemies) or be blinded for 1d6 minutes.",

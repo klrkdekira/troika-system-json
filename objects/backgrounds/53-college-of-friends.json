@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/53-college-of-friends.json",
+  "@type": "Background",
   "id": 53,
   "name": "Sorcerer of the College of Friends",
   "description": "As an integral part of your tutelage in the sub-dimensional academy of the Cordial Wizard God you spent your childhood learning about the fate of pixies, the colour of magic, ritual grammar, and endless other theoretical topics. Now you're out in the world, discovering that your education hardly accounted for any of the things that you've seen.",
@@ -15,7 +18,7 @@
   ],
   "advancedSkills": [
     {
-      "name": "Secret Signs – Witching Words",
+      "name": "Secret Signs \u2013 Witching Words",
       "rank": 4
     },
     {

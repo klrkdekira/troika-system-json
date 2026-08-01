@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/bale-hook.json",
+  "@type": "Item",
   "name": "Bale Hook",
   "description": "A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects.",
   "encumbrance": 1,

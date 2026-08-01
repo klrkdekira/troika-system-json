@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/blood-shroud.json",
+  "@type": "Spell",
   "name": "Blood Shroud",
   "cost": 4,
   "description": "Smear a small amount of a demon's blood on yourself to become completely invisible to them, even if you attack or speak to them, for 6 hours.",

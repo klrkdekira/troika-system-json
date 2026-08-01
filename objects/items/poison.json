@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/poison.json",
+  "@type": "Item",
   "name": "Poison",
   "type": "component",
   "description": "A vial of deadly poison. Can be applied to weapons or added to food and drink.",

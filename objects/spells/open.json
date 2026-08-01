@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/open.json",
+  "@type": "Spell",
   "name": "Open",
   "cost": 1,
   "description": "The wizard chooses a reality wherein the lock was open all along. May be used to open any mundane door or container and counteract a Lock Spell.",

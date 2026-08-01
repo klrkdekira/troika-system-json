@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/trapping.json",
+  "@type": "Skill",
   "name": "Trapping",
   "type": "general",
   "description": "Use this to set and disarm traps. When setting traps Roll Under your Trapping Skill and describe how the trap is made with the materials at hand. When someone wishes to disarm a trap they must Roll Versus the original trap-setter's Trapping Skill.",

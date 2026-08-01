@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/read-stars.json",
+  "@type": "Spell",
   "name": "Read Stars",
   "cost": 1,
   "description": "Rather than physical stars the wizard navigates by astral starlight that peeks through the veil. This Spell enables the wizard to get a reasonable sense of direction regardless of any obscuring factors.",

@@ -1,19 +1,31 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/longsword.json",
+  "@type": "Item",
   "name": "Longsword",
+  "type": "weapon",
   "description": "A longer, more deadly version of the standard sword.",
-  "slots": 1,
+  "slots": 2,
+  "value": 25,
+  "weapon": {
+    "category": "melee",
+    "damageAs": "Longsword",
+    "specialRules": [
+      "Versatile weapon"
+    ]
+  },
+  "damageTable": {
+    "1": 4,
+    "2": 6,
+    "3": 8,
+    "4": 8,
+    "5": 10,
+    "6": 12,
+    "7+": 14
+  },
   "tags": [
     "weapon",
     "melee",
     "blade"
-  ],
-  "weapon": {
-    "category": "melee",
-    "damageAs": "longsword",
-    "specialRules": [
-      "one_handed",
-      "melee"
-    ]
-  },
-  "type": "weapon"
+  ]
 }

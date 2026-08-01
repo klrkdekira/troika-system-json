@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/quench.json",
+  "@type": "Spell",
   "name": "Quench",
   "cost": 1,
   "description": "Snuff a small flame with the wave of a hand.",

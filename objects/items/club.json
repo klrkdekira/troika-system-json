@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/club.json",
+  "@type": "Item",
   "name": "Club",
   "description": "A simple wooden weapon, crude but effective.",
   "slots": 1,

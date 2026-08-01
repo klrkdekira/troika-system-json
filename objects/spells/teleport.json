@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/teleport.json",
+  "@type": "Spell",
   "name": "Teleport",
   "cost": 10,
   "description": "The wizard or a target of their choosing may travel to any location within a single sphere instantly. If unfamiliar with the location they must Test their Luck (or Skill for Enemies) or be thrown wildly off course to potentially devastating results.",

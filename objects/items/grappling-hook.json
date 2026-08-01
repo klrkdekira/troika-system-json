@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/grappling-hook.json",
+  "@type": "Item",
   "name": "Grappling Hook",
   "type": "tool",
   "description": "A metal hook attached to a length of rope for climbing or retrieving objects.",

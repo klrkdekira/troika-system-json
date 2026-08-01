@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/11-ardent-giant-of-corda.json",
+  "@type": "Background",
   "id": 11,
   "name": "Ardent Giant of Corda",
   "description": "Every giant has a different story about Corda, well told and interrupted with tears and laughter, of how they lost it and mean to find it soon enough but oh, what of today? We should drink and cheer, we'll search once again in the morning!",

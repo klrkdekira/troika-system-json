@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/darkness.json",
+  "@type": "Spell",
   "name": "Darkness",
   "cost": 3,
   "description": "Summon a stationary, perfect sphere of darkness up to five metres from the wizard for up to 3 minutes.",

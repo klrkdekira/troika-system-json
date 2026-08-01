@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/zed.json",
+  "@type": "Spell",
   "name": "Zed",
   "cost": "?",
   "description": "No one knows what this does but everyone who has cast it disappears instantly, never to be seen again.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/wall-of-power.json",
+  "@type": "Spell",
   "name": "Wall of Power",
   "cost": 2,
   "description": "What they call a wall is in fact a dome, but wizards always have worked in mysterious ways. The wall is a shimmering bubble that causes 1d6 Damage when touched. Nothing may pass without the wizard's permission (it is recommended that they remember to allow air). Lasts for 12 minutes.",

@@ -201,9 +201,13 @@ FOOTER = """
           <a href="https://cheeleong.dev">Chee Leong</a> and is not affiliated
           with the Melsonian Arts Council. It is published under the terms of
           the
-          <a href="https://troika-srd.netlify.app/#/"
-            >Troika! System Reference Document</a
-          >. "Troika!" is a trademark of the Melsonian Arts Council; please
+          <a href="https://troika-srd.netlify.app/"
+            >Troika! System Reference Document (SRD)</a
+          >
+          (source repository:
+          <a href="https://github.com/dialectrical/troika-srd"
+            >dialectrical/troika-srd</a
+          >). "Troika!" is a trademark of the Melsonian Arts Council; please
           support the original creators by buying the official rulebook.
         </p>
       </footer>"""
@@ -214,6 +218,11 @@ SECTIONS = {
         "Backgrounds",
         "{n} character backgrounds, rolled on a d66",
         "background.schema.json",
+    ),
+    "characters": (
+        "Characters",
+        "{n} sample player characters",
+        "character.schema.json",
     ),
     "enemies": ("Enemies", "{n} bestiary entries", "enemy.schema.json"),
     "items": ("Items", "{n} pieces of equipment", "item.schema.json"),
@@ -234,9 +243,7 @@ def data_files(directory):
 def listing_page(name, heading, subtitle_tpl):
     files = data_files(OBJECTS / name)
     subtitle = subtitle_tpl.format(n=len(files))
-    links = "\n".join(
-        f'        <a href="{f}"><code>{f}</code></a>' for f in files
-    )
+    links = "\n".join(f'        <a href="{f}"><code>{f}</code></a>' for f in files)
     body = f'      <div class="file-list">\n{links}\n      </div>'
     return PAGE.format(
         title=f"Troika! {heading}",
@@ -277,8 +284,8 @@ def table(header_cells, rows):
 def objects_page():
     rows = [
         [
-            '<td><a href="troika-system-data.json">'
-            "<code>troika-system-data.json</code></a></td>",
+            ('<td><a href="troika-system-data.json">'
+            "<code>troika-system-data.json</code></a></td>"),
             '<td class="count">1</td>',
         ]
     ]
@@ -304,14 +311,12 @@ def objects_page():
 
 def root_page():
     def schema_cell(schema):
-        return (
-            f'<td><a href="/systems/{schema}"><code>{schema}</code></a></td>'
-        )
+        return f'<td><a href="/systems/{schema}"><code>{schema}</code></a></td>'
 
     rows = [
         [
-            '<td><a href="/objects/troika-system-data.json">'
-            "<code>troika-system-data.json</code></a></td>",
+            ('<td><a href="/objects/troika-system-data.json">'
+            "<code>troika-system-data.json</code></a></td>"),
             '<td class="count">1</td>',
             schema_cell("troika-system.schema.json"),
         ]
@@ -325,13 +330,6 @@ def root_page():
                 schema_cell(schema),
             ]
         )
-    rows.append(
-        [
-            '<td class="muted">player characters (schema only)</td>',
-            '<td class="count"></td>',
-            schema_cell("character.schema.json"),
-        ]
-    )
     body = table(
         ["<th>Data</th>", '<th class="count">Files</th>', "<th>Schema</th>"],
         rows,

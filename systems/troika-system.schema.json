@@ -77,6 +77,25 @@
         "optionalRules": {
             "$ref": "#/definitions/optionalRules",
             "description": "Optional rule variants and house rules"
+        },
+        "@context": {
+            "type": [
+                "string",
+                "object",
+                "array"
+            ],
+            "description": "JSON-LD context reference or inline context object"
+        },
+        "@id": {
+            "type": "string",
+            "description": "JSON-LD unique resource identifier URI"
+        },
+        "@type": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "JSON-LD semantic resource type"
         }
     },
     "required": [
@@ -310,7 +329,7 @@
                             "properties": {
                                 "basicTest": {
                                     "type": "string",
-                                    "default": "2d6 ≤ Skill+Rank"
+                                    "default": "2d6 \u2264 Skill+Rank"
                                 },
                                 "opposedTest": {
                                     "type": "string",
@@ -318,7 +337,7 @@
                                 },
                                 "luckTest": {
                                     "type": "string",
-                                    "default": "2d6 ≤ Current Luck"
+                                    "default": "2d6 \u2264 Current Luck"
                                 }
                             }
                         },

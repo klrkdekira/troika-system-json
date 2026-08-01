@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/darksee.json",
+  "@type": "Spell",
   "name": "Darksee",
   "cost": 1,
   "description": "The wizard reaches into their sockets and extricates their eyes. Thus freed, the dark void behind can see perfectly well in pitch blackness and suffer excruciating pain in light (-4 penalty to all rolls). Be careful not to lose those eyeballs as re-inserting them is the only way to end the Spell.",

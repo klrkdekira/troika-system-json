@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/shield.json",
+  "@type": "Item",
   "name": "Shield",
   "type": "armor",
   "description": "A defensive item that can be used to block attacks and also as a weapon.",

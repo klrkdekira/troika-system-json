@@ -6,7 +6,7 @@ import glob
 import json
 import os
 import unittest
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 
 class TestEnemyData(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestEnemyData(unittest.TestCase):
         self.enemies_dir = "objects/enemies/"
         self.maxDiff = None
 
-    def load_enemy_json(self, enemy_id: str) -> Optional[Dict[str, Any]]:
+    def load_enemy_json(self, enemy_id: str) -> dict[str, Any] | None:
         """Load an enemy JSON file"""
         file_path = f"{self.enemies_dir}{enemy_id}.json"
         if os.path.exists(file_path):
@@ -25,7 +25,7 @@ class TestEnemyData(unittest.TestCase):
                 return json.load(f)
         return None
 
-    def get_all_enemy_files(self) -> List[str]:
+    def get_all_enemy_files(self) -> list[str]:
         """Get all enemy file IDs"""
         files = glob.glob(f"{self.enemies_dir}*.json")
         return [os.path.basename(f).replace(".json", "") for f in files]

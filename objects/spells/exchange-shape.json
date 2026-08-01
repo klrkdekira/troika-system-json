@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/exchange-shape.json",
+  "@type": "Spell",
   "name": "Exchange Shape",
   "cost": 5,
   "description": "What looks like a hug is in fact fell wizardry! The wizard bumps into another and exchanges bodies. Lasts until the wizard chooses to end it but they must be within sight of their own body for this to happen.",

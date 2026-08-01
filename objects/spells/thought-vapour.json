@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/thought-vapour.json",
+  "@type": "Spell",
   "name": "Thought Vapour",
   "cost": 1,
   "description": "The wizard can cause their nose to exist in multiple alternative realities, travel through various spheres, and enable the olfactory sensation of thought. Emotions, attitudes, and underlying feelings can be smelled. No words or images are formed, just impressions. Any strong odour will cause this Spell to fail.",

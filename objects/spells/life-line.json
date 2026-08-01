@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/life-line.json",
+  "@type": "Spell",
   "name": "Life Line",
   "cost": 1,
   "description": "Created by the Horizon Knights to enable them to take the fight to the Nothing, they would cast this on their squires and dive off the edge of creation. While this Spell lasts the wizard's essential bodily functions are linked to another, thereby enabling them to breath or eat for the recipient. They will need to breathe and eat for two, which makes it hard to do anything useful while linked. The Spell lasts for a day, until cancelled, or until the death of the linked person. Note if the linked person dies, starves, or is choked you will suffer equally.",

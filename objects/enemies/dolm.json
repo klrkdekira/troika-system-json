@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/dolm.json",
+  "@type": "Enemy",
   "id": "dolm",
   "name": "Dolm",
   "description": "Somewhere beneath the earth they sit suspended in their cavities, peacefully contemplating the movements of the surface world. A witness to their intercrevice ambling would see a large, saggy-skinned humanoid with soulful grey eyes staggering as though carrying a heavy basin of water. The dolm never stops growing, as far as anyone can tell, and the oldest and wisest of their sort can tower above a typical townhouse while still being able to squeeze themselves under the door.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/see-through.json",
+  "@type": "Spell",
   "name": "See Through",
   "cost": 1,
   "description": "The wizard rubs a surface vigorously, making it translucent. Can penetrate up to 12 inches of material. Lead and Silver are immune.",

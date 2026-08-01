@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/cone-of-air.json",
+  "@type": "Spell",
   "name": "Cone of Air",
   "cost": 2,
   "description": "Creates a mysterious and specifically shaped cone of air focused on a touched target's head. They may continue to breathe the freshest of air for 12 minutes.",

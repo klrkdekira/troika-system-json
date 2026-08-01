@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/peace.json",
+  "@type": "Spell",
   "name": "Peace",
   "cost": 2,
   "description": "Open up the mind to universal love and cause two subjects to Test their Luck (or Skill for Enemies) or cease hostilities. They will still defend themselves if attacked but will at least appreciate the pettiness of it.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/rope.json",
+  "@type": "Item",
   "name": "Rope",
   "type": "tool",
   "description": "A length of sturdy rope useful for climbing, binding, or pulling.",

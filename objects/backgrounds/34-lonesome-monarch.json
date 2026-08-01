@@ -1,7 +1,10 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/34-lonesome-monarch.json",
+  "@type": "Background",
   "id": 34,
   "name": "Lonesome Monarch",
-  "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as well. Either way you are now a lost and lonely sovereign without a kingdom — no one has heard of you or your people. Most don't believe you and laugh, or worse, they do believe you and shrug at the vagaries of fate.",
+  "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as well. Either way you are now a lost and lonely sovereign without a kingdom \u2014 no one has heard of you or your people. Most don't believe you and laugh, or worse, they do believe you and shrug at the vagaries of fate.",
   "possessions": [
     {
       "name": "Nice Weapon of your choice",

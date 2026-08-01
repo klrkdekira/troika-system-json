@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/tables/melee-damage-table.json",
+  "@type": "Table",
   "name": "Melee Weapons Damage Table",
   "description": "Damage values for melee weapons based on damage roll",
   "type": "damage",

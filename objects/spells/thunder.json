@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/thunder.json",
+  "@type": "Spell",
   "name": "Thunder",
   "cost": 2,
   "description": "The wizard raises their arms and shouts something suitably ominous. All within 24 metres must Test their Luck (or Skill for Enemies) or be deafened by a riotous roll of thunder. Luck or no, they will be mightily impressed.",

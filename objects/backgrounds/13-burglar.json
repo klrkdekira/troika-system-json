@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/13-burglar.json",
+  "@type": "Background",
   "id": 13,
   "name": "Burglar",
   "description": "As a second-story man you often have cause to wander. Enemies come naturally from both sides of the law and it pays to keep ahead of trouble.",

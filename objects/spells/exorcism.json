@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/exorcism.json",
+  "@type": "Spell",
   "name": "Exorcism",
   "cost": 1,
   "description": "The Red Priests posit that all negative behaviour is a symptom of some level of possession, or at least direct influence, by the forces of Change, unwitting agents of Mass in need of healing. The wizard throws salt at their target and Rolls Versus the possessing spirit to cast it out. In the case of a Fumble the spirit is drawn into and possesses the wizard.",

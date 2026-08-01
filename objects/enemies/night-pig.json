@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/night-pig.json",
+  "@type": "Enemy",
   "name": "Night Pig",
   "mien": {
     "diceType": "d6",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/knife.json",
+  "@type": "Item",
   "name": "Knife",
   "description": "A small blade, useful as both tool and weapon. Starting equipment for all characters.",
   "slots": 1,

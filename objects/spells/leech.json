@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/leech.json",
+  "@type": "Spell",
   "name": "Leech",
   "cost": 2,
   "description": "The necromancer must place their hands on a living subject and allow their fingertips to transform into sucking apertures which drain the victim of blood. Deal 2d6 Damage to your victim and regain half as much Stamina.",

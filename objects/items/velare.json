@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/velare.json",
+  "@type": "Item",
   "name": "Velare",
   "description": "When inactive, looks like an ornate piece of costume jewellery, usually a brooch or a circlet. When active it produces a full body disguise on the wearer formed from hard-light. Grants +4 Disguise. Lasts for 24 hours before needing to be recharged with a plasmic core.",
   "slots": 1,

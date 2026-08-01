@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/coal-resolve.json",
+  "@type": "Spell",
   "name": "Coal Resolve",
   "cost": 1,
   "description": "This Spell turns one's heart into a burning ember of grief. Those under its effect are so consumed by grief that they are immune to mind controlling effects and the non-physical impact of pain. Lasts until the next rest.",

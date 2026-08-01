@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/staff.json",
+  "@type": "Item",
   "name": "Staff",
   "type": "weapon",
   "description": "A long wooden pole, useful for walking, fighting, and casting spells.",

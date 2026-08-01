@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/thinking-engine.json",
+  "@type": "Enemy",
   "name": "Thinking Engine",
   "mien": {
     "diceType": "d6",

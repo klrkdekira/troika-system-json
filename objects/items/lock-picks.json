@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/lock-picks.json",
+  "@type": "Item",
   "name": "Lock Picks",
   "type": "tool",
   "description": "A set of delicate tools for opening locks without the proper key.",

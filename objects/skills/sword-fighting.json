@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/sword-fighting.json",
+  "@type": "Skill",
   "name": "Sword Fighting",
   "description": "The art of combat with swords and similar bladed weapons. Used in Roll Versus combat when wielding appropriate weapons.",
   "type": "weapon",
@@ -19,5 +22,9 @@
     "Sword Fighting vs Dodge",
     "Sword Fighting vs other weapon skills"
   ],
-  "tags": ["combat", "melee", "weapon"]
+  "tags": [
+    "combat",
+    "melee",
+    "weapon"
+  ]
 }

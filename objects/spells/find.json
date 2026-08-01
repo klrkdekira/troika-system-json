@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/find.json",
+  "@type": "Spell",
   "name": "Find",
   "cost": 2,
   "description": "When wizards lose their glasses they mumble to themselves until they turn up. The thing being sought must be a specific object, not a general category or type, and the direction is only given in terms of compass points.",

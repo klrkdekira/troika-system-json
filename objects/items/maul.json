@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/maul.json",
+  "@type": "Item",
   "name": "Maul",
   "type": "weapon",
   "description": "A massive two-handed hammer capable of devastating blows.",

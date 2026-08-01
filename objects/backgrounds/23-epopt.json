@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/23-epopt.json",
+  "@type": "Background",
   "id": 23,
   "name": "Epopt",
   "description": "You are a roaming seer, selling your visions at courts and fetes. You are instantly recognisable by your yellow coif and habit as being open for business. Road weary and worldwise, your unpopular visions cause you to constantly move on.",

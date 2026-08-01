@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/evaluate.json",
+  "@type": "Skill",
   "name": "Evaluate",
   "type": "general",
   "description": "Test this to get an idea of how much something is worth.",

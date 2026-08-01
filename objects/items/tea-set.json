@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/tea-set.json",
+  "@type": "Item",
   "name": "Tea Set",
   "description": "A tea set grants +1 to Etiquette when you have the time to sit down and make tea for those you are trying to impress.",
   "slots": 2,

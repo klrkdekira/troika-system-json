@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/66-zoanthrop.json",
+  "@type": "Background",
   "id": 66,
   "name": "Zoanthrop",
   "description": "At some point in your past you decided you didn't need it anymore: you found a Zoanthropologist and paid them well to remove your troublesome forebrain and elevate you to the pure and unburdened beast you are today.",

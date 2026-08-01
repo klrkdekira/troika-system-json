@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/16-claviger.json",
+  "@type": "Background",
   "id": 16,
   "name": "Claviger",
   "description": "The Key Masters wander the universe fathoming the workings of all entryways. Though they're quite fascinated with simple chests and doors they are most excited by metaphysical and metaphorical barriers. You might find small conclaves of Clavigers camped around the feet of Demon Gates, debating appropriate methods of attack, or building obscure machines of entry.",

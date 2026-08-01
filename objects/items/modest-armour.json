@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/modest-armour.json",
+  "@type": "Item",
   "name": "Modest Armour",
   "type": "armor",
   "description": "Decent protection such as chain mail or reinforced leather.",

@@ -10,7 +10,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from jsonschema import Draft7Validator
 from rich.console import Console
@@ -22,10 +22,10 @@ from rich.text import Text
 class TroikaValidator:
     """JSON Schema validator for Troika system objects."""
 
-    def __init__(self, schema_dir: Optional[Path] = None):
+    def __init__(self, schema_dir: Path | None = None):
         """Initialize validator with schema directory."""
         self.schema_dir = schema_dir or Path("systems")
-        self.schemas: Dict[str, Any] = {}
+        self.schemas: dict[str, Any] = {}
         self.console = Console()
         self.load_schemas()
 
@@ -47,12 +47,12 @@ class TroikaValidator:
                     )
                     self.schemas[schema_id] = schema_data
                     self.console.print(f"✓ Loaded schema: {schema_id}", style="green")
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001
                 self.console.print(
                     f"✗ Failed to load schema {schema_file}: {e}", style="red"
                 )
 
-    def get_schema_for_object(self, obj_path: Path) -> Optional[str]:
+    def get_schema_for_object(self, obj_path: Path) -> str | None:
         """Determine which schema to use based on object path."""
         # Map directory names to schema IDs
         schema_mapping = {
@@ -80,10 +80,10 @@ class TroikaValidator:
         return "troika-system"
 
     def validate_object(
-        self, obj_path: Path, schema_id: Optional[str] = None
-    ) -> Dict[str, Any]:
+        self, obj_path: Path, schema_id: str | None = None
+    ) -> dict[str, Any]:
         """Validate a single JSON object against its schema."""
-        result: Dict[str, Any] = {
+        result: dict[str, Any] = {
             "file": str(obj_path),
             "valid": False,
             "errors": [],
@@ -110,7 +110,7 @@ class TroikaValidator:
             try:
                 validator = Draft7Validator(schema)
                 errors = list(validator.iter_errors(obj_data))
-            except Exception:
+            except Exception:  # noqa: BLE001
                 # If there's an issue with unresolvable references,
                 # we'll create a temporary schema without references
                 temp_schema = self._create_temp_schema_without_refs(schema)
@@ -127,14 +127,14 @@ class TroikaValidator:
 
         except json.JSONDecodeError as e:
             result["errors"].append(f"Invalid JSON: {e}")
-        except Exception as e:
+        except Exception as e:  # noqa: BLE001
             result["errors"].append(f"Validation error: {e}")
 
         return result
 
     def validate_directory(
         self, directory: Path, recursive: bool = True
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """Validate all JSON files in a directory."""
         results = []
 
@@ -159,7 +159,15 @@ class TroikaValidator:
 
     def validate_by_categories(self, objects_dir: Path) -> None:
         """Validate objects by category (backgrounds, enemies, items, etc.)."""
-        categories = ["backgrounds", "enemies", "items", "skills", "spells", "tables"]
+        categories = [
+            "backgrounds",
+            "characters",
+            "enemies",
+            "items",
+            "skills",
+            "spells",
+            "tables",
+        ]
 
         for category in categories:
             category_dir = objects_dir / category
@@ -179,7 +187,7 @@ class TroikaValidator:
             result = self.validate_object(main_data_file)
             self.print_validation_results([result])
 
-    def print_validation_results(self, results: List[Dict[str, Any]]) -> None:
+    def print_validation_results(self, results: list[dict[str, Any]]) -> None:
         """Print validation results in a formatted table."""
         if not results:
             self.console.print("No validation results to display.", style="yellow")
@@ -241,8 +249,8 @@ class TroikaValidator:
         self.console.print(table)
 
     def _create_temp_schema_without_refs(
-        self, schema: Dict[str, Any]
-    ) -> Dict[str, Any]:
+        self, schema: dict[str, Any]
+    ) -> dict[str, Any]:
         """Create a temporary schema without references for basic validation."""
         import copy
 
@@ -317,7 +325,7 @@ def main():
             print(f"Error: Path '{target_path}' does not exist", file=sys.stderr)
             sys.exit(1)
 
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
 

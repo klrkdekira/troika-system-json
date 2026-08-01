@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/spear.json",
+  "@type": "Item",
   "name": "Spear",
   "type": "weapon",
   "description": "A long polearm with a pointed tip, effective for thrusting attacks.",

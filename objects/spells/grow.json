@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/grow.json",
+  "@type": "Spell",
   "name": "Grow",
   "cost": 2,
   "description": "Cause an item to grow half its size again if it fails to Test its Luck (or Skill for Enemies). Lasts for 3 minutes.",

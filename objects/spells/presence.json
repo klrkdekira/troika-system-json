@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/presence.json",
+  "@type": "Spell",
   "name": "Presence",
   "cost": 1,
   "description": "This Spell creates the sense of being watched by a patriarchal figure. Some find it comforting, others, not so much.",

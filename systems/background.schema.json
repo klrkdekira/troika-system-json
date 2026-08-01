@@ -103,6 +103,25 @@
                 }
             },
             "description": "Special advancement rules for this background"
+        },
+        "@context": {
+            "type": [
+                "string",
+                "object",
+                "array"
+            ],
+            "description": "JSON-LD context reference or inline context object"
+        },
+        "@id": {
+            "type": "string",
+            "description": "JSON-LD unique resource identifier URI"
+        },
+        "@type": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "JSON-LD semantic resource type"
         }
     },
     "required": [

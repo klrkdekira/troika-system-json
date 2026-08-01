@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/banish-spirit.json",
+  "@type": "Spell",
   "name": "Banish Spirit",
   "cost": 6,
   "description": "The wizard explains, clearly, sternly, why it is impossible that the spirit could be here at this time. The spirit must Test its Luck (or Skill for Enemies) or be sent to somewhere less improbable.",

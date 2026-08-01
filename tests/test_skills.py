@@ -6,7 +6,7 @@ import glob
 import json
 import os
 import unittest
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 
 class TestSkillData(unittest.TestCase):
@@ -42,7 +42,7 @@ class TestSkillData(unittest.TestCase):
             "trapping": "Use this to set and disarm traps. When setting traps Roll Under your Trapping Skill and describe how the trap is made with the materials at hand.",
         }
 
-    def load_skill_json(self, skill_id: str) -> Optional[Dict[str, Any]]:
+    def load_skill_json(self, skill_id: str) -> dict[str, Any] | None:
         """Load a skill JSON file"""
         file_path = f"{self.skills_dir}{skill_id}.json"
         if os.path.exists(file_path):
@@ -50,14 +50,14 @@ class TestSkillData(unittest.TestCase):
                 return json.load(f)
         return None
 
-    def get_all_skill_files(self) -> List[str]:
+    def get_all_skill_files(self) -> list[str]:
         """Get all skill file IDs"""
         files = glob.glob(f"{self.skills_dir}*.json")
         return [os.path.basename(f).replace(".json", "") for f in files]
 
     def test_expected_skills_present(self):
         """Test that expected core skills are present"""
-        for skill_id in self.expected_skills.keys():
+        for skill_id in self.expected_skills:
             with self.subTest(skill_id=skill_id):
                 skill_data = self.load_skill_json(skill_id)
                 self.assertIsNotNone(
@@ -66,7 +66,7 @@ class TestSkillData(unittest.TestCase):
 
     def test_skill_names_correct(self):
         """Test that skill names are correct"""
-        for skill_id in self.expected_skills.keys():
+        for skill_id in self.expected_skills:
             with self.subTest(skill_id=skill_id):
                 skill_data = self.load_skill_json(skill_id)
                 if skill_data:

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/helping-hands.json",
+  "@type": "Spell",
   "name": "Helping Hands",
   "cost": 1,
   "description": "Animate hands spring forth from an inanimate surface and perform any task the wizard requires but are limited to being rooted to the spot from which they sprang. They last until the wizard wills it or leaves the location.",

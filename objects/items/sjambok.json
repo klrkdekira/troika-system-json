@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/sjambok.json",
+  "@type": "Item",
   "name": "Sjambok",
   "type": "weapon",
   "description": "A heavy leather whip traditionally used as both tool and weapon.",

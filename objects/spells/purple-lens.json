@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/purple-lens.json",
+  "@type": "Spell",
   "name": "Purple Lens",
   "cost": 1,
   "description": "The recipient's eyes glow purple as they experience an alternative reality where people are kind, their surroundings are beautiful, their food is indulgent, and so on. This doesn't change the reality of things but it does make them more palatable. Lasts until they want it to end.",

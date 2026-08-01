@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/24-exographer.json",
+  "@type": "Background",
   "id": 24,
   "name": "Exographer",
   "description": "Where you come from it's become quite normal to traverse the Spheres. Idle academics like yourself have even begun to study these more remote reaches of the divine effluvia. Though these rural indwellers may never appreciate your important work, you continually, thanklessly measure their latent phlogiston. For posterity.",

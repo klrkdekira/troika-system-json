@@ -1,0 +1,102 @@
+{
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/characters/sample-ardent-giant.json",
+  "@type": "Character",
+  "name": "Ignatius the Ardent",
+  "background": "Ardent Giant of Corda",
+  "attributes": {
+    "skill": 5,
+    "stamina": {
+      "current": 18,
+      "maximum": 18,
+      "temporary": 0
+    },
+    "luck": {
+      "current": 9,
+      "maximum": 9,
+      "timesTestedThisSession": 0
+    }
+  },
+  "advancedSkills": [
+    {
+      "name": "Strength",
+      "rank": 4,
+      "total": 9,
+      "type": "skill"
+    },
+    {
+      "name": "Astrology",
+      "rank": 3,
+      "total": 8,
+      "type": "skill"
+    }
+  ],
+  "inventory": [
+    {
+      "name": "Artefact of Lost Corda",
+      "position": 1,
+      "slots": 1,
+      "description": "A heavy reliquary containing starlight from fallen Corda.",
+      "readyForUse": true,
+      "condition": "good"
+    },
+    {
+      "name": "Greatsword",
+      "position": 2,
+      "slots": 2,
+      "description": "A massive two-handed weapon.",
+      "readyForUse": true,
+      "condition": "excellent"
+    },
+    {
+      "name": "Knife",
+      "position": 4,
+      "slots": 1,
+      "description": "Baseline possession knife.",
+      "readyForUse": false,
+      "condition": "good"
+    },
+    {
+      "name": "Lantern & Flask of Oil",
+      "position": 5,
+      "slots": 1,
+      "description": "Baseline lantern equipment.",
+      "readyForUse": false,
+      "condition": "good"
+    },
+    {
+      "name": "Rucksack",
+      "position": 6,
+      "slots": 1,
+      "description": "Baseline rucksack.",
+      "readyForUse": false,
+      "condition": "good"
+    }
+  ],
+  "baselinePossessions": [
+    {
+      "name": "Knife",
+      "position": 1,
+      "slots": 1
+    },
+    {
+      "name": "Lantern & Flask of Oil",
+      "position": 2,
+      "slots": 1
+    },
+    {
+      "name": "Rucksack",
+      "position": 3,
+      "slots": 1
+    }
+  ],
+  "initiativeTokens": 2,
+  "specialAbilities": [
+    "Ardent Giant Trait: Takes double damage from heat/fire, but immune to cold."
+  ],
+  "languages": [
+    "Troikan Standard",
+    "Giant dialect"
+  ],
+  "notes": "Seeking to restore the lost grandeur of Corda."
+}

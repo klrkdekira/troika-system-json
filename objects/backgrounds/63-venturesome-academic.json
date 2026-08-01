@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/63-venturesome-academic.json",
+  "@type": "Background",
   "id": 63,
   "name": "Venturesome Academic",
   "description": "You're a classically trained Academic, a product of the universities of the Brass City, the Palace of Tigers, or some other less prestigious centre of learning among the spheres.",

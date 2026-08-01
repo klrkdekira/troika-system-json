@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/15-chaos-champion.json",
+  "@type": "Background",
   "id": 15,
   "name": "Chaos Champion",
   "description": "You no longer don the spiked brass armour but you still have the ear of your Chaos patron. They're happy for you to experiment with not plunging your world into disorder and, ultimately, darkness, but the door is always open.",
@@ -22,7 +25,7 @@
   ],
   "advancedSkills": [
     {
-      "name": "Language – Kurgan",
+      "name": "Language \u2013 Kurgan",
       "rank": 6
     },
     {
@@ -30,7 +33,7 @@
       "rank": 3
     },
     {
-      "name": "Secret Signs – Chaos Patron",
+      "name": "Secret Signs \u2013 Chaos Patron",
       "rank": 3
     },
     {

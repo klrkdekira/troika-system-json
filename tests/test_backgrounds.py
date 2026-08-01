@@ -5,7 +5,7 @@ Unit tests for Background data against SRD.md
 import glob
 import json
 import unittest
-from typing import Any, Dict, Optional
+from typing import Any
 
 
 class TestBackgroundData(unittest.TestCase):
@@ -647,7 +647,7 @@ class TestBackgroundData(unittest.TestCase):
             },
         }
 
-    def load_background_json(self, background_id: int) -> Optional[Dict[str, Any]]:
+    def load_background_json(self, background_id: int) -> dict[str, Any] | None:
         """Load a background JSON file"""
         file_pattern = f"{self.backgrounds_dir}{background_id}-*.json"
         files = glob.glob(file_pattern)
@@ -659,7 +659,7 @@ class TestBackgroundData(unittest.TestCase):
 
     def test_all_backgrounds_present(self):
         """Test that all 36 backgrounds are present"""
-        for bg_id in self.expected_backgrounds.keys():
+        for bg_id in self.expected_backgrounds:
             with self.subTest(background_id=bg_id):
                 bg_data = self.load_background_json(bg_id)
                 self.assertIsNotNone(bg_data, f"Background {bg_id} JSON file not found")
@@ -778,7 +778,7 @@ class TestBackgroundData(unittest.TestCase):
 
     def test_background_has_description(self):
         """Test that all backgrounds have descriptions"""
-        for bg_id in self.expected_backgrounds.keys():
+        for bg_id in self.expected_backgrounds:
             with self.subTest(background_id=bg_id):
                 bg_data = self.load_background_json(bg_id)
                 if bg_data:
@@ -805,7 +805,7 @@ class TestBackgroundData(unittest.TestCase):
             "special",
         ]
 
-        for bg_id in self.expected_backgrounds.keys():
+        for bg_id in self.expected_backgrounds:
             with self.subTest(background_id=bg_id):
                 bg_data = self.load_background_json(bg_id)
                 if bg_data:

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/sleep.json",
+  "@type": "Spell",
   "name": "Sleep",
   "cost": 2,
   "description": "The wizard convinces a target to forgo wakefulness for a time, causing them to sleep until woken unless they successfully Test their Luck. Remember: fighting is loud.",

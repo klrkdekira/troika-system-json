@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/tables/random-spell-table.json",
+  "@type": "Table",
   "name": "Random Spell Table",
   "description": "Table for generating random spells using d66",
   "type": "random",

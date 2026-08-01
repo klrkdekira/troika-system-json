@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/pistolet.json",
+  "@type": "Item",
   "name": "Pistolet",
   "description": "A hand held energy Weapon. Holds enough energy for 8 shots.",
   "slots": 1,

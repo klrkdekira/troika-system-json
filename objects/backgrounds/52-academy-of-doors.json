@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/52-academy-of-doors.json",
+  "@type": "Background",
   "id": 52,
   "name": "Sorcerer of the Academy of Doors",
   "description": "You are a student at Troika's most prestigious wizarding academy (pride of the city, experts in pan-dimensional mobility) you were finally able to penetrate the (2d6)th door. You are no master but few outside your peers can claim to know more about the vagaries of skyward travel than you.",

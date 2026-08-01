@@ -37,20 +37,25 @@ All the data from the Troika! SRD is covered.
   <img src="fortle.svg" alt="Fortle Logo" width="200" height="200">
 </p>
 
-This project is based on the **Troika!** tabletop RPG system by the **Melsonian Arts Council**.
+This project is based on the **Troika!** tabletop RPG system by the **Melsonian Arts Council**, sourced from the official [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/) and its open source repository [`dialectrical/troika-srd`](https://github.com/dialectrical/troika-srd).
 
 ### Third Party Compatibility
 
-This is an independent production and is not affiliated with the Melsonian Arts Council. It is published under the terms outlined in the [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/#/).
+This is an independent production and is not affiliated with the Melsonian Arts Council. It is published under the terms outlined in the [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/).
 
 **Troika! System JSON is an independent production by [Chee Leong](https://cheeleong.dev) and is not affiliated with the Melsonian Arts Council.**
+
+### Attribution & Sources
+
+* **Troika! SRD Web**: [https://troika-srd.netlify.app/](https://troika-srd.netlify.app/)
+* **Troika! SRD Repository**: [https://github.com/dialectrical/troika-srd](https://github.com/dialectrical/troika-srd)
 
 ### Terms of Use
 
 - The mechanics and concepts of "Troika!" are used under the terms of the SRD
 - This data structure may be used freely for compatible projects
 - Original game content remains copyright of the Melsonian Arts Council
-- See the [SRD](https://troika-srd.netlify.app/#/) for complete licensing terms
+- See the [SRD](https://troika-srd.netlify.app/) and [`dialectrical/troika-srd`](https://github.com/dialectrical/troika-srd) for complete licensing terms
 
 ### Original Work
 

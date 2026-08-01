@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/khaibit.json",
+  "@type": "Enemy",
   "id": "khaibit",
   "name": "Khaibit",
   "damageType": "weapon",

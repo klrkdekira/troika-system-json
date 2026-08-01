@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/babble.json",
+  "@type": "Spell",
   "name": "Babble",
   "cost": 2,
   "description": "The wizard speaks nonsense while watching the intended target, causing their words to trip and confuse. This may be done under their breath and relatively subtly.",

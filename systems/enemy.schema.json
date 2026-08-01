@@ -113,6 +113,25 @@
         "encounterNotes": {
             "type": "string",
             "description": "GM notes for running encounters with this creature"
+        },
+        "@context": {
+            "type": [
+                "string",
+                "object",
+                "array"
+            ],
+            "description": "JSON-LD context reference or inline context object"
+        },
+        "@id": {
+            "type": "string",
+            "description": "JSON-LD unique resource identifier URI"
+        },
+        "@type": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "JSON-LD semantic resource type"
         }
     },
     "required": [

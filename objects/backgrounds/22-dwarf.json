@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/22-dwarf.json",
+  "@type": "Background",
   "id": 22,
   "name": "Dwarf",
   "description": "You are a short, hairy, belligerent, alcohol dependent creature. Dwarfs are a sculpted people, ungendered, and thus there are no Dwarf children or Dwarf families to prevent you from fully committing to the important Dwarfy endeavours of creating fine art in unusual places. You intend to find the most unusual places in all the million spheres.",

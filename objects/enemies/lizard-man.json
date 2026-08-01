@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/lizard-man.json",
+  "@type": "Enemy",
   "id": "lizard-man",
   "name": "Lizard-Man",
   "damageType": "weapon_or_modest_beast",

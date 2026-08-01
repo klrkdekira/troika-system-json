@@ -11,19 +11,18 @@ This script will:
 """
 
 import json
-import os
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any
 
 
-def find_json_files(directory: str) -> List[Path]:
+def find_json_files(directory: str) -> list[Path]:
     """Find all JSON files in the given directory and subdirectories."""
     directory_path = Path(directory)
     return list(directory_path.rglob("*.json"))
 
 
-def convert_silver_value(value: Any) -> Tuple[Any, bool]:
+def convert_silver_value(value: Any) -> tuple[Any, bool]:
     """
     Convert a value if it matches the X_silver pattern.
 
@@ -41,7 +40,7 @@ def convert_silver_value(value: Any) -> Tuple[Any, bool]:
     return value, False
 
 
-def process_json_object(obj: Any, path: str = "") -> Tuple[Any, List[str]]:
+def process_json_object(obj: Any, path: str = "") -> tuple[Any, list[str]]:
     """
     Recursively process a JSON object to find and convert silver values.
 
@@ -85,7 +84,7 @@ def process_json_object(obj: Any, path: str = "") -> Tuple[Any, List[str]]:
         return obj, []
 
 
-def process_json_file(file_path: Path) -> Tuple[bool, List[str]]:
+def process_json_file(file_path: Path) -> tuple[bool, list[str]]:
     """
     Process a single JSON file to convert silver values.
 
@@ -111,7 +110,7 @@ def process_json_file(file_path: Path) -> Tuple[bool, List[str]]:
 
         return False, []
 
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001
         print(f"Error processing {file_path}: {e}")
         return False, []
 

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/slide-skywards.json",
+  "@type": "Spell",
   "name": "Slide Skywards",
   "cost": 6,
   "description": "Requires mirrors or other highly reflective surfaces. The wizard stands between two reflective surfaces so that they are infinitely repeated. They then step out from between them but as a different incidence of themselves. To those watching the wizard moves in the direction not seen and reappears between two mirrors elsewhere. If the location has been compromised the wizard arrives in a random mirrored location somewhere across the million crystal spheres.",

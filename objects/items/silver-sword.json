@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/silver-sword.json",
+  "@type": "Item",
   "name": "Silver Sword",
   "description": "Silver is the star metal, the most untouched material fallen from the hump-backed sky. Weapons made from it may inflict Damage to creatures normally immune to material harm.",
   "slots": 1,

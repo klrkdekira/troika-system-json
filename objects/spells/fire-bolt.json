@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/fire-bolt.json",
+  "@type": "Spell",
   "name": "Fire Bolt",
   "cost": 1,
   "description": "Shoot impressive flames from your fingertips, dealing Damage to one target within 20 metres.",

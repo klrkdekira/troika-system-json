@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/poison.json",
+  "@type": "Spell",
   "name": "Poison",
   "cost": 1,
   "description": "When cast upon a liquid this Spell causes it to become deadly poison. The liquid deals 4 Damage if drunk and 1 Damage per Turn until the target successfully Tests their Luck (or Skill for Enemies). The liquid loses its potency after an hour.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/natter.json",
+  "@type": "Spell",
   "name": "Natter",
   "cost": 1,
   "description": "As everyone knows, wizards are excellent ventriloquists, so good, in fact, that they can throw their voice inside another's mouth. They can target anyone within sight and transmit a short sentence.",

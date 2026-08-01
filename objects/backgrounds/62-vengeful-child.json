@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/62-vengeful-child.json",
+  "@type": "Background",
   "id": 62,
   "name": "Vengeful Child",
   "description": "Your village was burnt down by ruffians, or your mother was beheaded by snake cultists, or your father was hung by corrupt officials. Either way you took umbrage and entered the world with a chip on one shoulder and an oversized Sword on the other.",

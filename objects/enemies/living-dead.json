@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/living-dead.json",
+  "@type": "Enemy",
   "id": "living-dead",
   "name": "Living Dead",
   "damageType": "weapon_or_modest_beast",

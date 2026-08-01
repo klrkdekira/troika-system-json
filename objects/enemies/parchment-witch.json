@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/parchment-witch.json",
+  "@type": "Enemy",
   "name": "Parchment Witch",
   "mien": {
     "diceType": "d6",
@@ -59,7 +62,12 @@
     }
   ],
   "spells": [],
-  "tags": ["undead", "witch", "disguise", "shapeshifter"],
+  "tags": [
+    "undead",
+    "witch",
+    "disguise",
+    "shapeshifter"
+  ],
   "stats": {
     "skill": 8,
     "stamina": 14,

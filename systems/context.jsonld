@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://troika-system-json.cheeleong.dev/ns#",
+    "schema": "http://schema.org/",
+    "troika": "https://troika-system-json.cheeleong.dev/ns#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "value": "schema:value",
+    "quantity": "schema:amount",
+    "srd": "schema:url",
+    "srdRepository": "schema:codeRepository",
+    "attribution": "schema:citation",
+    "Background": "troika:Background",
+    "Enemy": "troika:Enemy",
+    "Item": "troika:Item",
+    "Skill": "troika:Skill",
+    "Spell": "troika:Spell",
+    "Table": "troika:Table",
+    "Character": "troika:Character",
+    "TroikaSystemData": "troika:TroikaSystemData",
+    "possessions": {
+      "@id": "troika:possessions",
+      "@container": "@set"
+    },
+    "advancedSkills": {
+      "@id": "troika:advancedSkills",
+      "@container": "@set"
+    },
+    "spells": {
+      "@id": "troika:spells",
+      "@container": "@set"
+    },
+    "special": {
+      "@id": "troika:special",
+      "@container": "@set"
+    },
+    "tags": {
+      "@id": "troika:tags",
+      "@container": "@set"
+    },
+    "stats": "troika:stats",
+    "mien": "troika:mien",
+    "weapon": "troika:weapon",
+    "armor": "troika:armor",
+    "damageTable": "troika:damageTable",
+    "attributes": "troika:attributes",
+    "inventory": {
+      "@id": "troika:inventory",
+      "@container": "@set"
+    },
+    "entries": {
+      "@id": "troika:entries",
+      "@container": "@set"
+    },
+    "damageMatrix": "troika:damageMatrix",
+    "cost": "troika:staminaCost",
+    "duration": "troika:duration",
+    "range": "troika:range",
+    "testType": "troika:testType",
+    "rules": "troika:rules"
+  }
+}

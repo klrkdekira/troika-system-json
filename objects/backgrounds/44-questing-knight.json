@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/44-questing-knight.json",
+  "@type": "Background",
   "id": 44,
   "name": "Questing Knight",
   "description": "You are on a quest for the grail, or the sword, or the throne, or for god, or a lost love, or some other significant object. Your sort are common enough, wandering the worlds, acting out your romantic melodrama, accusing good folk of being demons or faeries. Questing Knights are generally considered to be harmless.",

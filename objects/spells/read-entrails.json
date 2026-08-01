@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/read-entrails.json",
+  "@type": "Spell",
   "name": "Read Entrails",
   "cost": 1,
   "description": "The wizard can get the answer to one question from the entrails of a living creature. The size and importance of the creature influences the level of knowledge gained. Small, common animals are able to offer yes or no answers, oxen can predict things obtusely, lamassu may offer explicit and thorough advice.",

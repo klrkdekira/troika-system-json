@@ -1,19 +1,32 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/crossbow.json",
+  "@type": "Item",
   "name": "Crossbow",
+  "type": "weapon",
   "description": "A mechanical bow that fires bolts with great force and accuracy.",
   "slots": 2,
+  "value": 30,
+  "weapon": {
+    "category": "ranged",
+    "damageAs": "Crossbow",
+    "specialRules": [
+      "Two-handed weapon",
+      "Ranged"
+    ]
+  },
+  "damageTable": {
+    "1": 4,
+    "2": 4,
+    "3": 6,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7+": 10
+  },
   "tags": [
     "weapon",
     "ranged",
     "mechanical"
-  ],
-  "weapon": {
-    "category": "ranged",
-    "damageAs": "crossbow",
-    "specialRules": [
-      "two_handed",
-      "ranged"
-    ]
-  },
-  "type": "weapon"
+  ]
 }

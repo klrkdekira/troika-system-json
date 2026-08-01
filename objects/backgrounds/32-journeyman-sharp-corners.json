@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/32-journeyman-sharp-corners.json",
+  "@type": "Background",
   "id": 32,
   "name": "Journeyman of the Guild of Sharp Corners",
   "description": "You are an assassin in training, graduated from fighting dummies and branding practise clients, freshly imbued with a license to ply your trade. You haven't fully developed the idiosyncratic methods required of a master but you are on the path.",

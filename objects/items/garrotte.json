@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/garrotte.json",
+  "@type": "Item",
   "name": "Garrotte",
   "type": "weapon",
   "description": "A silent strangling weapon used by assassins, consisting of a cord or wire with handles.",

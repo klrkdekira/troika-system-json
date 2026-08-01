@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/owl.json",
+  "@type": "Enemy",
   "name": "Owl",
   "mien": {
     "diceType": "d6",

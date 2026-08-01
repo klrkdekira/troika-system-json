@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/salt.json",
+  "@type": "Item",
   "name": "Salt",
   "description": "Salt is the poor man's Silver. Where Silver kills the demonic and the dead Salt merely harms or bars.",
   "slots": 1,

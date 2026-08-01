@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/etiquette.json",
+  "@type": "Skill",
   "id": "etiquette",
   "name": "Etiquette",
   "description": "When making a good impression is important Roll Versus your host's Etiquette. Represents a mechanical understanding of social conduct and those who are better at it are more discerning.",

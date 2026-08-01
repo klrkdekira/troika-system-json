@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/shatter.json",
+  "@type": "Spell",
   "name": "Shatter",
   "cost": 3,
   "description": "The wizard may wildly gesticulate at a brittle object no larger than an umbrella and cause it to shatter into a million pieces. Living targets may Test their Luck to avoid this unpleasant Spell.",

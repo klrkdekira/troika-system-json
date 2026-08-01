@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/polearm.json",
+  "@type": "Item",
   "name": "Polearm",
   "type": "weapon",
   "description": "A long-hafted weapon with various blade configurations, devastating in skilled hands.",

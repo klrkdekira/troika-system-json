@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/51-sceptical-lamassu.json",
+  "@type": "Background",
   "id": 51,
   "name": "Sceptical Lamassu",
   "description": "With the body of a bull, the head of a man, the forelegs of a cat, and the wings of a swan you are the sweetest of the children of the gods. You, however, were not content to rest on your cloud and instead descended from the heavens or crawled up from the abyss and set about finding your own path among the stars.",
@@ -16,7 +19,7 @@
       "name": "Hooves (Damage as Club)"
     },
     {
-      "name": "Wings — able to fly as fast as a running man over clear ground"
+      "name": "Wings \u2014 able to fly as fast as a running man over clear ground"
     }
   ],
   "advancedSkills": [

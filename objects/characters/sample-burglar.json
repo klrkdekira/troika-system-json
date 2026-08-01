@@ -1,0 +1,75 @@
+{
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/characters/sample-burglar.json",
+  "@type": "Character",
+  "name": "Sly Corvo",
+  "background": "Burglar",
+  "attributes": {
+    "skill": 4,
+    "stamina": {
+      "current": 16,
+      "maximum": 16,
+      "temporary": 0
+    },
+    "luck": {
+      "current": 11,
+      "maximum": 11,
+      "timesTestedThisSession": 0
+    }
+  },
+  "advancedSkills": [
+    {
+      "name": "Locks",
+      "rank": 3,
+      "total": 7,
+      "type": "skill"
+    },
+    {
+      "name": "Sneak",
+      "rank": 2,
+      "total": 6,
+      "type": "skill"
+    },
+    {
+      "name": "Climb",
+      "rank": 2,
+      "total": 6,
+      "type": "skill"
+    }
+  ],
+  "inventory": [
+    {
+      "name": "Lock Picks",
+      "position": 1,
+      "slots": 1,
+      "description": "Fine thieves tools.",
+      "readyForUse": true,
+      "condition": "good"
+    },
+    {
+      "name": "Grappling Hook",
+      "position": 2,
+      "slots": 1,
+      "description": "Iron hook attached to hemp rope.",
+      "readyForUse": false,
+      "condition": "good"
+    },
+    {
+      "name": "Knife",
+      "position": 3,
+      "slots": 1,
+      "description": "Sturdy dagger.",
+      "readyForUse": true,
+      "condition": "good"
+    }
+  ],
+  "initiativeTokens": 2,
+  "specialAbilities": [
+    "Light-footed: +1 to Sneak tests in dark locations."
+  ],
+  "languages": [
+    "Troikan Standard",
+    "Thieves' Cant"
+  ],
+  "notes": "Always looking for lucrative vaults to crack."
+}

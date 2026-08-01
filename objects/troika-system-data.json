@@ -5,6 +5,9 @@
     "description": "Science Fantasy RPG System Data",
     "publisher": "Melsonian Arts Council",
     "version": "1.0",
+    "srd": "https://troika-srd.netlify.app/",
+    "srdRepository": "https://github.com/dialectrical/troika-srd",
+    "attribution": "Based on the Troika! SRD by Melsonian Arts Council and dialectrical (https://github.com/dialectrical/troika-srd). Troika! System JSON is an independent production by Chee Leong and is not affiliated with the Melsonian Arts Council.",
     "license": "Third Party Compatible - see Terms in SRD"
   },
   "backgrounds": [
@@ -119,6 +122,9 @@
   ],
   "skills": [
     {
+      "$ref": "./skills/acrobatics.json"
+    },
+    {
       "$ref": "./skills/astrology.json"
     },
     {
@@ -137,6 +143,9 @@
       "$ref": "./skills/evaluate.json"
     },
     {
+      "$ref": "./skills/fly.json"
+    },
+    {
       "$ref": "./skills/golden-barge-pilot.json"
     },
     {
@@ -144,6 +153,12 @@
     },
     {
       "$ref": "./skills/locks.json"
+    },
+    {
+      "$ref": "./skills/mathmology.json"
+    },
+    {
+      "$ref": "./skills/poison.json"
     },
     {
       "$ref": "./skills/ride.json"
@@ -178,10 +193,43 @@
       "$ref": "./spells/affix.json"
     },
     {
+      "$ref": "./spells/amity.json"
+    },
+    {
+      "$ref": "./spells/animate.json"
+    },
+    {
+      "$ref": "./spells/assassins-dagger.json"
+    },
+    {
       "$ref": "./spells/assume-shape.json"
     },
     {
+      "$ref": "./spells/astral-reach.json"
+    },
+    {
+      "$ref": "./spells/babble.json"
+    },
+    {
+      "$ref": "./spells/banish-spirit.json"
+    },
+    {
+      "$ref": "./spells/befuddle.json"
+    },
+    {
       "$ref": "./spells/blood-shroud.json"
+    },
+    {
+      "$ref": "./spells/breach.json"
+    },
+    {
+      "$ref": "./spells/brittle-twigs.json"
+    },
+    {
+      "$ref": "./spells/callous-strike.json"
+    },
+    {
+      "$ref": "./spells/coal-resolve.json"
     },
     {
       "$ref": "./spells/cockroach.json"
@@ -190,7 +238,40 @@
       "$ref": "./spells/cone-of-air.json"
     },
     {
+      "$ref": "./spells/darkness.json"
+    },
+    {
+      "$ref": "./spells/darksee.json"
+    },
+    {
+      "$ref": "./spells/diminish.json"
+    },
+    {
+      "$ref": "./spells/drown.json"
+    },
+    {
+      "$ref": "./spells/earthquake.json"
+    },
+    {
+      "$ref": "./spells/ember.json"
+    },
+    {
+      "$ref": "./spells/exchange-shape.json"
+    },
+    {
       "$ref": "./spells/exorcism.json"
+    },
+    {
+      "$ref": "./spells/explode.json"
+    },
+    {
+      "$ref": "./spells/farseeing.json"
+    },
+    {
+      "$ref": "./spells/fear.json"
+    },
+    {
+      "$ref": "./spells/find.json"
     },
     {
       "$ref": "./spells/fire-bolt.json"
@@ -199,7 +280,19 @@
       "$ref": "./spells/flash.json"
     },
     {
-      "$ref": "./spells/helping-hand.json"
+      "$ref": "./spells/gills.json"
+    },
+    {
+      "$ref": "./spells/grow.json"
+    },
+    {
+      "$ref": "./spells/helping-hands.json"
+    },
+    {
+      "$ref": "./spells/hurricane.json"
+    },
+    {
+      "$ref": "./spells/illusion.json"
     },
     {
       "$ref": "./spells/invisibility.json"
@@ -217,34 +310,49 @@
       "$ref": "./spells/leech.json"
     },
     {
+      "$ref": "./spells/levitate.json"
+    },
+    {
+      "$ref": "./spells/life-line.json"
+    },
+    {
       "$ref": "./spells/light.json"
     },
     {
       "$ref": "./spells/lock.json"
     },
     {
-      "$ref": "./spells/matron.json"
+      "$ref": "./spells/mirror-selves.json"
     },
     {
-      "$ref": "./spells/mirror-mirror.json"
+      "$ref": "./spells/natter.json"
     },
     {
-      "$ref": "./spells/morph.json"
+      "$ref": "./spells/open.json"
     },
     {
-      "$ref": "./spells/nod.json"
+      "$ref": "./spells/peace.json"
     },
     {
-      "$ref": "./spells/prayer.json"
+      "$ref": "./spells/poison.json"
+    },
+    {
+      "$ref": "./spells/posthumous-vitality.json"
     },
     {
       "$ref": "./spells/presence.json"
     },
     {
-      "$ref": "./spells/protection.json"
+      "$ref": "./spells/protection-from-rain.json"
+    },
+    {
+      "$ref": "./spells/purple-lens.json"
     },
     {
       "$ref": "./spells/quench.json"
+    },
+    {
+      "$ref": "./spells/read-entrails.json"
     },
     {
       "$ref": "./spells/read-stars.json"
@@ -253,7 +361,28 @@
       "$ref": "./spells/see-through.json"
     },
     {
+      "$ref": "./spells/sentry.json"
+    },
+    {
+      "$ref": "./spells/shatter.json"
+    },
+    {
       "$ref": "./spells/skeletal-counsel.json"
+    },
+    {
+      "$ref": "./spells/sleep.json"
+    },
+    {
+      "$ref": "./spells/slide-skywards.json"
+    },
+    {
+      "$ref": "./spells/starry-orb.json"
+    },
+    {
+      "$ref": "./spells/teleport.json"
+    },
+    {
+      "$ref": "./spells/thought-vapour.json"
     },
     {
       "$ref": "./spells/thunder.json"
@@ -262,7 +391,25 @@
       "$ref": "./spells/tongue-twister.json"
     },
     {
+      "$ref": "./spells/torpor.json"
+    },
+    {
+      "$ref": "./spells/true-seeing.json"
+    },
+    {
+      "$ref": "./spells/undo.json"
+    },
+    {
       "$ref": "./spells/wall-of-power.json"
+    },
+    {
+      "$ref": "./spells/ward.json"
+    },
+    {
+      "$ref": "./spells/web.json"
+    },
+    {
+      "$ref": "./spells/zed.json"
     }
   ],
   "items": [
@@ -303,10 +450,10 @@
       "$ref": "./items/garrotte.json"
     },
     {
-      "$ref": "./items/golden-barge.json"
+      "$ref": "./items/grappling-hook.json"
     },
     {
-      "$ref": "./items/grappling-hook.json"
+      "$ref": "./items/greatsword.json"
     },
     {
       "$ref": "./items/hammer.json"
@@ -318,6 +465,9 @@
       "$ref": "./items/knife.json"
     },
     {
+      "$ref": "./items/knuckle-dice.json"
+    },
+    {
       "$ref": "./items/lance.json"
     },
     {
@@ -327,10 +477,19 @@
       "$ref": "./items/large-wooden-ladle.json"
     },
     {
+      "$ref": "./items/light-armour.json"
+    },
+    {
       "$ref": "./items/lock-picks.json"
     },
     {
+      "$ref": "./items/longsword.json"
+    },
+    {
       "$ref": "./items/mace.json"
+    },
+    {
+      "$ref": "./items/maul.json"
     },
     {
       "$ref": "./items/modest-armour.json"
@@ -339,7 +498,16 @@
       "$ref": "./items/pistolet.json"
     },
     {
+      "$ref": "./items/plasmic-cores.json"
+    },
+    {
       "$ref": "./items/pocket-barometer.json"
+    },
+    {
+      "$ref": "./items/pocket-gods.json"
+    },
+    {
+      "$ref": "./items/poison.json"
     },
     {
       "$ref": "./items/polearm.json"
@@ -348,7 +516,22 @@
       "$ref": "./items/provisions.json"
     },
     {
+      "$ref": "./items/rapier.json"
+    },
+    {
+      "$ref": "./items/rope.json"
+    },
+    {
       "$ref": "./items/ruby-lorgnette.json"
+    },
+    {
+      "$ref": "./items/rucksack.json"
+    },
+    {
+      "$ref": "./items/sackcloth-robes.json"
+    },
+    {
+      "$ref": "./items/salt.json"
     },
     {
       "$ref": "./items/shield.json"
@@ -357,13 +540,25 @@
       "$ref": "./items/silver-sword.json"
     },
     {
+      "$ref": "./items/sjambok.json"
+    },
+    {
       "$ref": "./items/spear.json"
+    },
+    {
+      "$ref": "./items/staff.json"
     },
     {
       "$ref": "./items/sword.json"
     },
     {
       "$ref": "./items/tea-set.json"
+    },
+    {
+      "$ref": "./items/velare.json"
+    },
+    {
+      "$ref": "./items/witch-hair-rope.json"
     },
     {
       "$ref": "./items/yoke.json"
@@ -490,10 +685,10 @@
       "$ref": "./tables/oops-table.json"
     },
     {
-      "$ref": "./tables/ranged-damage-table.json"
+      "$ref": "./tables/random-spell-table.json"
     },
     {
-      "$ref": "./tables/random-spell-table.json"
+      "$ref": "./tables/ranged-damage-table.json"
     }
   ],
   "rules": {
@@ -532,5 +727,16 @@
   },
   "possessions": [],
   "advancedSkills": [],
-  "special": []
+  "special": [],
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/troika-system-data.json",
+  "@type": "TroikaSystemData",
+  "characters": [
+    {
+      "$ref": "./characters/sample-ardent-giant.json"
+    },
+    {
+      "$ref": "./characters/sample-burglar.json"
+    }
+  ]
 }

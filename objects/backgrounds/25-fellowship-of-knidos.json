@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/25-fellowship-of-knidos.json",
+  "@type": "Background",
   "id": 25,
   "name": "The Fellowship of Knidos",
   "description": "Mathmologists honour the clean and unambiguous truths of mathematics and coordinate them with their observations of the multiverse. All things can be measured and predicted with the application of the correct mathmological ratios, those methods applied to penetrate the ethereal surface and glimpse the fundamental numbers below.",

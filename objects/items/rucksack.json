@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/rucksack.json",
+  "@type": "Item",
   "name": "Rucksack",
   "description": "A sturdy backpack for carrying equipment. Starting equipment for all characters.",
   "slots": 1,

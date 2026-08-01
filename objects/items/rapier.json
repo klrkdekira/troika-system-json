@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/rapier.json",
+  "@type": "Item",
   "name": "Rapier",
   "type": "weapon",
   "description": "A slender, elegant thrusting sword favored by duelists and nobles.",

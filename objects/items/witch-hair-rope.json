@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/witch-hair-rope.json",
+  "@type": "Item",
   "name": "Witch-hair Rope",
   "description": "Witch-hair ropes are immune to manipulation via magical means.",
   "slots": 1,

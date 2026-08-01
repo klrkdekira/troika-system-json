@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/axe.json",
+  "@type": "Item",
   "name": "Axe",
   "type": "weapon",
   "description": "A sturdy chopping weapon with a heavy head and wooden handle.",

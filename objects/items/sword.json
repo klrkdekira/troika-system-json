@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/items/sword.json",
+  "@type": "Item",
   "name": "Sword",
   "type": "weapon",
   "description": "A standard blade weapon, well-balanced and versatile.",

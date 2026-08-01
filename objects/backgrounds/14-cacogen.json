@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/14-cacogen.json",
+  "@type": "Background",
   "id": 14,
   "name": "Cacogen",
   "description": "You are Those-Filthy-Born, spawned in the hump-backed sky lit only by great black anti-suns and false light. Your mother was sailing on the golden barges or caught in some more abstract fate when she passed you, far from the protective malaise of the million spheres. You were receptive to the power and the glory at a generative time and it shows in your teratoid form.",

@@ -1,4 +1,7 @@
 {
+  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
+  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/amity.json",
+  "@type": "Spell",
   "name": "Amity",
   "cost": 4,
   "description": "The College of Friends always sends out its Factotums on nights after Amity classes. Clearing out the bars and brothels of their drunken apprentices is tiring work. Use of this Spell causes the target to Test their Luck (or Skill for Enemies) or become very friendly towards the wizard, as though they were an old friend. They will not act irrationally, though, and if they were already a bit of a boor this might not change much.",
