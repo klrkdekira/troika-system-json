@@ -1,8 +1,8 @@
 {
   "@context": {
-    "@vocab": "https://troika-system-json.cheeleong.dev/ns#",
+    "@vocab": "https://cheeleong.dev/troika-system-json/ns#",
     "schema": "http://schema.org/",
-    "troika": "https://troika-system-json.cheeleong.dev/ns#",
+    "troika": "https://cheeleong.dev/troika-system-json/ns#",
     "name": "schema:name",
     "description": "schema:description",
     "value": "schema:value",

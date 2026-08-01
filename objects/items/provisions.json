@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/items/provisions.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/items/provisions.json",
   "@type": "Item",
   "name": "Provisions",
   "description": "Food and drink for sustenance. Can be consumed to regain 1d6 Stamina (max 3 per day). Starting equipment includes 6 provisions.",

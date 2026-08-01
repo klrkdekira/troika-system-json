@@ -14,7 +14,7 @@ class TestJsonLdData(unittest.TestCase):
         """Set up test fixtures"""
         self.objects_dir = Path("objects")
         self.context_file = Path("systems/context.jsonld")
-        self.base_uri = "https://troika-system-json.cheeleong.dev"
+        self.base_uri = "https://cheeleong.dev/troika-system-json"
         self.maxDiff = None
 
         self.expected_types = {

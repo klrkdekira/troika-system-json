@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/34-lonesome-monarch.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/34-lonesome-monarch.json",
   "@type": "Background",
   "id": 34,
   "name": "Lonesome Monarch",

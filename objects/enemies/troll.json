@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/troll.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/enemies/troll.json",
   "@type": "Enemy",
   "name": "Troll",
   "description": "Trolls are ill-tempered creatures often spied leaning on a pike in the town square, gabbing with other guards while taking the occasional break to shout at a child, or tripping up an old lady. You'd think they'd stop hiring them.",

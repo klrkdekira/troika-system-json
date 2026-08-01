@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/spells/levitate.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/spells/levitate.json",
   "@type": "Spell",
   "name": "Levitate",
   "cost": 2,

@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/cyclops.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/enemies/cyclops.json",
   "@type": "Enemy",
   "name": "Cyclops",
   "description": "Once upon a time a nation of man asked one of the Aeons to grant them the power of immortality and foresight. The Aeons, being an arbitrary bunch, took one eye from each as fair exchange. The men found that their foresight was indeed present but extended only to knowledge of their eventual deaths by accident or violence.",

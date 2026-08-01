@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/dragon.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/enemies/dragon.json",
   "@type": "Enemy",
   "name": "Dragon",
   "description": "Dragons are creatures of hyper-light, unburdened by base matter, able to soar across the dark sea of sky between worlds. Since their spirits are immortal and illuminated by the black-suns they may, and often do, indulge in base activities such as wanton slaughter, accumulating needless wealth, and plumbing the depths of forbidden knowledge. They do this because they know that nothing of these wicked spheres can harm them or their objective spiritual and physical perfection.",

@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/65-yongardy-lawyer.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/65-yongardy-lawyer.json",
   "@type": "Background",
   "id": 65,
   "name": "Yongardy Lawyer",

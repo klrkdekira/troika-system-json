@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/tables/ranged-damage-table.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/tables/ranged-damage-table.json",
   "@type": "Table",
   "name": "Ranged Weapons Damage Table",
   "description": "Damage values for ranged weapons based on damage roll",

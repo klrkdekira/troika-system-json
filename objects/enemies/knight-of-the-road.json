@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/enemies/knight-of-the-road.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/enemies/knight-of-the-road.json",
   "@type": "Enemy",
   "id": "knight-of-the-road",
   "name": "Knight of the Road",

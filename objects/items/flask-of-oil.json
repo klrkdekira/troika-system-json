@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/items/flask-of-oil.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/items/flask-of-oil.json",
   "@type": "Item",
   "name": "Flask of Oil",
   "description": "Fuel for lanterns and other purposes. Starting equipment for all characters.",

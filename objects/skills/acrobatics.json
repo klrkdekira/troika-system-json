@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/skills/acrobatics.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/skills/acrobatics.json",
   "@type": "Skill",
   "name": "Acrobatics",
   "description": "Used for rolling, balancing, falling, jumping, etc.",

@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/11-ardent-giant-of-corda.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/11-ardent-giant-of-corda.json",
   "@type": "Background",
   "id": 11,
   "name": "Ardent Giant of Corda",

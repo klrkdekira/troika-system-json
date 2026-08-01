@@ -2,7 +2,7 @@
 
 Structured JSON and JSON Schemas for the [Troika!](https://www.troika-rpg.com/) tabletop RPG System Reference Document (SRD).
 
-Available online at [troika-system-json.cheeleong.dev](https://troika-system-json.cheeleong.dev).
+Available online at [cheeleong.dev/troika-system-json](https://cheeleong.dev/troika-system-json/).
 
 ## Structure
 

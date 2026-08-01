@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/items/heavy-armour.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/items/heavy-armour.json",
   "@type": "Item",
   "name": "Heavy Armour",
   "description": "The heaviest protection available, offering substantial damage reduction but taking up significant inventory space.",

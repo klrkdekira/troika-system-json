@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/tables/beastly-damage-table.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/tables/beastly-damage-table.json",
   "@type": "Table",
   "name": "Beastly Weapons Damage Table",
   "description": "Damage values for natural and creature attacks based on damage roll",

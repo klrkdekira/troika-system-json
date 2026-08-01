@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/53-college-of-friends.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/53-college-of-friends.json",
   "@type": "Background",
   "id": 53,
   "name": "Sorcerer of the College of Friends",

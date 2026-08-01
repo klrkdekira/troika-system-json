@@ -1,6 +1,6 @@
 {
-  "@context": "https://troika-system-json.cheeleong.dev/context.jsonld",
-  "@id": "https://troika-system-json.cheeleong.dev/objects/backgrounds/15-chaos-champion.json",
+  "@context": "https://cheeleong.dev/troika-system-json/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/backgrounds/15-chaos-champion.json",
   "@type": "Background",
   "id": 15,
   "name": "Chaos Champion",
