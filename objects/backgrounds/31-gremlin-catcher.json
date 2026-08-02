@@ -36,7 +36,7 @@
       "name": "A Sack",
       "description": "For collecting gremlins (Container)",
       "category": "container",
-      "slots": 0,
+      "slots": 1,
       "properties": [
         "storage"
       ]
