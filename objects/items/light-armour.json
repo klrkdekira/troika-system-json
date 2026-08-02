@@ -7,8 +7,10 @@
   "description": "Basic protective gear such as leather or padded clothing.",
   "slots": 2,
   "value": 25,
-  "armorType": "light",
-  "armorValue": 1,
+  "armor": {
+    "protection": 1,
+    "type": "light"
+  },
   "tags": [
     "armor",
     "light",

@@ -281,7 +281,11 @@
                     "type": "integer",
                     "minimum": 0,
                     "maximum": 3,
-                    "description": "Armor protection value (0=Unarmored, 1=Light, 2=Modest, 3=Heavy)"
+                    "description": "Armor protection value / damage reduction (0=Unarmored, 1=Light, 2=Modest, 3=Heavy)"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Armor classification (e.g. light, modest, heavy, shield, clothing)"
                 },
                 "coverage": {
                     "type": "array",

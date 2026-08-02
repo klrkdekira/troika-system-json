@@ -10,6 +10,8 @@
       "name": "Yellow Epopt Outfit",
       "description": "Padded for protection against unhappy clients (counts as Modest Armour)",
       "category": "armor",
+      "armor": 2,
+      "slots": 4,
       "properties": [
         "modest_armor",
         "distinctive"

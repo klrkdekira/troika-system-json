@@ -236,7 +236,10 @@
         },
         {
           "name": "Assortment of Ragged Armour",
-          "description": "Counts as Modest Armour"
+          "description": "Counts as Modest Armour",
+          "category": "armor",
+          "armor": 2,
+          "slots": 4
         },
         {
           "name": "Dream Journal",
@@ -281,7 +284,10 @@
       "possessions": [
         {
           "name": "Festooned with Keys",
-          "description": "Counts as Modest Armour"
+          "description": "Counts as Modest Armour",
+          "category": "armor",
+          "armor": 2,
+          "slots": 4
         },
         {
           "name": "Distinguished Sledgehammer",
@@ -457,6 +463,8 @@
           "name": "Yellow Epopt Outfit",
           "description": "Padded for protection against unhappy clients (counts as Modest Armour)",
           "category": "armor",
+          "armor": 2,
+          "slots": 4,
           "properties": [
             "modest_armor",
             "distinctive"
@@ -524,6 +532,8 @@
           "name": "Hermetically Sealed Rubber Suit",
           "description": "Counts as Heavy Armour",
           "category": "armor",
+          "armor": 3,
+          "slots": 6,
           "properties": [
             "heavy_armor",
             "sealed"
@@ -941,6 +951,8 @@
           "name": "Brightly Coloured Clothing with lots of tassels and bells",
           "description": "Impossible to sneak but counts as Modest Armour while weighing as normal clothing",
           "category": "armor",
+          "armor": 2,
+          "slots": 0,
           "properties": [
             "modest_armor",
             "distinctive",
@@ -1372,7 +1384,10 @@
       "possessions": [
         {
           "name": "Heavy Armour",
-          "description": "Full plate protection"
+          "description": "Full plate protection",
+          "category": "armor",
+          "armor": 3,
+          "slots": 6
         },
         {
           "name": "Horse",
@@ -1388,7 +1403,10 @@
         },
         {
           "name": "Shield",
-          "description": "Defensive equipment"
+          "description": "Defensive equipment",
+          "category": "armor",
+          "armor": 1,
+          "slots": 2
         },
         {
           "name": "Quixotic Undertaking",
@@ -1432,7 +1450,10 @@
           "name": "Red Robes"
         },
         {
-          "name": "Traditional Faceless Metal Helmet of your order (Modest Armour)"
+          "name": "Traditional Faceless Metal Helmet of your order (Modest Armour)",
+          "category": "armor",
+          "armor": 2,
+          "slots": 4
         },
         {
           "name": "Symbolic (but fully sized and fully functional) Single Headed Greataxe, to help batter down the door to sin (Damage as Greatsword)"
@@ -4687,8 +4708,10 @@
       "description": "Basic protective gear such as leather or padded clothing.",
       "slots": 2,
       "value": 25,
-      "armorType": "light",
-      "armorValue": 1,
+      "armor": {
+        "protection": 1,
+        "type": "light"
+      },
       "tags": [
         "armor",
         "light",
@@ -4826,8 +4849,10 @@
       "description": "Decent protection such as chain mail or reinforced leather.",
       "slots": 4,
       "value": 50,
-      "armorType": "modest",
-      "armorValue": 2,
+      "armor": {
+        "protection": 2,
+        "type": "modest"
+      },
       "tags": [
         "armor",
         "modest",
@@ -5094,8 +5119,10 @@
       "description": "Rough robes caked in stinking mud and undergrowth, perfect for blending into marshy terrain but offensive everywhere else.",
       "slots": 2,
       "value": 2,
-      "armorType": "clothing",
-      "armorValue": 0,
+      "armor": {
+        "protection": 0,
+        "type": "clothing"
+      },
       "bonuses": [
         {
           "type": "skill",
@@ -5139,8 +5166,10 @@
       "description": "A defensive item that can be used to block attacks and also as a weapon.",
       "slots": 2,
       "value": 8,
-      "armorType": "shield",
-      "armorValue": 0,
+      "armor": {
+        "protection": 1,
+        "type": "shield"
+      },
       "damageTable": {
         "1": 2,
         "2": 2,

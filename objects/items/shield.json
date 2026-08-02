@@ -7,8 +7,10 @@
   "description": "A defensive item that can be used to block attacks and also as a weapon.",
   "slots": 2,
   "value": 8,
-  "armorType": "shield",
-  "armorValue": 0,
+  "armor": {
+    "protection": 1,
+    "type": "shield"
+  },
   "damageTable": {
     "1": 2,
     "2": 2,

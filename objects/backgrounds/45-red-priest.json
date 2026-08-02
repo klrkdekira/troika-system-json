@@ -10,7 +10,10 @@
       "name": "Red Robes"
     },
     {
-      "name": "Traditional Faceless Metal Helmet of your order (Modest Armour)"
+      "name": "Traditional Faceless Metal Helmet of your order (Modest Armour)",
+      "category": "armor",
+      "armor": 2,
+      "slots": 4
     },
     {
       "name": "Symbolic (but fully sized and fully functional) Single Headed Greataxe, to help batter down the door to sin (Damage as Greatsword)"

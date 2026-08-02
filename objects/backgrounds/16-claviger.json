@@ -8,7 +8,10 @@
   "possessions": [
     {
       "name": "Festooned with Keys",
-      "description": "Counts as Modest Armour"
+      "description": "Counts as Modest Armour",
+      "category": "armor",
+      "armor": 2,
+      "slots": 4
     },
     {
       "name": "Distinguished Sledgehammer",

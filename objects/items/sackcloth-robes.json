@@ -7,8 +7,10 @@
   "description": "Rough robes caked in stinking mud and undergrowth, perfect for blending into marshy terrain but offensive everywhere else.",
   "slots": 2,
   "value": 2,
-  "armorType": "clothing",
-  "armorValue": 0,
+  "armor": {
+    "protection": 0,
+    "type": "clothing"
+  },
   "bonuses": [
     {
       "type": "skill",

@@ -10,6 +10,8 @@
       "name": "Hermetically Sealed Rubber Suit",
       "description": "Counts as Heavy Armour",
       "category": "armor",
+      "armor": 3,
+      "slots": 6,
       "properties": [
         "heavy_armor",
         "sealed"

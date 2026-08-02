@@ -7,8 +7,10 @@
   "description": "Decent protection such as chain mail or reinforced leather.",
   "slots": 4,
   "value": 50,
-  "armorType": "modest",
-  "armorValue": 2,
+  "armor": {
+    "protection": 2,
+    "type": "modest"
+  },
   "tags": [
     "armor",
     "modest",

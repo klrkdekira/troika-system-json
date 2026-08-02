@@ -348,9 +348,20 @@
                 },
                 "slots": {
                     "type": "integer",
-                    "minimum": 1,
+                    "minimum": 0,
                     "default": 1,
-                    "description": "Inventory slots occupied"
+                    "description": "Inventory slots occupied (0 for weightless clothing/exceptions like Lansquenet attire)"
+                },
+                "armor": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3,
+                    "description": "Armor protection / damage reduction value provided by this item"
+                },
+                "isWorn": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether armor or clothing is actively worn"
                 },
                 "description": {
                     "type": "string",

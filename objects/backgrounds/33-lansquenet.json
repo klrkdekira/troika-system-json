@@ -38,6 +38,8 @@
       "name": "Brightly Coloured Clothing with lots of tassels and bells",
       "description": "Impossible to sneak but counts as Modest Armour while weighing as normal clothing",
       "category": "armor",
+      "armor": 2,
+      "slots": 0,
       "properties": [
         "modest_armor",
         "distinctive",

@@ -8,7 +8,10 @@
   "possessions": [
     {
       "name": "Heavy Armour",
-      "description": "Full plate protection"
+      "description": "Full plate protection",
+      "category": "armor",
+      "armor": 3,
+      "slots": 6
     },
     {
       "name": "Horse",
@@ -24,7 +27,10 @@
     },
     {
       "name": "Shield",
-      "description": "Defensive equipment"
+      "description": "Defensive equipment",
+      "category": "armor",
+      "armor": 1,
+      "slots": 2
     },
     {
       "name": "Quixotic Undertaking",
