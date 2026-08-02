@@ -33,6 +33,10 @@
             "type": "string",
             "description": "Item description"
         },
+        "damageAs": {
+            "type": "string",
+            "description": "Damage table reference for weapon damage"
+        },
         "slots": {
             "oneOf": [
                 {
