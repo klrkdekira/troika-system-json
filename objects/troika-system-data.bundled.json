@@ -475,6 +475,7 @@
           "name": "Epopt Staff",
           "description": "A walking staff with seeing crystal on one end (Damage as Staff)",
           "category": "weapon",
+          "damageAs": "Staff",
           "properties": [
             "staff",
             "crystal"
@@ -681,6 +682,7 @@
           "name": "A Bale Hook",
           "description": "Damage as Knife and +1 on rolls to lift heavy objects",
           "category": "weapon",
+          "damageAs": "Knife",
           "properties": [
             "knife",
             "lifting"
@@ -4302,7 +4304,7 @@
       "description": "A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects.",
       "encumbrance": 1,
       "slots": 1,
-      "damage": "knife",
+      "damageAs": "Knife",
       "effects": [
         {
           "type": "skill_bonus",
@@ -4449,7 +4451,7 @@
       "description": "An Epopt's Staff is a tool, an advert, and, in a pinch, a Weapon. In its head is set a cloudy ruby, like a useless magnifying glass, which grants the user +1 Second Sight while peering through it.",
       "encumbrance": 1,
       "slots": 1,
-      "damage": "staff",
+      "damageAs": "Staff",
       "effects": [
         {
           "type": "skill_bonus",

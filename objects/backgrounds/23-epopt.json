@@ -21,6 +21,7 @@
       "name": "Epopt Staff",
       "description": "A walking staff with seeing crystal on one end (Damage as Staff)",
       "category": "weapon",
+      "damageAs": "Staff",
       "properties": [
         "staff",
         "crystal"

@@ -28,6 +28,7 @@
       "name": "A Bale Hook",
       "description": "Damage as Knife and +1 on rolls to lift heavy objects",
       "category": "weapon",
+      "damageAs": "Knife",
       "properties": [
         "knife",
         "lifting"
