@@ -31,9 +31,7 @@ def generate_bundled_data():
             new_items = []
             for item in data[cat]:
                 if isinstance(item, dict) and "$ref" in item:
-                    ref_str = item["$ref"]
-                    if ref_str.startswith("./"):
-                        ref_str = ref_str[2:]
+                    ref_str = item["$ref"].removeprefix("./")
                     ref_path = OBJECTS / ref_str
                     with open(ref_path, "r", encoding="utf-8") as rf:
                         new_items.append(json.load(rf))

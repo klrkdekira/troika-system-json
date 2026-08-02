@@ -120,15 +120,9 @@ class TroikaValidator:
             schema = self.schemas[schema_id]
 
             # Create validator with RefResolver to resolve internal and external $ref pointers
-            try:
-                resolver = RefResolver.from_schema(schema, store=self.schema_store)
-                validator = Draft7Validator(schema, resolver=resolver)
-                errors = list(validator.iter_errors(obj_data))
-            except Exception:  # noqa: BLE001
-                # If there's an issue with unresolvable references, fallback to schema without refs
-                temp_schema = self._create_temp_schema_without_refs(schema)
-                validator = Draft7Validator(temp_schema)
-                errors = list(validator.iter_errors(obj_data))
+            resolver = RefResolver.from_schema(schema, store=self.schema_store)
+            validator = Draft7Validator(schema, resolver=resolver)
+            errors = list(validator.iter_errors(obj_data))
 
 
             if errors:
@@ -159,7 +153,7 @@ class TroikaValidator:
 
         # Find all JSON files
         pattern = "**/*.json" if recursive else "*.json"
-        json_files = sorted(list(directory.glob(pattern)))
+        json_files = sorted(directory.glob(pattern))
 
         if not json_files:
             self.console.print(f"No JSON files found in {directory}", style="yellow")
@@ -219,11 +213,23 @@ class TroikaValidator:
         items_dir = objects_dir / "items"
         skills_dir = objects_dir / "skills"
         spells_dir = objects_dir / "spells"
-        backgrounds_dir = objects_dir / "backgrounds"
+        items = {}
+        if items_dir.exists():
+            for p in items_dir.glob("*.json"):
+                with open(p, "r", encoding="utf-8") as f:
+                    items[json.load(f)["name"].lower()] = p.name
 
-        items = {json.load(open(p, "r", encoding="utf-8"))["name"].lower(): p.name for p in items_dir.glob("*.json")} if items_dir.exists() else {}
-        skills = {json.load(open(p, "r", encoding="utf-8"))["name"].lower(): p.name for p in skills_dir.glob("*.json")} if skills_dir.exists() else {}
-        spells = {json.load(open(p, "r", encoding="utf-8"))["name"].lower(): p.name for p in spells_dir.glob("*.json")} if spells_dir.exists() else {}
+        skills = {}
+        if skills_dir.exists():
+            for p in skills_dir.glob("*.json"):
+                with open(p, "r", encoding="utf-8") as f:
+                    skills[json.load(f)["name"].lower()] = p.name
+
+        spells = {}
+        if spells_dir.exists():
+            for p in spells_dir.glob("*.json"):
+                with open(p, "r", encoding="utf-8") as f:
+                    spells[json.load(f)["name"].lower()] = p.name
 
         table = Table(title="Reference Check Summary")
         table.add_column("Category", style="cyan")
@@ -309,9 +315,7 @@ class TroikaValidator:
                 new_items = []
                 for item in expanded[cat]:
                     if isinstance(item, dict) and "$ref" in item:
-                        ref_str = item["$ref"]
-                        if ref_str.startswith("./"):
-                            ref_str = ref_str[2:]
+                        ref_str = item["$ref"].removeprefix("./")
                         ref_path = base_dir / ref_str
                         if ref_path.exists():
                             with open(ref_path, "r", encoding="utf-8") as rf:
@@ -323,25 +327,6 @@ class TroikaValidator:
                 expanded[cat] = new_items
         return expanded
 
-    def _create_temp_schema_without_refs(
-        self, schema: dict[str, Any]
-    ) -> dict[str, Any]:
-        """Create a temporary schema without references for basic validation."""
-        import copy
-
-        temp_schema = copy.deepcopy(schema)
-
-        def remove_refs(obj):
-            if isinstance(obj, dict):
-                if "$ref" in obj:
-                    # Replace $ref with a simple type validation
-                    return {"type": "object"}
-                return {k: remove_refs(v) for k, v in obj.items()}
-            elif isinstance(obj, list):
-                return [remove_refs(item) for item in obj]
-            return obj
-
-        return remove_refs(temp_schema)
 
 
 def main():

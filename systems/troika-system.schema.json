@@ -10,7 +10,7 @@
             "description": "Schema version"
         },
         "metadata": {
-            "$ref": "#/definitions/systemMetadata",
+            "$ref": "troika-system#/definitions/systemMetadata",
             "description": "System metadata and information"
         },
         "characters": {
@@ -63,19 +63,19 @@
             "description": "Game tables including Oops!, damage, and random tables"
         },
         "campaign": {
-            "$ref": "#/definitions/campaignData",
+            "$ref": "troika-system#/definitions/campaignData",
             "description": "Campaign-specific data and settings"
         },
         "rules": {
-            "$ref": "#/definitions/rulesReference",
+            "$ref": "troika-system#/definitions/rulesReference",
             "description": "Core rules and mechanics reference"
         },
         "initiativeSystem": {
-            "$ref": "#/definitions/initiativeSystem",
+            "$ref": "troika-system#/definitions/initiativeSystem",
             "description": "Initiative system configuration and rules"
         },
         "optionalRules": {
-            "$ref": "#/definitions/optionalRules",
+            "$ref": "troika-system#/definitions/optionalRules",
             "description": "Optional rule variants and house rules"
         },
         "@context": {
