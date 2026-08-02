@@ -26,8 +26,9 @@
     },
     {
       "name": "Tired Horse",
-      "description": "Your faithful but weary mount",
+      "description": "Your faithful but weary mount (Companion / External mount)",
       "category": "companion",
+      "slots": 0,
       "properties": [
         "mount",
         "tired"

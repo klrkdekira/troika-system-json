@@ -17,8 +17,9 @@
     },
     {
       "name": "The Skull of your Master or Zombie Servant or Ghost",
-      "description": "A companion with whom you have developed a codependent relationship",
+      "description": "A companion with whom you have developed a codependent relationship (Companion / External undead)",
       "category": "companion",
+      "slots": 0,
       "properties": [
         "undead",
         "advisor",

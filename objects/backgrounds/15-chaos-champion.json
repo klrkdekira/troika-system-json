@@ -8,7 +8,8 @@
   "possessions": [
     {
       "name": "Ritual Scars",
-      "description": "Ceremonial markings from your service"
+      "description": "Ceremonial markings from your service (Body trait / Scars)",
+      "slots": 0
     },
     {
       "name": "Huge Maul",

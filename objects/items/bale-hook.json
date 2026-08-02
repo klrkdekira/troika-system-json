@@ -5,6 +5,7 @@
   "name": "Bale Hook",
   "description": "A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects.",
   "encumbrance": 1,
+  "slots": 1,
   "damage": "knife",
   "effects": [
     {

@@ -15,7 +15,8 @@
     },
     {
       "name": "Horse",
-      "description": "Noble steed"
+      "description": "Noble steed (Companion / External mount)",
+      "slots": 0
     },
     {
       "name": "Lance",
@@ -27,14 +28,14 @@
     },
     {
       "name": "Shield",
-      "description": "Defensive equipment",
-      "category": "armor",
+      "description": "Defensive equipment (-1 to incoming Damage Rolls)",
       "armor": 1,
-      "slots": 2
+      "slots": 1
     },
     {
       "name": "Quixotic Undertaking",
-      "description": "Your impossible quest"
+      "description": "Your impossible quest (Intangible concept)",
+      "slots": 0
     }
   ],
   "advancedSkills": [

@@ -5,6 +5,7 @@
   "name": "Ruby Lorgnette",
   "description": "Ruby lorgnettes are collapsable spectacles made with ruby lenses that require a free hand to use. While wearing them your sight is impaired but you can see sorcerous activity clearly (+2 Second Sight).",
   "encumbrance": 0,
+  "slots": 1,
   "effects": [
     {
       "type": "skill_bonus",

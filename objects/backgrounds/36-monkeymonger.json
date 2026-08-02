@@ -29,6 +29,7 @@
       "quantity": "1d6",
       "description": "Do not heed commands but are too scared and hungry to travel far from you",
       "category": "companion",
+      "slots": 0,
       "properties": [
         "animal",
         "livestock",

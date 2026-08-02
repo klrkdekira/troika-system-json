@@ -10,7 +10,9 @@
       "name": "Soldering iron"
     },
     {
-      "name": "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3"
+      "name": "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3",
+      "description": "Innate body modification / cybernetic attachment",
+      "slots": 0
     }
   ],
   "advancedSkills": [

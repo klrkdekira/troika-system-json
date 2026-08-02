@@ -3,14 +3,22 @@
   "@id": "https://cheeleong.dev/troika-system-json/objects/items/shield.json",
   "@type": "Item",
   "name": "Shield",
-  "type": "armor",
+  "type": "shield",
   "description": "A defensive item that can be used to block attacks and also as a weapon.",
-  "slots": 2,
+  "slots": 1,
   "value": 8,
   "armor": {
     "protection": 1,
     "type": "shield"
   },
+  "bonuses": [
+    {
+      "type": "armor",
+      "target": "damage_reduction",
+      "value": 1,
+      "description": "Reduces incoming Damage Rolls by 1 (minimum 1)"
+    }
+  ],
   "damageTable": {
     "1": 2,
     "2": 2,
@@ -21,7 +29,6 @@
     "7+": 8
   },
   "tags": [
-    "armor",
     "shield",
     "defensive",
     "weapon"

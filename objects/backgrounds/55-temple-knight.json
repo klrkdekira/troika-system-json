@@ -7,7 +7,9 @@
   "description": "You were once (and possibly still are) a fanatical monk set to maintain constant, vigilant martial readiness in preparation for the end times, when all doorways crumble inwards. You are always prepared and never unready.",
   "possessions": [
     {
-      "name": "The Blessing of Telak"
+      "name": "The Blessing of Telak",
+      "description": "Intangible divine blessing",
+      "slots": 0
     },
     {
       "name": "6 Swords of your choice"

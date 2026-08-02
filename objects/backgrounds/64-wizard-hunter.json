@@ -7,7 +7,10 @@
   "description": "Some people say man is the most dangerous prey. They are wrong. Can men ignite the air and freeze your blood? Can men turn into flocks of seagulls when cornered in an alley? No, they cannot. Wizards are the most dangerous prey.",
   "possessions": [
     {
-      "name": "Large Sack"
+      "name": "Large Sack",
+      "description": "Container for holding goods/wizards",
+      "category": "container",
+      "slots": 0
     },
     {
       "name": "Witch-hair Rope"

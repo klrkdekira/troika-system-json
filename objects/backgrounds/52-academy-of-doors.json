@@ -7,7 +7,9 @@
   "description": "You are a student at Troika's most prestigious wizarding academy (pride of the city, experts in pan-dimensional mobility) you were finally able to penetrate the (2d6)th door. You are no master but few outside your peers can claim to know more about the vagaries of skyward travel than you.",
   "possessions": [
     {
-      "name": "Small Functional Door worn on your forehead through which you channel your magic"
+      "name": "Small Functional Door worn on your forehead through which you channel your magic",
+      "description": "Innate magical body fixture",
+      "slots": 0
     },
     {
       "name": "Flashy Robes"

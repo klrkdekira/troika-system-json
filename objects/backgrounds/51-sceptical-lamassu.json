@@ -13,13 +13,19 @@
       "name": "Pillbox Hat"
     },
     {
-      "name": "Claws (Damage as Sword)"
+      "name": "Claws (Damage as Sword)",
+      "description": "Innate body part",
+      "slots": 0
     },
     {
-      "name": "Hooves (Damage as Club)"
+      "name": "Hooves (Damage as Club)",
+      "description": "Innate body part",
+      "slots": 0
     },
     {
-      "name": "Wings \u2014 able to fly as fast as a running man over clear ground"
+      "name": "Wings - able to fly as fast as a running man over clear ground",
+      "description": "Innate body part",
+      "slots": 0
     }
   ],
   "advancedSkills": [

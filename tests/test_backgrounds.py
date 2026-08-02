@@ -555,7 +555,7 @@ class TestBackgroundData(unittest.TestCase):
                     "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3",
                 ],
                 "special": [
-                    "You don't recover Stamina by resting in the usual manner — instead you must spend a full rest period with a hot iron welding your skin back together like putty. For each hour of rest with access to the right tools you regain 3 Stamina.",
+                    "You don't recover Stamina by resting in the usual manner - instead you must spend a full rest period with a hot iron welding your skin back together like putty. For each hour of rest with access to the right tools you regain 3 Stamina.",
                     "You may recharge plasmic machines by hooking your fluids to them and spending Stamina at a rate of 1 Stamina and 6 minutes per charge.",
                     "You always count as being at least Lightly Armoured.",
                 ],

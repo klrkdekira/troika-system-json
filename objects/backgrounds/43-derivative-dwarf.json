@@ -17,8 +17,9 @@
     },
     {
       "name": "Empty Firkin",
-      "description": "A small barrel, currently empty",
-      "category": "tool",
+      "description": "A small barrel, currently empty (Container)",
+      "category": "container",
+      "slots": 1,
       "properties": [
         "storage",
         "empty"

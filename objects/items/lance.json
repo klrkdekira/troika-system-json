@@ -5,7 +5,7 @@
   "name": "Lance",
   "type": "weapon",
   "description": "A long cavalry weapon designed for mounted combat and jousting.",
-  "slots": 2,
+  "slots": 1,
   "value": 15,
   "damageTable": {
     "1": 4,

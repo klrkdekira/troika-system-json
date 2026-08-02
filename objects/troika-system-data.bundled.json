@@ -228,7 +228,8 @@
       "possessions": [
         {
           "name": "Ritual Scars",
-          "description": "Ceremonial markings from your service"
+          "description": "Ceremonial markings from your service (Body trait / Scars)",
+          "slots": 0
         },
         {
           "name": "Huge Maul",
@@ -733,8 +734,9 @@
       "possessions": [
         {
           "name": "Small but Vicious Dog",
-          "description": "A loyal companion for hunting gremlins",
+          "description": "A loyal companion for hunting gremlins (Companion / Animal)",
           "category": "companion",
+          "slots": 0,
           "properties": [
             "animal",
             "vicious"
@@ -758,8 +760,9 @@
         },
         {
           "name": "A Sack",
-          "description": "For collecting gremlins",
-          "category": "tool",
+          "description": "For collecting gremlins (Container)",
+          "category": "container",
+          "slots": 0,
           "properties": [
             "storage"
           ]
@@ -767,8 +770,9 @@
         {
           "name": "Empty Gremlin Jars",
           "quantity": "1d6",
-          "description": "For storing captured gremlins",
-          "category": "tool",
+          "description": "For storing captured gremlins (Containers)",
+          "category": "container",
+          "slots": 1,
           "properties": [
             "storage",
             "trapping"
@@ -1013,8 +1017,9 @@
         },
         {
           "name": "Tired Horse",
-          "description": "Your faithful but weary mount",
+          "description": "Your faithful but weary mount (Companion / External mount)",
           "category": "companion",
+          "slots": 0,
           "properties": [
             "mount",
             "tired"
@@ -1052,8 +1057,9 @@
       "possessions": [
         {
           "name": "Sharp metal dentures or forked metal dentures or blunt metal dentures",
-          "description": "Sharp (Damage as Sword), forked (Damage as Knife, Mighty Blow strips flesh from appendage), or blunt (Damage as Knife, may eat hard objects)",
+          "description": "Sharp (Damage as Sword), forked (Damage as Knife, Mighty Blow strips flesh from appendage), or blunt (Damage as Knife, may eat hard objects) (Dental implant / Body fixture)",
           "category": "weapon",
+          "slots": 0,
           "properties": [
             "metal",
             "teeth",
@@ -1128,6 +1134,7 @@
           "quantity": "1d6",
           "description": "Do not heed commands but are too scared and hungry to travel far from you",
           "category": "companion",
+          "slots": 0,
           "properties": [
             "animal",
             "livestock",
@@ -1186,8 +1193,9 @@
         },
         {
           "name": "The Skull of your Master or Zombie Servant or Ghost",
-          "description": "A companion with whom you have developed a codependent relationship",
+          "description": "A companion with whom you have developed a codependent relationship (Companion / External undead)",
           "category": "companion",
+          "slots": 0,
           "properties": [
             "undead",
             "advisor",
@@ -1338,8 +1346,9 @@
         },
         {
           "name": "Empty Firkin",
-          "description": "A small barrel, currently empty",
-          "category": "tool",
+          "description": "A small barrel, currently empty (Container)",
+          "category": "container",
+          "slots": 1,
           "properties": [
             "storage",
             "empty"
@@ -1391,7 +1400,8 @@
         },
         {
           "name": "Horse",
-          "description": "Noble steed"
+          "description": "Noble steed (Companion / External mount)",
+          "slots": 0
         },
         {
           "name": "Lance",
@@ -1403,14 +1413,14 @@
         },
         {
           "name": "Shield",
-          "description": "Defensive equipment",
-          "category": "armor",
+          "description": "Defensive equipment (-1 to incoming Damage Rolls)",
           "armor": 1,
-          "slots": 2
+          "slots": 1
         },
         {
           "name": "Quixotic Undertaking",
-          "description": "Your impossible quest"
+          "description": "Your impossible quest (Intangible concept)",
+          "slots": 0
         }
       ],
       "advancedSkills": [
@@ -1498,10 +1508,14 @@
       "description": "The original Rhino-Men were created by an insane sorcerer several centuries ago but rebelled and killed him. They are fairly rare creatures, serving as formidable and loyal guards to those who can afford their services.",
       "possessions": [
         {
-          "name": "Horn (Damage as Knife)"
+          "name": "Horn (Damage as Knife)",
+          "description": "Innate body part",
+          "slots": 0
         },
         {
-          "name": "Thick Skin (Rhino Men always count as being Modestly Armoured)"
+          "name": "Thick Skin (Rhino Men always count as being Modestly Armoured)",
+          "description": "Innate body trait",
+          "slots": 0
         },
         {
           "name": "Undersized Spear"
@@ -1552,13 +1566,19 @@
           "name": "Pillbox Hat"
         },
         {
-          "name": "Claws (Damage as Sword)"
+          "name": "Claws (Damage as Sword)",
+          "description": "Innate body part",
+          "slots": 0
         },
         {
-          "name": "Hooves (Damage as Club)"
+          "name": "Hooves (Damage as Club)",
+          "description": "Innate body part",
+          "slots": 0
         },
         {
-          "name": "Wings — able to fly as fast as a running man over clear ground"
+          "name": "Wings - able to fly as fast as a running man over clear ground",
+          "description": "Innate body part",
+          "slots": 0
         }
       ],
       "advancedSkills": [
@@ -1600,7 +1620,9 @@
       "description": "You are a student at Troika's most prestigious wizarding academy (pride of the city, experts in pan-dimensional mobility) you were finally able to penetrate the (2d6)th door. You are no master but few outside your peers can claim to know more about the vagaries of skyward travel than you.",
       "possessions": [
         {
-          "name": "Small Functional Door worn on your forehead through which you channel your magic"
+          "name": "Small Functional Door worn on your forehead through which you channel your magic",
+          "description": "Innate magical body fixture",
+          "slots": 0
         },
         {
           "name": "Flashy Robes"
@@ -1792,7 +1814,9 @@
       "description": "You were once (and possibly still are) a fanatical monk set to maintain constant, vigilant martial readiness in preparation for the end times, when all doorways crumble inwards. You are always prepared and never unready.",
       "possessions": [
         {
-          "name": "The Blessing of Telak"
+          "name": "The Blessing of Telak",
+          "description": "Intangible divine blessing",
+          "slots": 0
         },
         {
           "name": "6 Swords of your choice"
@@ -1894,7 +1918,9 @@
           "name": "Soldering iron"
         },
         {
-          "name": "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3"
+          "name": "Detachable autonomous hands or centaur body (+4 Run) or inbuilt particle detector (+4 Second Sight) or one random Spell at rank 3",
+          "description": "Innate body modification / cybernetic attachment",
+          "slots": 0
         }
       ],
       "advancedSkills": [
@@ -2047,7 +2073,10 @@
       "description": "Some people say man is the most dangerous prey. They are wrong. Can men ignite the air and freeze your blood? Can men turn into flocks of seagulls when cornered in an alley? No, they cannot. Wizards are the most dangerous prey.",
       "possessions": [
         {
-          "name": "Large Sack"
+          "name": "Large Sack",
+          "description": "Container for holding goods/wizards",
+          "category": "container",
+          "slots": 0
         },
         {
           "name": "Witch-hair Rope"
@@ -4183,6 +4212,7 @@
       "name": "Astrological Equipment",
       "description": "Requires twenty minutes to set up and use but doesn't need to be outside. Consists of a ruby specular, charms against reciprocal observation, and complicated charts of the spheres. Grants +1 to Astrology.",
       "encumbrance": 2,
+      "slots": 1,
       "effects": [
         {
           "type": "skill_bonus",
@@ -4240,6 +4270,7 @@
       "name": "Bale Hook",
       "description": "A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects.",
       "encumbrance": 1,
+      "slots": 1,
       "damage": "knife",
       "effects": [
         {
@@ -4259,6 +4290,7 @@
       "name": "Blue Star Maps",
       "description": "The blue star maps of Corda hold the secrets of travel between the spheres. Every juncture in space and time can be found on its many square metred face if one is sufficiently educated in its use. Test Astrology to tell the precise destination of any portal.",
       "encumbrance": 2,
+      "slots": 1,
       "effects": [
         {
           "type": "portal_detection",
@@ -4385,6 +4417,7 @@
       "name": "Epopt Staff",
       "description": "An Epopt's Staff is a tool, an advert, and, in a pinch, a Weapon. In its head is set a cloudy ruby, like a useless magnifying glass, which grants the user +1 Second Sight while peering through it.",
       "encumbrance": 1,
+      "slots": 1,
       "damage": "staff",
       "effects": [
         {
@@ -4607,6 +4640,7 @@
       "name": "Knuckle Dice",
       "description": "Knuckle dice are made from the nimble, petal shaped knuckle bones of goblins and make excellent two sided dice.",
       "encumbrance": 0,
+      "slots": 1,
       "effects": [
         {
           "type": "gambling_tool",
@@ -4624,7 +4658,7 @@
       "name": "Lance",
       "type": "weapon",
       "description": "A long cavalry weapon designed for mounted combat and jousting.",
-      "slots": 2,
+      "slots": 1,
       "value": 15,
       "damageTable": {
         "1": 4,
@@ -4906,6 +4940,7 @@
       "name": "Pocket Barometer",
       "description": "The pocket barometer is part of a fashionable affectation for the metropolitan Troikan. Though the city has no discernable weather it is considered polite to check it intermittently and comment on the present clemency and hope for it to continue into the future. Examining its quartz face will inform you of future weather with 5 in 6 accuracy.",
       "encumbrance": 0,
+      "slots": 1,
       "effects": [
         {
           "type": "weather_prediction",
@@ -4924,6 +4959,7 @@
       "name": "Pocket Gods",
       "description": "Pocket gods are little cloth puppets made in the image of your numerous gods. If you whisper a secret to one and throw it away you regain 1 Luck.",
       "encumbrance": 0,
+      "slots": 1,
       "effects": [
         {
           "type": "luck_restoration",
@@ -5079,6 +5115,7 @@
       "name": "Ruby Lorgnette",
       "description": "Ruby lorgnettes are collapsable spectacles made with ruby lenses that require a free hand to use. While wearing them your sight is impaired but you can see sorcerous activity clearly (+2 Second Sight).",
       "encumbrance": 0,
+      "slots": 1,
       "effects": [
         {
           "type": "skill_bonus",
@@ -5102,13 +5139,13 @@
       "@type": "Item",
       "name": "Rucksack",
       "description": "A sturdy backpack for carrying equipment. Starting equipment for all characters.",
-      "slots": 1,
+      "slots": 0,
       "tags": [
         "equipment",
         "container",
         "starting_equipment"
       ],
-      "type": "tool"
+      "type": "container"
     },
     {
       "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
@@ -5162,14 +5199,22 @@
       "@id": "https://cheeleong.dev/troika-system-json/objects/items/shield.json",
       "@type": "Item",
       "name": "Shield",
-      "type": "armor",
+      "type": "shield",
       "description": "A defensive item that can be used to block attacks and also as a weapon.",
-      "slots": 2,
+      "slots": 1,
       "value": 8,
       "armor": {
         "protection": 1,
         "type": "shield"
       },
+      "bonuses": [
+        {
+          "type": "armor",
+          "target": "damage_reduction",
+          "value": 1,
+          "description": "Reduces incoming Damage Rolls by 1 (minimum 1)"
+        }
+      ],
       "damageTable": {
         "1": 2,
         "2": 2,
@@ -5180,7 +5225,6 @@
         "7+": 8
       },
       "tags": [
-        "armor",
         "shield",
         "defensive",
         "weapon"

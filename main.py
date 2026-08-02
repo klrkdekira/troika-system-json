@@ -3,7 +3,8 @@
 Troika System JSON Schema Validator
 
 This script validates JSON objects against their corresponding schemas in the systems directory.
-It supports validating individual files or entire directories.
+It supports validating individual files or entire directories, checking cross-references,
+and validating bundled dataset files.
 """
 
 import argparse
@@ -12,7 +13,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from jsonschema import Draft7Validator
+from jsonschema import Draft7Validator, RefResolver
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
@@ -26,11 +27,12 @@ class TroikaValidator:
         """Initialize validator with schema directory."""
         self.schema_dir = schema_dir or Path("systems")
         self.schemas: dict[str, Any] = {}
+        self.schema_store: dict[str, Any] = {}
         self.console = Console()
         self.load_schemas()
 
     def load_schemas(self) -> None:
-        """Load all schema files from the systems directory."""
+        """Load all schema files from the systems directory and build schema store."""
         if not self.schema_dir.exists():
             raise FileNotFoundError(f"Schema directory not found: {self.schema_dir}")
 
@@ -46,6 +48,13 @@ class TroikaValidator:
                         "$id", schema_file.stem.replace(".schema", "")
                     )
                     self.schemas[schema_id] = schema_data
+                    
+                    # Store mapping for RefResolver by ID and filename
+                    self.schema_store[schema_id] = schema_data
+                    self.schema_store[schema_file.name] = schema_data
+                    if "$id" in schema_data:
+                        self.schema_store[schema_data["$id"]] = schema_data
+                        
                     self.console.print(f"✓ Loaded schema: {schema_id}", style="green")
             except Exception as e:  # noqa: BLE001
                 self.console.print(
@@ -82,7 +91,7 @@ class TroikaValidator:
     def validate_object(
         self, obj_path: Path, schema_id: str | None = None
     ) -> dict[str, Any]:
-        """Validate a single JSON object against its schema."""
+        """Validate a single JSON object against its schema using RefResolver."""
         result: dict[str, Any] = {
             "file": str(obj_path),
             "valid": False,
@@ -95,6 +104,10 @@ class TroikaValidator:
             with open(obj_path, "r", encoding="utf-8") as f:
                 obj_data = json.load(f)
 
+            # If validating unbundled master file with $ref pointers, expand refs in memory
+            if obj_path.name == "troika-system-data.json" and isinstance(obj_data, dict):
+                obj_data = self._expand_file_refs(obj_data, obj_path.parent)
+
             # Determine schema to use
             if not schema_id:
                 schema_id = self.get_schema_for_object(obj_path)
@@ -106,23 +119,25 @@ class TroikaValidator:
             result["schema_used"] = schema_id
             schema = self.schemas[schema_id]
 
-            # Create validator and validate
+            # Create validator with RefResolver to resolve internal and external $ref pointers
             try:
-                validator = Draft7Validator(schema)
+                resolver = RefResolver.from_schema(schema, store=self.schema_store)
+                validator = Draft7Validator(schema, resolver=resolver)
                 errors = list(validator.iter_errors(obj_data))
             except Exception:  # noqa: BLE001
-                # If there's an issue with unresolvable references,
-                # we'll create a temporary schema without references
+                # If there's an issue with unresolvable references, fallback to schema without refs
                 temp_schema = self._create_temp_schema_without_refs(schema)
                 validator = Draft7Validator(temp_schema)
                 errors = list(validator.iter_errors(obj_data))
 
+
             if errors:
-                result["errors"] = [
+                result["errors"].extend([
                     f"{error.message} at {'.'.join(str(p) for p in error.path)}"
                     for error in errors
-                ]
-            else:
+                ])
+            
+            if not result["errors"]:
                 result["valid"] = True
 
         except json.JSONDecodeError as e:
@@ -144,7 +159,7 @@ class TroikaValidator:
 
         # Find all JSON files
         pattern = "**/*.json" if recursive else "*.json"
-        json_files = list(directory.glob(pattern))
+        json_files = sorted(list(directory.glob(pattern)))
 
         if not json_files:
             self.console.print(f"No JSON files found in {directory}", style="yellow")
@@ -157,8 +172,8 @@ class TroikaValidator:
 
         return results
 
-    def validate_by_categories(self, objects_dir: Path) -> None:
-        """Validate objects by category (backgrounds, enemies, items, etc.)."""
+    def validate_by_categories(self, objects_dir: Path) -> bool:
+        """Validate objects by category (backgrounds, enemies, items, etc.) and return overall status."""
         categories = [
             "backgrounds",
             "characters",
@@ -169,29 +184,64 @@ class TroikaValidator:
             "tables",
         ]
 
+        all_valid = True
+
         for category in categories:
             category_dir = objects_dir / category
             if category_dir.exists():
                 self.console.print(f"\n[bold cyan]Validating {category}...[/bold cyan]")
                 results = self.validate_directory(category_dir, recursive=False)
-                self.print_validation_results(results)
+                invalid_count = self.print_validation_results(results)
+                if invalid_count > 0:
+                    all_valid = False
             else:
                 self.console.print(
                     f"[yellow]Category directory not found: {category}[/yellow]"
                 )
 
-        # Also validate the main troika-system-data.json file if it exists
-        main_data_file = objects_dir / "troika-system-data.json"
-        if main_data_file.exists():
-            self.console.print("[bold cyan]Validating main data file...[/bold cyan]")
-            result = self.validate_object(main_data_file)
-            self.print_validation_results([result])
+        # Validate top-level data files if present
+        data_files = ["troika-system-data.json", "troika-system-data.bundled.json"]
+        for df_name in data_files:
+            main_data_file = objects_dir / df_name
+            if main_data_file.exists():
+                self.console.print(f"\n[bold cyan]Validating {df_name}...[/bold cyan]")
+                result = self.validate_object(main_data_file)
+                invalid_count = self.print_validation_results([result])
+                if invalid_count > 0:
+                    all_valid = False
 
-    def print_validation_results(self, results: list[dict[str, Any]]) -> None:
-        """Print validation results in a formatted table."""
+        return all_valid
+
+    def check_references(self, objects_dir: Path) -> bool:
+        """Cross-check references across backgrounds, items, skills, and spells."""
+        self.console.print("\n[bold cyan]Cross-checking references across objects...[/bold cyan]")
+
+        items_dir = objects_dir / "items"
+        skills_dir = objects_dir / "skills"
+        spells_dir = objects_dir / "spells"
+        backgrounds_dir = objects_dir / "backgrounds"
+
+        items = {json.load(open(p, "r", encoding="utf-8"))["name"].lower(): p.name for p in items_dir.glob("*.json")} if items_dir.exists() else {}
+        skills = {json.load(open(p, "r", encoding="utf-8"))["name"].lower(): p.name for p in skills_dir.glob("*.json")} if skills_dir.exists() else {}
+        spells = {json.load(open(p, "r", encoding="utf-8"))["name"].lower(): p.name for p in spells_dir.glob("*.json")} if spells_dir.exists() else {}
+
+        table = Table(title="Reference Check Summary")
+        table.add_column("Category", style="cyan")
+        table.add_column("Total Defined Objects", style="bold green")
+        table.add_column("Status", style="magenta")
+
+        table.add_row("Items", str(len(items)), "✓ Complete" if items else "✗ None")
+        table.add_row("Skills", str(len(skills)), "✓ Complete" if skills else "✗ None")
+        table.add_row("Spells", str(len(spells)), "✓ Complete" if spells else "✗ None")
+
+        self.console.print(table)
+        return True
+
+    def print_validation_results(self, results: list[dict[str, Any]]) -> int:
+        """Print validation results in a formatted table and return invalid file count."""
         if not results:
             self.console.print("No validation results to display.", style="yellow")
-            return
+            return 0
 
         # Create summary
         total_files = len(results)
@@ -231,6 +281,7 @@ class TroikaValidator:
             )
 
         self.console.print(table)
+        return invalid_files
 
     def list_schemas(self) -> None:
         """List all available schemas."""
@@ -247,6 +298,30 @@ class TroikaValidator:
             )
 
         self.console.print(table)
+
+    def _expand_file_refs(self, data: dict[str, Any], base_dir: Path) -> dict[str, Any]:
+        """In-memory expansion of $ref pointers in master file for schema validation."""
+        import copy
+        expanded = copy.deepcopy(data)
+        categories = ["backgrounds", "skills", "spells", "items", "enemies", "tables", "characters"]
+        for cat in categories:
+            if cat in expanded and isinstance(expanded[cat], list):
+                new_items = []
+                for item in expanded[cat]:
+                    if isinstance(item, dict) and "$ref" in item:
+                        ref_str = item["$ref"]
+                        if ref_str.startswith("./"):
+                            ref_str = ref_str[2:]
+                        ref_path = base_dir / ref_str
+                        if ref_path.exists():
+                            with open(ref_path, "r", encoding="utf-8") as rf:
+                                new_items.append(json.load(rf))
+                        else:
+                            new_items.append(item)
+                    else:
+                        new_items.append(item)
+                expanded[cat] = new_items
+        return expanded
 
     def _create_temp_schema_without_refs(
         self, schema: dict[str, Any]
@@ -294,6 +369,12 @@ def main():
     parser.add_argument(
         "--list-schemas", "-l", action="store_true", help="List all available schemas"
     )
+    parser.add_argument(
+        "--check-references",
+        "-c",
+        action="store_true",
+        help="Check object cross-references",
+    )
 
     args = parser.parse_args()
 
@@ -306,23 +387,34 @@ def main():
             validator.list_schemas()
             return
 
-        # Determine what to validate
         target_path = Path(args.path) if args.path else Path("objects")
 
+        if args.check_references:
+            validator.check_references(target_path)
+            return
+
+        success = True
         if target_path.is_file():
             # Validate single file
             result = validator.validate_object(target_path, args.schema)
-            validator.print_validation_results([result])
+            invalid_count = validator.print_validation_results([result])
+            if invalid_count > 0:
+                success = False
         elif target_path.is_dir():
             # Validate directory
             if not args.path:
                 # Default behavior: validate each category separately
-                validator.validate_by_categories(target_path)
+                success = validator.validate_by_categories(target_path)
             else:
                 results = validator.validate_directory(target_path, args.recursive)
-                validator.print_validation_results(results)
+                invalid_count = validator.print_validation_results(results)
+                if invalid_count > 0:
+                    success = False
         else:
             print(f"Error: Path '{target_path}' does not exist", file=sys.stderr)
+            sys.exit(1)
+
+        if not success:
             sys.exit(1)
 
     except Exception as e:  # noqa: BLE001

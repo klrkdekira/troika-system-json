@@ -133,7 +133,7 @@ class TestSkillData(unittest.TestCase):
                             skill_name.lower()
                             .replace(" ", "-")
                             .replace("–", "-")
-                            .replace("—", "-")
+                            .replace("-", "-")
                         )
                         referenced_skills.add(skill_id)
 

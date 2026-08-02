@@ -4,11 +4,11 @@
   "@type": "Item",
   "name": "Rucksack",
   "description": "A sturdy backpack for carrying equipment. Starting equipment for all characters.",
-  "slots": 1,
+  "slots": 0,
   "tags": [
     "equipment",
     "container",
     "starting_equipment"
   ],
-  "type": "tool"
+  "type": "container"
 }

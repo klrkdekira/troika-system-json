@@ -8,8 +8,9 @@
   "possessions": [
     {
       "name": "Small but Vicious Dog",
-      "description": "A loyal companion for hunting gremlins",
+      "description": "A loyal companion for hunting gremlins (Companion / Animal)",
       "category": "companion",
+      "slots": 0,
       "properties": [
         "animal",
         "vicious"
@@ -33,8 +34,9 @@
     },
     {
       "name": "A Sack",
-      "description": "For collecting gremlins",
-      "category": "tool",
+      "description": "For collecting gremlins (Container)",
+      "category": "container",
+      "slots": 0,
       "properties": [
         "storage"
       ]
@@ -42,8 +44,9 @@
     {
       "name": "Empty Gremlin Jars",
       "quantity": "1d6",
-      "description": "For storing captured gremlins",
-      "category": "tool",
+      "description": "For storing captured gremlins (Containers)",
+      "category": "container",
+      "slots": 1,
       "properties": [
         "storage",
         "trapping"

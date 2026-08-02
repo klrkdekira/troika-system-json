@@ -8,8 +8,9 @@
   "possessions": [
     {
       "name": "Sharp metal dentures or forked metal dentures or blunt metal dentures",
-      "description": "Sharp (Damage as Sword), forked (Damage as Knife, Mighty Blow strips flesh from appendage), or blunt (Damage as Knife, may eat hard objects)",
+      "description": "Sharp (Damage as Sword), forked (Damage as Knife, Mighty Blow strips flesh from appendage), or blunt (Damage as Knife, may eat hard objects) (Dental implant / Body fixture)",
       "category": "weapon",
+      "slots": 0,
       "properties": [
         "metal",
         "teeth",

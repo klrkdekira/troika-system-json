@@ -47,7 +47,7 @@ class TestSpellData(unittest.TestCase):
             "astral-reach": {
                 "name": "Astral Reach",
                 "cost": 1,
-                "description": "The Sorcerers of the Academy of Doors are most famous for this one Spell. With it they may reach through any portal and into another known receptacle. For example they might use it to reach through to a safe in their manse via their purse. This Spell only allows partial translocation— the wizard cannot fully or permanently enter.",
+                "description": "The Sorcerers of the Academy of Doors are most famous for this one Spell. With it they may reach through any portal and into another known receptacle. For example they might use it to reach through to a safe in their manse via their purse. This Spell only allows partial translocation- the wizard cannot fully or permanently enter.",
             },
             "babble": {
                 "name": "Babble",
