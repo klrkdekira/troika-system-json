@@ -1064,6 +1064,29 @@
             "metal",
             "teeth",
             "special"
+          ],
+          "alternatives": [
+            {
+              "name": "Sharp metal dentures",
+              "description": "Dental implant / body fixture",
+              "category": "weapon",
+              "damageAs": "Sword",
+              "slots": 0
+            },
+            {
+              "name": "Forked metal dentures",
+              "description": "Dental implant / body fixture; Mighty Blow strips flesh from an appendage",
+              "category": "weapon",
+              "damageAs": "Knife",
+              "slots": 0
+            },
+            {
+              "name": "Blunt metal dentures",
+              "description": "Dental implant / body fixture; may eat hard objects",
+              "category": "weapon",
+              "damageAs": "Knife",
+              "slots": 0
+            }
           ]
         },
         {
@@ -1508,8 +1531,10 @@
       "description": "The original Rhino-Men were created by an insane sorcerer several centuries ago but rebelled and killed him. They are fairly rare creatures, serving as formidable and loyal guards to those who can afford their services.",
       "possessions": [
         {
-          "name": "Horn (Damage as Knife)",
+          "name": "Horn",
           "description": "Innate body part",
+          "category": "weapon",
+          "damageAs": "Knife",
           "slots": 0
         },
         {
@@ -1568,13 +1593,17 @@
           "name": "Pillbox Hat"
         },
         {
-          "name": "Claws (Damage as Sword)",
+          "name": "Claws",
           "description": "Innate body part",
+          "category": "weapon",
+          "damageAs": "Sword",
           "slots": 0
         },
         {
-          "name": "Hooves (Damage as Club)",
+          "name": "Hooves",
           "description": "Innate body part",
+          "category": "weapon",
+          "damageAs": "Club",
           "slots": 0
         },
         {

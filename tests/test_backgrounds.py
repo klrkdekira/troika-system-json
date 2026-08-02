@@ -761,6 +761,37 @@ class TestBackgroundData(unittest.TestCase):
                             f"Background {bg_id} missing possession: {expected_item}",
                         )
 
+    def test_innate_weapon_damage_mappings(self):
+        """Innate weapons and body fixtures use canonical damage-table rows."""
+
+        for background_id, weapon_name, damage_as in (
+            (46, "Horn", "Knife"),
+            (51, "Claws", "Sword"),
+            (51, "Hooves", "Club"),
+        ):
+            background = self.load_background_json(background_id)
+            possession = next(
+                item
+                for item in background["possessions"]
+                if item["name"] == weapon_name
+            )
+            self.assertEqual(possession["damageAs"], damage_as)
+
+        dentures_background = self.load_background_json(35)
+        dentures = next(
+            item
+            for item in dentures_background["possessions"]
+            if item["category"] == "weapon"
+        )
+        self.assertEqual(
+            {item["name"]: item["damageAs"] for item in dentures["alternatives"]},
+            {
+                "Sharp metal dentures": "Sword",
+                "Forked metal dentures": "Knife",
+                "Blunt metal dentures": "Knife",
+            },
+        )
+
     def test_background_special_abilities_present(self):
         """Test that background special abilities are present"""
         for bg_id, expected_data in self.expected_backgrounds.items():

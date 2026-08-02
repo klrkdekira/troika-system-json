@@ -15,6 +15,29 @@
         "metal",
         "teeth",
         "special"
+      ],
+      "alternatives": [
+        {
+          "name": "Sharp metal dentures",
+          "description": "Dental implant / body fixture",
+          "category": "weapon",
+          "damageAs": "Sword",
+          "slots": 0
+        },
+        {
+          "name": "Forked metal dentures",
+          "description": "Dental implant / body fixture; Mighty Blow strips flesh from an appendage",
+          "category": "weapon",
+          "damageAs": "Knife",
+          "slots": 0
+        },
+        {
+          "name": "Blunt metal dentures",
+          "description": "Dental implant / body fixture; may eat hard objects",
+          "category": "weapon",
+          "damageAs": "Knife",
+          "slots": 0
+        }
       ]
     },
     {

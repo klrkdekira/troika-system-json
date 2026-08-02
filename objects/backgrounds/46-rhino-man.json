@@ -7,8 +7,10 @@
   "description": "The original Rhino-Men were created by an insane sorcerer several centuries ago but rebelled and killed him. They are fairly rare creatures, serving as formidable and loyal guards to those who can afford their services.",
   "possessions": [
     {
-      "name": "Horn (Damage as Knife)",
+      "name": "Horn",
       "description": "Innate body part",
+      "category": "weapon",
+      "damageAs": "Knife",
       "slots": 0
     },
     {

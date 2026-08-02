@@ -358,6 +358,10 @@
                     "maximum": 3,
                     "description": "Armor protection / damage reduction value provided by this item"
                 },
+                "damageAs": {
+                    "type": "string",
+                    "description": "Damage table reference for weapons (e.g., 'Sword', 'Bow', 'Large Beast')"
+                },
                 "isWorn": {
                     "type": "boolean",
                     "default": false,

@@ -13,13 +13,17 @@
       "name": "Pillbox Hat"
     },
     {
-      "name": "Claws (Damage as Sword)",
+      "name": "Claws",
       "description": "Innate body part",
+      "category": "weapon",
+      "damageAs": "Sword",
       "slots": 0
     },
     {
-      "name": "Hooves (Damage as Club)",
+      "name": "Hooves",
       "description": "Innate body part",
+      "category": "weapon",
+      "damageAs": "Club",
       "slots": 0
     },
     {
