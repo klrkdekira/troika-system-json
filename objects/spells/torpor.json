@@ -4,7 +4,7 @@
   "@type": "Spell",
   "name": "Torpor",
   "cost": 3,
-  "description": "Those who study the dead consider it necessary to develop a profound sympathy with their subject \u2014 how can you speak with the dead if you don't understand the dead? Torpor helps build post-mortem empathy by causing the necromancer to temporarily die. Bodily functions are halted, no food, water, or air is needed, and they are, by most vulgar definitions of the word, dead. The Spell lasts until ended by the wizard, who remains vaguely aware of their surroundings to the extent of being conscious of sound and movement but not of what is said or who is saying it. They will still take Damage from bodily abuse while under the effect and can indeed become irretrievably dead.",
+  "description": "Those who study the dead consider it necessary to develop a profound sympathy with their subject - how can you speak with the dead if you don't understand the dead? Torpor helps build post-mortem empathy by causing the necromancer to temporarily die. Bodily functions are halted, no food, water, or air is needed, and they are, by most vulgar definitions of the word, dead. The Spell lasts until ended by the wizard, who remains vaguely aware of their surroundings to the extent of being conscious of sound and movement but not of what is said or who is saying it. They will still take Damage from bodily abuse while under the effect and can indeed become irretrievably dead.",
   "duration": "Until ended by wizard",
   "range": "Self",
   "testType": "rollUnder",

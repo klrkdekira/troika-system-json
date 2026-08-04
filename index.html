@@ -1295,7 +1295,7 @@
             }).join("")}</div>`;
           }
           if (isPrimitiveArray(value)) {
-            if (!value.length) return `<div class="field-value" style="color:var(--text-light);">—</div>`;
+            if (!value.length) return `<div class="field-value" style="color:var(--text-light);">-</div>`;
             return `<div class="chip-list">${value.map((v) => `<span class="chip">${esc(valueText(v))}</span>`).join("")}</div>`;
           }
           if (value && typeof value === "object") {
@@ -1627,7 +1627,7 @@
                 <table>
                   <thead><tr><th>Roll</th><th>Mood / Behavior</th></tr></thead>
                   <tbody>
-                    ${mien.entries.map((e) => `<tr><td style="font-family:var(--font-mono); font-weight:600;">${esc(e.roll)}</td><td><strong>${esc(e.mood || "")}</strong> ${e.behavior ? `— ${esc(e.behavior)}` : ""}</td></tr>`).join("")}
+                    ${mien.entries.map((e) => `<tr><td style="font-family:var(--font-mono); font-weight:600;">${esc(e.roll)}</td><td><strong>${esc(e.mood || "")}</strong> ${e.behavior ? `- ${esc(e.behavior)}` : ""}</td></tr>`).join("")}
                   </tbody>
                 </table>
               </div>
@@ -1645,7 +1645,7 @@
                   <thead><tr><th>Roll</th><th>Entry</th></tr></thead>
                   <tbody>
                     ${entries.map((e) => {
-                      const rollText = e.roll != null ? e.roll : (e.min != null ? `${e.min}-${e.max}` : "—");
+                      const rollText = e.roll != null ? e.roll : (e.min != null ? `${e.min}-${e.max}` : "-");
                       const mainText = e.name || e.result || e.description || JSON.stringify(e);
                       const subDesc = (e.name && e.description) ? `<br><span style="color:var(--text-muted); font-size:0.875rem;">${esc(e.description)}</span>` : "";
                       return `<tr><td style="font-family:var(--font-mono); font-weight:600; vertical-align:top;">${esc(rollText)}</td><td><strong>${esc(mainText)}</strong>${subDesc}</td></tr>`;
@@ -1665,7 +1665,7 @@
               <ul style="margin:0; padding-left:1.25rem;">
                 ${possessions.map((p) => {
                   if (typeof p === "string") return `<li>${esc(p)}</li>`;
-                  return `<li><strong>${esc(p.name || p.item || "Item")}</strong>${p.description ? ` — ${esc(p.description)}` : ""}</li>`;
+                  return `<li><strong>${esc(p.name || p.item || "Item")}</strong>${p.description ? ` - ${esc(p.description)}` : ""}</li>`;
                 }).join("")}
               </ul>
             </div>
@@ -1696,7 +1696,7 @@
               <ul style="margin:0; padding-left:1.25rem;">
                 ${special.map((sp) => {
                   if (typeof sp === "string") return `<li>${esc(sp)}</li>`;
-                  return `<li><strong>${esc(sp.name || "Special")}</strong>${sp.description ? ` — ${esc(sp.description)}` : ""}</li>`;
+                  return `<li><strong>${esc(sp.name || "Special")}</strong>${sp.description ? ` - ${esc(sp.description)}` : ""}</li>`;
                 }).join("")}
               </ul>
             </div>

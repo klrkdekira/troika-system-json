@@ -76,9 +76,9 @@ class TestBackgroundData(unittest.TestCase):
             15: {
                 "name": "Chaos Champion",
                 "skills": [
-                    ("Language – Kurgan", 6),
+                    ("Language - Kurgan", 6),
                     ("Maul Fighting", 3),
-                    ("Secret Signs – Chaos Patron", 3),
+                    ("Secret Signs - Chaos Patron", 3),
                     ("Second Sight", 1),
                 ],
                 "spells": [("Random", 1)],
@@ -111,7 +111,7 @@ class TestBackgroundData(unittest.TestCase):
             21: {
                 "name": "Demon Stalker",
                 "skills": [
-                    ("Language – Abyssal", 5),
+                    ("Language - Abyssal", 5),
                     ("Second Sight", 2),
                     ("Sword Fighting", 2),
                     ("Bow Fighting", 2),
@@ -232,7 +232,7 @@ class TestBackgroundData(unittest.TestCase):
                     "A Club",
                     "A Sack",
                     "1d6 Empty Gremlin Jars",
-                    "A Jar with a Pissed–off Gremlin Inside",
+                    "A Jar with a Pissed-off Gremlin Inside",
                 ],
                 "special": [],
             },
@@ -459,7 +459,7 @@ class TestBackgroundData(unittest.TestCase):
             53: {
                 "name": "Sorcerer of the College of Friends",
                 "skills": [
-                    ("Secret Signs – Witching Words", 4),
+                    ("Secret Signs - Witching Words", 4),
                     ("Run", 2),
                     ("Climb", 1),
                     ("Sleight of Hand", 1),

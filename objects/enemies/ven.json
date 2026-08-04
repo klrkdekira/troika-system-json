@@ -4,7 +4,7 @@
   "@type": "Enemy",
   "id": "ven",
   "name": "Ven",
-  "description": "The million spheres have not been counted, it's just understood that there are a lot \u2014 countless by every useful standard. Eventually, in a future further from now than the birth of the Monad is from here, the hump-backed sky will fold in on itself and one crystal sphere will remain. On that sphere will be the last culture, the Ven, pale skinned, dressed in rubber and peaked caps, spending the time left before the Monad rests in obscure and pointless pursuits. Their arts can do anything but prevent the End of All Things. Some amongst their race, not content to wait, fling themselves and some small portion of their arts back through time to live in a more vigorous era.",
+  "description": "The million spheres have not been counted, it's just understood that there are a lot - countless by every useful standard. Eventually, in a future further from now than the birth of the Monad is from here, the hump-backed sky will fold in on itself and one crystal sphere will remain. On that sphere will be the last culture, the Ven, pale skinned, dressed in rubber and peaked caps, spending the time left before the Monad rests in obscure and pointless pursuits. Their arts can do anything but prevent the End of All Things. Some amongst their race, not content to wait, fling themselves and some small portion of their arts back through time to live in a more vigorous era.",
   "mien": {
     "diceType": "d6",
     "entries": [

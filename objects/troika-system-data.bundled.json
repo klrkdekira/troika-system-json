@@ -249,7 +249,7 @@
       ],
       "advancedSkills": [
         {
-          "name": "Language – Kurgan",
+          "name": "Language - Kurgan",
           "rank": 6
         },
         {
@@ -257,7 +257,7 @@
           "rank": 3
         },
         {
-          "name": "Secret Signs – Chaos Patron",
+          "name": "Secret Signs - Chaos Patron",
           "rank": 3
         },
         {
@@ -360,7 +360,7 @@
       ],
       "advancedSkills": [
         {
-          "name": "Language – Abyssal",
+          "name": "Language - Abyssal",
           "rank": 5
         },
         {
@@ -781,7 +781,7 @@
           ]
         },
         {
-          "name": "A Jar with a Pissed–off Gremlin Inside",
+          "name": "A Jar with a Pissed-off Gremlin Inside",
           "description": "Evidence of your profession",
           "category": "specimen",
           "properties": [
@@ -997,7 +997,7 @@
       "@type": "Background",
       "id": 34,
       "name": "Lonesome Monarch",
-      "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as well. Either way you are now a lost and lonely sovereign without a kingdom — no one has heard of you or your people. Most don't believe you and laugh, or worse, they do believe you and shrug at the vagaries of fate.",
+      "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as well. Either way you are now a lost and lonely sovereign without a kingdom - no one has heard of you or your people. Most don't believe you and laugh, or worse, they do believe you and shrug at the vagaries of fate.",
       "possessions": [
         {
           "name": "Nice Weapon of your choice",
@@ -1205,7 +1205,7 @@
       "@type": "Background",
       "id": 41,
       "name": "Necromancer",
-      "description": "The least popular of magical practitioners, Necromancers are shunned by the major centres of learning, left to their own devices on the edges of society, passing on knowledge in the time honoured master–student dynamic. This loneliness encourages students to make their own friends.",
+      "description": "The least popular of magical practitioners, Necromancers are shunned by the major centres of learning, left to their own devices on the edges of society, passing on knowledge in the time honoured master-student dynamic. This loneliness encourages students to make their own friends.",
       "possessions": [
         {
           "name": "Dusty Robes",
@@ -1721,7 +1721,7 @@
       ],
       "advancedSkills": [
         {
-          "name": "Secret Signs – Witching Words",
+          "name": "Secret Signs - Witching Words",
           "rank": 4
         },
         {
@@ -1988,7 +1988,7 @@
       ],
       "spells": [],
       "special": [
-        "You don't recover Stamina by resting in the usual manner — instead you must spend a full rest period with a hot iron welding your skin back together like putty. For each hour of rest with access to the right tools you regain 3 Stamina.",
+        "You don't recover Stamina by resting in the usual manner - instead you must spend a full rest period with a hot iron welding your skin back together like putty. For each hour of rest with access to the right tools you regain 3 Stamina.",
         "You may recharge plasmic machines by hooking your fluids to them and spending Stamina at a rate of 1 Stamina and 6 minutes per charge.",
         "You always count as being at least Lightly Armoured."
       ]
@@ -2530,7 +2530,7 @@
       "@id": "https://cheeleong.dev/troika-system-json/objects/skills/poison.json",
       "@type": "Skill",
       "name": "Poison",
-      "description": "You may Test this Skill during down time to create a single dose of poison. Pick which kind it is when you make it. This list is not exhaustive — more exotic ones may be available if you possess the knowledge and ingredients. 1d3 Common Poisons of Troika: 1 Causes anyone ingesting it to Test their Luck (or Skill for Enemies) or lose 4d6 Stamina. 2 Add 1 to all Damage Rolls while this is applied to piercing or edged Weapons. If you Roll a 1 for Damage the poison has worn off. 3 Causes anyone ingesting it to fall unconscious for 1d6 hours.",
+      "description": "You may Test this Skill during down time to create a single dose of poison. Pick which kind it is when you make it. This list is not exhaustive - more exotic ones may be available if you possess the knowledge and ingredients. 1d3 Common Poisons of Troika: 1 Causes anyone ingesting it to Test their Luck (or Skill for Enemies) or lose 4d6 Stamina. 2 Add 1 to all Damage Rolls while this is applied to piercing or edged Weapons. If you Roll a 1 for Damage the poison has worn off. 3 Causes anyone ingesting it to fall unconscious for 1d6 hours.",
       "type": "general",
       "related_attribute": "intelligence",
       "difficulty_notes": "Crafting and applying various poisons during downtime",
@@ -2883,7 +2883,7 @@
       "@type": "Spell",
       "name": "Astral Reach",
       "cost": 1,
-      "description": "The Sorcerers of the Academy of Doors are most famous for this one Spell. With it they may reach through any portal and into another known receptacle. For example they might use it to reach through to a safe in their manse via their purse. This Spell only allows partial translocation— the wizard cannot fully or permanently enter.",
+      "description": "The Sorcerers of the Academy of Doors are most famous for this one Spell. With it they may reach through any portal and into another known receptacle. For example they might use it to reach through to a safe in their manse via their purse. This Spell only allows partial translocation -  the wizard cannot fully or permanently enter.",
       "duration": "Instantaneous action",
       "range": "Through known portals to known locations",
       "testType": "rollUnder"
@@ -4098,7 +4098,7 @@
       "@type": "Spell",
       "name": "Torpor",
       "cost": 3,
-      "description": "Those who study the dead consider it necessary to develop a profound sympathy with their subject — how can you speak with the dead if you don't understand the dead? Torpor helps build post-mortem empathy by causing the necromancer to temporarily die. Bodily functions are halted, no food, water, or air is needed, and they are, by most vulgar definitions of the word, dead. The Spell lasts until ended by the wizard, who remains vaguely aware of their surroundings to the extent of being conscious of sound and movement but not of what is said or who is saying it. They will still take Damage from bodily abuse while under the effect and can indeed become irretrievably dead.",
+      "description": "Those who study the dead consider it necessary to develop a profound sympathy with their subject - how can you speak with the dead if you don't understand the dead? Torpor helps build post-mortem empathy by causing the necromancer to temporarily die. Bodily functions are halted, no food, water, or air is needed, and they are, by most vulgar definitions of the word, dead. The Spell lasts until ended by the wizard, who remains vaguely aware of their surroundings to the extent of being conscious of sound and movement but not of what is said or who is saying it. They will still take Damage from bodily abuse while under the effect and can indeed become irretrievably dead.",
       "duration": "Until ended by wizard",
       "range": "Self",
       "testType": "rollUnder",
@@ -5475,7 +5475,7 @@
       "@id": "https://cheeleong.dev/troika-system-json/objects/enemies/alzabo.json",
       "@type": "Enemy",
       "name": "Alzabo",
-      "description": "The red furred ghoul-bear, which at its shoulder stands as tall as a horse, would be a frightful creature for no other reason than its immediate physical impression. The Alzabo can produce — for it is not truly mimicking, rather recalling — the exact sound of any creature it has ever eaten. Crying out in the night, it draws its prey from safety, typically by imitating a recently eaten family member and calling to its children or parents.",
+      "description": "The red furred ghoul-bear, which at its shoulder stands as tall as a horse, would be a frightful creature for no other reason than its immediate physical impression. The Alzabo can produce - for it is not truly mimicking, rather recalling - the exact sound of any creature it has ever eaten. Crying out in the night, it draws its prey from safety, typically by imitating a recently eaten family member and calling to its children or parents.",
       "mien": {
         "diceType": "d6",
         "entries": [
@@ -7810,7 +7810,7 @@
       "@type": "Enemy",
       "id": "ven",
       "name": "Ven",
-      "description": "The million spheres have not been counted, it's just understood that there are a lot — countless by every useful standard. Eventually, in a future further from now than the birth of the Monad is from here, the hump-backed sky will fold in on itself and one crystal sphere will remain. On that sphere will be the last culture, the Ven, pale skinned, dressed in rubber and peaked caps, spending the time left before the Monad rests in obscure and pointless pursuits. Their arts can do anything but prevent the End of All Things. Some amongst their race, not content to wait, fling themselves and some small portion of their arts back through time to live in a more vigorous era.",
+      "description": "The million spheres have not been counted, it's just understood that there are a lot - countless by every useful standard. Eventually, in a future further from now than the birth of the Monad is from here, the hump-backed sky will fold in on itself and one crystal sphere will remain. On that sphere will be the last culture, the Ven, pale skinned, dressed in rubber and peaked caps, spending the time left before the Monad rests in obscure and pointless pursuits. Their arts can do anything but prevent the End of All Things. Some amongst their race, not content to wait, fling themselves and some small portion of their arts back through time to live in a more vigorous era.",
       "mien": {
         "diceType": "d6",
         "entries": [
