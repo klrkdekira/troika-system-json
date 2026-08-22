@@ -10,10 +10,21 @@
 
 <p align="center">
   <a href="https://cheeleong.dev/troika-system-json/"><img src="https://img.shields.io/badge/Live%20Explorer-cheeleong.dev-blue?style=flat-square" alt="Live Explorer"></a>
+  <a href="pyproject.toml"><img src="https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square" alt="Version 0.1.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20%2B%20Troika!%20SRD-green?style=flat-square" alt="License"></a>
+  <a href="CITATION.cff"><img src="https://img.shields.io/badge/Citation-CITATION.cff-blueviolet?style=flat-square" alt="Citation"></a>
+  <br>
   <a href="systems/context.jsonld"><img src="https://img.shields.io/badge/Linked%20Data-JSON--LD%201.1-purple?style=flat-square" alt="JSON-LD 1.1"></a>
+  <a href="systems/"><img src="https://img.shields.io/badge/JSON%20Schema-Draft--07%20%2F%202020--12-blue?style=flat-square" alt="JSON Schema"></a>
   <a href="datapackage.json"><img src="https://img.shields.io/badge/Data%20Package-Frictionless-orange?style=flat-square" alt="Data Package"></a>
+  <a href="objects/troika-system-data.json"><img src="https://img.shields.io/badge/Corpus-225%20Entities-success?style=flat-square" alt="Corpus 225 Entities"></a>
   <a href="llms.txt"><img src="https://img.shields.io/badge/AI%2FLLM-llms.txt-teal?style=flat-square" alt="llms.txt"></a>
+  <br>
+  <a href="pyproject.toml"><img src="https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.12+"></a>
+  <a href="https://github.com/astral-sh/uv"><img src="https://img.shields.io/badge/uv-Astral-261230?style=flat-square&logo=astral&logoColor=white" alt="uv package manager"></a>
+  <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/badge/Code%20Style-Ruff-000000?style=flat-square&logo=ruff&logoColor=white" alt="Ruff code style"></a>
+  <a href="tests/"><img src="https://img.shields.io/badge/Tests-45%20Passing-success?style=flat-square" alt="Tests"></a>
+  <a href="main.py"><img src="https://img.shields.io/badge/Schema%20Validation-Passing-brightgreen?style=flat-square" alt="Schema Validation"></a>
 </p>
 
 ---
