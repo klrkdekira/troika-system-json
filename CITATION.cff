@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below and retain the Troika! SRD attribution."
+title: "Troika! System JSON"
+type: dataset
+authors:
+  - family-names: "Chow"
+    given-names: "Chee Leong"
+version: "0.1.0"
+url: "https://cheeleong.dev/troika-system-json/"
+repository-code: "https://github.com/klrkdekira/troika-system-json"
+abstract: >-
+  A machine-readable JSON-LD 1.1 reference corpus and JSON Schema
+  specifications for the Troika! tabletop role-playing game System Reference
+  Document. Includes backgrounds, characters, enemies, items, advanced skills,
+  spells, and tables, plus deterministic LLM and static-publishing artifacts.
+references:
+  - type: manual
+    title: "Troika! System Reference Document"
+    authors:
+      - name: "Melsonian Arts Council"
+      - name: "dialectrical"
+    url: "https://troika-srd.netlify.app/"

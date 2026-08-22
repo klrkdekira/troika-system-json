@@ -1,0 +1,31 @@
+# Troika! System JSON
+
+> Machine-readable JSON and JSON-LD reference corpus for the Troika! SRD. 225 records with JSON Schema validation.
+
+Attribution: Based on the Troika! SRD by Melsonian Arts Council and dialectrical. Troika! System JSON is an independent production by Chee Leong and is not affiliated with the Melsonian Arts Council.
+
+## Entry points
+
+- [Full corpus context](https://cheeleong.dev/troika-system-json/llms-full.txt): complete text projection of every record
+- [Reference manifest](https://cheeleong.dev/troika-system-json/objects/troika-system-data.json): collection lists using JSON References
+- [Single-file bundle](https://cheeleong.dev/troika-system-json/objects/troika-system-data.bundled.json): every record in one document
+- [Search index](https://cheeleong.dev/troika-system-json/objects/search-index.json): static inverted token index
+- [Collection index](https://cheeleong.dev/troika-system-json/objects/collection-index.json): compact browse metadata
+- [JSON-LD context](https://cheeleong.dev/troika-system-json/systems/context.jsonld)
+
+## Collections
+
+- Backgrounds: 36 records under `objects/backgrounds/`
+- Advanced skills: 22 records under `objects/skills/`
+- Spells: 74 records under `objects/spells/`
+- Items: 50 records under `objects/items/`
+- Enemies: 36 records under `objects/enemies/`
+- Tables: 5 records under `objects/tables/`
+- Sample characters: 2 records under `objects/characters/`
+
+## Documentation
+
+- [README](https://cheeleong.dev/troika-system-json/README.md)
+- [Citation metadata](https://cheeleong.dev/troika-system-json/CITATION.cff)
+- [License and attribution](https://cheeleong.dev/troika-system-json/LICENSE)
+- [Official Troika! SRD](https://troika-srd.netlify.app/)

@@ -1,6 +1,24 @@
+Troika! System JSON licensing and attribution
+
+1. Repository-authored code, schemas, interface, and documentation are
+   licensed under the MIT License below.
+
+2. Troika! game content remains copyright of the Melsonian Arts Council and
+   is included under the terms published with the official Troika! System
+   Reference Document:
+
+   https://troika-srd.netlify.app/
+   https://github.com/dialectrical/troika-srd
+
+   Troika! System JSON is an independent production by Chee Leong and is not
+   affiliated with the Melsonian Arts Council. "Troika!" is a trademark of
+   the Melsonian Arts Council.
+
+---
+
 MIT License
 
-Copyright (c) 2025 Chee Leong
+Copyright (c) 2026 Chee Leong
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

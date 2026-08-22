@@ -28,6 +28,19 @@ troika-system-json/
 - **Individual Entities:** Fetch individual JSON files from `objects/<category>/`.
 - **Validation & Testing:** Validate entities against schemas in [`systems/`](systems/). Run tests with `python -m unittest`.
 
+## Machine-readable publishing
+
+- [`llms.txt`](llms.txt) provides a concise corpus guide for agents and crawlers.
+- [`llms-full.txt`](llms-full.txt) contains a complete text projection of every record.
+- [`objects/search-index.json`](objects/search-index.json) and [`objects/collection-index.json`](objects/collection-index.json) support static search and browsing.
+- [`datapackage.json`](datapackage.json), [`sitemap.xml`](sitemap.xml), and [`robots.txt`](robots.txt) describe the published package.
+
+Run `make publish` to rebuild all generated publishing artifacts, or `make check` to rebuild, validate, and test the repository.
+
+## Citation
+
+Preferred citation metadata is available in [`CITATION.cff`](CITATION.cff). If you use or redistribute the dataset, retain the Troika! SRD attribution and follow the content terms described in [`LICENSE`](LICENSE).
+
 ## License & Attribution
 
 <p align="center">

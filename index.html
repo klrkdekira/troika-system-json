@@ -16,7 +16,12 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Troika! System JSON" />
     <meta name="twitter:description" content="Browse structured JSON-LD data and JSON schemas for the Troika! tabletop RPG SRD." />
+    <meta name="citation_title" content="Troika! System JSON" />
+    <meta name="citation_author" content="Chee Leong Chow" />
+    <meta name="citation_publication_date" content="2026" />
+    <meta name="citation_technical_report_institution" content="Chee Leong" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="license" href="LICENSE" />
     <link rel="preload" href="objects/troika-system-data.bundled.json" as="fetch" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +35,12 @@
         "creator": { "@type": "Person", "name": "Chee Leong" },
         "license": "https://opensource.org/licenses/MIT",
         "isBasedOn": "https://troika-srd.netlify.app/",
-        "inLanguage": "en"
+        "inLanguage": "en",
+        "distribution": [
+          { "@type": "DataDownload", "name": "Full JSON bundle", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/troika-system-data.bundled.json" },
+          { "@type": "DataDownload", "name": "Full LLM context", "encodingFormat": "text/plain", "contentUrl": "https://cheeleong.dev/troika-system-json/llms-full.txt" },
+          { "@type": "DataDownload", "name": "Search index", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/search-index.json" }
+        ]
       }
     </script>
     <title>Troika! System JSON</title>
@@ -154,6 +164,45 @@
         border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
         box-shadow: var(--shadow-xs);
       }
+      .landing-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin: -0.75rem 0 2rem;
+      }
+      .primary-action,
+      .secondary-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.65rem 1rem;
+        border-radius: var(--radius-md);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .primary-action {
+        background: var(--accent-indigo-hover);
+        color: #ffffff;
+        border: 1px solid var(--accent-indigo-hover);
+        box-shadow: var(--shadow-sm);
+      }
+      .primary-action:hover {
+        background: var(--accent-indigo);
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .secondary-action {
+        background: var(--bg-card);
+        color: var(--text-main);
+        border: 1px solid var(--border-medium);
+      }
+      .secondary-action:hover {
+        background: var(--bg-subtle);
+        color: var(--text-main);
+        text-decoration: none;
+      }
       .table-wrap {
         overflow-x: auto;
         margin-bottom: 2rem;
@@ -185,6 +234,42 @@
       }
       tbody tr:hover {
         background-color: var(--bg-subtle);
+      }
+      .publishing-section {
+        margin: 2rem 0;
+      }
+      .publishing-section h2 {
+        margin: 0 0 0.35rem;
+        font-size: 1.2rem;
+        letter-spacing: -0.015em;
+      }
+      .publishing-section > p {
+        margin: 0 0 1rem;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+      .publishing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+      }
+      .publishing-card {
+        padding: 1rem;
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        background: var(--bg-subtle);
+      }
+      .publishing-card a {
+        display: inline-block;
+        margin-bottom: 0.3rem;
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+      }
+      .publishing-card p {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.82rem;
+        line-height: 1.45;
       }
       td.count {
         text-align: right;
@@ -422,6 +507,29 @@
         grid-template-rows: auto minmax(0, 1fr);
         gap: 1.25rem 1.75rem;
         align-items: start;
+      }
+      .viewer-home {
+        width: min(100%, 64rem);
+        margin: 0 auto;
+      }
+      .viewer-home-hero {
+        padding: clamp(1rem, 4vw, 3rem) 0 2rem;
+        border-bottom: 1px solid var(--border-light);
+      }
+      .viewer-home-hero h2 {
+        max-width: 16ch;
+        margin: 0.4rem 0 1rem;
+        font-size: clamp(2rem, 5vw, 3.75rem);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+      }
+      .viewer-home-hero p {
+        max-width: 48rem;
+        color: var(--text-muted);
+        font-size: 1.05rem;
+      }
+      .viewer-home .publishing-card {
+        background: var(--bg-card);
       }
       .viewer-main header {
         grid-column: 1 / -1;
@@ -975,6 +1083,9 @@
           border-radius: 0;
           border: none;
         }
+        .publishing-grid {
+          grid-template-columns: 1fr;
+        }
         .viewer-shell {
           grid-template-columns: 1fr;
         }
@@ -1047,7 +1158,7 @@
   </head>
   <body>
     <a class="skip-link" href="#viewer-main">Skip to explorer</a>
-    <div class="container">
+    <div class="container" id="landing-page">
       <div class="header-badge">JSON-LD 1.1 + JSON Schema</div>
       <h1>Troika! System JSON</h1>
       <p class="subtitle">
@@ -1056,6 +1167,11 @@
 
       <div class="note">
         <strong>Interactive explorer:</strong> Browse 225 structured JSON-LD records across 7 collections, with live search and schema specifications.
+      </div>
+
+      <div class="landing-actions">
+        <a class="primary-action" id="open-explorer" href="#explorer">Open interactive explorer <span aria-hidden="true">→</span></a>
+        <a class="secondary-action" href="objects/troika-system-data.bundled.json">Download full JSON bundle</a>
       </div>
 
       <div class="table-wrap">
@@ -1122,6 +1238,45 @@
         </table>
       </div>
 
+      <section class="publishing-section" aria-labelledby="publishing-title">
+        <h2 id="publishing-title">Machine-readable publishing</h2>
+        <p>Discovery, ingestion, indexing, and package metadata for agents and static clients.</p>
+        <div class="publishing-grid">
+          <div class="publishing-card">
+            <a href="llms.txt">llms.txt</a>
+            <p>Concise corpus guide with entry points and collection counts.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="llms-full.txt">llms-full.txt</a>
+            <p>Complete text projection of all 225 records for LLM ingestion.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="objects/search-index.json">search-index.json</a>
+            <p>Deterministic inverted index spanning 3,880 searchable tokens.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="objects/collection-index.json">collection-index.json</a>
+            <p>Compact browse metadata for all seven record collections.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="datapackage.json">datapackage.json</a>
+            <p>Data Package descriptor covering the corpus and derived resources.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="sitemap.xml">sitemap.xml</a>
+            <p>Published entry points and canonical URLs for all 225 records.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="CITATION.cff">CITATION.cff</a>
+            <p>Preferred citation metadata for research tools and archives.</p>
+          </div>
+          <div class="publishing-card">
+            <a href="LICENSE">LICENSE</a>
+            <p>Repository license, SRD content terms, trademark notice, and attribution.</p>
+          </div>
+        </div>
+      </section>
+
       <footer class="static-footer">
         <img src="fortle.svg" alt="Fortle Logo" />
         <p>
@@ -1154,6 +1309,7 @@
         app.id = "viewer-app";
         app.setAttribute("aria-live", "polite");
         app.setAttribute("aria-busy", "true");
+        app.hidden = true;
         app.innerHTML = `
           <main class="loading-shell" aria-labelledby="loading-title">
             <div class="loading-card">
@@ -1164,10 +1320,41 @@
           </main>
         `;
         document.body.appendChild(app);
-        document.body.classList.add("viewer");
-        document.querySelector(".container").style.display = "none";
+        const landing = document.getElementById("landing-page");
+        let bundleStarted = false;
+
+        const showLanding = () => {
+          state.collection = null;
+          state.query = "";
+          state.selectedId = null;
+          history.replaceState(null, "", window.location.pathname + window.location.search);
+          render();
+          window.scrollTo(0, 0);
+        };
+
+        const startExplorer = () => {
+          landing.hidden = true;
+          app.hidden = false;
+          document.body.classList.add("viewer");
+          if (!bundleStarted) {
+            bundleStarted = true;
+            loadBundle();
+          }
+        };
+
+        document.getElementById("open-explorer").addEventListener("click", (event) => {
+          event.preventDefault();
+          history.replaceState(null, "", "#explorer");
+          startExplorer();
+        });
 
         app.addEventListener("click", (event) => {
+          const home = event.target.closest("[data-home]");
+          if (home) {
+            event.preventDefault();
+            showLanding();
+            return;
+          }
           const toggle = event.target.closest(".json-toggle");
           if (toggle) {
             const node = toggle.closest(".json-node");
@@ -1490,8 +1677,8 @@
 
         const render = () => {
           const collections = state.manifest.collections;
-          const current = state.collection || Object.keys(collections)[0];
-          state.collection = current;
+          const current = state.collection;
+          const isHome = current === null;
 
           const totalEntities = Object.values(collections).reduce((n, x) => n + x.length, 0);
 
@@ -1499,11 +1686,15 @@
             <div class="viewer-shell">
               <aside class="viewer-nav">
                 <div class="viewer-nav-main">
-                  <h1><a href="#viewer-main" style="color:inherit;">Troika! System Explorer</a></h1>
+                  <h1><a href="./" data-home style="color:inherit;">Troika! System Explorer</a></h1>
                   <span class="nav-corpus-tag">${totalEntities} indexed entities</span>
                   <button class="nav-toggle" type="button" aria-expanded="true" aria-controls="collection-nav">Collections <span aria-hidden="true">☰</span></button>
                   <input id="nav-search" placeholder="Filter collections…" aria-label="Filter collections">
                   <nav id="collection-nav" aria-label="Entity collections">
+                    <button type="button" class="collection-link ${isHome ? "active" : ""}" data-home>
+                      <span>Home</span>
+                      <span aria-hidden="true">⌂</span>
+                    </button>
                     ${Object.keys(collections).map((name) => `
                       <button type="button" class="collection-link ${name === current ? "active" : ""}" data-collection="${esc(name)}">
                         <span>${esc(name)}</span>
@@ -1516,10 +1707,38 @@
                   <p>Independent Troika! production by <strong>Chee Leong</strong></p>
                   <p>Published under <a href="https://troika-srd.netlify.app/" target="_blank" rel="noopener noreferrer">Troika! SRD</a> terms</p>
                   <p>Corpus &amp; UI <a href="LICENSE">MIT License</a> &copy; 2026 Chee Leong</p>
+                  <p><a href="llms.txt">llms.txt</a> &bull; <a href="datapackage.json">Data Package</a> &bull; <a href="CITATION.cff">Cite</a> &bull; <a href="sitemap.xml">Sitemap</a></p>
                   <p style="margin-top:0.5rem;"><a href="https://github.com/klrkdekira/troika-system-json" target="_blank" rel="noopener noreferrer">GitHub Repo</a> &bull; <a href="LICENSE">LICENSE</a></p>
                 </div>
               </aside>
               <main class="viewer-main">
+                ${isHome ? `
+                <div class="viewer-home" id="viewer-main">
+                  <section class="viewer-home-hero">
+                    <span class="header-badge">JSON-LD 1.1 + JSON Schema</span>
+                    <h2>Troika! System Reference Document, as data.</h2>
+                    <p>Browse 225 structured records across seven collections, inspect their JSON-LD, or use the deterministic publishing artifacts for agents, search, and data tooling.</p>
+                    <div class="landing-actions" style="margin:1.5rem 0 0;">
+                      <button type="button" class="primary-action" data-collection="backgrounds">Browse the corpus <span aria-hidden="true">→</span></button>
+                      <a class="secondary-action" href="objects/troika-system-data.bundled.json">Download full JSON bundle</a>
+                    </div>
+                  </section>
+                  <section class="publishing-section" aria-labelledby="explorer-publishing-title">
+                    <h2 id="explorer-publishing-title">Machine-readable publishing</h2>
+                    <p>Discovery, ingestion, indexing, citation, and package metadata.</p>
+                    <div class="publishing-grid">
+                      <div class="publishing-card"><a href="llms.txt">llms.txt</a><p>Concise guide with entry points and collection counts.</p></div>
+                      <div class="publishing-card"><a href="llms-full.txt">llms-full.txt</a><p>Complete text projection of all 225 records.</p></div>
+                      <div class="publishing-card"><a href="objects/search-index.json">search-index.json</a><p>Static inverted index spanning 3,880 tokens.</p></div>
+                      <div class="publishing-card"><a href="objects/collection-index.json">collection-index.json</a><p>Compact browse metadata for every collection.</p></div>
+                      <div class="publishing-card"><a href="datapackage.json">datapackage.json</a><p>Portable dataset and resource metadata.</p></div>
+                      <div class="publishing-card"><a href="CITATION.cff">CITATION.cff</a><p>Preferred citation for research tools and archives.</p></div>
+                      <div class="publishing-card"><a href="sitemap.xml">sitemap.xml</a><p>Canonical published URLs for the full corpus.</p></div>
+                      <div class="publishing-card"><a href="LICENSE">LICENSE</a><p>License scopes, SRD terms, and attribution.</p></div>
+                    </div>
+                  </section>
+                </div>
+                ` : `
                 <div class="viewer-main-content">
                   <header>
                     <div>
@@ -1531,6 +1750,7 @@
                   <section aria-label="Entity results"><p id="search-status" class="search-status" role="status" aria-live="polite"></p><div id="entity-list" class="entity-list"></div></section>
                   <section id="detail" aria-label="Selected entity" aria-live="polite">${detailPlaceholder}</section>
                 </div>
+                `}
                 <footer class="viewer-footer">
                   <div class="viewer-footer-grid">
                     <div class="viewer-footer-col">
@@ -1539,7 +1759,7 @@
                     </div>
                     <div class="viewer-footer-col">
                       <h4>Specification &amp; Data</h4>
-                      <p>Structured JSON-LD 1.1 records and JSON Schema specifications in Draft 2020-12 / Draft 7 format.</p>
+                      <p>Structured JSON-LD 1.1 records and JSON Schema specifications in Draft 2020-12 / Draft 7 format. <a href="llms.txt">LLM guide</a> &middot; <a href="llms-full.txt">full context</a> &middot; <a href="datapackage.json">package metadata</a> &middot; <a href="CITATION.cff">citation</a></p>
                     </div>
                     <div class="viewer-footer-col">
                       <h4>Repository License</h4>
@@ -1597,8 +1817,10 @@
             };
           }
 
-          renderEntityList();
-          loadCollectionBackground(current);
+          if (!isHome) {
+            renderEntityList();
+            loadCollectionBackground(current);
+          }
         };
 
         const renderTroikaStats = (stats, attributes) => {
@@ -1872,7 +2094,8 @@
               };
             }
           });
-        loadBundle();
+        if (window.location.hash === "#explorer") state.collection = "backgrounds";
+        startExplorer();
       })();
     </script>
   </body>

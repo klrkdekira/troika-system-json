@@ -1,0 +1,1369 @@
+{
+  "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
+  "@id": "https://cheeleong.dev/troika-system-json/objects/collection-index.json",
+  "@type": "CollectionIndex",
+  "collections": {
+    "backgrounds": [
+      {
+        "slug": "11-ardent-giant-of-corda",
+        "name": "Ardent Giant of Corda",
+        "type": "Background",
+        "description": "Every giant has a different story about Corda, well told and interrupted with tears and laughter, of how they lost it and mean to find it soon enough but oh, what of today? We should drink and cheer, we'll search once again in the morning!"
+      },
+      {
+        "slug": "12-befouler-of-ponds",
+        "name": "Befouler of Ponds",
+        "type": "Background",
+        "description": "You're a wise man, a high priest, a pond-pisser, a typical but committed adherent of P!P!Ssshrp. The bloated Toad God has no church other than the periphery of ponds where the foulness catches in the reeds and no congregation other than the"
+      },
+      {
+        "slug": "13-burglar",
+        "name": "Burglar",
+        "type": "Background",
+        "description": "As a second-story man you often have cause to wander. Enemies come naturally from both sides of the law and it pays to keep ahead of trouble."
+      },
+      {
+        "slug": "14-cacogen",
+        "name": "Cacogen",
+        "type": "Background",
+        "description": "You are Those-Filthy-Born, spawned in the hump-backed sky lit only by great black anti-suns and false light. Your mother was sailing on the golden barges or caught in some more abstract fate when she passed you, far from the protective mala"
+      },
+      {
+        "slug": "15-chaos-champion",
+        "name": "Chaos Champion",
+        "type": "Background",
+        "description": "You no longer don the spiked brass armour but you still have the ear of your Chaos patron. They're happy for you to experiment with not plunging your world into disorder and, ultimately, darkness, but the door is always open."
+      },
+      {
+        "slug": "16-claviger",
+        "name": "Claviger",
+        "type": "Background",
+        "description": "The Key Masters wander the universe fathoming the workings of all entryways. Though they're quite fascinated with simple chests and doors they are most excited by metaphysical and metaphorical barriers. You might find small conclaves of Cla"
+      },
+      {
+        "slug": "21-demon-stalker",
+        "name": "Demon Stalker",
+        "type": "Background",
+        "description": "You stake your reputation upon your ability to hunt and kill demonic creatures and those who break bread with them. Goat men in the wilds or the Angel cults of the slums, all need to be driven back off the edge of the map and onto the shore"
+      },
+      {
+        "slug": "43-derivative-dwarf",
+        "name": "Derivative Dwarf",
+        "type": "Background",
+        "description": "Dwarfs are known for being the finest artisans of the million spheres. Give a Dwarf a rock and they will make gold, give a Dwarf a boulder and they will make a Dwarf. You were supposed to be the finest expression of Dwarfy craftsmanship, a "
+      },
+      {
+        "slug": "22-dwarf",
+        "name": "Dwarf",
+        "type": "Background",
+        "description": "You are a short, hairy, belligerent, alcohol dependent creature. Dwarfs are a sculpted people, ungendered, and thus there are no Dwarf children or Dwarf families to prevent you from fully committing to the important Dwarfy endeavours of cre"
+      },
+      {
+        "slug": "23-epopt",
+        "name": "Epopt",
+        "type": "Background",
+        "description": "You are a roaming seer, selling your visions at courts and fetes. You are instantly recognisable by your yellow coif and habit as being open for business. Road weary and worldwise, your unpopular visions cause you to constantly move on."
+      },
+      {
+        "slug": "24-exographer",
+        "name": "Exographer",
+        "type": "Background",
+        "description": "Where you come from it's become quite normal to traverse the Spheres. Idle academics like yourself have even begun to study these more remote reaches of the divine effluvia. Though these rural indwellers may never appreciate your important "
+      },
+      {
+        "slug": "26-porter-basin-filler",
+        "name": "Fellow of the Peerage of Porters & Basin Fillers",
+        "type": "Background",
+        "description": "Luggers are a servile group by nature, most often found in the service of others, weighed down by loads that would buckle a donkey. You take pride in this, so much so that the everyday assignments of the guild cannot sate your desire to ser"
+      },
+      {
+        "slug": "54-beef-steaks",
+        "name": "Fellow of The Sublime Society of Beef Steaks",
+        "type": "Background",
+        "description": "Brawlers believe the application of might and a good beef steak is the universal truth. Words have no power and can no more define the universe than they can build a house, lift a cup, or sear a steak. Might can! Really, they have thought a"
+      },
+      {
+        "slug": "31-gremlin-catcher",
+        "name": "Gremlin Catcher",
+        "type": "Background",
+        "description": "No matter what country, sphere, or abstract dimension you may find yourself in, be assured that gremlins will be there digging their warrens and bothering nice people willing to pay you a shiny penny to bash their little heads in."
+      },
+      {
+        "slug": "32-journeyman-sharp-corners",
+        "name": "Journeyman of the Guild of Sharp Corners",
+        "type": "Background",
+        "description": "You are an assassin in training, graduated from fighting dummies and branding practise clients, freshly imbued with a license to ply your trade. You haven't fully developed the idiosyncratic methods required of a master but you are on the p"
+      },
+      {
+        "slug": "33-lansquenet",
+        "name": "Lansquenet",
+        "type": "Background",
+        "description": "You were a mercenary retained in the exclusive service of the Phoenix Throne, handsomely paid and sent to distant spheres on golden ships to spread the ineffable glory of your lords at the tip of your flaming sword."
+      },
+      {
+        "slug": "34-lonesome-monarch",
+        "name": "Lonesome Monarch",
+        "type": "Background",
+        "description": "You were the ruler of all you surveyed, a great conqueror, a lawbringer! Unfortunately your horse sped off into the pixie forest, or the court magician ensured you disappeared, or you led a sortie into the stars to put your stamp on them as"
+      },
+      {
+        "slug": "35-miss-kinsey-dining-club",
+        "name": "Member of Miss Kinsey's Dining Club",
+        "type": "Background",
+        "description": "The Eaters know that there are only two worlds: the Without and the Within. They intend to insert as much of the prior into the latter as they can while experiencing the finest delights available. All culinary experience is open to them as "
+      },
+      {
+        "slug": "36-monkeymonger",
+        "name": "Monkeymonger",
+        "type": "Background",
+        "description": "Life on The Wall is hard. One is never more than a few yards from an endless fall yet those precarious villages still need to eat. This is where you come in with your Edible Monkeys (the distinction is purely for appeal since all monkeys ar"
+      },
+      {
+        "slug": "41-necromancer",
+        "name": "Necromancer",
+        "type": "Background",
+        "description": "The least popular of magical practitioners, Necromancers are shunned by the major centres of learning, left to their own devices on the edges of society, passing on knowledge in the time honoured master-student dynamic. This loneliness enco"
+      },
+      {
+        "slug": "42-parchment-witch",
+        "name": "Parchment Witch",
+        "type": "Background",
+        "description": "Known for their smooth skin, midnight gatherings, and preternatural fear of rain and open flames; the Parchment Witches are long-dead sorcerers who cannot give up the vanity of life. They cover themselves in perfect paper skin, a patiently "
+      },
+      {
+        "slug": "44-questing-knight",
+        "name": "Questing Knight",
+        "type": "Background",
+        "description": "You are on a quest for the grail, or the sword, or the throne, or for god, or a lost love, or some other significant object. Your sort are common enough, wandering the worlds, acting out your romantic melodrama, accusing good folk of being "
+      },
+      {
+        "slug": "45-red-priest",
+        "name": "Red Priest",
+        "type": "Background",
+        "description": "You are an evangelist of the Red Redemption, wandering confessor, cauterizer of the festering wound of sin: the constant accumulation and recreational consumption of Mass. How can your spirit fly free while shackled and flabby?"
+      },
+      {
+        "slug": "46-rhino-man",
+        "name": "Rhino-Man",
+        "type": "Background",
+        "description": "The original Rhino-Men were created by an insane sorcerer several centuries ago but rebelled and killed him. They are fairly rare creatures, serving as formidable and loyal guards to those who can afford their services."
+      },
+      {
+        "slug": "51-sceptical-lamassu",
+        "name": "Sceptical Lamassu",
+        "type": "Background",
+        "description": "With the body of a bull, the head of a man, the forelegs of a cat, and the wings of a swan you are the sweetest of the children of the gods. You, however, were not content to rest on your cloud and instead descended from the heavens or craw"
+      },
+      {
+        "slug": "52-academy-of-doors",
+        "name": "Sorcerer of the Academy of Doors",
+        "type": "Background",
+        "description": "You are a student at Troika's most prestigious wizarding academy (pride of the city, experts in pan-dimensional mobility) you were finally able to penetrate the (2d6)th door. You are no master but few outside your peers can claim to know mo"
+      },
+      {
+        "slug": "53-college-of-friends",
+        "name": "Sorcerer of the College of Friends",
+        "type": "Background",
+        "description": "As an integral part of your tutelage in the sub-dimensional academy of the Cordial Wizard God you spent your childhood learning about the fate of pixies, the colour of magic, ritual grammar, and endless other theoretical topics. Now you're "
+      },
+      {
+        "slug": "55-temple-knight",
+        "name": "Temple Knight of Telak the Swordbringer",
+        "type": "Background",
+        "description": "You were once (and possibly still are) a fanatical monk set to maintain constant, vigilant martial readiness in preparation for the end times, when all doorways crumble inwards. You are always prepared and never unready."
+      },
+      {
+        "slug": "56-thaumaturge",
+        "name": "Thaumaturge",
+        "type": "Background",
+        "description": "Wandering miracle workers, the depths of whose clothes are filled with pouches of unguents, holy icons and herbs. No matter the metaphysical need, you are always prepared."
+      },
+      {
+        "slug": "25-fellowship-of-knidos",
+        "name": "The Fellowship of Knidos",
+        "type": "Background",
+        "description": "Mathmologists honour the clean and unambiguous truths of mathematics and coordinate them with their observations of the multiverse. All things can be measured and predicted with the application of the correct mathmological ratios, those met"
+      },
+      {
+        "slug": "61-thinking-engine",
+        "name": "Thinking Engine",
+        "type": "Background",
+        "description": "Your eyes are dull ruby spheres, your skin is hard and smooth like ivory but brown and whorled like wood. You are clearly broken, you have no memory of your creation or purpose, and some days your white internal juices ooze thickly from cra"
+      },
+      {
+        "slug": "62-vengeful-child",
+        "name": "Vengeful Child",
+        "type": "Background",
+        "description": "Your village was burnt down by ruffians, or your mother was beheaded by snake cultists, or your father was hung by corrupt officials. Either way you took umbrage and entered the world with a chip on one shoulder and an oversized Sword on th"
+      },
+      {
+        "slug": "63-venturesome-academic",
+        "name": "Venturesome Academic",
+        "type": "Background",
+        "description": "You're a classically trained Academic, a product of the universities of the Brass City, the Palace of Tigers, or some other less prestigious centre of learning among the spheres."
+      },
+      {
+        "slug": "64-wizard-hunter",
+        "name": "Wizard Hunter",
+        "type": "Background",
+        "description": "Some people say man is the most dangerous prey. They are wrong. Can men ignite the air and freeze your blood? Can men turn into flocks of seagulls when cornered in an alley? No, they cannot. Wizards are the most dangerous prey."
+      },
+      {
+        "slug": "65-yongardy-lawyer",
+        "name": "Yongardy Lawyer",
+        "type": "Background",
+        "description": "Down in Yongardy they do things differently. They respect the Law. Every day there is a queue outside the courts to get a seat to see the latest up and coming barrister defend their case with a metre of steel. The people follow the careers "
+      },
+      {
+        "slug": "66-zoanthrop",
+        "name": "Zoanthrop",
+        "type": "Background",
+        "description": "At some point in your past you decided you didn't need it anymore: you found a Zoanthropologist and paid them well to remove your troublesome forebrain and elevate you to the pure and unburdened beast you are today."
+      }
+    ],
+    "skills": [
+      {
+        "slug": "acrobatics",
+        "name": "Acrobatics",
+        "type": "Skill",
+        "description": "Used for rolling, balancing, falling, jumping, etc."
+      },
+      {
+        "slug": "astrology",
+        "name": "Astrology",
+        "type": "Skill",
+        "description": "An essential Skill for anyone intent on travelling the stars. Can be used to identify stars and constellations, to gather hints on the destination of interdimensional portals, and to make star charts."
+      },
+      {
+        "slug": "awareness",
+        "name": "Awareness",
+        "type": "Skill",
+        "description": "Anything worth having is well hidden so one must look very carefully. Use this to spot traps, things normally hidden, or things out of the ordinary."
+      },
+      {
+        "slug": "climb",
+        "name": "Climb",
+        "type": "Skill",
+        "description": "The usefulness of the ability to clamber up things cannot be overstated. Most climbs should be single rolls though longer or more difficult climbs may require multiple rolls. On these climbs consider requiring a number or total or repeated "
+      },
+      {
+        "slug": "disguise",
+        "name": "Disguise",
+        "type": "Skill",
+        "description": "Covers the use of props to change your appearance. When in disguise you must Roll Under this when someone is liable to see through it. Opposed by Awareness when under scrutiny."
+      },
+      {
+        "slug": "etiquette",
+        "name": "Etiquette",
+        "type": "Skill",
+        "description": "When making a good impression is important Roll Versus your host's Etiquette. Represents a mechanical understanding of social conduct and those who are better at it are more discerning."
+      },
+      {
+        "slug": "evaluate",
+        "name": "Evaluate",
+        "type": "Skill",
+        "description": "Test this to get an idea of how much something is worth."
+      },
+      {
+        "slug": "fly",
+        "name": "Fly",
+        "type": "Skill",
+        "description": "Use Fly much as you would Run. In normal situations this doesn't need testing, only in chases or high winds, maybe. Anyone attempting to Fly without this Skill must Test every Round to make sure they don't crash or lose control."
+      },
+      {
+        "slug": "golden-barge-pilot",
+        "name": "Golden Barge Pilot",
+        "type": "Skill",
+        "description": "Test this to navigate between the stars on a ship with golden mirror sails."
+      },
+      {
+        "slug": "healing",
+        "name": "Healing",
+        "type": "Skill",
+        "description": "Used to stitch wounds and apply ointments, stop bleeding, slow poison and the like. Also used for stabilising dying people."
+      },
+      {
+        "slug": "locks",
+        "name": "Locks",
+        "type": "Skill",
+        "description": "This allows a character to examine and open locks but does not detect traps. Roll Versus an imaginary locksmith whose Skill is somewhere between 6 and 12 with 6 being easy and 12 being very hard."
+      },
+      {
+        "slug": "mathmology",
+        "name": "Mathmology",
+        "type": "Skill",
+        "description": "Use this to gain insight into angles, pressures, numbers, and other such arcane arts. You could, for instance, Test your Mathmology to get a good idea of the surface tension of a ball of inert plasmic goo or to find the fulcrum for tripping"
+      },
+      {
+        "slug": "poison",
+        "name": "Poison",
+        "type": "Skill",
+        "description": "You may Test this Skill during down time to create a single dose of poison. Pick which kind it is when you make it. This list is not exhaustive - more exotic ones may be available if you possess the knowledge and ingredients. 1d3 Common Poi"
+      },
+      {
+        "slug": "ride",
+        "name": "Ride",
+        "type": "Skill",
+        "description": "Everyone is assumed to have basic animal riding Skill though anything more than trotting slowly will require some kind of roll to avoid trouble."
+      },
+      {
+        "slug": "run",
+        "name": "Run",
+        "type": "Skill",
+        "description": "When it matters how fast you are, or if you can reach somewhere in time, use this. A basic chase is an Roll Versus."
+      },
+      {
+        "slug": "second-sight",
+        "name": "Second Sight",
+        "type": "Skill",
+        "description": "Use of this allows the detection of magic. On a successful Test you focus your inner eye and all sorcerous activity glows faintly for a moment."
+      },
+      {
+        "slug": "sneak",
+        "name": "Sneak",
+        "type": "Skill",
+        "description": "The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker's score detects them."
+      },
+      {
+        "slug": "strength",
+        "name": "Strength",
+        "type": "Skill",
+        "description": "Used for lifting and breaking things. May also be used to grapple people if no grappling-appropriate Weapon Skill is possessed, though it counts for half rounded up."
+      },
+      {
+        "slug": "swim",
+        "name": "Swim",
+        "type": "Skill",
+        "description": "Use this while swimming in dangerous waters, diving, holding your breath for long periods, and so on. If you have this Skill you don't need to roll it for normal conditions. Characters without it are assumed to not be able to swim and need "
+      },
+      {
+        "slug": "sword-fighting",
+        "name": "Sword Fighting",
+        "type": "Skill",
+        "description": "The art of combat with swords and similar bladed weapons. Used in Roll Versus combat when wielding appropriate weapons."
+      },
+      {
+        "slug": "tracking",
+        "name": "Tracking",
+        "type": "Skill",
+        "description": "Used to stalk prey and find tracks. When stalking a quarry this is treated as an opposed Roll Versus the opponent's Tracking or Sneaking."
+      },
+      {
+        "slug": "trapping",
+        "name": "Trapping",
+        "type": "Skill",
+        "description": "Use this to set and disarm traps. When setting traps Roll Under your Trapping Skill and describe how the trap is made with the materials at hand. When someone wishes to disarm a trap they must Roll Versus the original trap-setter's Trapping"
+      }
+    ],
+    "spells": [
+      {
+        "slug": "affix",
+        "name": "Affix",
+        "type": "Spell",
+        "description": "Cause a subject to be fixed in place. While they are so held they do not move, breathe, fall, perspire, acquire, or otherwise change. They are totally immune to harm, in fact."
+      },
+      {
+        "slug": "amity",
+        "name": "Amity",
+        "type": "Spell",
+        "description": "The College of Friends always sends out its Factotums on nights after Amity classes. Clearing out the bars and brothels of their drunken apprentices is tiring work. Use of this Spell causes the target to Test their Luck (or Skill for Enemie"
+      },
+      {
+        "slug": "animate",
+        "name": "Animate",
+        "type": "Spell",
+        "description": "Cause inanimate objects to question their place. One object up to the size of a human baby may be caused to hop around and do whatever else the wizard wishes."
+      },
+      {
+        "slug": "assassins-dagger",
+        "name": "Assassin's Dagger",
+        "type": "Spell",
+        "description": "Evocatively named but actually quite mundane. The wizard whispers to an object and that object then seeks out and vigorously and repeatedly bumps into the desired target. Obviously if you whisper to a poisoned dagger the result is one thing"
+      },
+      {
+        "slug": "assume-shape",
+        "name": "Assume Shape",
+        "type": "Spell",
+        "description": "The wizard undergoes a distressing transformation into an inanimate object no larger than a piano and no smaller than a cup. Lasts until ended."
+      },
+      {
+        "slug": "astral-reach",
+        "name": "Astral Reach",
+        "type": "Spell",
+        "description": "The Sorcerers of the Academy of Doors are most famous for this one Spell. With it they may reach through any portal and into another known receptacle. For example they might use it to reach through to a safe in their manse via their purse. "
+      },
+      {
+        "slug": "babble",
+        "name": "Babble",
+        "type": "Spell",
+        "description": "The wizard speaks nonsense while watching the intended target, causing their words to trip and confuse. This may be done under their breath and relatively subtly."
+      },
+      {
+        "slug": "banish-spirit",
+        "name": "Banish Spirit",
+        "type": "Spell",
+        "description": "The wizard explains, clearly, sternly, why it is impossible that the spirit could be here at this time. The spirit must Test its Luck (or Skill for Enemies) or be sent to somewhere less improbable."
+      },
+      {
+        "slug": "befuddle",
+        "name": "Befuddle",
+        "type": "Spell",
+        "description": "A wizard's touch can shake up someone's mind like a snow globe. The target makes all rolls at a -1 penalty until their head clears. Lasts for 3 minutes."
+      },
+      {
+        "slug": "blood-shroud",
+        "name": "Blood Shroud",
+        "type": "Spell",
+        "description": "Smear a small amount of a demon's blood on yourself to become completely invisible to them, even if you attack or speak to them, for 6 hours."
+      },
+      {
+        "slug": "breach",
+        "name": "Breach",
+        "type": "Spell",
+        "description": "The wizard's hands work elemental material as though it were soft clay. Fire, stone, goo, earth, fog, all of it behaves like clay under their touch. Lasts for 9 minutes."
+      },
+      {
+        "slug": "brittle-twigs",
+        "name": "Brittle Twigs",
+        "type": "Spell",
+        "description": "You snap a twig or other brittle object to cause an injury in another. They must Test their Luck (or Skill for Enemies) or suffer a broken bone."
+      },
+      {
+        "slug": "callous-strike",
+        "name": "Callous Strike",
+        "type": "Spell",
+        "description": "The Wizard-Knights are most famous for their remote combat whereby they swing their Silver Swords seemingly at nothing only for their opponents, many metres away, to be torn to tatters. This Spell can be used in place of a melee attack by R"
+      },
+      {
+        "slug": "coal-resolve",
+        "name": "Coal Resolve",
+        "type": "Spell",
+        "description": "This Spell turns one's heart into a burning ember of grief. Those under its effect are so consumed by grief that they are immune to mind controlling effects and the non-physical impact of pain. Lasts until the next rest."
+      },
+      {
+        "slug": "cockroach",
+        "name": "Cockroach",
+        "type": "Spell",
+        "description": "A popular Spell that turns troublesome folk into humiliated animals. The target must Test their Luck (or Skill for Enemies) or be turned into an insignificant creature of the wizard's choice. Lasts forever."
+      },
+      {
+        "slug": "cone-of-air",
+        "name": "Cone of Air",
+        "type": "Spell",
+        "description": "Creates a mysterious and specifically shaped cone of air focused on a touched target's head. They may continue to breathe the freshest of air for 12 minutes."
+      },
+      {
+        "slug": "darkness",
+        "name": "Darkness",
+        "type": "Spell",
+        "description": "Summon a stationary, perfect sphere of darkness up to five metres from the wizard for up to 3 minutes."
+      },
+      {
+        "slug": "darksee",
+        "name": "Darksee",
+        "type": "Spell",
+        "description": "The wizard reaches into their sockets and extricates their eyes. Thus freed, the dark void behind can see perfectly well in pitch blackness and suffer excruciating pain in light (-4 penalty to all rolls). Be careful not to lose those eyebal"
+      },
+      {
+        "slug": "diminish",
+        "name": "Diminish",
+        "type": "Spell",
+        "description": "Cause something to Test its Luck (or Skill for Enemies) or reduce its size by half. Lasts 3 minutes."
+      },
+      {
+        "slug": "drown",
+        "name": "Drown",
+        "type": "Spell",
+        "description": "Cause a target's lungs to fill with water. They must Test their Luck (or Skill for Enemies). If they fail they start to Drown (7.9) and are incapacitated as water pours from their mouth. They may Test again once per Turn until they pass, at"
+      },
+      {
+        "slug": "earthquake",
+        "name": "Earthquake",
+        "type": "Spell",
+        "description": "The wizard hikes up their wizard robe and stomps their wizard feet. An area 30 metres around them suffers a massive earthquake. Everyone must Test their Luck (or Skill for Enemies) or fall through a crack in the earth, taking falling Damage"
+      },
+      {
+        "slug": "ember",
+        "name": "Ember",
+        "type": "Spell",
+        "description": "A simple but effective summoning of fire. Flames the size of a small bonfire appear somewhere within 12 metres of the wizard. Once present there is no accounting for its actions."
+      },
+      {
+        "slug": "exchange-shape",
+        "name": "Exchange Shape",
+        "type": "Spell",
+        "description": "What looks like a hug is in fact fell wizardry! The wizard bumps into another and exchanges bodies. Lasts until the wizard chooses to end it but they must be within sight of their own body for this to happen."
+      },
+      {
+        "slug": "exorcism",
+        "name": "Exorcism",
+        "type": "Spell",
+        "description": "The Red Priests posit that all negative behaviour is a symptom of some level of possession, or at least direct influence, by the forces of Change, unwitting agents of Mass in need of healing. The wizard throws salt at their target and Rolls"
+      },
+      {
+        "slug": "explode",
+        "name": "Explode",
+        "type": "Spell",
+        "description": "So simple that it's arguably not even a Spell but rather a premeditated failure of catastrophic proportions. The wizard causes a one cubic metre object to explode and deal Damage to everyone within 24 metres depending on proximity. Those wi"
+      },
+      {
+        "slug": "farseeing",
+        "name": "Farseeing",
+        "type": "Spell",
+        "description": "Endows the wizard with engorged, plate-like eyes that are able to see in minute detail for miles around but are unable to see anything up close. Lasts until ended."
+      },
+      {
+        "slug": "fear",
+        "name": "Fear",
+        "type": "Spell",
+        "description": "In the eyes of one poor target the wizard grows into a primal monster from the depths of their lizard brain. They will attempt to flee and if flight is impossible they will curl up in a ball and whimper. They may Test their Luck (or Skill f"
+      },
+      {
+        "slug": "find",
+        "name": "Find",
+        "type": "Spell",
+        "description": "When wizards lose their glasses they mumble to themselves until they turn up. The thing being sought must be a specific object, not a general category or type, and the direction is only given in terms of compass points."
+      },
+      {
+        "slug": "fire-bolt",
+        "name": "Fire Bolt",
+        "type": "Spell",
+        "description": "Shoot impressive flames from your fingertips, dealing Damage to one target within 20 metres."
+      },
+      {
+        "slug": "flash",
+        "name": "Flash",
+        "type": "Spell",
+        "description": "The wizard claps neatly and issues forth the light of a thousand suns from their hands. All within 20 metres must Test their Luck (or Skill for Enemies) or be blinded for 1d6 minutes."
+      },
+      {
+        "slug": "gills",
+        "name": "Gills",
+        "type": "Spell",
+        "description": "The wizard may permanently gift a touched subject with gills, replacing their usual breathing arrangement if they fail to Test their Luck (or Skill for Enemies). Useful for underwater excursions but less so when inflicted upon a chap in the"
+      },
+      {
+        "slug": "grow",
+        "name": "Grow",
+        "type": "Spell",
+        "description": "Cause an item to grow half its size again if it fails to Test its Luck (or Skill for Enemies). Lasts for 3 minutes."
+      },
+      {
+        "slug": "helping-hands",
+        "name": "Helping Hands",
+        "type": "Spell",
+        "description": "Animate hands spring forth from an inanimate surface and perform any task the wizard requires but are limited to being rooted to the spot from which they sprang. They last until the wizard wills it or leaves the location."
+      },
+      {
+        "slug": "hurricane",
+        "name": "Hurricane",
+        "type": "Spell",
+        "description": "The wizard waves their hands in the air like they just don't care, which, being wizards, they likely don't. A mighty gust knocks everyone over within 30 metres who fails to Test their Luck (or Skill for Enemies), dealing 1d3 Damage and maki"
+      },
+      {
+        "slug": "illusion",
+        "name": "Illusion",
+        "type": "Spell",
+        "description": "Those viewing this illusion may Test their Luck (or Skill for Enemies) to unveil the trickery. Lasts until the wizard leaves or falls asleep."
+      },
+      {
+        "slug": "invisibility",
+        "name": "Invisibility",
+        "type": "Spell",
+        "description": "The wizard turns flesh into refractive crystal sheets. It's very uncomfortable and you make a slight shish-ing sound as you move but are quite invisible and don't suffer from the usual limitations of illusions. Lasts for 3 minutes after whi"
+      },
+      {
+        "slug": "ironhand",
+        "name": "Ironhand",
+        "type": "Spell",
+        "description": "The common man does not appreciate exactly how close flesh and iron are when considered relative to, say, flesh and the smell of hot tea. With some slight convincing the wizard may cause a target's flesh to behave as though it had the desir"
+      },
+      {
+        "slug": "jolt",
+        "name": "Jolt",
+        "type": "Spell",
+        "description": "The mischievous apprentice's favourite Spell, Jolt sends an arc of electricity from the wizard's outstretched hand towards a target. Ignores Armour."
+      },
+      {
+        "slug": "languages",
+        "name": "Languages",
+        "type": "Spell",
+        "description": "The wizard forms a mouth with their hands through which they can speak any language. They can simultaneously cup their other hand to their ear to understand them in return. Lasts for one conversation."
+      },
+      {
+        "slug": "leech",
+        "name": "Leech",
+        "type": "Spell",
+        "description": "The necromancer must place their hands on a living subject and allow their fingertips to transform into sucking apertures which drain the victim of blood. Deal 2d6 Damage to your victim and regain half as much Stamina."
+      },
+      {
+        "slug": "levitate",
+        "name": "Levitate",
+        "type": "Spell",
+        "description": "Elevates the wizard or another on the backs of tiny invisible sprites who answer only to their summoner. May float about for 3 minutes."
+      },
+      {
+        "slug": "life-line",
+        "name": "Life Line",
+        "type": "Spell",
+        "description": "Created by the Horizon Knights to enable them to take the fight to the Nothing, they would cast this on their squires and dive off the edge of creation. While this Spell lasts the wizard's essential bodily functions are linked to another, t"
+      },
+      {
+        "slug": "light",
+        "name": "Light",
+        "type": "Spell",
+        "description": "Create an ethereal orb of light that glows like a torch. Lasts 6 hours and can be extinguished at will."
+      },
+      {
+        "slug": "lock",
+        "name": "Lock",
+        "type": "Spell",
+        "description": "Magically lock an object. The object must have a lockable aspect to it but is now magically sealed. Permanent until undone or dismissed."
+      },
+      {
+        "slug": "mirror-selves",
+        "name": "Mirror Selves",
+        "type": "Spell",
+        "description": "In the minds of others the wizard appears to be, in fact, three wizards. All three will perform the same actions in unison, offering attackers only a 1 in 3 chance of targeting the right wizard. Lasts for 12 minutes."
+      },
+      {
+        "slug": "natter",
+        "name": "Natter",
+        "type": "Spell",
+        "description": "As everyone knows, wizards are excellent ventriloquists, so good, in fact, that they can throw their voice inside another's mouth. They can target anyone within sight and transmit a short sentence."
+      },
+      {
+        "slug": "open",
+        "name": "Open",
+        "type": "Spell",
+        "description": "The wizard chooses a reality wherein the lock was open all along. May be used to open any mundane door or container and counteract a Lock Spell."
+      },
+      {
+        "slug": "peace",
+        "name": "Peace",
+        "type": "Spell",
+        "description": "Open up the mind to universal love and cause two subjects to Test their Luck (or Skill for Enemies) or cease hostilities. They will still defend themselves if attacked but will at least appreciate the pettiness of it."
+      },
+      {
+        "slug": "poison",
+        "name": "Poison",
+        "type": "Spell",
+        "description": "When cast upon a liquid this Spell causes it to become deadly poison. The liquid deals 4 Damage if drunk and 1 Damage per Turn until the target successfully Tests their Luck (or Skill for Enemies). The liquid loses its potency after an hour"
+      },
+      {
+        "slug": "posthumous-vitality",
+        "name": "Posthumous Vitality",
+        "type": "Spell",
+        "description": "Necromancers, known for their social inadequacy, often find themselves having to make friends. This Spell requires a fresh, or at least whole and lubricated, corpse. The wizard rolls 2d6 plus their Posthumous Vitality Skill Total and consul"
+      },
+      {
+        "slug": "presence",
+        "name": "Presence",
+        "type": "Spell",
+        "description": "This Spell creates the sense of being watched by a patriarchal figure. Some find it comforting, others, not so much."
+      },
+      {
+        "slug": "protection-from-rain",
+        "name": "Protection from Rain",
+        "type": "Spell",
+        "description": "This Spell prevents the wizard from getting rained upon for one shower."
+      },
+      {
+        "slug": "purple-lens",
+        "name": "Purple Lens",
+        "type": "Spell",
+        "description": "The recipient's eyes glow purple as they experience an alternative reality where people are kind, their surroundings are beautiful, their food is indulgent, and so on. This doesn't change the reality of things but it does make them more pal"
+      },
+      {
+        "slug": "quench",
+        "name": "Quench",
+        "type": "Spell",
+        "description": "Snuff a small flame with the wave of a hand."
+      },
+      {
+        "slug": "read-entrails",
+        "name": "Read Entrails",
+        "type": "Spell",
+        "description": "The wizard can get the answer to one question from the entrails of a living creature. The size and importance of the creature influences the level of knowledge gained. Small, common animals are able to offer yes or no answers, oxen can pred"
+      },
+      {
+        "slug": "read-stars",
+        "name": "Read Stars",
+        "type": "Spell",
+        "description": "Rather than physical stars the wizard navigates by astral starlight that peeks through the veil. This Spell enables the wizard to get a reasonable sense of direction regardless of any obscuring factors."
+      },
+      {
+        "slug": "see-through",
+        "name": "See Through",
+        "type": "Spell",
+        "description": "The wizard rubs a surface vigorously, making it translucent. Can penetrate up to 12 inches of material. Lead and Silver are immune."
+      },
+      {
+        "slug": "sentry",
+        "name": "Sentry",
+        "type": "Spell",
+        "description": "The wizard plucks a bit of their mind out like candy floss and leaves it stuck to a wall somewhere. This psychic presence is invisible to the naked eye but extends the wizard's senses to that spot for the duration. While it lasts the wizard"
+      },
+      {
+        "slug": "shatter",
+        "name": "Shatter",
+        "type": "Spell",
+        "description": "The wizard may wildly gesticulate at a brittle object no larger than an umbrella and cause it to shatter into a million pieces. Living targets may Test their Luck to avoid this unpleasant Spell."
+      },
+      {
+        "slug": "skeletal-counsel",
+        "name": "Skeletal Counsel",
+        "type": "Spell",
+        "description": "Necromancers often talk to skulls. Sometimes they talk back. Use of this Spell enables speaking with the dead, who answer one question per casting. Requires a skull."
+      },
+      {
+        "slug": "sleep",
+        "name": "Sleep",
+        "type": "Spell",
+        "description": "The wizard convinces a target to forgo wakefulness for a time, causing them to sleep until woken unless they successfully Test their Luck. Remember: fighting is loud."
+      },
+      {
+        "slug": "slide-skywards",
+        "name": "Slide Skywards",
+        "type": "Spell",
+        "description": "Requires mirrors or other highly reflective surfaces. The wizard stands between two reflective surfaces so that they are infinitely repeated. They then step out from between them but as a different incidence of themselves. To those watching"
+      },
+      {
+        "slug": "starry-orb",
+        "name": "Starry Orb",
+        "type": "Spell",
+        "description": "The wizard creates a 5th dimensional orb above their head. All intelligent beings looking at it must Test their Luck or marvel at it for 3 minutes."
+      },
+      {
+        "slug": "teleport",
+        "name": "Teleport",
+        "type": "Spell",
+        "description": "The wizard or a target of their choosing may travel to any location within a single sphere instantly. If unfamiliar with the location they must Test their Luck (or Skill for Enemies) or be thrown wildly off course to potentially devastating"
+      },
+      {
+        "slug": "thought-vapour",
+        "name": "Thought Vapour",
+        "type": "Spell",
+        "description": "The wizard can cause their nose to exist in multiple alternative realities, travel through various spheres, and enable the olfactory sensation of thought. Emotions, attitudes, and underlying feelings can be smelled. No words or images are f"
+      },
+      {
+        "slug": "thunder",
+        "name": "Thunder",
+        "type": "Spell",
+        "description": "The wizard raises their arms and shouts something suitably ominous. All within 24 metres must Test their Luck (or Skill for Enemies) or be deafened by a riotous roll of thunder. Luck or no, they will be mightily impressed."
+      },
+      {
+        "slug": "tongue-twister",
+        "name": "Tongue Twister",
+        "type": "Spell",
+        "description": "Beware! If a wizard screws their nose and twists their fingers at you then a Tongue Twister is coming your way. The target must Test their Luck (or Skill for Enemies) or have their tongue literally tied in knots. This requires some time and"
+      },
+      {
+        "slug": "torpor",
+        "name": "Torpor",
+        "type": "Spell",
+        "description": "Those who study the dead consider it necessary to develop a profound sympathy with their subject - how can you speak with the dead if you don't understand the dead? Torpor helps build post-mortem empathy by causing the necromancer to tempor"
+      },
+      {
+        "slug": "true-seeing",
+        "name": "True Seeing",
+        "type": "Spell",
+        "description": "The wizard focuses their sight on the unambiguous truth of matter, enabling them to see through illusions for the next 10 minutes."
+      },
+      {
+        "slug": "undo",
+        "name": "Undo",
+        "type": "Spell",
+        "description": "The wizard disentangles a Spell from this instance of reality. To do so they must Roll Versus the original casting if disentanglement is possible at all."
+      },
+      {
+        "slug": "wall-of-power",
+        "name": "Wall of Power",
+        "type": "Spell",
+        "description": "What they call a wall is in fact a dome, but wizards always have worked in mysterious ways. The wall is a shimmering bubble that causes 1d6 Damage when touched. Nothing may pass without the wizard's permission (it is recommended that they r"
+      },
+      {
+        "slug": "ward",
+        "name": "Ward",
+        "type": "Spell",
+        "description": "A handy Spell only requiring the flick of a wrist. In response to being fired upon the wizard may cast this Spell to cause the missile to be deflected."
+      },
+      {
+        "slug": "web",
+        "name": "Web",
+        "type": "Spell",
+        "description": "Whether this is opening a portal to the plane of slime or channelling the sprites of sickness, all can agree that it is quite disgusting. The wizard blows forth the \"web\" from their nose and all in a cone extending 12 metres in front of the"
+      },
+      {
+        "slug": "zed",
+        "name": "Zed",
+        "type": "Spell",
+        "description": "No one knows what this does but everyone who has cast it disappears instantly, never to be seen again."
+      }
+    ],
+    "items": [
+      {
+        "slug": "astrological-equipment",
+        "name": "Astrological Equipment",
+        "type": "Item",
+        "description": "Requires twenty minutes to set up and use but doesn't need to be outside. Consists of a ruby specular, charms against reciprocal observation, and complicated charts of the spheres. Grants +1 to Astrology."
+      },
+      {
+        "slug": "axe",
+        "name": "Axe",
+        "type": "Item",
+        "description": "A sturdy chopping weapon with a heavy head and wooden handle."
+      },
+      {
+        "slug": "bale-hook",
+        "name": "Bale Hook",
+        "type": "Item",
+        "description": "A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects."
+      },
+      {
+        "slug": "blue-star-maps",
+        "name": "Blue Star Maps",
+        "type": "Item",
+        "description": "The blue star maps of Corda hold the secrets of travel between the spheres. Every juncture in space and time can be found on its many square metred face if one is sufficiently educated in its use. Test Astrology to tell the precise destinat"
+      },
+      {
+        "slug": "bow",
+        "name": "Bow",
+        "type": "Item",
+        "description": "A traditional ranged weapon that fires arrows."
+      },
+      {
+        "slug": "club",
+        "name": "Club",
+        "type": "Item",
+        "description": "A simple wooden weapon, crude but effective."
+      },
+      {
+        "slug": "crossbow",
+        "name": "Crossbow",
+        "type": "Item",
+        "description": "A mechanical bow that fires bolts with great force and accuracy."
+      },
+      {
+        "slug": "curved-sword",
+        "name": "Curved Sword",
+        "type": "Item",
+        "description": "An exotic blade with a distinctive curve, favored by assassins and duelists."
+      },
+      {
+        "slug": "epopt-staff",
+        "name": "Epopt Staff",
+        "type": "Item",
+        "description": "An Epopt's Staff is a tool, an advert, and, in a pinch, a Weapon. In its head is set a cloudy ruby, like a useless magnifying glass, which grants the user +1 Second Sight while peering through it."
+      },
+      {
+        "slug": "flask-of-oil",
+        "name": "Flask of Oil",
+        "type": "Item",
+        "description": "Fuel for lanterns and other purposes. Starting equipment for all characters."
+      },
+      {
+        "slug": "fusil",
+        "name": "Fusil",
+        "type": "Item",
+        "description": "A long Weapon that looks like a rifle and can be used in melee as a Club. A Fusil holds 6 charges before the plasmic core needs replacing."
+      },
+      {
+        "slug": "garrotte",
+        "name": "Garrotte",
+        "type": "Item",
+        "description": "A silent strangling weapon used by assassins, consisting of a cord or wire with handles."
+      },
+      {
+        "slug": "grappling-hook",
+        "name": "Grappling Hook",
+        "type": "Item",
+        "description": "A metal hook attached to a length of rope for climbing or retrieving objects."
+      },
+      {
+        "slug": "greatsword",
+        "name": "Greatsword",
+        "type": "Item",
+        "description": "A massive two-handed sword capable of devastating strikes."
+      },
+      {
+        "slug": "hammer",
+        "name": "Hammer",
+        "type": "Item",
+        "description": "A heavy blunt weapon designed for crushing blows."
+      },
+      {
+        "slug": "heavy-armour",
+        "name": "Heavy Armour",
+        "type": "Item",
+        "description": "The heaviest protection available, offering substantial damage reduction but taking up significant inventory space."
+      },
+      {
+        "slug": "knife",
+        "name": "Knife",
+        "type": "Item",
+        "description": "A small blade, useful as both tool and weapon. Starting equipment for all characters."
+      },
+      {
+        "slug": "knuckle-dice",
+        "name": "Knuckle Dice",
+        "type": "Item",
+        "description": "Knuckle dice are made from the nimble, petal shaped knuckle bones of goblins and make excellent two sided dice."
+      },
+      {
+        "slug": "lance",
+        "name": "Lance",
+        "type": "Item",
+        "description": "A long cavalry weapon designed for mounted combat and jousting."
+      },
+      {
+        "slug": "lantern",
+        "name": "Lantern",
+        "type": "Item",
+        "description": "A portable light source. Starting equipment for all characters."
+      },
+      {
+        "slug": "large-wooden-ladle",
+        "name": "Large Wooden Ladle",
+        "type": "Item",
+        "description": "A large, worn wooden ladle that has seen better days but still serves as an effective improvised weapon."
+      },
+      {
+        "slug": "light-armour",
+        "name": "Light Armour",
+        "type": "Item",
+        "description": "Basic protective gear such as leather or padded clothing."
+      },
+      {
+        "slug": "lock-picks",
+        "name": "Lock Picks",
+        "type": "Item",
+        "description": "A set of delicate tools for opening locks without the proper key."
+      },
+      {
+        "slug": "longsword",
+        "name": "Longsword",
+        "type": "Item",
+        "description": "A longer, more deadly version of the standard sword."
+      },
+      {
+        "slug": "mace",
+        "name": "Mace",
+        "type": "Item",
+        "description": "A heavy clubbing weapon with a weighted head, designed to crush armor."
+      },
+      {
+        "slug": "maul",
+        "name": "Maul",
+        "type": "Item",
+        "description": "A massive two-handed hammer capable of devastating blows."
+      },
+      {
+        "slug": "modest-armour",
+        "name": "Modest Armour",
+        "type": "Item",
+        "description": "Decent protection such as chain mail or reinforced leather."
+      },
+      {
+        "slug": "pistolet",
+        "name": "Pistolet",
+        "type": "Item",
+        "description": "A hand held energy Weapon. Holds enough energy for 8 shots."
+      },
+      {
+        "slug": "plasmic-cores",
+        "name": "Plasmic Cores",
+        "type": "Item",
+        "description": "Crystalised starlight cast in metal. Or astral vapours captured in glass. Or maybe hard-ghosts? Whatever it is, it's pretty and used as a fuel source for exotic Weapons and reckless magicians. A plasmic core can be cracked open and huffed b"
+      },
+      {
+        "slug": "pocket-barometer",
+        "name": "Pocket Barometer",
+        "type": "Item",
+        "description": "The pocket barometer is part of a fashionable affectation for the metropolitan Troikan. Though the city has no discernable weather it is considered polite to check it intermittently and comment on the present clemency and hope for it to con"
+      },
+      {
+        "slug": "pocket-gods",
+        "name": "Pocket Gods",
+        "type": "Item",
+        "description": "Pocket gods are little cloth puppets made in the image of your numerous gods. If you whisper a secret to one and throw it away you regain 1 Luck."
+      },
+      {
+        "slug": "poison",
+        "name": "Poison",
+        "type": "Item",
+        "description": "A vial of deadly poison. Can be applied to weapons or added to food and drink."
+      },
+      {
+        "slug": "polearm",
+        "name": "Polearm",
+        "type": "Item",
+        "description": "A long-hafted weapon with various blade configurations, devastating in skilled hands."
+      },
+      {
+        "slug": "provisions",
+        "name": "Provisions",
+        "type": "Item",
+        "description": "Food and drink for sustenance. Can be consumed to regain 1d6 Stamina (max 3 per day). Starting equipment includes 6 provisions."
+      },
+      {
+        "slug": "rapier",
+        "name": "Rapier",
+        "type": "Item",
+        "description": "A slender, elegant thrusting sword favored by duelists and nobles."
+      },
+      {
+        "slug": "rope",
+        "name": "Rope",
+        "type": "Item",
+        "description": "A length of sturdy rope useful for climbing, binding, or pulling."
+      },
+      {
+        "slug": "ruby-lorgnette",
+        "name": "Ruby Lorgnette",
+        "type": "Item",
+        "description": "Ruby lorgnettes are collapsable spectacles made with ruby lenses that require a free hand to use. While wearing them your sight is impaired but you can see sorcerous activity clearly (+2 Second Sight)."
+      },
+      {
+        "slug": "rucksack",
+        "name": "Rucksack",
+        "type": "Item",
+        "description": "A sturdy backpack for carrying equipment. Starting equipment for all characters."
+      },
+      {
+        "slug": "sackcloth-robes",
+        "name": "Sackcloth Robes",
+        "type": "Item",
+        "description": "Rough robes caked in stinking mud and undergrowth, perfect for blending into marshy terrain but offensive everywhere else."
+      },
+      {
+        "slug": "salt",
+        "name": "Salt",
+        "type": "Item",
+        "description": "Salt is the poor man's Silver. Where Silver kills the demonic and the dead Salt merely harms or bars."
+      },
+      {
+        "slug": "shield",
+        "name": "Shield",
+        "type": "Item",
+        "description": "A defensive item that can be used to block attacks and also as a weapon."
+      },
+      {
+        "slug": "silver-sword",
+        "name": "Silver Sword",
+        "type": "Item",
+        "description": "Silver is the star metal, the most untouched material fallen from the hump-backed sky. Weapons made from it may inflict Damage to creatures normally immune to material harm."
+      },
+      {
+        "slug": "sjambok",
+        "name": "Sjambok",
+        "type": "Item",
+        "description": "A heavy leather whip traditionally used as both tool and weapon."
+      },
+      {
+        "slug": "spear",
+        "name": "Spear",
+        "type": "Item",
+        "description": "A long polearm with a pointed tip, effective for thrusting attacks."
+      },
+      {
+        "slug": "staff",
+        "name": "Staff",
+        "type": "Item",
+        "description": "A long wooden pole, useful for walking, fighting, and casting spells."
+      },
+      {
+        "slug": "sword",
+        "name": "Sword",
+        "type": "Item",
+        "description": "A standard blade weapon, well-balanced and versatile."
+      },
+      {
+        "slug": "tea-set",
+        "name": "Tea Set",
+        "type": "Item",
+        "description": "A tea set grants +1 to Etiquette when you have the time to sit down and make tea for those you are trying to impress."
+      },
+      {
+        "slug": "velare",
+        "name": "Velare",
+        "type": "Item",
+        "description": "When inactive, looks like an ornate piece of costume jewellery, usually a brooch or a circlet. When active it produces a full body disguise on the wearer formed from hard-light. Grants +4 Disguise. Lasts for 24 hours before needing to be re"
+      },
+      {
+        "slug": "witch-hair-rope",
+        "name": "Witch-hair Rope",
+        "type": "Item",
+        "description": "Witch-hair ropes are immune to manipulation via magical means."
+      },
+      {
+        "slug": "yoke",
+        "name": "Yoke",
+        "type": "Item",
+        "description": "A yoke gives you +4 carry capacity while worn but you can not use your hands while wearing it."
+      }
+    ],
+    "enemies": [
+      {
+        "slug": "alzabo",
+        "name": "Alzabo",
+        "type": "Enemy",
+        "description": "The red furred ghoul-bear, which at its shoulder stands as tall as a horse, would be a frightful creature for no other reason than its immediate physical impression. The Alzabo can produce - for it is not truly mimicking, rather recalling -"
+      },
+      {
+        "slug": "boggart",
+        "name": "Boggart",
+        "type": "Enemy",
+        "description": "You could be forgiven for thinking a boggart was a rangy man with an exceedingly bristly beard, but no, once upon a time it sprung fully formed from a Hole and has been ungrateful and ill prepared for everything since. They rarely travel fa"
+      },
+      {
+        "slug": "bonshad",
+        "name": "Bonshad",
+        "type": "Enemy",
+        "description": "The Bonshad is the source of an amusing piece of trivia amongst diabolists. While it is well known that the Bonshads know the method of creating the Elixir of Shazmazm it is less well known (at least amongst impatient apprentices) that The "
+      },
+      {
+        "slug": "cyclops",
+        "name": "Cyclops",
+        "type": "Enemy",
+        "description": "Once upon a time a nation of man asked one of the Aeons to grant them the power of immortality and foresight. The Aeons, being an arbitrary bunch, took one eye from each as fair exchange. The men found that their foresight was indeed presen"
+      },
+      {
+        "slug": "dolm",
+        "name": "Dolm",
+        "type": "Enemy",
+        "description": "Somewhere beneath the earth they sit suspended in their cavities, peacefully contemplating the movements of the surface world. A witness to their intercrevice ambling would see a large, saggy-skinned humanoid with soulful grey eyes staggeri"
+      },
+      {
+        "slug": "donestre",
+        "name": "Donestre",
+        "type": "Enemy",
+        "description": "There is a certain race of a solitary nature whose multitudinous heads are all lions and flowing manes. They glitter with numinous light and speak the language of all thinking beings. They dazzle travellers with knowledge of their past and "
+      },
+      {
+        "slug": "dragon",
+        "name": "Dragon",
+        "type": "Enemy",
+        "description": "Dragons are creatures of hyper-light, unburdened by base matter, able to soar across the dark sea of sky between worlds. Since their spirits are immortal and illuminated by the black-suns they may, and often do, indulge in base activities s"
+      },
+      {
+        "slug": "drock",
+        "name": "Drock",
+        "type": "Enemy",
+        "description": "Dwarfs are creatures of purpose; they set their minds on a course and follow it until they finish or run aground. Occasionally a Dwarf is forcibly prevented from finishing a project, possibly by dropping dead at an inopportune moment; it ha"
+      },
+      {
+        "slug": "ekodat",
+        "name": "Ekodat",
+        "type": "Enemy",
+        "description": "The Ekodat is a series of crystalline protrusions emanating from a clouded crystal core. These \"tentacles\" don't move; instead they grow rapidly through the air like roots. Natural philosophers have been back and forth about the categorisat"
+      },
+      {
+        "slug": "feathered-folk",
+        "name": "Feathered Folk",
+        "type": "Enemy",
+        "description": "Profoundly religious though unfocused. Their civilisation worshiped the Egg of Time, which sat at the heart of their temple city on their holy mountain, until the day the Egg cracked and the god that leaped forth instantly shattered into a "
+      },
+      {
+        "slug": "goblin",
+        "name": "Goblin",
+        "type": "Enemy",
+        "description": "Goblins are the vanguard of civilisation. The moment a sphere bobs to the surface the goblins will creep out of the nooks and crannies to start expanding their labyrinth. Left to their own devices they will eventually tame and cover every s"
+      },
+      {
+        "slug": "gremlin",
+        "name": "Gremlin",
+        "type": "Enemy",
+        "description": "Vicious little creatures dressed in potato sacks they stole from an old mother's cupboards. When you see footprints in the pie crust it's time to call the Gremlin Catcher because where there's one there's a hundred and underneath your home "
+      },
+      {
+        "slug": "harpy",
+        "name": "Harpy",
+        "type": "Enemy",
+        "description": "Immortal creatures of bitterness and spite, they look like vultures with human heads and unusually large claws. Their immortal nature precludes the need to eat yet they hunt mercilessly, most usually by lifting their quarry up into the sky "
+      },
+      {
+        "slug": "khaibit",
+        "name": "Khaibit",
+        "type": "Enemy",
+        "description": "The Shadow Exultants make up the bulk of the Autarch's lower nobility, being the handmaids and officers filling out attendance at highborn social events. Each one possesses an uncanny resemblance to one Exultant or other, blood of their ver"
+      },
+      {
+        "slug": "knight-of-the-road",
+        "name": "Knight of the Road",
+        "type": "Enemy",
+        "description": "Contrary to what the farmers tell you the life of a vagabond is not an easy one. First you must find a road, but not a quiet road or else you'll wait for weeks without a client, nor should it be too busy or else you'll no sooner have belaye"
+      },
+      {
+        "slug": "living-dead",
+        "name": "Living Dead",
+        "type": "Enemy",
+        "description": "The definition of 'dead' varies from place to place. In some spheres you might be considered dead when unconscious or still living until buried. Now consider the ambulatory deceased and the definition is even more nebulous and near the poin"
+      },
+      {
+        "slug": "lizard-man",
+        "name": "Lizard-Man",
+        "type": "Enemy",
+        "description": "Imagine a fat man but this man is a crocodile. Stand him on his hind legs, yank his head into a civilised position, shorten his snout, and give him some short horns and a large Weapon. This is a lizard-man, a preternaturally militaristic ra"
+      },
+      {
+        "slug": "loathsome-wurm",
+        "name": "Loathsome Wurm That Will Consume The Sun",
+        "type": "Enemy",
+        "description": "Once upon a distant time the gods banded together to mould the dripping flesh of the Monad into all the creatures of the earth. One Divine Architect, sneaky, lazy, or mad, consistently came up short on their daily quota of flesh-given-shape"
+      },
+      {
+        "slug": "man-beast",
+        "name": "Man-Beast",
+        "type": "Enemy",
+        "description": "The Autarchs couldn't rely on the aristocracy for delicate or controversial matters; even for thoroughly mundane requests they were worshipful in word and recalcitrant in action and so towards the beginning of their reign an Autarch had the"
+      },
+      {
+        "slug": "manticore",
+        "name": "Manticore",
+        "type": "Enemy",
+        "description": "Manticores are rarely encountered outside of their homes, which they tend to construct on mountain sides, far out of reach of the common folk. The servants that attend them are kidnapped travellers plucked from the backs of wagons or dragge"
+      },
+      {
+        "slug": "night-pig",
+        "name": "Night Pig",
+        "type": "Enemy",
+        "description": "There are those witches that don the skin of a pig and walk abroad amongst their sleeping neighbours. Through the power imbued by that most sinister animal they rub themselves against the exteriors of houses and snuffle at their hedges, the"
+      },
+      {
+        "slug": "notule",
+        "name": "Notule",
+        "type": "Enemy",
+        "description": "A star-creature, sometimes caught roosting in the rigging of golden barges, formless, freezing to the touch, and valued for its utility as a tool of murder. By utilizing only the smallest bit of physical remains a knowledgeable sorcerer may"
+      },
+      {
+        "slug": "ogre",
+        "name": "Ogre",
+        "type": "Enemy",
+        "description": "The ogre is a phenomenon common across the universe. A child will be born with a scowl on its face and a corded knot where their heart should be. They won't play with the other children, preferring to steal their toys and break them in priv"
+      },
+      {
+        "slug": "orc",
+        "name": "Orc",
+        "type": "Enemy",
+        "description": "The manifested people. By the order of the universe, as set in motion by the Unmoving Mover, they exist for the briefest time in the indivisible moment at the beginning and end of all things. Their duty is to tidy along the demiurge and all"
+      },
+      {
+        "slug": "owl",
+        "name": "Owl",
+        "type": "Enemy",
+        "description": "The rooftops of Troika are crenelated by owls. They watch the streets with dumb spite, waiting for a vole, a rat, or an errant, fat finger to come to their attention. They swoop after it, followed by other owls blindly responding to the mot"
+      },
+      {
+        "slug": "parchment-witch",
+        "name": "Parchment Witch",
+        "type": "Enemy",
+        "description": "Parchment Witches are an unusual breed of living dead both for having usually chosen the state of their own volition and for their staunch denial of it. They cover their rotting skin in a layer of leather, vellum, or, if no other option is "
+      },
+      {
+        "slug": "piscean",
+        "name": "Piscean",
+        "type": "Enemy",
+        "description": "Legs of a man, torso and tail of a fish. They break into granaries, batter the nightguards with their blubbery tails, stuff their bellies full of feed, and run off into the night to digest in a local lake. They are menaces!"
+      },
+      {
+        "slug": "salamander",
+        "name": "Salamander",
+        "type": "Enemy",
+        "description": "A star creature that sailors are accustomed to removing from their golden ships like terrestrial barnacles. They are attracted to the heat of the sails and interfere with their correct operation if not dealt with. When removed they are low "
+      },
+      {
+        "slug": "separator",
+        "name": "Separator",
+        "type": "Enemy",
+        "description": "In an infinite universe there are infinite witches, amongst which is a rich spectrum of awfulness. Separators are some of the foulest. They live like normal people by day but by night feed their sorcery through teratic transformations. Sat "
+      },
+      {
+        "slug": "sympathy-serpent",
+        "name": "Sympathy Serpent",
+        "type": "Enemy",
+        "description": "Dark, thick as a man's thigh, and as long as three destriers, they crush their prey as you'd expect such a snake to do but their hunting style is idiosyncratic: they do not wrestle with their quarry but offer a gentle embrace, telling them "
+      },
+      {
+        "slug": "thinking-engine",
+        "name": "Thinking Engine",
+        "type": "Enemy",
+        "description": "Built in the time of the First Empire, commissioned by the will of the Other Lords to pilot the golden ships of their cosmic civilisation. Each one is unfathomably ancient but by design or fault they don't remember more than a lifetime's wo"
+      },
+      {
+        "slug": "tiger",
+        "name": "Tiger",
+        "type": "Enemy",
+        "description": "It is common knowledge that all tigers come from the Palace of Tigers. You may see one in a jungle somewhere and think they are at home, maybe they are even raising kittens and leading rich full tiger lives, but they are as alien to that fo"
+      },
+      {
+        "slug": "tower-wizard",
+        "name": "Tower Wizard",
+        "type": "Enemy",
+        "description": "The majority of sorcery enthusiasts are either members of a college or well respected freelance lecturers with a nice manse in a seaside town, esteemed members of society who buy their groceries the same as us. However, when people think \"w"
+      },
+      {
+        "slug": "troll",
+        "name": "Troll",
+        "type": "Enemy",
+        "description": "Trolls are ill-tempered creatures often spied leaning on a pike in the town square, gabbing with other guards while taking the occasional break to shout at a child, or tripping up an old lady. You'd think they'd stop hiring them."
+      },
+      {
+        "slug": "ven",
+        "name": "Ven",
+        "type": "Enemy",
+        "description": "The million spheres have not been counted, it's just understood that there are a lot - countless by every useful standard. Eventually, in a future further from now than the birth of the Monad is from here, the hump-backed sky will fold in o"
+      },
+      {
+        "slug": "zoanthrop",
+        "name": "Zoanthrop",
+        "type": "Enemy",
+        "description": "In the reign of the 35th Autarch it became fashionable to be seen as in-touch with the natural world. One could often witness Exultants abstaining from artificial cloth, conspicuously forgoing their flyers on shorter journeys, and walking b"
+      }
+    ],
+    "tables": [
+      {
+        "slug": "beastly-damage-table",
+        "name": "Beastly Weapons Damage Table",
+        "type": "Table",
+        "description": "Damage values for natural and creature attacks based on damage roll"
+      },
+      {
+        "slug": "melee-damage-table",
+        "name": "Melee Weapons Damage Table",
+        "type": "Table",
+        "description": "Damage values for melee weapons based on damage roll"
+      },
+      {
+        "slug": "oops-table",
+        "name": "Oops! Table",
+        "type": "Table",
+        "description": "Table for magical mishaps when rolling double 6s on spell casting"
+      },
+      {
+        "slug": "random-spell-table",
+        "name": "Random Spell Table",
+        "type": "Table",
+        "description": "Table for generating random spells using d66"
+      },
+      {
+        "slug": "ranged-damage-table",
+        "name": "Ranged Weapons Damage Table",
+        "type": "Table",
+        "description": "Damage values for ranged weapons based on damage roll"
+      }
+    ],
+    "characters": [
+      {
+        "slug": "sample-ardent-giant",
+        "name": "Ignatius the Ardent",
+        "type": "Character"
+      },
+      {
+        "slug": "sample-burglar",
+        "name": "Sly Corvo",
+        "type": "Character"
+      }
+    ]
+  }
+}

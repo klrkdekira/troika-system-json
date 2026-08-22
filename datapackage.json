@@ -1,0 +1,30 @@
+{
+  "name": "troika-system-json",
+  "title": "Troika! System JSON",
+  "description": "Machine-readable JSON and JSON-LD reference data and JSON Schemas for the Troika! SRD.",
+  "homepage": "https://cheeleong.dev/troika-system-json/",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "MIT",
+      "title": "MIT License (repository-authored code, schemas, interface, and documentation)",
+      "path": "LICENSE"
+    },
+    {
+      "name": "Troika-SRD-Terms",
+      "title": "Official Troika! SRD terms (SRD-derived game content)",
+      "path": "https://troika-srd.netlify.app/"
+    }
+  ],
+  "contributors": [
+    { "title": "Chee Leong", "role": "author", "path": "https://cheeleong.dev" },
+    { "title": "Melsonian Arts Council", "role": "publisher", "path": "https://www.troika-rpg.com/" }
+  ],
+  "resources": [
+    { "name": "manifest", "path": "objects/troika-system-data.json", "format": "json", "mediatype": "application/json" },
+    { "name": "bundle", "path": "objects/troika-system-data.bundled.json", "format": "json", "mediatype": "application/json" },
+    { "name": "llms-full", "path": "llms-full.txt", "format": "txt", "mediatype": "text/plain" },
+    { "name": "search-index", "path": "objects/search-index.json", "format": "json", "mediatype": "application/json" },
+    { "name": "collection-index", "path": "objects/collection-index.json", "format": "json", "mediatype": "application/json" }
+  ]
+}
