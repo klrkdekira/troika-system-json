@@ -1,5 +1,28 @@
-srd.md
-*/__pycache__
-*.pyc
-*.pyo
-Troika SRD.md
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing and type checking / linter caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor and IDE configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/
+
+# Operating system files
+.DS_Store
+Thumbs.db
