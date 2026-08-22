@@ -9,22 +9,38 @@
 </p>
 
 <p align="center">
-  <a href="https://cheeleong.dev/troika-system-json/"><img src="https://img.shields.io/badge/Live%20Explorer-cheeleong.dev-blue?style=flat-square" alt="Live Explorer"></a>
-  <a href="pyproject.toml"><img src="https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square" alt="Version 0.1.0"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20%2B%20Troika!%20SRD-green?style=flat-square" alt="License"></a>
-  <a href="CITATION.cff"><img src="https://img.shields.io/badge/Citation-CITATION.cff-blueviolet?style=flat-square" alt="Citation"></a>
+  <a href="https://cheeleong.dev/troika-system-json/"><img src="https://img.shields.io/badge/Live%20Explorer-cheeleong.dev-4f46e5?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Explorer"></a>
+  <a href="pyproject.toml"><img src="https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square&logo=semver&logoColor=white" alt="Version 0.1.0"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20%2B%20Troika!%20SRD-success?style=flat-square" alt="License"></a>
+  <a href="CITATION.cff"><img src="https://img.shields.io/badge/Citation-CITATION.cff-8b5cf6?style=flat-square&logo=zenodo&logoColor=white" alt="Citation"></a>
+  <a href="https://github.com/klrkdekira/troika-system-json/stargazers"><img src="https://img.shields.io/github/stars/klrkdekira/troika-system-json?style=flat-square&logo=github&color=gold" alt="GitHub Stars"></a>
+  <a href="https://github.com/klrkdekira/troika-system-json/network/members"><img src="https://img.shields.io/github/forks/klrkdekira/troika-system-json?style=flat-square&logo=github" alt="GitHub Forks"></a>
+  <a href="https://github.com/klrkdekira/troika-system-json/commits/main"><img src="https://img.shields.io/github/last-commit/klrkdekira/troika-system-json?style=flat-square&logo=github" alt="Last Commit"></a>
   <br>
-  <a href="systems/context.jsonld"><img src="https://img.shields.io/badge/Linked%20Data-JSON--LD%201.1-purple?style=flat-square" alt="JSON-LD 1.1"></a>
-  <a href="systems/"><img src="https://img.shields.io/badge/JSON%20Schema-Draft--07%20%2F%202020--12-blue?style=flat-square" alt="JSON Schema"></a>
-  <a href="datapackage.json"><img src="https://img.shields.io/badge/Data%20Package-Frictionless-orange?style=flat-square" alt="Data Package"></a>
-  <a href="objects/troika-system-data.json"><img src="https://img.shields.io/badge/Corpus-225%20Entities-success?style=flat-square" alt="Corpus 225 Entities"></a>
-  <a href="llms.txt"><img src="https://img.shields.io/badge/AI%2FLLM-llms.txt-teal?style=flat-square" alt="llms.txt"></a>
+  <a href="systems/context.jsonld"><img src="https://img.shields.io/badge/Linked%20Data-JSON--LD%201.1-7b1fa2?style=flat-square&logo=w3c&logoColor=white" alt="JSON-LD 1.1"></a>
+  <a href="systems/"><img src="https://img.shields.io/badge/JSON%20Schema-Draft--07%20%2F%202020--12-00599c?style=flat-square&logo=json-schema&logoColor=white" alt="JSON Schema"></a>
+  <a href="datapackage.json"><img src="https://img.shields.io/badge/Data%20Package-Frictionless-d97706?style=flat-square" alt="Data Package"></a>
+  <a href="llms.txt"><img src="https://img.shields.io/badge/AI%2FLLM-llms.txt-0d9488?style=flat-square&logo=openai&logoColor=white" alt="llms.txt"></a>
+  <a href="llms-full.txt"><img src="https://img.shields.io/badge/Context%20Projection-llms--full.txt-059669?style=flat-square&logo=markdown&logoColor=white" alt="llms-full.txt"></a>
+  <a href="sitemap.xml"><img src="https://img.shields.io/badge/Sitemap-sitemap.xml-0284c7?style=flat-square&logo=xml&logoColor=white" alt="Sitemap"></a>
+  <a href="Troika%20SRD.md"><img src="https://img.shields.io/badge/SRD-Troika!%20Numinous%20Edition-c026d3?style=flat-square" alt="Troika SRD"></a>
+  <br>
+  <a href="objects/troika-system-data.json"><img src="https://img.shields.io/badge/Corpus-225%20Entities-10b981?style=flat-square" alt="Corpus 225 Entities"></a>
+  <a href="objects/backgrounds/"><img src="https://img.shields.io/badge/Backgrounds-36%20d66-8b5cf6?style=flat-square" alt="36 Backgrounds"></a>
+  <a href="objects/spells/"><img src="https://img.shields.io/badge/Spells-74%20Spells-ec4899?style=flat-square" alt="74 Spells"></a>
+  <a href="objects/items/"><img src="https://img.shields.io/badge/Items-50%20Items-f59e0b?style=flat-square" alt="50 Items"></a>
+  <a href="objects/enemies/"><img src="https://img.shields.io/badge/Bestiary-25%20Enemies-ef4444?style=flat-square" alt="25 Enemies"></a>
+  <a href="objects/skills/"><img src="https://img.shields.io/badge/Skills-22%20Advanced-3b82f6?style=flat-square" alt="22 Skills"></a>
+  <a href="objects/tables/"><img src="https://img.shields.io/badge/Tables-5%20Matrices-6366f1?style=flat-square" alt="5 Tables"></a>
+  <a href="objects/characters/"><img src="https://img.shields.io/badge/Characters-3%20Sample-14b8a6?style=flat-square" alt="3 Sample Characters"></a>
   <br>
   <a href="pyproject.toml"><img src="https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.12+"></a>
   <a href="https://github.com/astral-sh/uv"><img src="https://img.shields.io/badge/uv-Astral-261230?style=flat-square&logo=astral&logoColor=white" alt="uv package manager"></a>
   <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/badge/Code%20Style-Ruff-000000?style=flat-square&logo=ruff&logoColor=white" alt="Ruff code style"></a>
-  <a href="tests/"><img src="https://img.shields.io/badge/Tests-45%20Passing-success?style=flat-square" alt="Tests"></a>
-  <a href="main.py"><img src="https://img.shields.io/badge/Schema%20Validation-Passing-brightgreen?style=flat-square" alt="Schema Validation"></a>
+  <a href="tests/"><img src="https://img.shields.io/badge/Tests-45%20Passing-success?style=flat-square&logo=pytest&logoColor=white" alt="Tests"></a>
+  <a href="main.py"><img src="https://img.shields.io/badge/Schema%20Validation-100%25%20Passing-brightgreen?style=flat-square" alt="Schema Validation"></a>
+  <a href="objects/search-index.json"><img src="https://img.shields.io/badge/Search%20Index-3%2C880%20Tokens-blue?style=flat-square" alt="Search Index"></a>
+  <a href="Makefile"><img src="https://img.shields.io/badge/Build-Makefile-427819?style=flat-square&logo=gnu&logoColor=white" alt="Makefile"></a>
 </p>
 
 ---
