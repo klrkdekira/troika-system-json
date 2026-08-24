@@ -93,7 +93,15 @@ class TestTroikaSystemData(unittest.TestCase):
         self.assertIn("version", data)
         self.assertIn("metadata", data)
 
-        categories = ["backgrounds", "skills", "spells", "items", "enemies", "tables", "characters"]
+        categories = [
+            "backgrounds",
+            "skills",
+            "spells",
+            "items",
+            "enemies",
+            "tables",
+            "characters",
+        ]
         for category in categories:
             with self.subTest(category=category):
                 self.assertIn(category, data)
@@ -115,4 +123,3 @@ class TestTroikaSystemData(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

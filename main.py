@@ -48,13 +48,13 @@ class TroikaValidator:
                         "$id", schema_file.stem.replace(".schema", "")
                     )
                     self.schemas[schema_id] = schema_data
-                    
+
                     # Store mapping for RefResolver by ID and filename
                     self.schema_store[schema_id] = schema_data
                     self.schema_store[schema_file.name] = schema_data
                     if "$id" in schema_data:
                         self.schema_store[schema_data["$id"]] = schema_data
-                        
+
                     self.console.print(f"✓ Loaded schema: {schema_id}", style="green")
             except Exception as e:  # noqa: BLE001
                 self.console.print(
@@ -105,7 +105,9 @@ class TroikaValidator:
                 obj_data = json.load(f)
 
             # If validating unbundled master file with $ref pointers, expand refs in memory
-            if obj_path.name == "troika-system-data.json" and isinstance(obj_data, dict):
+            if obj_path.name == "troika-system-data.json" and isinstance(
+                obj_data, dict
+            ):
                 obj_data = self._expand_file_refs(obj_data, obj_path.parent)
 
             # Determine schema to use
@@ -124,13 +126,14 @@ class TroikaValidator:
             validator = Draft7Validator(schema, resolver=resolver)
             errors = list(validator.iter_errors(obj_data))
 
-
             if errors:
-                result["errors"].extend([
-                    f"{error.message} at {'.'.join(str(p) for p in error.path)}"
-                    for error in errors
-                ])
-            
+                result["errors"].extend(
+                    [
+                        f"{error.message} at {'.'.join(str(p) for p in error.path)}"
+                        for error in errors
+                    ]
+                )
+
             if not result["errors"]:
                 result["valid"] = True
 
@@ -208,7 +211,9 @@ class TroikaValidator:
 
     def check_references(self, objects_dir: Path) -> bool:
         """Cross-check references across backgrounds, items, skills, and spells."""
-        self.console.print("\n[bold cyan]Cross-checking references across objects...[/bold cyan]")
+        self.console.print(
+            "\n[bold cyan]Cross-checking references across objects...[/bold cyan]"
+        )
 
         items_dir = objects_dir / "items"
         skills_dir = objects_dir / "skills"
@@ -308,8 +313,17 @@ class TroikaValidator:
     def _expand_file_refs(self, data: dict[str, Any], base_dir: Path) -> dict[str, Any]:
         """In-memory expansion of $ref pointers in master file for schema validation."""
         import copy
+
         expanded = copy.deepcopy(data)
-        categories = ["backgrounds", "skills", "spells", "items", "enemies", "tables", "characters"]
+        categories = [
+            "backgrounds",
+            "skills",
+            "spells",
+            "items",
+            "enemies",
+            "tables",
+            "characters",
+        ]
         for cat in categories:
             if cat in expanded and isinstance(expanded[cat], list):
                 new_items = []
@@ -326,7 +340,6 @@ class TroikaValidator:
                         new_items.append(item)
                 expanded[cat] = new_items
         return expanded
-
 
 
 def main():

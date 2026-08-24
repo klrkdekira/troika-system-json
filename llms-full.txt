@@ -9094,11 +9094,14 @@ Cautious
 [mien.entries[5].behavior]
 Cautious
 
-[specialAbilities[0].name]
+[special[0].name]
 Continuous Growth
 
-[specialAbilities[0].description]
+[special[0].description]
 The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids.
+
+[special[0].type]
+passive
 
 [tags[0]]
 mineral
@@ -9826,11 +9829,14 @@ Distressed
 [mien.entries[5].behavior]
 Distressed
 
-[specialAbilities[0].name]
+[special[0].name]
 Silver Vulnerability
 
-[specialAbilities[0].description]
+[special[0].description]
 They take double Damage from Silver.
+
+[special[0].type]
+passive
 
 [tags[0]]
 undead
@@ -10468,8 +10474,14 @@ Enveloping
 [mien.entries[5].behavior]
 Enveloping
 
-[special_abilities[0]]
+[special[0].name]
+Suffocation
+
+[special[0].description]
 Anyone successfully hit by a notule must Test their Luck (or Skill for Enemies) or start to Drown. The notule wraps itself around their face and begins to suffocate them.
+
+[special[0].type]
+passive
 
 [stats.skill]
 6
@@ -11650,8 +11662,14 @@ Transgressive
 [mien.entries[5].behavior]
 Transgressive
 
-[special_abilities[0]]
+[special[0].name]
+Spellcasting
+
+[special[0].description]
 The Tower Wizard has access to Jolt or Ember and 4 other Spells rolled randomly or chosen ahead of time.
+
+[special[0].type]
+passive
 
 [stats.skill]
 10
@@ -11842,8 +11860,14 @@ Depressed
 [mien.entries[5].behavior]
 Depressed
 
-[special_abilities[0]]
+[special[0].name]
+Time Travelers
+
+[special[0].description]
 Time travelers from the end of the universe with advanced arts and technology
+
+[special[0].type]
+passive
 
 [stats.skill]
 8

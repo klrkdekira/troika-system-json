@@ -40,8 +40,12 @@
       }
     ]
   },
-  "special_abilities": [
-    "Time travelers from the end of the universe with advanced arts and technology"
+  "special": [
+    {
+      "name": "Time Travelers",
+      "description": "Time travelers from the end of the universe with advanced arts and technology",
+      "type": "passive"
+    }
   ],
   "stats": {
     "skill": 8,
@@ -52,6 +56,5 @@
   },
   "possessions": [],
   "advancedSkills": [],
-  "spells": [],
-  "special": []
+  "spells": []
 }

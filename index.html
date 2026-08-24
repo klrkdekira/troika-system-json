@@ -39,8 +39,11 @@
         "inLanguage": "en",
         "distribution": [
           { "@type": "DataDownload", "name": "Full JSON bundle", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/troika-system-data.bundled.json" },
+          { "@type": "DataDownload", "name": "Reference manifest", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/troika-system-data.json" },
           { "@type": "DataDownload", "name": "Full LLM context", "encodingFormat": "text/plain", "contentUrl": "https://cheeleong.dev/troika-system-json/llms-full.txt" },
-          { "@type": "DataDownload", "name": "Search index", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/search-index.json" }
+          { "@type": "DataDownload", "name": "Search index", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/search-index.json" },
+          { "@type": "DataDownload", "name": "Collection index", "encodingFormat": "application/json", "contentUrl": "https://cheeleong.dev/troika-system-json/objects/collection-index.json" },
+          { "@type": "DataDownload", "name": "JSON-LD context", "encodingFormat": "application/ld+json", "contentUrl": "https://cheeleong.dev/troika-system-json/systems/context.jsonld" }
         ]
       }
     </script>
@@ -2318,9 +2321,9 @@
                   <p><a href="LICENSE">License &amp; attribution</a> &middot; <a href="CITATION.cff">Cite this dataset</a></p>
                 </div>
               </aside>
-              <main class="viewer-main">
+              <main class="viewer-main" id="viewer-main">
                 ${isHome ? `
-                <div class="viewer-home" id="viewer-main">
+                <div class="viewer-home">
                   <section class="viewer-home-hero">
                     <span class="header-badge">225 records &middot; JSON-LD 1.1</span>
                     <h2>Troika! System Reference Document, as data.</h2>
@@ -2365,7 +2368,7 @@
                   <header>
                     <div>
                       <nav class="breadcrumb" aria-label="Breadcrumb"><button type="button" data-home>Overview</button><span aria-hidden="true">/</span><span>${esc(formatTitle(current))}</span></nav>
-                      <h2 id="viewer-main">${state.query.trim() ? `Search results for &ldquo;${esc(state.query.trim())}&rdquo;` : esc(formatTitle(current))}</h2>
+                      <h2 id="viewer-heading">${state.query.trim() ? `Search results for &ldquo;${esc(state.query.trim())}&rdquo;` : esc(formatTitle(current))}</h2>
                       <p class="search-status" id="viewer-subtitle" style="margin:0;">${state.query.trim() ? "Matching records across the entire corpus." : "Select a record to inspect stats, rules text, and JSON-LD."}</p>
                     </div>
                     <div class="search-control">
@@ -2441,7 +2444,7 @@
               state.query = event.target.value;
               renderEntityList();
               const searching = !!state.query.trim();
-              const heading = document.getElementById("viewer-main");
+              const heading = document.getElementById("viewer-heading");
               const subtitle = document.getElementById("viewer-subtitle");
               if (heading) heading.textContent = searching ? `Search results for "${state.query.trim()}"` : formatTitle(current);
               if (subtitle) subtitle.textContent = searching ? "Matching records across the entire corpus." : "Select a record to inspect stats, rules text, and JSON-LD.";
@@ -2462,19 +2465,37 @@
           }
         };
 
-        const renderTroikaStats = (stats, attributes) => {
+        const formatStatValue = (val) => {
+          if (val == null) return null;
+          if (typeof val === "object") {
+            if (val.current != null) {
+              return val.maximum != null && val.maximum !== val.current
+                ? `${val.current}/${val.maximum}`
+                : String(val.current);
+            }
+            if (val.formula) return String(val.formula);
+            if (val.value != null) return String(val.value);
+            return JSON.stringify(val);
+          }
+          return String(val);
+        };
+
+        const renderTroikaStats = (stats, attributes, record = {}) => {
           const s = stats || attributes;
           if (!s || typeof s !== "object") return "";
           const cards = [];
-          if (s.skill != null) cards.push(`<div class="stat-card"><span class="stat-label">Skill</span><span class="stat-val">${esc(s.skill)}</span></div>`);
-          if (s.stamina != null) {
-            const stamVal = typeof s.stamina === "object" ? (s.stamina.formula || s.stamina.value || JSON.stringify(s.stamina)) : s.stamina;
-            cards.push(`<div class="stat-card"><span class="stat-label">Stamina</span><span class="stat-val">${esc(stamVal)}</span></div>`);
-          }
-          if (s.initiative != null) cards.push(`<div class="stat-card"><span class="stat-label">Initiative</span><span class="stat-val">${esc(s.initiative)}</span></div>`);
-          if (s.armor != null) cards.push(`<div class="stat-card"><span class="stat-label">Armor</span><span class="stat-val">${esc(s.armor)}</span></div>`);
-          if (s.luck != null) cards.push(`<div class="stat-card"><span class="stat-label">Luck</span><span class="stat-val">${esc(s.luck)}</span></div>`);
-          if (s.damage != null) cards.push(`<div class="stat-card"><span class="stat-label">Damage</span><span class="stat-val">${esc(s.damage)}</span></div>`);
+          const skillVal = formatStatValue(s.skill);
+          if (skillVal != null) cards.push(`<div class="stat-card"><span class="stat-label">Skill</span><span class="stat-val">${esc(skillVal)}</span></div>`);
+          const stamVal = formatStatValue(s.stamina);
+          if (stamVal != null) cards.push(`<div class="stat-card"><span class="stat-label">Stamina</span><span class="stat-val">${esc(stamVal)}</span></div>`);
+          const initVal = formatStatValue(s.initiative != null ? s.initiative : record.initiativeTokens);
+          if (initVal != null) cards.push(`<div class="stat-card"><span class="stat-label">Initiative</span><span class="stat-val">${esc(initVal)}</span></div>`);
+          const armorVal = formatStatValue(s.armor);
+          if (armorVal != null) cards.push(`<div class="stat-card"><span class="stat-label">Armor</span><span class="stat-val">${esc(armorVal)}</span></div>`);
+          const luckVal = formatStatValue(s.luck);
+          if (luckVal != null) cards.push(`<div class="stat-card"><span class="stat-label">Luck</span><span class="stat-val">${esc(luckVal)}</span></div>`);
+          const dmgVal = formatStatValue(s.damage);
+          if (dmgVal != null) cards.push(`<div class="stat-card"><span class="stat-label">Damage</span><span class="stat-val">${esc(dmgVal)}</span></div>`);
           if (!cards.length) return "";
           return `<div class="stats-badge-grid">${cards.join("")}</div>`;
         };
@@ -2518,6 +2539,47 @@
           `;
         };
 
+        const renderTroikaDamageMatrix = (damageMatrix) => {
+          if (!damageMatrix || typeof damageMatrix !== "object" || !damageMatrix.matrix) return "";
+          const rollCols = damageMatrix.rollColumns || ["1", "2", "3", "4", "5", "6", "7+"];
+          const weapons = damageMatrix.weapons || Object.keys(damageMatrix.matrix);
+          return `
+            <div class="section-box">
+              <h3>Damage Matrix</h3>
+              <div class="markdown-table-wrap">
+                <table>
+                  <thead><tr><th>Weapon / Attack</th>${rollCols.map((c) => `<th>${esc(c)}</th>`).join("")}</tr></thead>
+                  <tbody>
+                    ${weapons.map((w) => {
+                      const row = damageMatrix.matrix[w] || {};
+                      return `<tr><td><strong>${esc(w)}</strong></td>${rollCols.map((c) => `<td style="font-family:var(--font-mono); font-weight:600;">${esc(row[c] != null ? row[c] : "-")}</td>`).join("")}</tr>`;
+                    }).join("")}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        };
+
+        const renderTroikaDamageTable = (damageTable) => {
+          if (!damageTable || typeof damageTable !== "object" || Array.isArray(damageTable)) return "";
+          const keys = Object.keys(damageTable);
+          if (!keys.length) return "";
+          return `
+            <div class="section-box">
+              <h3>Damage Table</h3>
+              <div class="markdown-table-wrap">
+                <table>
+                  <thead><tr>${keys.map((k) => `<th>${esc(k)}</th>`).join("")}</tr></thead>
+                  <tbody>
+                    <tr>${keys.map((k) => `<td style="font-family:var(--font-mono); font-weight:600;">${esc(damageTable[k])}</td>`).join("")}</tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        };
+
         const renderTroikaPossessions = (possessions) => {
           if (!Array.isArray(possessions) || !possessions.length) return "";
           return `
@@ -2526,7 +2588,14 @@
               <ul style="margin:0; padding-left:1.25rem;">
                 ${possessions.map((p) => {
                   if (typeof p === "string") return `<li>${esc(p)}</li>`;
-                  return `<li><strong>${esc(p.name || p.item || "Item")}</strong>${p.description ? ` - ${esc(p.description)}` : ""}</li>`;
+                  const name = esc(p.name || p.item || "Item");
+                  const details = [];
+                  if (p.slots != null) details.push(`${p.slots} ${p.slots === 1 ? "slot" : "slots"}`);
+                  if (p.position != null) details.push(`pos #${p.position}`);
+                  if (p.condition) details.push(p.condition);
+                  if (p.description) details.push(p.description);
+                  const detailStr = details.length ? ` - ${esc(details.join(" · "))}` : "";
+                  return `<li><strong>${name}</strong>${detailStr}</li>`;
                 }).join("")}
               </ul>
             </div>
@@ -2601,7 +2670,13 @@
             }
           }
 
-          const ignoredKeys = new Set(["@context", "@id", "@type", "id", "name", "description", "rulesText", "stats", "attributes", "mien", "entries", "possessions", "advancedSkills", "skills", "special"]);
+          const ignoredKeys = new Set([
+            "@context", "@id", "@type", "id", "name", "description", "rulesText",
+            "stats", "attributes", "mien", "entries", "possessions", "inventory",
+            "baselinePossessions", "advancedSkills", "skills", "special",
+            "specialAbilities", "special_abilities", "damageMatrix", "damageTable",
+            "diceType", "dice", "diceExpression", "initiativeTokens"
+          ]);
           const fields = Object.entries(record).filter(([key, value]) => !ignoredKeys.has(key) && hasDisplayValue(value));
 
           const rawUrl = fileFor(record["@id"]);
@@ -2631,7 +2706,7 @@
                   </div>
                   ${rawUrl ? `<a href="${esc(rawUrl)}" target="_blank" rel="noopener noreferrer" class="copy-btn" style="display:inline-flex; align-items:center; gap:0.35rem; text-decoration:none;">Raw JSON-LD ↗</a>` : ""}
                 </div>
-                ${renderTroikaStats(record.stats, record.attributes)}
+                ${renderTroikaStats(record.stats, record.attributes, record)}
               </div>
               
               ${fields.length ? `
@@ -2644,10 +2719,12 @@
               ${record.rulesText ? `<h3 class="detail-section-title">Rules text</h3><div class="markdown-body">${renderMarkdown(record.rulesText)}</div>` : ""}
 
               ${renderTroikaMien(record.mien)}
-              ${renderTroikaTableEntries(record.entries, record.diceType || record.dice)}
-              ${renderTroikaPossessions(record.possessions)}
+              ${renderTroikaTableEntries(record.entries, record.diceType || record.dice || record.diceExpression)}
+              ${renderTroikaDamageMatrix(record.damageMatrix)}
+              ${renderTroikaDamageTable(record.damageTable)}
+              ${renderTroikaPossessions(record.possessions || record.inventory)}
               ${renderTroikaSkills(record.advancedSkills || record.skills)}
-              ${renderTroikaSpecial(record.special)}
+              ${renderTroikaSpecial(record.special || record.specialAbilities || record.special_abilities)}
 
               ${provenanceHtml}
 

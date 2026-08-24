@@ -41,10 +41,11 @@
       }
     ]
   },
-  "specialAbilities": [
+  "special": [
     {
       "name": "Continuous Growth",
-      "description": "The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids."
+      "description": "The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids.",
+      "type": "passive"
     }
   ],
   "tags": [
@@ -62,6 +63,5 @@
   },
   "possessions": [],
   "advancedSkills": [],
-  "spells": [],
-  "special": []
+  "spells": []
 }

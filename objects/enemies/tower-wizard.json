@@ -40,8 +40,12 @@
       }
     ]
   },
-  "special_abilities": [
-    "The Tower Wizard has access to Jolt or Ember and 4 other Spells rolled randomly or chosen ahead of time."
+  "special": [
+    {
+      "name": "Spellcasting",
+      "description": "The Tower Wizard has access to Jolt or Ember and 4 other Spells rolled randomly or chosen ahead of time.",
+      "type": "passive"
+    }
   ],
   "stats": {
     "skill": 10,
@@ -52,6 +56,5 @@
   },
   "possessions": [],
   "advancedSkills": [],
-  "spells": [],
-  "special": []
+  "spells": []
 }

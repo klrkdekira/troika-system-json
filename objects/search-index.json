@@ -29337,11 +29337,19 @@
         "excerpt": "passive"
       },
       {
+        "document": 190,
+        "excerpt": "passive"
+      },
+      {
         "document": 193,
         "excerpt": "passive"
       },
       {
         "document": 194,
+        "excerpt": "passive"
+      },
+      {
+        "document": 197,
         "excerpt": "passive"
       },
       {
@@ -29358,6 +29366,10 @@
       },
       {
         "document": 202,
+        "excerpt": "passive"
+      },
+      {
+        "document": 203,
         "excerpt": "passive"
       },
       {
@@ -29393,7 +29405,15 @@
         "excerpt": "passive"
       },
       {
+        "document": 214,
+        "excerpt": "passive"
+      },
+      {
         "document": 215,
+        "excerpt": "passive"
+      },
+      {
+        "document": 216,
         "excerpt": "passive"
       },
       {
@@ -37823,6 +37843,12 @@
         "excerpt": "Random Spell Table"
       }
     ],
+    "spellcasting": [
+      {
+        "document": 214,
+        "excerpt": "Spellcasting"
+      }
+    ],
     "spells": [
       {
         "document": 35,
@@ -39225,6 +39251,12 @@
       {
         "document": 203,
         "excerpt": "s the intended victim, whereupon it will envelop them, suffocating and freezing their target all at once and leaving a relatively unmarked corpse before sluggishly returni"
+      }
+    ],
+    "suffocation": [
+      {
+        "document": 203,
+        "excerpt": "Suffocation"
       }
     ],
     "sufusion": [
@@ -43118,7 +43150,7 @@
     "travelers": [
       {
         "document": 216,
-        "excerpt": "Time travelers from the end of the universe with advanced arts and technology"
+        "excerpt": "Time Travelers"
       }
     ],
     "travellers": [

@@ -43,6 +43,9 @@ class TestJsonLdData(unittest.TestCase):
         self.assertIn("Spell", ctx)
         self.assertIn("Table", ctx)
         self.assertIn("Character", ctx)
+        self.assertIn("TroikaSystemData", ctx)
+        self.assertIn("CollectionIndex", ctx)
+        self.assertIn("SearchIndex", ctx)
 
     def test_all_objects_have_jsonld_fields(self):
         """Test that every data object in objects/ contains @context, @id, and @type"""
@@ -67,6 +70,41 @@ class TestJsonLdData(unittest.TestCase):
                     data["@id"].startswith(self.base_uri),
                     f"Invalid @id URI prefix in {rel_path}",
                 )
+
+    def test_all_object_ids_map_to_filesystem(self):
+        """Test that all @id URIs map to existing JSON files on disk"""
+        json_files = list(self.objects_dir.glob("**/*.json"))
+        for json_file in json_files:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            uri = data.get("@id", "")
+            if uri.startswith(self.base_uri + "/objects/"):
+                rel_part = uri.removeprefix(self.base_uri + "/objects/")
+                expected_file = self.objects_dir / rel_part
+                self.assertTrue(
+                    expected_file.exists(),
+                    f"@id '{uri}' in {json_file} does not resolve to {expected_file}",
+                )
+
+    def test_index_html_embedded_jsonld(self):
+        """Test that index.html contains valid Schema.org Dataset metadata"""
+        import re
+
+        index_file = Path("index.html")
+        self.assertTrue(index_file.exists(), "index.html missing")
+        content = index_file.read_text(encoding="utf-8")
+        match = re.search(
+            r'<script type="application/ld\+json">\s*(\{.*?\})\s*</script>',
+            content,
+            re.DOTALL,
+        )
+        self.assertIsNotNone(match, "No application/ld+json script in index.html")
+        meta = json.loads(match.group(1))
+        self.assertEqual(meta.get("@context"), "https://schema.org")
+        self.assertEqual(meta.get("@type"), "Dataset")
+        self.assertEqual(meta.get("name"), "Troika! System JSON")
+        self.assertIn("distribution", meta)
+        self.assertGreaterEqual(len(meta["distribution"]), 3)
 
     def test_object_jsonld_types_match_categories(self):
         """Test that @type matches the directory category"""

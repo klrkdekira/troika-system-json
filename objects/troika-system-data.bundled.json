@@ -6067,10 +6067,11 @@
           }
         ]
       },
-      "specialAbilities": [
+      "special": [
         {
           "name": "Continuous Growth",
-          "description": "The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids."
+          "description": "The tentacles remain after an attack. When an individual is successfully injured by the Ekodat they are immediately attacked again by the sudden growth of additional spurs brought on by the sufusion of vital fluids.",
+          "type": "passive"
         }
       ],
       "tags": [
@@ -6088,8 +6089,7 @@
       },
       "possessions": [],
       "advancedSkills": [],
-      "spells": [],
-      "special": []
+      "spells": []
     },
     {
       "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
@@ -6536,10 +6536,11 @@
           }
         ]
       },
-      "specialAbilities": [
+      "special": [
         {
           "name": "Silver Vulnerability",
-          "description": "They take double Damage from Silver."
+          "description": "They take double Damage from Silver.",
+          "type": "passive"
         }
       ],
       "tags": [
@@ -6556,8 +6557,7 @@
       },
       "possessions": [],
       "advancedSkills": [],
-      "spells": [],
-      "special": []
+      "spells": []
     },
     {
       "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
@@ -6952,8 +6952,12 @@
           }
         ]
       },
-      "special_abilities": [
-        "Anyone successfully hit by a notule must Test their Luck (or Skill for Enemies) or start to Drown. The notule wraps itself around their face and begins to suffocate them."
+      "special": [
+        {
+          "name": "Suffocation",
+          "description": "Anyone successfully hit by a notule must Test their Luck (or Skill for Enemies) or start to Drown. The notule wraps itself around their face and begins to suffocate them.",
+          "type": "passive"
+        }
       ],
       "stats": {
         "skill": 6,
@@ -6964,8 +6968,7 @@
       },
       "possessions": [],
       "advancedSkills": [],
-      "spells": [],
-      "special": []
+      "spells": []
     },
     {
       "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
@@ -7009,7 +7012,6 @@
           }
         ]
       },
-      "special_abilities": [],
       "stats": {
         "skill": 9,
         "stamina": 18,
@@ -7064,7 +7066,6 @@
           }
         ]
       },
-      "special_abilities": [],
       "stats": {
         "skill": 7,
         "stamina": 8,
@@ -7719,8 +7720,12 @@
           }
         ]
       },
-      "special_abilities": [
-        "The Tower Wizard has access to Jolt or Ember and 4 other Spells rolled randomly or chosen ahead of time."
+      "special": [
+        {
+          "name": "Spellcasting",
+          "description": "The Tower Wizard has access to Jolt or Ember and 4 other Spells rolled randomly or chosen ahead of time.",
+          "type": "passive"
+        }
       ],
       "stats": {
         "skill": 10,
@@ -7731,8 +7736,7 @@
       },
       "possessions": [],
       "advancedSkills": [],
-      "spells": [],
-      "special": []
+      "spells": []
     },
     {
       "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",
@@ -7846,8 +7850,12 @@
           }
         ]
       },
-      "special_abilities": [
-        "Time travelers from the end of the universe with advanced arts and technology"
+      "special": [
+        {
+          "name": "Time Travelers",
+          "description": "Time travelers from the end of the universe with advanced arts and technology",
+          "type": "passive"
+        }
       ],
       "stats": {
         "skill": 8,
@@ -7858,8 +7866,7 @@
       },
       "possessions": [],
       "advancedSkills": [],
-      "spells": [],
-      "special": []
+      "spells": []
     },
     {
       "@context": "https://cheeleong.dev/troika-system-json/systems/context.jsonld",

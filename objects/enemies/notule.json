@@ -40,8 +40,12 @@
       }
     ]
   },
-  "special_abilities": [
-    "Anyone successfully hit by a notule must Test their Luck (or Skill for Enemies) or start to Drown. The notule wraps itself around their face and begins to suffocate them."
+  "special": [
+    {
+      "name": "Suffocation",
+      "description": "Anyone successfully hit by a notule must Test their Luck (or Skill for Enemies) or start to Drown. The notule wraps itself around their face and begins to suffocate them.",
+      "type": "passive"
+    }
   ],
   "stats": {
     "skill": 6,
@@ -52,6 +56,5 @@
   },
   "possessions": [],
   "advancedSkills": [],
-  "spells": [],
-  "special": []
+  "spells": []
 }

@@ -41,10 +41,11 @@
       }
     ]
   },
-  "specialAbilities": [
+  "special": [
     {
       "name": "Silver Vulnerability",
-      "description": "They take double Damage from Silver."
+      "description": "They take double Damage from Silver.",
+      "type": "passive"
     }
   ],
   "tags": [
@@ -61,6 +62,5 @@
   },
   "possessions": [],
   "advancedSkills": [],
-  "spells": [],
-  "special": []
+  "spells": []
 }

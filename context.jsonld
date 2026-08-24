@@ -1,7 +1,7 @@
 {
   "@context": {
     "@vocab": "https://cheeleong.dev/troika-system-json/ns#",
-    "schema": "http://schema.org/",
+    "schema": "https://schema.org/",
     "troika": "https://cheeleong.dev/troika-system-json/ns#",
     "name": "schema:name",
     "description": "schema:description",
@@ -18,6 +18,8 @@
     "Table": "troika:Table",
     "Character": "troika:Character",
     "TroikaSystemData": "troika:TroikaSystemData",
+    "CollectionIndex": "troika:CollectionIndex",
+    "SearchIndex": "troika:SearchIndex",
     "possessions": {
       "@id": "troika:possessions",
       "@container": "@set"
@@ -32,6 +34,18 @@
     },
     "special": {
       "@id": "troika:special",
+      "@container": "@set"
+    },
+    "specialAbilities": {
+      "@id": "troika:specialAbilities",
+      "@container": "@set"
+    },
+    "baselinePossessions": {
+      "@id": "troika:baselinePossessions",
+      "@container": "@set"
+    },
+    "languages": {
+      "@id": "troika:languages",
       "@container": "@set"
     },
     "tags": {
