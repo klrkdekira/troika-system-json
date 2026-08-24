@@ -1,243 +1,176 @@
 # Troika! System JSON
 
 <p align="center">
-  <img src="fortle.svg" alt="Fortle Logo" width="120" height="120">
+  <img src="fortle.svg" alt="Fortle logo" width="120" height="120">
 </p>
 
 <p align="center">
-  <strong>A machine-readable JSON-LD 1.1 corpus, JSON Schema specification, and interactive explorer for the Troika! tabletop RPG System Reference Document (SRD).</strong>
+  <strong>A machine-readable JSON-LD corpus, JSON Schema specification, and interactive explorer for the Troika! tabletop RPG System Reference Document.</strong>
 </p>
 
 <p align="center">
-  <a href="https://cheeleong.dev/troika-system-json/"><img src="https://img.shields.io/badge/Live%20Explorer-cheeleong.dev-4f46e5?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Explorer"></a>
-  <a href="pyproject.toml"><img src="https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square&logo=semver&logoColor=white" alt="Version 0.1.0"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20%2B%20Troika!%20SRD-success?style=flat-square" alt="License"></a>
-  <a href="CITATION.cff"><img src="https://img.shields.io/badge/Citation-CITATION.cff-8b5cf6?style=flat-square&logo=zenodo&logoColor=white" alt="Citation"></a>
-  <a href="https://github.com/klrkdekira/troika-system-json/stargazers"><img src="https://img.shields.io/github/stars/klrkdekira/troika-system-json?style=flat-square&logo=github&color=gold" alt="GitHub Stars"></a>
-  <a href="https://github.com/klrkdekira/troika-system-json/network/members"><img src="https://img.shields.io/github/forks/klrkdekira/troika-system-json?style=flat-square&logo=github" alt="GitHub Forks"></a>
-  <a href="https://github.com/klrkdekira/troika-system-json/commits/main"><img src="https://img.shields.io/github/last-commit/klrkdekira/troika-system-json?style=flat-square&logo=github" alt="Last Commit"></a>
-  <br>
-  <a href="systems/context.jsonld"><img src="https://img.shields.io/badge/Linked%20Data-JSON--LD%201.1-7b1fa2?style=flat-square&logo=w3c&logoColor=white" alt="JSON-LD 1.1"></a>
-  <a href="systems/"><img src="https://img.shields.io/badge/JSON%20Schema-Draft--07%20%2F%202020--12-00599c?style=flat-square&logo=json-schema&logoColor=white" alt="JSON Schema"></a>
-  <a href="datapackage.json"><img src="https://img.shields.io/badge/Data%20Package-Frictionless-d97706?style=flat-square" alt="Data Package"></a>
-  <a href="llms.txt"><img src="https://img.shields.io/badge/AI%2FLLM-llms.txt-0d9488?style=flat-square&logo=openai&logoColor=white" alt="llms.txt"></a>
-  <a href="llms-full.txt"><img src="https://img.shields.io/badge/Context%20Projection-llms--full.txt-059669?style=flat-square&logo=markdown&logoColor=white" alt="llms-full.txt"></a>
-  <a href="sitemap.xml"><img src="https://img.shields.io/badge/Sitemap-sitemap.xml-0284c7?style=flat-square&logo=xml&logoColor=white" alt="Sitemap"></a>
-  <a href="Troika%20SRD.md"><img src="https://img.shields.io/badge/SRD-Troika!%20Numinous%20Edition-c026d3?style=flat-square" alt="Troika SRD"></a>
-  <br>
-  <a href="objects/troika-system-data.json"><img src="https://img.shields.io/badge/Corpus-225%20Entities-10b981?style=flat-square" alt="Corpus 225 Entities"></a>
-  <a href="objects/backgrounds/"><img src="https://img.shields.io/badge/Backgrounds-36%20d66-8b5cf6?style=flat-square" alt="36 Backgrounds"></a>
-  <a href="objects/spells/"><img src="https://img.shields.io/badge/Spells-74%20Spells-ec4899?style=flat-square" alt="74 Spells"></a>
-  <a href="objects/items/"><img src="https://img.shields.io/badge/Items-50%20Items-f59e0b?style=flat-square" alt="50 Items"></a>
-  <a href="objects/enemies/"><img src="https://img.shields.io/badge/Bestiary-25%20Enemies-ef4444?style=flat-square" alt="25 Enemies"></a>
-  <a href="objects/skills/"><img src="https://img.shields.io/badge/Skills-22%20Advanced-3b82f6?style=flat-square" alt="22 Skills"></a>
-  <a href="objects/tables/"><img src="https://img.shields.io/badge/Tables-5%20Matrices-6366f1?style=flat-square" alt="5 Tables"></a>
-  <a href="objects/characters/"><img src="https://img.shields.io/badge/Characters-3%20Sample-14b8a6?style=flat-square" alt="3 Sample Characters"></a>
-  <br>
-  <a href="pyproject.toml"><img src="https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.12+"></a>
-  <a href="https://github.com/astral-sh/uv"><img src="https://img.shields.io/badge/uv-Astral-261230?style=flat-square&logo=astral&logoColor=white" alt="uv package manager"></a>
-  <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/badge/Code%20Style-Ruff-000000?style=flat-square&logo=ruff&logoColor=white" alt="Ruff code style"></a>
-  <a href="tests/"><img src="https://img.shields.io/badge/Tests-45%20Passing-success?style=flat-square&logo=pytest&logoColor=white" alt="Tests"></a>
-  <a href="main.py"><img src="https://img.shields.io/badge/Schema%20Validation-100%25%20Passing-brightgreen?style=flat-square" alt="Schema Validation"></a>
-  <a href="objects/search-index.json"><img src="https://img.shields.io/badge/Search%20Index-3%2C880%20Tokens-blue?style=flat-square" alt="Search Index"></a>
-  <a href="Makefile"><img src="https://img.shields.io/badge/Build-Makefile-427819?style=flat-square&logo=gnu&logoColor=white" alt="Makefile"></a>
+  <a href="https://cheeleong.dev/troika-system-json/"><img src="https://img.shields.io/badge/Explorer-Live-4f46e5?style=flat-square" alt="Live explorer"></a>
+  <a href="systems/context.jsonld"><img src="https://img.shields.io/badge/JSON--LD-1.1-7b1fa2?style=flat-square" alt="JSON-LD 1.1"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT%20%2B%20Troika!%20SRD-059669?style=flat-square" alt="MIT and Troika! SRD license"></a>
 </p>
-
----
 
 ## Overview
 
-**Troika! System JSON** turns the official [Troika! System Reference Document (SRD)](https://troika-srd.netlify.app/) into structured, schema-validated, and linked JSON data.
+Troika! System JSON turns the official [Troika! System Reference Document](https://troika-srd.netlify.app/) into structured, schema-validated, linked data. Browse it in the [live explorer](https://cheeleong.dev/troika-system-json/) or use the published files directly in applications, tools, and retrieval pipelines.
 
-Every background, spell, skill, enemy, item, and roll table is represented as:
-1. **Granular JSON-LD objects** with explicit semantic `@context`, `@id`, and `@type` fields.
-2. **Deterministic single-file bundles** for zero-dependency client integration.
-3. **AI/LLM-ready text projections** (`llms.txt`, `llms-full.txt`) for agents, crawlers, and retrieval pipelines.
-4. **Precomputed static indexes** (`search-index.json`, `collection-index.json`) for instant client-side search without a backend.
+The repository provides:
 
-Explore the dataset live at **[cheeleong.dev/troika-system-json](https://cheeleong.dev/troika-system-json/)**.
+- Granular JSON-LD records with explicit `@context`, `@id`, and `@type` fields.
+- JSON Schemas for backgrounds, characters, enemies, items, skills, spells, and tables.
+- A deterministic, single-file bundle for zero-dependency client integration.
+- AI-friendly text projections and precomputed indexes for static search and retrieval.
 
----
+## Use the dataset
 
-## Dataset Summary
+Choose the artifact that best fits your use case:
 
-The corpus contains **225 structured entities** across 7 core collections:
+| Artifact | Best for |
+| :--- | :--- |
+| [Live explorer](https://cheeleong.dev/troika-system-json/) | Browsing and searching the corpus |
+| [`troika-system-data.bundled.json`](objects/troika-system-data.bundled.json) | Loading the complete corpus in one request |
+| [`troika-system-data.json`](objects/troika-system-data.json) | Traversing the corpus as a manifest of `$ref` links |
+| [`llms.txt`](llms.txt) | Discovering collections and canonical URLs |
+| [`llms-full.txt`](llms-full.txt) | Ingesting a deterministic full-text projection |
+| [`datapackage.json`](datapackage.json) | Using the corpus as a Frictionless Data Package |
 
-| Collection | Path | Count | Description |
-| :--- | :--- | :---: | :--- |
-| **Backgrounds** | [`objects/backgrounds/`](objects/backgrounds/) | 36 | Complete d66 character backgrounds with skills, possessions, and special abilities |
-| **Enemies** | [`objects/enemies/`](objects/enemies/) | 25 | Bestiary entries with initiative (Miên), stamina, armor ratings, and attacks |
-| **Items** | [`objects/items/`](objects/items/) | 50 | Weapons, armor, gear, and provisions with silver values, inventory slots, and damage rows |
-| **Skills** | [`objects/skills/`](objects/skills/) | 22 | Advanced skills definitions, prerequisites, and descriptions |
-| **Spells** | [`objects/spells/`](objects/spells/) | 74 | Magic spells with stamina costs, casting requirements, and rules |
-| **Tables** | [`objects/tables/`](objects/tables/) | 5 | Core matrices: Melee, Ranged, and Beastly damage tables, Oops table, and Random Spell table |
-| **Characters** | [`objects/characters/`](objects/characters/) | 3 | Sample pre-generated character records |
+### Download the complete corpus
 
----
-
-## Repository Structure
-
-```
-troika-system-json/
-├── objects/                              # Game data collections (JSON & JSON-LD 1.1)
-│   ├── troika-system-data.json           # Master manifest linking entities via $ref
-│   ├── troika-system-data.bundled.json   # Single-file bundled corpus (all $refs inlined)
-│   ├── search-index.json                 # Precomputed static inverted search index
-│   ├── collection-index.json             # Lightweight collection metadata index
-│   ├── backgrounds/                      # 36 character background files
-│   ├── characters/                       # Sample character sheets
-│   ├── enemies/                          # 25 bestiary records
-│   ├── items/                            # 50 equipment and item entries
-│   ├── skills/                           # 22 advanced skill files
-│   ├── spells/                           # 74 spell records
-│   └── tables/                           # 5 core system tables & damage matrices
-├── systems/                              # JSON Schemas (Draft 7 / Draft 2020-12)
-│   ├── context.jsonld                    # Shared JSON-LD vocabulary and context
-│   ├── background.schema.json            # Schema for character backgrounds
-│   ├── character.schema.json             # Schema for character sheets
-│   ├── enemy.schema.json                 # Schema for enemies
-│   ├── item.schema.json                  # Schema for items and weapons
-│   ├── skill.schema.json                 # Schema for advanced skills
-│   ├── spell.schema.json                 # Schema for spells
-│   ├── table.schema.json                 # Schema for damage and roll tables
-│   └── troika-system.schema.json         # Schema for the top-level manifest and bundle
-├── scripts/                              # Publishing and index generation tools
-│   ├── publishlib.py                     # Shared corpus traversal utilities
-│   ├── build_llms.py                     # Generates llms.txt
-│   ├── build_llms_full.py                # Generates llms-full.txt
-│   ├── build_search_index.py             # Generates objects/search-index.json
-│   ├── build_collection_index.py         # Generates objects/collection-index.json
-│   ├── build_sitemap.py                  # Generates sitemap.xml
-│   └── generate_indexes.py               # Compiles inlined bundle & root context
-├── tests/                                # Test suite (45 unit tests)
-├── datapackage.json                      # Frictionless Data Package metadata
-├── CITATION.cff                          # Citation File Format metadata
-├── llms.txt                              # Concise agent and crawler corpus guide
-├── llms-full.txt                         # Full-text context projection of all records
-├── index.html                            # Interactive single-page web explorer
-├── Makefile                              # Build, test, validate, and publishing tasks
-└── pyproject.toml                        # Python package configuration
-```
-
----
-
-## Machine-Readable Publishing & AI/LLM Access
-
-This repository implements standardized discovery formats for AI agents, search engines, and data pipelines:
-
-- **[`llms.txt`](llms.txt)**: A concise index following the `/llms.txt` standard with collection summaries, counts, and canonical URLs.
-- **[`llms-full.txt`](llms-full.txt)**: A complete, deterministic markdown projection of all 225 records designed for direct context-window ingestion.
-- **[`objects/search-index.json`](objects/search-index.json)**: Static inverted index spanning ~3,880 searchable tokens for zero-backend client search.
-- **[`objects/collection-index.json`](objects/collection-index.json)**: Lightweight metadata summaries for rapidly browsing collections.
-- **[`datapackage.json`](datapackage.json)**: [Frictionless Data Package](https://datapackage.org/) descriptor defining all resources and licenses.
-- **[`sitemap.xml`](sitemap.xml)** & **[`robots.txt`](robots.txt)**: Search engine crawler manifests and canonical URLs.
-
----
-
-## Quick Start & Consumption
-
-### 1. Inlined Single-File Bundle
-For apps, web clients, or bots that need all data in a single HTTP request:
 ```bash
 curl -O https://cheeleong.dev/troika-system-json/objects/troika-system-data.bundled.json
 ```
 
-### 2. Individual Entities via JSON-LD
-Each entity is addressable directly by its `@id`:
-```bash
-# Fetch the 'Epopt' background
-curl -O https://cheeleong.dev/troika-system-json/objects/backgrounds/04-epopt.json
+### Fetch individual records
 
-# Fetch the 'Fire Bolt' spell
+Each record is available at a stable URL:
+
+```bash
+# Epopt background
+curl -O https://cheeleong.dev/troika-system-json/objects/backgrounds/23-epopt.json
+
+# Fire Bolt spell
 curl -O https://cheeleong.dev/troika-system-json/objects/spells/fire-bolt.json
 ```
 
-### 3. Python Integration
+### Load the bundle with Python
+
 ```python
 import json
 from urllib.request import urlopen
 
-# Load bundled corpus
 url = "https://cheeleong.dev/troika-system-json/objects/troika-system-data.bundled.json"
-with urlopen(url) as response:
-    corpus = json.loads(response.read().decode())
 
-# Access backgrounds and spells
-print(f"Loaded {len(corpus['backgrounds'])} backgrounds and {len(corpus['spells'])} spells.")
+with urlopen(url) as response:
+    corpus = json.load(response)
+
+print(
+    f"Loaded {len(corpus['backgrounds'])} backgrounds "
+    f"and {len(corpus['spells'])} spells."
+)
 ```
 
----
+## Collections
 
-## Development, Validation & Testing
+The corpus contains **225 records** across seven collections:
 
-### Prerequisites
-- Python >= 3.12
-- [uv](https://github.com/astral-sh/uv) (recommended) or standard `pip`
+| Collection | Records | Description |
+| :--- | :---: | :--- |
+| [Backgrounds](objects/backgrounds/) | 36 | d66 character backgrounds with skills, possessions, and special abilities |
+| [Characters](objects/characters/) | 2 | Sample pre-generated character records |
+| [Enemies](objects/enemies/) | 36 | Bestiary entries with initiative (Miên), stamina, armor ratings, and attacks |
+| [Items](objects/items/) | 50 | Weapons, armor, gear, and provisions with values, inventory slots, and damage rows |
+| [Skills](objects/skills/) | 22 | Advanced skill definitions, prerequisites, and descriptions |
+| [Spells](objects/spells/) | 74 | Spells with stamina costs, casting requirements, and rules |
+| [Tables](objects/tables/) | 5 | Damage matrices and core random tables |
 
-Install dependencies:
+The publishing pipeline also produces [`objects/search-index.json`](objects/search-index.json), [`objects/collection-index.json`](objects/collection-index.json), [`sitemap.xml`](sitemap.xml), and [`robots.txt`](robots.txt) for static discovery and search.
+
+## Repository structure
+
+```text
+troika-system-json/
+├── objects/                    # JSON-LD records, manifests, bundle, and indexes
+│   ├── backgrounds/
+│   ├── characters/
+│   ├── enemies/
+│   ├── items/
+│   ├── skills/
+│   ├── spells/
+│   └── tables/
+├── systems/                    # JSON Schemas and the shared JSON-LD context
+├── scripts/                    # Publishing and index-generation tools
+├── tests/                      # Unit test suite
+├── datapackage.json            # Frictionless Data Package metadata
+├── llms.txt                    # Concise agent and crawler guide
+├── llms-full.txt               # Full-text corpus projection
+├── index.html                  # Interactive web explorer
+├── Makefile                    # Build, validation, and test tasks
+└── pyproject.toml              # Python project configuration
+```
+
+## Development
+
+### Requirements
+
+- Python 3.12.10 or newer
+- [`uv`](https://github.com/astral-sh/uv)
+
+Install the dependencies and run the complete verification pipeline:
+
 ```bash
 uv sync
+make check
 ```
 
-### Makefile Commands
+### Common commands
 
 | Command | Description |
 | :--- | :--- |
-| `make check` | Full pipeline: rebuilds all publishing artifacts, validates all schemas, and runs test suite |
-| `make publish` | Regenerates all publishing artifacts (`bundle`, `llms.txt`, `llms-full.txt`, indexes, sitemap) |
-| `make validate` | Validates all JSON files against their schemas and verifies cross-references |
-| `make test` | Runs the test suite via `unittest` |
-| `make bundle` | Compiles `troika-system-data.bundled.json` and syncs `context.jsonld` |
-| `make search-index` | Regenerates `objects/search-index.json` |
-| `make collection-index` | Regenerates `objects/collection-index.json` |
-| `make llms` | Regenerates `llms.txt` |
-| `make llms-full` | Regenerates `llms-full.txt` |
-| `make sitemap` | Regenerates `sitemap.xml` |
+| `make check` | Rebuild all artifacts, validate the corpus and references, and run the tests |
+| `make publish` | Regenerate the bundle, text projections, indexes, and sitemap |
+| `make validate` | Validate JSON files against their schemas and check cross-references |
+| `make test` | Run the unit test suite |
+| `make bundle` | Rebuild the single-file corpus and synchronize the JSON-LD context |
+| `make search-index` | Regenerate the static search index |
+| `make collection-index` | Regenerate the collection metadata index |
+| `make llms` | Regenerate `llms.txt` |
+| `make llms-full` | Regenerate `llms-full.txt` |
+| `make sitemap` | Regenerate `sitemap.xml` |
 
-### CLI Validation
+### Validate specific data
 
-Validate all files or specific directories:
 ```bash
-# Validate entire dataset with Rich formatted output
+# Validate the complete dataset
 uv run python main.py
 
-# Validate and cross-check all cross-references ($ref, item IDs, spell names)
+# Validate the dataset and all cross-references
 uv run python main.py objects --check-references
 
-# Validate a single file against its schema
-uv run python main.py objects/backgrounds/01-arphaestian-unfettered.json
+# Validate one record
+uv run python main.py objects/backgrounds/23-epopt.json
 ```
-
-### Running Tests
-```bash
-uv run python -m unittest discover -s tests -v
-```
-
----
 
 ## Citation
 
-If you use or reference this dataset in research, tools, or applications, please cite it using the metadata from [`CITATION.cff`](CITATION.cff):
+If you use this dataset in research, tools, or applications, cite the metadata in [`CITATION.cff`](CITATION.cff):
 
 ```bibtex
 @dataset{chow_troika_system_json_2026,
-  author    = {Chow, Chee Leong},
-  title     = {Troika! System JSON},
-  year      = {2026},
-  url       = {https://cheeleong.dev/troika-system-json/},
-  version   = {0.1.0},
-  note      = {Machine-readable JSON-LD 1.1 corpus and JSON Schemas for the Troika! SRD}
+  author  = {Chow, Chee Leong},
+  title   = {Troika! System JSON},
+  year    = {2026},
+  url     = {https://cheeleong.dev/troika-system-json/},
+  version = {0.1.0},
+  note    = {Machine-readable JSON-LD corpus and JSON Schemas for the Troika! SRD}
 }
 ```
 
----
+## License and attribution
 
-## License & Attribution
-
-<p align="center">
-  <img src="fortle.svg" alt="Fortle Logo" width="100" height="100">
-</p>
-
-- **Repository Code, Schemas, Architecture & UI**: Licensed under the [MIT License](LICENSE) &copy; 2026 [Chee Leong](https://cheeleong.dev).
-- **Troika! Game Content**: Content from the *Troika! System Reference Document* remains &copy; [Melsonian Arts Council](https://www.troika-rpg.com/) and is used under the terms of the official [Troika! SRD](https://troika-srd.netlify.app/) ([dialectrical/troika-srd](https://github.com/dialectrical/troika-srd)).
-- *Troika!* is a trademark of the Melsonian Arts Council. *Troika! System JSON* is an independent production and is not affiliated with the Melsonian Arts Council.
+- Repository code, schemas, architecture, and interface: [MIT License](LICENSE), copyright 2026 [Chee Leong](https://cheeleong.dev).
+- Troika! game content: copyright [Melsonian Arts Council](https://www.troika-rpg.com/), used under the terms of the official [Troika! SRD](https://troika-srd.netlify.app/).
+- Troika! is a trademark of the Melsonian Arts Council. Troika! System JSON is an independent production and is not affiliated with the Melsonian Arts Council.
